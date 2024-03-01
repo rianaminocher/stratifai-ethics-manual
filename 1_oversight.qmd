@@ -1,0 +1,71 @@
+# Human Agency and Oversight
+
+**Principle:**\
+Respect for human autonomy
+
+**Requirements:**\
+(1) Enable democratic, flourishing, equitable society\
+(2) Prioritize user agency\
+(3) Allow for human oversight
+
+**Notes:**\
+This is particularly relevant for AI systems which are designed to guide, influence or support human decision-making---such as STRATIF-AI.
+
+**Keywords:**\
+guiding, influencing, decision-making (e.g., prediction systems, predictive policing, decision-support); human-like; trust and (in)dependence
+
+**Definitions:**\
+human-in-the-loop (HITL): capability for human intervention in every decision cycle of the system\
+human-on-the-loop (HOTL): capability for human intervention during the design cycle of the system and monitoring the system's operation\
+human-in- command (HIC): capability to oversee the overall activity of the AI system (including its broader economic, societal, legal and ethical impact) and the ability to decide when and how to use the AI system in any particular situation---e.g., override decision or discontinue use
+
+## Human agency and autonomy
+
+**Questions:**
+
+-   Is the AI system designed to interact, guide or take decisions by human end-users that affect humans or society?
+-   Could the AI system generate confusion for some or all end-users or subjects on whether a decision, content, advice or outcome is the result of an algorithmic decision?
+-   Are end-users or other subjects adequately made aware that a decision, content, advice or outcome is the result of an algorithmic decision?
+-   Could the AI system generate confusion for some or all end-users or subjects on whether they are interacting with a human or AI system?
+-   Are end-users or subjects informed that they are interacting with an AI system?
+-   Does the AI system risk creating human attachment, stimulating addictive behaviour, or manipulating user behaviour? Depending on which risks are possible or likely, please answer the questions below:
+-   Did you take measures to deal with possible negative consequences for end-users or subjects in case they develop a disproportionate attachment to the AI System?
+-   Did you take measures to minimise the risk of addiction?
+-   Did you take measures to mitigate the risk of manipulation?
+
+**Solutions:**
+
+1. Provide training on medical decision-making  
+
+Description: A comprehensive training program for doctors on STRATIF-AI usage and interpretation should be made available before application. The program should include: discussion of limitations, protocol for overriding recommendations, a simplified explanation of the AI ("blackboxed") system, value placed on medical expertise. 
+
+Key personnel: WP4 Prevention, WP5 Treatment, WP6 Rehabilitation---Leads to be appointed to draft training program.
+
+Progress: What is the status of training program development? What percentage of doctors have received training? What proportion of decisions are overridden by doctors? 
+
+Phase: Clinical validation/Deployment
+
+2. Communicate the role of AI in decision-making
+
+Description: A standardized procedure for explaining the use of the tool and involvement of the tool to patients should be designed and adhered to.
+
+Key personnel: WP4 Prevention, WP5 Treatment, WP6 Rehabilitation---Leads to be appointed to draft training program.
+
+Progress: Has standardized documentation been drafted? Do visual materials exist? Have patient doubts/mistrust been assessed? Has patient understanding been verified? 
+
+Phase: Clinical validation/Deployment
+
+3. Prioritize epistemic authority
+
+
+## Human oversight
+
+**Questions:**
+
+-   Please determine whether the AI system (choose as many as appropriate): Is a self-learning or autonomous system; Is overseen by a Human-in-the-Loop; Is overseen by a Human-on-the-Loop; Is overseen by a Human-in-Command.
+-   Have the humans (human-in-the-loop, human-on-the-loop, human-in-command) been given specific training on how to exercise oversight?
+-   Did you establish any detection and response mechanisms for undesirable adverse effects of the AI system for the end-user or subject?
+-   Did you ensure a 'stop button' or procedure to safely abort an operation when needed?
+-   Did you take any specific oversight and control measures to reflect the self-learning or autonomous nature of the AI system?
+
+**Solutions:**

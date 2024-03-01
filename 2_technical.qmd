@@ -1,0 +1,80 @@
+# Technical Robustness and Safety
+
+**Principle:**  
+
+**Requirements:**\
+(1) Security\
+(2) Safety\
+(3) Accuracy  
+(4) Reliability/reproducibility
+
+**Keywords:**\
+accuracy, AI Bias, AI System, AI Reliability, AI Reproducibility, (Low) Confidence Score, Continual Learning, Data Poisoning, Model Evasion, Model Inversion, Pen Test, Red-team
+
+**Definitions:**\
+dependability: the ability to deliver services that can justifiably be trusted\
+resilience: robustness when facing changes
+
+## Resilience to attack and security
+
+**Questions**:
+
+-   Could the AI system have adversarial, critical or damaging effects (e.g. to human or societal safety) in case of risks or threats such as design or technical faults, defects, outages, attacks, misuse, inappropriate or malicious use?
+-   Is the AI system certified for cybersecurity (e.g. the certification scheme created by the Cybersecurity Act in Europe) or is it compliant with specific security standards?
+-   How exposed is the AI system to cyber-attacks?
+-   Did you assess potential forms of attacks to which the AI system could be vulnerable?
+-   Did you consider different types of vulnerabilities and potential entry points for attacks such as:
+-   Data poisoning (i.e. manipulation of training data);
+-   Model evasion (i.e. classifying the data according to the attacker's will);
+-   Model inversion (i.e. infer the model parameters)
+-   Did you put measures in place to ensure the integrity, robustness and overall security of the AI system against potential attacks over its lifecycle?
+-   Did you red-team/pentest the system?
+-   Did you inform end-users of the duration of security coverage and updates?
+-   What length is the expected timeframe within which you provide security updates for the AI system?
+
+**Solutions:**
+
+## General safety
+
+**Questions:**
+
+-   Did you define risks, risk metrics and risk levels of the AI system in each specific use case?
+-   Did you put in place a process to continuously measure and assess risks?
+-   Did you inform end-users and subjects of existing or potential risks?
+-   Did you identify the possible threats to the AI system (design faults, technical faults, environmental threats) and the possible consequences?
+-   Did you assess the risk of possible malicious use, misuse or inappropriate use of the AI system?
+-   Did you define safety criticality levels (e.g. related to human integrity) of the possible consequences of faults or misuse of the AI system?
+-   Did you assess the dependency of a critical AI system's decisions on its stable and reliable behaviour?
+-   Did you align the reliability/testing requirements to the appropriate levels of stability and reliability?
+-   Did you plan fault tolerance via, e.g. a duplicated system or another parallel system (AI-based or 'conventional')?
+-   Did you develop a mechanism to evaluate when the AI system has been changed to merit a new review of its technical robustness and safety?
+
+**Solutions:**
+
+## Accuracy
+
+**Questions:**
+
+-   Could a low level of accuracy of the AI system result in critical, adversarial or damaging consequences?
+-   Did you put in place measures to ensure that the data (including training data) used to develop the AI system is up-to-date, of high quality, complete and representative of the environment the system will be deployed in?
+-   Did you put in place a series of steps to monitor, and document the AI system's accuracy?
+-   Did you consider whether the AI system's operation can invalidate the data or assumptions it was trained on, and how this might lead to adversarial effects?
+-   Did you put processes in place to ensure that the level of accuracy of the AI system to be expected by end-users and/or subjects is properly communicated?
+
+**Solutions:**
+
+## Reliability and reproducibility
+
+**Questions:**
+
+-   Could the AI system cause critical, adversarial, or damaging consequences (e.g. pertaining to human safety) in case of low reliability and/or reproducibility?
+-   Did you put in place a well-defined process to monitor if the AI system is meeting the intended goals?
+-   Did you test whether specific contexts or conditions need to be taken into account to ensure reproducibility?
+-   Did you put in place verification and validation methods and documentation (e.g. logging) to evaluate and ensure different aspects of the AI system's reliability and reproducibility?
+-   Did you clearly document and operationalise processes for the testing and verification of the reliability and reproducibility of the AI system?
+-   Did you define tested failsafe fallback plans to address AI system errors of whatever origin and put governance procedures in place to trigger them?
+-   Did you put in place a proper procedure for handling the cases where the AI system yields results with a low confidence score?
+-   Is your AI system using (online) continual learning?
+-   Did you consider potential negative consequences from the AI system learning novel or unusual methods to score well on its objective function?
+
+**Solutions:**

@@ -1,0 +1,39 @@
+STRATIF-AI is a novel concept and technology. 
+
+The tool, built with AI and real-time data, will simulate lifetimes of individual patients and their responses to various treatments. This is intended to guide physicians in making diagnoses and aid patients in following rehabilitation schedules. Such data-driven simulations of real-world systems are known as "digital twins", and are utilized widely in the manufacturing and design industries.
+
+While STRATIF-AI is being developed to detect, treat, and rehabilitate patients of stroke, the tool's successful deployment will serve as a blueprint for digital-twin-based healthcare more broadly. This will contribute a pivotal step towards a future of personalized medicine.
+
+## Ethical and trustworthy design  {.unnumbered}
+
+As medical AI proliferates, the trustworthiness of its technology has come under scrutiny. Tools fail to perform in new contexts or fail to conform to minimum reporting standards set out by governing bodies. Technology may be based on data which is not representative, which could perpetuate harmful biases and increase inequality.
+
+STRATIF-AI involves numerous novel technological solutions. A hybrid machine-learning and mechanistic modelling framework will be utilized to simulate patient-specific responses to changes in behaviour, diet, exercise and medication. Models will be trained on diverse sources of electronic health data, collected from 6 clinical studies, within a federated learning platform. Data will be uploaded and stored in a Personal Data Vault---to ensure patient control---and subjected to a semantic harmonization process to make them interoperable. Such a multi-faceted technology is yet unprecedented and could indeed spur new ethical dilemmas. 
+
+To ensure the design of an ethical and trustworthy tool, a dedicated effort involving all relevant project stakeholders, and a wide range of expertise, is necessary. For STRATIF-AI, we utilized a multi-pronged approach to construct a framework for ethics and trustworthiness. 
+
+#### Translation
+
+Existing guidelines or soft-law documents tend to be rather high-level or generally applicable. This makes them appropriate for a diversity of AI-systems, but they lack specific guidance on implementation for individual AI systems. We utilize expertise from the "Responsible Algorithms" team at the Berlin Institute for Health at Charite to develop strategic and prooject-specific solutions to ensure STRATIF-AI can adhere to AI policy.
+
+#### Co-creation
+
+We are committed to equitable development of solutions. The framework for ethical design is being co-created with relevant stakeholders within the STRATIF-AI project, i.e., clinicians, data scientists, medical researchers, patient organization representatives and project coordinators. We thus assess the risks and benefits of various requirements to ensure ethics and trustworthiness, to create necessary, feasible and auditable ethical requirements.
+
+#### Anticipation
+
+The regulatory landscape in the EU is evolving rapidly. With the advent of new technology often comes new legislation. Many aspects of STRATIF-AI are novel and may thus be overlooked by current guidelines. Solutions based solely on existing regulations will be reactive rather than prescriptive, having to rely on the deployment and failure of technology to guide decision-making.
+
+To pre-empt such changes, we are conducting a scoping review of the ethical considerations in the field of digital twin technology in health-care. We additionally play close attention to concerns that may lie outside of the framework, during workshops with key project personnel.
+
+## Framework overview
+
+This manual has been designed in concordance with the EU Guidelines for Trustworthy AI. The manual will be updated following audits of the STRATIF-AI consortium's adherance to the framework, and an external Z-inspection of the ethical solution.
+
+The EU Guidelines for Trustworthy AI were developed on 8 April 2019 by the High-Level Expert Group (HLEG) on AI. The guidelines aim to promote three key principles to support the development and deployment of safe AI systems---i.e., lawfulness, ethics and robustness. The principles are expounded as seven key requirements. 
+
+Our manual was first derived by following the self-assessment checklist---Assessment List for Trustworthy AI (ALTAI)---developed by the HLEG in 2020. The ALTAI checklist is intended to help organizations identify key elements and concepts to design ethical AI systems.
+
+This framework will provide concrete, co-created solutions to (1) ensure STRATIF-AI will comply with present regulations and (2) anticipate future barriers to implementation and uptake.
+
+## Socio-technical scenarios from the Z-inspection process

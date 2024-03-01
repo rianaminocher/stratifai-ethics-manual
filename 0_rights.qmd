@@ -1,0 +1,19 @@
+# Fundamental Rights Impact Assessment {.unnumbered}
+
+The protection of people's fundamental rights is the term in the European Union used to refer to the human rights set forth within the EU Treaties, the Charter of Fundamental Rights and Internal Human Rights Law. These rights encompass dignity and non-discrimination, data protection and privacy. As recommended by policy-makers, this manual begins with a broad assessment of fundamental rights. The relevant solutions are linked below in response to each assessment question.
+
+**1. Does the AI system potentially negatively discriminate against people on the basis of any of the following grounds (non-exhaustively): sex, race, colour, ethnic or social origin, genetic features, language, religion or belief, political or any other opinion, membership of a national minority, property, birth, disability, age or sexual orientation?**
+
+- list bias testing plans for development, deployment, and use
+- list processes to address bias
+
+**2. Does the AI system respect the rights of the child, for example with respect to child protection and taking the child’s best interests into account?**
+
+**3. Does the AI system protect personal data relating to individuals in line with GDPR?**
+
+- data protection impact assessment, including necessity/proportionality of processing operations in relation to their purpose
+- risks, safeguards, security measures for personal data
+
+**4. Does the AI system respect the freedom of expression and information and/or freedom of assembly and association?**
+
+- which mechanisms are in place/testing/monitoring systems

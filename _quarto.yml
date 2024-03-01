@@ -1,0 +1,30 @@
+project:
+  type: book
+
+book:
+  title: "STRATIF-AI: \nFramework for Ethical and Trustworthy Design"
+  author: ""
+  date: ""
+  chapters:
+    - index.qmd
+    - 0_rights.qmd
+    - 1_oversight.qmd
+    - 2_technical.qmd
+    - 3_privacy.qmd
+    - 4_transparency.qmd
+    - 5_diversity.qmd
+    - 6_societal.qmd
+    - 7_accountability.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+

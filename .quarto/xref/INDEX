@@ -1,0 +1,38 @@
+{
+  "index.qmd": {
+    "index.html": "d4084772"
+  },
+  "intro.qmd": {
+    "intro.html": "4b074431"
+  },
+  "summary.qmd": {
+    "summary.html": "e2d863b2"
+  },
+  "references.qmd": {
+    "references.html": "85d84ae9"
+  },
+  "1_oversight.qmd": {
+    "1_oversight.html": "8657e4ed"
+  },
+  "2_technical.qmd": {
+    "2_technical.html": "8fc67ca5"
+  },
+  "3_privacy.qmd": {
+    "3_privacy.html": "9be00895"
+  },
+  "4_transparency.qmd": {
+    "4_transparency.html": "5f77eff7"
+  },
+  "5_diversity.qmd": {
+    "5_diversity.html": "be08137a"
+  },
+  "6_societal.qmd": {
+    "6_societal.html": "4a158ac9"
+  },
+  "7_accountability.qmd": {
+    "7_accountability.html": "67df9896"
+  },
+  "0_rights.qmd": {
+    "0_rights.html": "7f9ee195"
+  }
+}

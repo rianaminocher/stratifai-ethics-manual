@@ -1,0 +1,48 @@
+# Societal and Environmental Well-being
+
+**Principle:**   
+prevention of harm and fairness
+
+**Requirements:**  
+(1) sustainability and ecological responsibility  
+(2) beneficial to all human beings and future generations  
+(3) foster democratic processes  
+
+## Sustainable and environmentally friendly AI
+
+**Questions:**  
+
+- Are there potential negative impacts of the AI system on the environment? o Which potential impact(s) do you identify?
+- Where possible, did you establish mechanisms to evaluate the environmental impact of the AI system’s development, deployment and/or use (for example, the amount of energy used and carbon emissions)?
+- Did you define measures to reduce the environmental impact of the AI system throughout its lifecycle?
+
+**Solutions:**  
+
+## Social impact
+
+**Questions:**  
+
+- Does the AI system impact human work and work arrangements?
+- Did you pave the way for the introduction of the AI system in your organisation by informing and consulting with impacted workers and their representatives (trade
+unions, (European) work councils) in advance?
+- Did you adopt measures to ensure that the impacts of the AI system on human work
+are well understood?
+- Did you ensure that workers understand how the AI system operates, which
+capabilities it has and which it does not have?
+- Could the AI system create the risk of de-skilling of the workforce?
+- Did you take measures to counteract de-skilling risks? 
+- Does the system promote or require new (digital) skills?
+- Did you provide training opportunities and materials for re- and up-skilling?
+
+**Solutions:**  
+
+## Society and democracy
+
+**Questions:**  
+
+- Could the AI system have a negative impact on society at large or democracy?
+- Did you assess the societal impact of the AI system’s use beyond the (end-)user and subject, such as potentially indirectly affected stakeholders or society at large?
+- Did you take action to minimize potential societal harm of the AI system? o Did you take measures that ensure that the AI system does not negatively impact democracy?
+
+**Solutions:**  
+
