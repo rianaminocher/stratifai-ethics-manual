@@ -14,7 +14,7 @@ To ensure the design of an ethical and trustworthy tool, a dedicated effort invo
 
 #### Translation
 
-Existing guidelines or soft-law documents tend to be rather high-level or generally applicable. This makes them appropriate for a diversity of AI-systems, but they lack specific guidance on implementation for individual AI systems. We utilize expertise from the "Responsible Algorithms" team at the Berlin Institute for Health at Charite to develop strategic and prooject-specific solutions to ensure STRATIF-AI can adhere to AI policy.
+Existing guidelines or soft-law documents tend to be rather high-level or generally applicable. This makes them appropriate for a diversity of AI-systems, but they lack specific guidance on implementation for individual AI systems. We utilize expertise from the "Responsible Algorithms" team at the Berlin Institute for Health at Charite to develop strategic and project-specific solutions to ensure STRATIF-AI can adhere to AI policy.
 
 #### Co-creation
 
@@ -28,7 +28,7 @@ To pre-empt such changes, we are conducting a scoping review of the ethical cons
 
 ## Framework overview
 
-This manual has been designed in concordance with the EU Guidelines for Trustworthy AI. The manual will be updated following audits of the STRATIF-AI consortium's adherance to the framework, and an external Z-inspection of the ethical solution.
+This manual has been designed in concordance with the EU Guidelines for Trustworthy AI. The manual will be updated following audits of the STRATIF-AI consortium's adherence to the framework, and an external Z-inspection of the ethical solution.
 
 The EU Guidelines for Trustworthy AI were developed on 8 April 2019 by the High-Level Expert Group (HLEG) on AI. The guidelines aim to promote three key principles to support the development and deployment of safe AI systems---i.e., lawfulness, ethics and robustness. The principles are expounded as seven key requirements. 
 
@@ -36,4 +36,4 @@ Our manual was first derived by following the self-assessment checklist---Assess
 
 This framework will provide concrete, co-created solutions to (1) ensure STRATIF-AI will comply with present regulations and (2) anticipate future barriers to implementation and uptake.
 
-## Socio-technical scenarios from the Z-inspection process
+## Socio-technical scenarios

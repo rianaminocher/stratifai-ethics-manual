@@ -35,15 +35,9 @@ human-in- command (HIC): capability to oversee the overall activity of the AI sy
 
 **Solutions:**
 
-1. Provide training on medical decision-making  
-
-Description: A comprehensive training program for doctors on STRATIF-AI usage and interpretation should be made available before application. The program should include: discussion of limitations, protocol for overriding recommendations, a simplified explanation of the AI ("blackboxed") system, value placed on medical expertise. 
-
-Key personnel: WP4 Prevention, WP5 Treatment, WP6 Rehabilitation---Leads to be appointed to draft training program.
-
-Progress: What is the status of training program development? What percentage of doctors have received training? What proportion of decisions are overridden by doctors? 
-
-Phase: Clinical validation/Deployment
+| Solution  | Description | Key Personnel    | Indicators | Project Phase | Action Items| Notes|
+|-----------|-------------|------------------|------------|-------|-------------|------|
+|Provide training on medical decision-making | A comprehensive training program for doctors on STRATIF-AI usage and interpretation should be made available before application. The program should include: discussion of limitations, protocol for overriding recommendations, a simplified explanation of the AI ("blackboxed") system, value placed on medical expertise.|WP4 Prevention, WP5 Treatment, WP6 Rehabilitation | What is the status of training program development? What percentage of doctors have received training? What proportion of decisions are overridden by doctors?|Development|Leads to be appointed to draft training program|Is this a part of any clinical study?|
 
 2. Communicate the role of AI in decision-making
 
@@ -69,3 +63,13 @@ Phase: Clinical validation/Deployment
 -   Did you take any specific oversight and control measures to reflect the self-learning or autonomous nature of the AI system?
 
 **Solutions:**
+
+1. Evaluate and ensure physician trust in the system 
+
+Description: For the system to be useful, physicians should 
+
+ A comprehensive training program for doctors on STRATIF-AI usage and interpretation should be made available before application. The program should include: discussion of limitations, protocol for overriding recommendations, a simplified explanation of the AI ("blackboxed") system, value placed on medical expertise. 
+
+experience (HAO-05-R05)
+Requirement: Physician mistrust system’s decision due to use
+

@@ -43,3 +43,6 @@ Thumbs.db
 *.Rapp.history
 *.rds
 *.Rproj*
+
+/.quarto/
+.Rproj.user
