@@ -10,17 +10,15 @@ prevention of harm and fairness
 
 ## Sustainable and environmentally friendly AI
 
-**Questions:**  
+### ALTAI Assessment {.unnumbered}
 
 - Are there potential negative impacts of the AI system on the environment? o Which potential impact(s) do you identify?
 - Where possible, did you establish mechanisms to evaluate the environmental impact of the AI system’s development, deployment and/or use (for example, the amount of energy used and carbon emissions)?
 - Did you define measures to reduce the environmental impact of the AI system throughout its lifecycle?
 
-**Solutions:**  
-
 ## Social impact
 
-**Questions:**  
+### ALTAI Assessment {.unnumbered}
 
 - Does the AI system impact human work and work arrangements?
 - Did you pave the way for the introduction of the AI system in your organisation by informing and consulting with impacted workers and their representatives (trade
@@ -34,15 +32,24 @@ capabilities it has and which it does not have?
 - Does the system promote or require new (digital) skills?
 - Did you provide training opportunities and materials for re- and up-skilling?
 
-**Solutions:**  
-
 ## Society and democracy
 
-**Questions:**  
+### ALTAI Assessment {.unnumbered}
 
 - Could the AI system have a negative impact on society at large or democracy?
 - Did you assess the societal impact of the AI system’s use beyond the (end-)user and subject, such as potentially indirectly affected stakeholders or society at large?
 - Did you take action to minimize potential societal harm of the AI system? o Did you take measures that ensure that the AI system does not negatively impact democracy?
 
-**Solutions:**  
+VALIDATE machine learning engineers follow an SOP to reduce the environmental impact of model training.
+
+Environmental Impact of AI System in Healthcare
+Description of requirement
+Training AI models and running sophisticated algorithms require significant computational power, which can lead to high energy consumption, potentially leading to a larger carbon footprint.
+
+
+Monitoring and Analysis of Cost-Benefit for Patients Description of requirement To address the dilemma of cost versus benefits in using the diagnostic tool, it is crucial to establish a comprehensive cost benefit analysis and monitoring framework that focuses on patient outcome and well-being.
+
+Trade-off
+Monetary Cost vs. Benefits to Patient
+Description In order for the tool to be worthwhile, the developers must show that it provides a positive return on investment for all stakeholders, especially the patients. If the cost of using the tool is greater than the potential life-saving benefits, then it should not be used.
 

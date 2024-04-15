@@ -1,0 +1,27 @@
+# {.unnumbered .unlisted .hidden}
+
+![](stratifai_logo.png)
+
+**Deliverable**  
+D3.2 Ethical Plan
+
+Project Acronym: **STRATIF-AI**  
+
+Project Title: **Continuous stratification for improved prevention, treatment, and rehabilitation of stroke patients using digital twins and AI**  
+
+Grant Agreement Number: **101080875**  
+
+::: {layout="[5,-1,30]" layout-valign="center"}
+![](EU_flag.jpg)
+
+\noindent This project has received funding from the European Union's Horizon Europe research and innovation programme under Grant Agreement No. 101080875
+:::
+
+Revision 1.0
+
+Authors and Contributors | Riana Minocher (Berlin Institute for Health @ Charité); Vince I. Madai (Berlin Institute for Health @ Charité) 
+Responsible Author | Riana Minocher | Email | riana.minocher\@bih-charite.de |
+Beneficiary | CUB | Phone | |
+Work package information | Work package | WP3 | Deliverable | D3.2 Ethical plan
+
+Dissemination Level | Confidential / Restricted / **Public**

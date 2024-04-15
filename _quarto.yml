@@ -2,19 +2,21 @@ project:
   type: book
 
 book:
-  title: "STRATIF-AI: \nFramework for Ethical and Trustworthy Design"
+  title: "Deliverable 3.2 Ethical plan"
   author: ""
   date: ""
   chapters:
     - index.qmd
+    - abstract.qmd
+    - overview.qmd
+    - framework.qmd
+    - workshops.qmd
     - 0_rights.qmd
     - 1_oversight.qmd
     - 2_technical.qmd
     - 3_privacy.qmd
     - 4_transparency.qmd
     - 5_diversity.qmd
-    - 6_societal.qmd
-    - 7_accountability.qmd
     - summary.qmd
     - references.qmd
 
@@ -24,7 +26,19 @@ format:
   html:
     theme: cosmo
   pdf:
-    documentclass: scrreprt
-
-editor: visual
-
+    documentclass: scrreport
+    mainfont: "Avenir"
+    sansfont: "Avenir"
+    include-before-body: "main.tex"
+    include-in-header: 
+      text: |
+        \usepackage{scrlayer-scrpage}
+        \clearpairofpagestyles
+        \cohead[{\includegraphics[width=5cm]{stratifai_logo.png}}]{}
+        \lofoot{STRATIF-AI D3.2}
+        \rofoot{April 24}
+        \usepackage{graphicx}
+        \graphicspath{{images/}}
+        \usepackage{wrapfig}
+        \usepackage{blindtext}
+        \usepackage{subfiles}

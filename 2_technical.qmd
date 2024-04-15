@@ -1,80 +1,402 @@
 # Technical Robustness and Safety
 
-**Principle:**  
+AI systems must be technically robust to prevent harm, unintentional or otherwise, to human dignity, mental and physical integrity. The system must be guard against vulnerability to attack by third parties which could compromise its integrity or alter its behaviour. Safety procedures to enact in the event of errors or risks must be instituted. The accuracy of the system is of critical importance where the case for AI-assisted medical decision-making. Finally, reproducibility and reliability help to ensure that the performance and behaviour of AI system can be critically assessed.
 
-**Requirements:**\
-(1) Security\
-(2) Safety\
-(3) Accuracy  
-(4) Reliability/reproducibility
-
-**Keywords:**\
+**Keywords:**
 accuracy, AI Bias, AI System, AI Reliability, AI Reproducibility, (Low) Confidence Score, Continual Learning, Data Poisoning, Model Evasion, Model Inversion, Pen Test, Red-team
-
-**Definitions:**\
-dependability: the ability to deliver services that can justifiably be trusted\
-resilience: robustness when facing changes
 
 ## Resilience to attack and security
 
-**Questions**:
+### ALTAI Assessment {.unnumbered}
 
--   Could the AI system have adversarial, critical or damaging effects (e.g. to human or societal safety) in case of risks or threats such as design or technical faults, defects, outages, attacks, misuse, inappropriate or malicious use?
--   Is the AI system certified for cybersecurity (e.g. the certification scheme created by the Cybersecurity Act in Europe) or is it compliant with specific security standards?
--   How exposed is the AI system to cyber-attacks?
--   Did you assess potential forms of attacks to which the AI system could be vulnerable?
--   Did you consider different types of vulnerabilities and potential entry points for attacks such as:
--   Data poisoning (i.e. manipulation of training data);
--   Model evasion (i.e. classifying the data according to the attacker's will);
--   Model inversion (i.e. infer the model parameters)
--   Did you put measures in place to ensure the integrity, robustness and overall security of the AI system against potential attacks over its lifecycle?
--   Did you red-team/pentest the system?
--   Did you inform end-users of the duration of security coverage and updates?
--   What length is the expected timeframe within which you provide security updates for the AI system?
+In the event of technical faults, misuse or defect, STRATIF-AI could have damaging effects to human safety. The risk of vulnerability to cyber-attacks will be evaluated to ensure the system is made compliant with security standards under the Cybersecurity Act in Europe. Vulnerability to data poisoning, model evasion, model inversion will be addressed throughout model validation and testing. Measures to ensure robustness to attacks after the system has been deployed will be designed. The expected timeframe of validity for security measures need to be defined. 
 
-**Solutions:**
+### Define trade-offs in Federated Learning
+
+**Description** Measures to assess whether federated learning exposes patients to ***risks*** by various ***parties*** must be established, assessed and reported.   
+ 
+***risks:*** model inversion (information in parameters to reconstruct data); data leakage; data poisoning  
+***parties:*** internal (consortium); beneficiaries (collaborators); external  
+
+**Owner**  
+
+- WP1
+
+**Key Personnel**
+
+-   technical staff (TBD)
+
+**Schedule**  During model training.  
+
+**Stroke Phase** ALL
+
+**Actionable tasks**  
+
+* appoint key personnel
+* define list of risks and parties
+* document measures to assess risks 
+* verify metrics are sufficient to dissuade concerns about vulnerability
+* publish validation study
+
+### Comply with cybersecurity law
+
+**Description** The system must be made compliant with the ***relevant cybersecurity legislation***. 
+ 
+***relevant cybersecurity legislation***: EU; country-specific; global
+
+**Owner**  
+
+- WP7
+
+**Key Personnel**
+
+- technical staff (TBD)
+
+**Schedule**  At any point, before end of project. 
+
+**Stroke Phase** ALL
+
+**Actionable tasks**  
+
+* appoint key personnel
+* define relevant legislation/ compliance categories
+
+### Establish emergency protocols
+
+**Description** In the event of a breach to security, a process protocol based on the ***severity*** of the attack must be followed. 
+ 
+***severity:*** TBD; data poisoning; model evasion;  
+
+**Owner**  
+
+- WP2
+
+**Key Personnel**
+
+- technical staff (TBD)
+- WP7
+
+**Schedule**  At any point, before end of project. 
+
+**Stroke Phase** ALL
+
+**Actionable tasks**  
+
+* appoint key personnel
+* define severity levels for attack
+* define parameters for process protocols
+* external validation of process protocols
 
 ## General safety
 
-**Questions:**
+### ALTAI Assessment {.unnumbered}
 
--   Did you define risks, risk metrics and risk levels of the AI system in each specific use case?
--   Did you put in place a process to continuously measure and assess risks?
--   Did you inform end-users and subjects of existing or potential risks?
--   Did you identify the possible threats to the AI system (design faults, technical faults, environmental threats) and the possible consequences?
--   Did you assess the risk of possible malicious use, misuse or inappropriate use of the AI system?
--   Did you define safety criticality levels (e.g. related to human integrity) of the possible consequences of faults or misuse of the AI system?
--   Did you assess the dependency of a critical AI system's decisions on its stable and reliable behaviour?
--   Did you align the reliability/testing requirements to the appropriate levels of stability and reliability?
--   Did you plan fault tolerance via, e.g. a duplicated system or another parallel system (AI-based or 'conventional')?
--   Did you develop a mechanism to evaluate when the AI system has been changed to merit a new review of its technical robustness and safety?
+The risks associated with the AI system for each use-case will be assessed through pilot and clinical studies. Procedures to continuously measure and access risks will be devised, validated and implemented. A plan to inform end-users of existing and potential risks will be disseminated. STRATIF-AI is a novel concept and technology; possible threats and vulnerability to misuse will additionally be explored through a systematic literature review of ethical dilemmas regarding the use of digital twins in healthcare. Stability and reliability of the system will continually be assessed throughout model development. A plan to regularly evaluate the system, upon changes to technical infrastructure, will also be devised. 
 
-**Solutions:**
+### Assess risk of use
+
+**Description** An independent risk assessment of use of the STRATIF-AI platform for different ***end-users*** must be carried out.
+
+***end-users:*** TBD; patients; patients with stroke; patients at risk of stroke; patients without stroke; language; education; age; disability; medical professionals; doctors; physiotherapists; psychologists; care-workers; proficiency-levels; learner; proficient; expert  
+
+**Owner**  
+
+- WP4
+- WP5
+- WP6
+
+**Key Personnel**
+
+- medical staff (TBD)
+- patients/patient representatives (TBD)
+- WP3
+
+**Schedule**  At any point, before end of project. 
+
+**Stroke Phase** ALL
+
+**Actionable tasks**  
+
+* appoint key personnel
+* define end-users and risk assessment framework
+* develop protocol for clinical study/pilot study
+* conduct risk assessment 
+* publish risk assessment
+
+### Implement risk-assessment feedback loop
+
+**Description** A system to assess ***levels*** of ***risk*** should be established within the platform and ***periodically*** be evaluated.
+
+***levels:*** TBD; stakeholder risk levels; patients  
+***risk:*** TBD; threat to safety; validity; misuse; reliability; metrics  
+***periodically:*** TBD  
+
+**Stroke Phase** ALL
+
+**Owner**  
+
+* WP2
+
+**Key Personnel**
+
+* design staff
+* technical staff
+* WP3
+
+**Actionable tasks**
+
+* appoint key personnel
+* determine evaluation schedule
+* design and validate system
+
+### Communicate risks to patients   
+
+**Description**  A standardized procedure for explaining ***technical risks*** of the system customized for ***patients*** must be designed.  
+
+***technical risks:*** TBD; vulnerability to misuse; technical robustness metrics
+***patients:*** language; education; age; disability  
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** ALL
+
+**Owner**  
+
+* WP7
+
+**Key Personnel**
+
+* patient representatives
+* technical staff (TBD)
+* design staff (TBD)
+* WP3
+
+**Actionable tasks**
+
+* appoint key personnel
+* define technical risks
+* draft documentation
+* feedback from patients/patient representatives
+* translation of documentation
+* adaptation in simple and complex format
+* adaptation for youth
+* adaptation for visually impaired
+* adaptation for mentally impaired
+* assessment by disability experts
+* additional feedback from patients/patient representatives
+
+### Process protocol for technical updates
+
+**Description**  A process protocol for assessing ***system functions*** following any technical developments or changes to infrastructure should be designed and followed.
+
+***system functions:*** TBD; validity; risks to safety; evaluation metrics  
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** ALL
+
+**Owner**  
+
+* WP2
+
+**Key Personnel**
+
+* technical staff (TBD)
+* design staff (TBD)
+
+**Actionable tasks**
+
+* appoint key personnel
+* define regular system function metrics
+* design process protocol
+* feedback from experts/ external review
+* dissemination of protocol
 
 ## Accuracy
 
-**Questions:**
+### ALTAI Assessment {.unnumbered}
 
--   Could a low level of accuracy of the AI system result in critical, adversarial or damaging consequences?
--   Did you put in place measures to ensure that the data (including training data) used to develop the AI system is up-to-date, of high quality, complete and representative of the environment the system will be deployed in?
--   Did you put in place a series of steps to monitor, and document the AI system's accuracy?
--   Did you consider whether the AI system's operation can invalidate the data or assumptions it was trained on, and how this might lead to adversarial effects?
--   Did you put processes in place to ensure that the level of accuracy of the AI system to be expected by end-users and/or subjects is properly communicated?
+Effective and safe use of the STRATIF-AI platform hinges upon a high level of accuracy. As such, various measures to ensure data is of high quality, representative, and continuously monitored for accuracy will be put in place. The external and internal validity of the system will similarly be established and periodically reviewed. Levels of accuracy and validity established for the STRATIF-AI platform will clearly be communicated to end-users. 
 
-**Solutions:**
+### Evaluate data accuracy within Federated Learning
+
+**Description**  The accuracy of the Federated Learning system under different ***scenarios*** must be analyzed and monitored ***periodically***. 
+
+***scenarios:*** TBD; missing data; data interoperability; heterogeneity of data; updates to data types  
+***periodically:*** TBD  
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** ALL
+
+**Owner**  
+
+* WP1
+
+**Key Personnel**
+
+* technical staff (TBD)
+
+**Actionable tasks**
+
+* appoint key personnel
+* define scenarios to assess validity
+* define periodic intervals for assessment
+* design system
+
+### Establish internal validity
+
+**Description** The behaviour of the tool, based on a set of core ***performance metrics*** will not differ under different ***data contexts***, validated within a randomized clinical trial design or prospective follow-up study design. 
+
+***performance metrics:*** discrepancies between physician and system; discrepancies/discomfort of patient with system; other technical error reports; TBD  
+***data contexts:*** type of stroke; patient demography; age; education; socio-economic background; ethnicity; TBD  
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** EACH (prevention, acute, monitoring)
+
+**Owner**  
+
+* WP2
+
+**Key Personnel**
+
+* technical staff (TBD)
+* WP3 
+* patients/patient representatives
+
+**Actionable tasks**
+
+* verify whether this is planned in clinical studies
+* appoint key personnel
+* define performance metrics 
+* define data contexts to assess 
+* design study protocol
+* feedback from patient representatives
+* validate in pilot study
+* publish validation
+
+### Establish external validity
+
+**Description** The generalizability of modelling ***predictions*** across a ***diversity*** of end-users must be established. 
+ 
+***predictions:*** TBD; core metrics to assess behaviour  
+***diversity:*** patient subgroups; geography; ethnicity; gender; socio-economic background; health history; disability; TBD  
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** EACH (3)
+
+**Owner**  
+
+* WP2
+
+**Key Personnel**
+
+* technical staff (TBD)
+* WP3
+* WP7
+* patient representatives
+
+**Actionable tasks**
+
+* appoint key personnel
+* define patient subgroups 
+* define performance metrics
+* design study for external validation
+* feedback on study design
+* publication of external validity
+
+### Disseminate metrics of accuracy and validity   
+
+**Description**  A standardized procedure for disseminating established metrics of ***accuracy*** and ***validity*** of the system customized for ***patients*** must be designed.  
+
+***accuracy:*** metrics TBD   
+***validity:*** metrics TBD  
+***patients:*** language; education; age; disability  
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** ALL
+
+**Owner**  
+
+* WP7
+
+**Key Personnel**
+
+* technical staff (TBD)
+* design staff (TBD)
+* WP3
+
+**Actionable tasks**
+
+* appoint key personnel
+* define metrics of accuracy and validity 
+* feedback on metric interpretability from patients/representatives
+* adaptation in formats 
+* publication of initial metrics (internal/otherwise)
 
 ## Reliability and reproducibility
 
-**Questions:**
+### ALTAI Assessment {.unnumbered}
 
--   Could the AI system cause critical, adversarial, or damaging consequences (e.g. pertaining to human safety) in case of low reliability and/or reproducibility?
--   Did you put in place a well-defined process to monitor if the AI system is meeting the intended goals?
--   Did you test whether specific contexts or conditions need to be taken into account to ensure reproducibility?
--   Did you put in place verification and validation methods and documentation (e.g. logging) to evaluate and ensure different aspects of the AI system's reliability and reproducibility?
--   Did you clearly document and operationalise processes for the testing and verification of the reliability and reproducibility of the AI system?
--   Did you define tested failsafe fallback plans to address AI system errors of whatever origin and put governance procedures in place to trigger them?
--   Did you put in place a proper procedure for handling the cases where the AI system yields results with a low confidence score?
--   Is your AI system using (online) continual learning?
--   Did you consider potential negative consequences from the AI system learning novel or unusual methods to score well on its objective function?
+Reliability and reproducibility will play a crucial role along the entire STRATIF-AI workflow. Reproducibility metrics will be defined and evaluated periodically. Methods of verification of reproducibility/reliability will clearly be documented. A procedure to track errors and trace their source will be developed. A continual learning system to adapt system performance to evolving medical guidelines or diverse medical principles will also be instated. 
 
-**Solutions:**
+### Track system errors
+
+**Description**  A system to track, trace, and report ***errors*** within the platform must be implemented. 
+
+***errors*** error type; TBD
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** ALL 
+
+**Owner**  
+
+* WP2
+
+**Key Personnel**
+
+* technical staff (TBD)
+* design staff (TBD)
+
+**Actionable tasks**
+
+* appoint key personnel
+* define error reporting metrics
+* design error reporting system
+* verification by technical experts
+* publication (internal) of system
+* publication of reports
+
+### Ensure continuous adaptation
+
+**Description**  Measures to ensure that the system is able to adapt to ***evolving treatment guidelines*** while maintaining ***predictive accuracy*** will be taken. 
+
+This involves addressing data scarcity challenges and handling variations in healthcare practices, particularly in countries with different approaches to guideline adherence. 
+
+***evolving treatment guidelines:*** variation in healthcare practice; countries with different norms/guidelines; TBD  
+***predictive accuracy:*** boundaries of accuracy; TBD  
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** EACH (3)
+
+**Owner**  
+
+* WP7
+
+**Key Personnel**
+
+* technical staff (TBD)
+* design staff (TBD)
+* WP3
+
+**Actionable tasks**
+
+* appoint key personnel
+* define boundaries for predictive accuracy/acceptable range
+* define evolving treatment guidelines
+* develop process protocol for evaluation

@@ -1,0 +1,24 @@
+### Revision History, Status, Abstract, Keywords, Statement of Originality {.unnumbered}
+
+|Revision | Date | Author | Organization | Description |
+|---------|------|--------|--------------|-------------|
+| 0.1 | 09.04.2024 | Riana Minocher | Charité | First draft|
+
+: **Revision History** {.unnumbered}
+
+Date of delivery | Contractual:| 30.04.2024 | Actual:|  |
+-----------------|-------------|------------|--------|--|
+Status | final [x] | |
+
+Abstract | This document describes the plan for ethical and trustworthy design of the STRATIF-AI platform.|
+---------|-----------------------------------|
+Keywords | ethics, trustworthy AI |
+
+
+::: {.callout-note appearance="minimal" icon=false}
+
+## Statement of originality
+
+This deliverable contains original unpublished work, or it is clearly indicated otherwise. Proper recognition of previously published material and of the work of others has been made through appropriate citation.
+
+:::

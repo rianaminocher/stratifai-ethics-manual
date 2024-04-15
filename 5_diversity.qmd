@@ -1,64 +1,418 @@
-# Diversity, non-discrimination and fairness
+# Diversity, Non-discrimination and Fairness
 
-**Principle:**
-
-**Requirements**  
-(1) user-centric design  
-(2) accessibility
+To ensure the trustworthiness of the STRATIF-AI platform, priority should be given to inclusion and diversity at every stage of the project lifecycle. Efforts to address historical biases, incompleteness, and governance models to mitigate the risk of unintended prejudice and discrimination should be made. Moreover, beginning with the identification and mitigation of bias from the outset is essential. Additionally, the design of STRATIF-AI systems should adhere to a user-centric approach, facilitating accessibility for all individuals, irrespective of demographic factors. This will include ensuring accessibility for persons with disabilities across diverse societal groups.
 
 **Keywords:**  
 AI bias, AI system, AI designer, AI developer, accessibility, assistive technology, end-user, fairness, subject, universal design, use case  
 
 ## Avoidance of unfair bias
 
-**Questions:**
+### ALTAI Assessment {.unnumbered}
 
-- Did you establish a strategy or a set of procedures to avoid creating or reinforcing unfair bias in the AI system, both regarding the use of input data as well as for the algorithm design?
-- Did you consider diversity and representativeness of end-users and/or subjects in the data?
-- Did you test for specific target groups or problematic use cases?
-- Did you research and use publicly available technical tools, that are state-of-
-the-art, to improve your understanding of the data, model and performance?
-- Did you assess and put in place processes to test and monitor for potential biases during the entire lifecycle of the AI system (e.g. biases due to possible limitations stemming from the composition of the used data sets (lack of diversity, non-representativeness)?
-- Where relevant, did you consider diversity and representativeness of
-end-users and or subjects in the data?
-- Did you put in place educational and awareness initiatives to help AI designers and
-AI developers be more aware of the possible bias they can inject in designing and
-developing the AI system?
-- Did you ensure a mechanism that allows for the flagging of issues related to bias,
-discrimination or poor performance of the AI system?
-- Did you establish clear steps and ways of communicating on how and to
-whom such issues can be raised?
-- Did you identify the subjects that could potentially be (in)directly affected by
-the AI system, in addition to the (end-)users and/or subjects?
+To mitigate inadvertent creation of, or perpetuation of, biased outcomes within the AI system, input data selection and algorithmic design need to be scrutinized for bias. Throughout development, consideration will be given to the diversity and representativeness of end-users and subjects within training data. Testing protocols will be tailored to rectify potential biases, to ensure integrity and impartiality of the platform across user demographics and application scenarios. Educational initiatives aimed at cultivating awareness among AI designers and developers regarding bias and its ethical ramifications will be initiated, fostering a culture of accountability. Mechanisms for identifying and resolving issues pertaining to bias or discrimination within the STRATIF-AI platform will be established within clear communication channels. Discourse with impacted communities, particularly at-risk patient subgroups, will be conducted to ensure that the STRATIF-AI project consortium's conception of fairness resonates with diverse perspectives. A quantitative analytical framework will be embraced to measure and evaluate the efficacy the applied definition of fairness, and institute mechanisms to achieve as such. 
 
-- Is your definition of fairness commonly used and implemented in any phase of the process of setting up the AI system?
-- Did you consider other definitions of fairness before choosing this one?
-- Did you consult with the impacted communities about the correct definition of
-fairness, i.e. representatives of elderly persons or persons with disabilities?
-- Did you ensure a quantitative analysis or metrics to measure and test the
-applied definition of fairness?
-- Did you establish mechanisms to ensure fairness in your AI system?
+### Represent diversity in training data
 
-**Solutions:**
+**Description** Inclusive representation of patients of specific (under-represented) ***subgroups*** in training data will be assessed against an acceptable ***threshold*** and rectified or reported accordingly. 
+
+***subgroups:*** TBD; patients; patients with stroke; patients at risk of stroke; patients without stroke; language; education; age; disability; ethnicity; gender; migration status; socio-economic status;  
+***threshold:*** TBD; reasonable representation; if zero; report in prediction uncertainty  
+
+**Owner**  
+
+- WP4
+- WP5
+- WP6
+
+**Key Personnel**
+
+- medical staff (TBD)
+- patients/patient representatives (TBD)
+- WP3
+
+**Schedule**  At any point, before end of project. 
+
+**Stroke Phase** EACH (3)
+
+**Actionable tasks**  
+
+* appoint key personnel
+* define at-risk patient subgroups
+* define acceptable thresholds
+* feedback from patient representatives/experts
+* assess training data
+* report in publication
+* note challenge of oversimplified categorization
+
+### Monitor bias 
+
+**Description** A ***system*** to ***periodically*** monitor bias in different project ***stages*** must be implemented.
+
+***system:*** TBD; within app for end-users; during model development;  
+***periodically:*** TBD;   
+***stages:*** training data; modelling; federated learning;  
+
+**Owner**  
+
+- WP2
+
+**Key Personnel**
+
+- technical staff (TBD)
+- WP4
+- WP5
+- WP6
+- WP3
+
+**Schedule**  At any point, before end of project. 
+
+**Stroke Phase** ALL
+
+**Actionable tasks**  
+
+* appoint key personnel
+* create bias testing pipelines
+* define parameters
+* send pipelines to necessary spaces (e.g., clinical partners)
+* pilot bias testing in preliminary study
+* report output
+* publication of tool/pipeline
+
+### Assess prediction bias
+
+**Description** System ***outputs*** will be assessed to ensure there is no  ***difference*** between patient ***subgroups***. 
+
+***outputs:*** TBD; model predictions; divergence between clinician prediction and model prediction;  
+***difference:*** TBD; quantitative threshold; acceptable margin of error;  
+***subgroups*** TBD; gender; sex; ethnicity; education; health history; disability; socio-economic background
+
+**Owner**  
+
+- WP2
+
+**Key Personnel**
+
+- technical staff (TBD)
+- WP3
+
+**Schedule**  At any point, before end of project. 
+
+**Stroke Phase** ALL
+
+**Actionable tasks**  
+
+* appoint key personnel
+* define parameters model outputs
+* define patient subgroups
+* define thresholds
+* feedback on thresholds
+* publication of results
+
+### Assess efficiency/diversity tradeoff
+
+**Description** ***Methods*** to weigh risk of producing predictions which are not ***generalizable*** against the need to represent diverse data and communicated to end-users. 
+
+***methods:*** TBD; modelling metrics;  
+***generalizable:*** TBD; acceptable prediction interval/agreement with medical professional    
+
+**Owner**  
+
+- WP2
+
+**Key Personnel**
+
+- technical staff (TBD)
+- WP3
+
+**Schedule**  At any point, before end of project. 
+
+**Stroke Phase** ALL
+
+**Actionable tasks**  
+
+* appoint key personnel
+* create testing metrics/methods
+* define problem of generalizability/ acceptable threshold
+* publication of results
+
+### Implement bias reporting system
+
+**Description** A system for ***end-users*** to make reports about ***bias*** should be established within the platform and ***periodically*** be evaluated.
+
+***end-users:*** medical professionals, patients  
+***bias:*** TBD; any discrimination; process protocol for what constitutes bias; response;       
+***periodically:*** TBD;      
+
+**Owner**  
+
+- WP2
+
+**Key Personnel**
+
+- technical staff (TBD)
+- design staff
+
+**Schedule**  At any point, before end of project. 
+
+**Stroke Phase** ALL
+
+**Actionable tasks**  
+
+* appoint key personnel
+* determine evaluation schedule
+* outline process protocol for updates upon substantial bias
+* design and validate system
+
+### Cultivate ethical awareness
+
+**Description** A ***strategy*** to ensure awareness about ethical issues and accountability for the system, tailored to specific ***stakeholders***, will be designed and executed. 
+
+***strategy:*** workshops; training materials; accountability declaration;   
+***stakeholders:*** developers; doctors; clinicians; care-workers; patients; family members; technical designers; project managers; 
+
+**Owner**  
+
+* WP3
+
+**Key Personnel**
+
+* all relevant leads
+
+**Schedule**  At any point, before end of project. 
+
+**Stroke Phase** ALL
+
+**Actionable tasks**  
+
+* write up workshop paper
+* create training package materials
+* interview study with experts
+* design accountability declaration for project partners
+* publish memorandum
+
+### Assess fairness across use-setting
+
+**Description** The fairness of system ***outputs*** across different ***use-settings*** needs to be quantitatively evaluated to minimize risk of unfair prediction values for specific locations/services. 
+
+***outputs:*** TBD; prediction intervals; prediction types; accessibility; speed;     
+***use-settings:*** hospitals; homes; resource differences; medical equipment; medical staff;   
+
+**Owner**  
+
+* WP7
+
+**Key Personnel**
+
+* WP4
+* WP5
+* WP6
+* WP3
+
+**Schedule**  At any point, before end of project. 
+
+**Stroke Phase** ALL
+
+**Actionable tasks**  
+
+* appoint key personnel
+* design study to assess fairness across contexts
+* define parameters to study
+* pre-register study
+* pilot with prototype of tool or collect data within clinical trials
+* publication of results
+
+### Assess and build trust within vulnerable patient groups
+
+**Description** Degree of trust in the STRATIF-AI platform, determined by ***end-users***, will be quantified. An assessment of trust within specifically vulnerable patient and care-work ***subgroups*** will be assessed and measures to respond to discrepancies between subgroups devised. 
+
+***end-users:*** medical professionals; patients with stroke; patients at risk of stroke; patients without stroke  
+***subgroups:*** TBD; language; education; age; disability; ethnicity; gender; migration status; socio-economic status;  
+
+**Schedule**  At any point, before end of project. 
+
+**Stroke Phase** ALL
+
+**Owner**  
+
+* WP3
+
+**Key Personnel**
+
+* patient representatives
+* medical staff
+
+**Actionable tasks**
+
+* appoint key personnel
+* define degrees of trust or conception of trust
+* design questionnaire/interview to survey trust of system
+* pre-register survey
+* execute survey with key personnel
+* report outcomes
+* assess how outcomes vary within patient subgroups
+* disseminate outcomes in STRATIF-AI pilot studies and solicit feedback
+* publication on trust and diversity in digital twins
+
+### Implement fairness reporting system
+
+**Description** A system to report whether the system ***outputs*** are evaluated as ***feasible*** must be implemented within the platform for ***end-users***, and the results quantitatively assessed. 
+
+***outputs:** TBD; prediction intervals; recommendations; rehab demos;   
+***feasible:*** TBD; language; comprehension; resource access; time;    
+***end-users:*** patients; medical staff
+
+**Schedule**  At any point, before end of project. 
+
+**Stroke Phase** ALL
+
+**Owner**  
+
+* WP7
+
+**Key Personnel**
+
+* patient representatives
+* medical staff
+* design staff (TBD)
+
+**Actionable tasks**
+
+* appoint key personnel
+* define parameters output and feasibility
+* prototype system in apps/platform
+* pilot study
+* report results
+* publication
 
 ## Accessibility and universal design
 
-**Questions:**
+### ALTAI Assessment {.unnumbered}
 
-- Did you ensure that the AI system corresponds to the variety of preferences and abilities in society?
-- Did you assess whether the AI system's user interface is usable by those with special needs or disabilities or those at risk of exclusion?
-- Did you ensure that information about, and the AI system's user interface of, the AI system is accessible and usable also to users of assistive technologies (such as screen readers)?
-- Did you involve or consult with end-users or subjects in need for assistive technology during the planning and development phase of the AI system?
-- Did you ensure that Universal Design principles are taken into account during every step of the planning and development process, if applicable?
-- Did you take the impact of the AI system on the potential end-users and/or subjects into account?
-- Did you assess whether the team involved in building the AI system engaged with the possible target end-users and/or subjects?
-- Did you assess whether there could be groups who might be disproportionately affected by the outcomes of the AI system?
-- Did you assess the risk of the possible unfairness of the system onto the end-user's or subject's communities?
+Measures to prioritize inclusivity and accessibility of STRATIF-AI to a wide and diverse user-base will be taken. Assessment will be conducted to gauge the usability of the AI system's user interface for individuals with special needs, disabilities, or those at risk of exclusion. Efforts will be made to guarantee that information about the AI system, as well as its user interface, remains accessible and usable for users of assistive technologies, particularly those relevant for patients of stroke. Furthermore, Universal Design principles will be integrated into various stages of planning and development, where applicable, to enhance accessibility for all users. The potential impact of the AI system on end-users and/or subjects will be carefully assessed, including any disproportionate effects on specific groups. 
 
-**Solutions:**
+### Utilize inclusive design principles
+
+**Description** The platform must be designed, tested, and trained to account for ***needs*** of vulnerable ***subgroups*** of ***end-users***. 
+
+***needs:** TBD;   
+***end-users:*** medical staff; patients;  
+***subgroups:*** TBD; language; ethnicity; socio-economic background; health history; trust;  
+
+**Schedule**  At any point, before end of project. 
+
+**Stroke Phase** EACH (3)
+
+**Owner**  
+
+* WP3
+
+**Key Personnel**
+
+* patient representatives
+* medical staff
+* design staff (TBD)
+
+**Actionable tasks**
+
+* appoint key personnel
+* this will move to a different owner after preliminary assessment
+* define set of needs that should be accessible
+* identify different patient subgroups
+* conduct interviews/solicit patient feedback
+* design protocol to evaluate prototype design
+* move WP owner to design staff
+* pilot design and solicit feedback
+
+### Assess financial risk of unfair design
+
+**Description** The system ***outputs*** must be critically evaluated to avoid ***risks*** of financial misuse in different ***clinical settings***.
+
+***outputs:** TBD; prediction intervals; discrepancy between clinician and prediction; discrepancy between patient and clinician;    
+***risks:*** TBD; insurance system; financial overhead; costs of stay;    
+***clinical settings:*** TBD; hospitals; rehab centers;  
+
+**Schedule**  At any point, before end of project. 
+
+**Stroke Phase** EACH (3)
+
+**Owner**  
+
+* WP7
+
+**Key Personnel**
+
+* patient representatives
+* medical staff
+* design staff (TBD)
+* technical staff (TBD)
+
+**Actionable tasks**
+
+* appoint key personnel
+* define parameters 
+* perform evaluation
+* e.g., via experimental study/ pilot/ lit review
+* update outputs
+* institute necessary data protections
 
 ## Stakeholder participation
 
-**Questions:**
+### ALTAI Assessment {.unnumbered}
 
-- Did you consider a mechanism to include the participation of the widest range of possible stakeholders in the AI system’s design and development?
+STRATIF-AI is a project with a significant diversity in stakeholders. Consistent feedback and co-creation will be maintained with stakeholders during early stages of project development. Mechanisms to ensure sustained stakeholder involvement after the implementation of the platform will also be designed.
+
+### Incorporate patient perspectives
+
+**Description** Feedback and perspectives about system ***functions*** from representatives of patient ***subgroups*** will be solicited ***periodically*** and incorporated into system development.
+
+***subgroups:*** TBD; gender; disability; ethnicity; socio-economic status;   
+***periodically:*** TBD;  
+***functions:*** TBD; prediction intervals; design; overall trust; use;  
+
+**Schedule**  At any point, before end of project. 
+
+**Stroke Phase** EACH (3)
+
+**Owner**  
+
+* WP3
+
+**Key Personnel**
+
+* patient representatives
+
+**Actionable tasks**
+
+* appoint key personnel
+* define parameters
+* design study or format
+* design a reproducible questionnaire that can easily be answered
+* pass to WP4, WP5, WP6
+* design process protocol for responding to feedback
+* design procedure for disseminating feedback
+* publication on patient perspectives
+
+### Foster end-user feedback
+
+**Description** A system for ***end-users*** to provide ***feedback*** should be established within the platform and ***periodically*** be evaluated.
+
+***end-users:*** medical professionals, patients;    
+***discrepancies:*** TBD; format of feedback;   
+***periodically:*** TBD;  
+
+**Stroke Phase** ALL
+
+**Owner**  
+
+* WP2
+
+**Key Personnel**
+
+* design staff
+* technical staff
+
+**Actionable tasks**
+
+* appoint key personnel
+* determine evaluation schedule
+* design and validate system

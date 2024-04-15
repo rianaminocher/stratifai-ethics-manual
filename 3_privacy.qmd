@@ -1,39 +1,274 @@
 # Privacy and Data Governance
 
-**Principle:**\
-Prevention of harm to privacy
+To prevent undue harm to society, the fundamental right to privacy must be protected. Data-driven AI systems like STRATIF-AI may pose substantial risks to individuals' privacy, and as such, a comprehensive data governance protocol is necessary to maintain integrity and privacy of data. 
 
-**Keywords:**\
-aggregation and anonymisation, AI system; data governance; Data Protection Impact Assessment (DPIA); Data Protection Officer (DPO); encryption; lifecycle; pseudonymisation; standards; use case
-
-**Definitions:**\
 https://gdpr.eu/data-protection-impact-assessment-template/. https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation- gdpr/accountability-and-governance/data-protection-officers/.
 
 ## Privacy
 
-**Questions:**
+### ALTAI Assessment {.unnumbered}
 
--   Did you consider the impact of the AI system on the right to privacy, the right to physical, mental and/or moral integrity and the right to data protection?
--   Depending on the use case, did you establish mechanisms that allow flagging issues related to privacy concerning the AI system?
+In the event of data leakage or misuse, STRATIF-AI could have significant impacts on the rights to privacy, physical, mental and moral integrity, and data protection. A process protocol to report violations to privacy or data integrity must be developed and implemented. 
 
-**Solutions:**
+### Investigate right to privacy within Federated Learning
+
+**Description** The Federated Learning platform transfers model parameters rather than data; ***vulnerabilities*** of the system for data privacy must be ***quantified***. 
+
+***vulnerabilities:*** TBD; potential to reconstruct training data; glean private information; model inversion   
+***quantified:*** TBD; levels of security identified    
+
+**Owner**  
+
+* WP1
+
+**Key Personnel**
+
+* WP2
+* modelling staff (TBD)
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** ALL
+
+**Actionable tasks**  
+
+* appoint key personnel
+* identify potential vulnerabilities
+* identify metrics to quantify scale/severity of vulnerability
+* assess performance
+* publish results
+
+### Allocate data usage and access rights
+
+**Description** Data management plan for different ***data types*** detailing ***access*** and ***safeguards*** for ***vulnerable*** patient groups must be made available. 
+
+***data types:*** training data; Personal Data Vault  
+***access:*** rights to access; location of storage; potential re-use; encryption  
+***safeguards:*** stewardship upon death; stewardship in event of disability;   stewardship of carers/wards    
+***vulnerabilities:*** language; age; ethnicity; disability   
+
+**Owner**  
+
+* WP1
+
+**Key Personnel**
+
+* WP7 (TBD)
+* patient representatives (TBD)
+* WP4 (TBD)
+* WP5 (TBD)
+* WP6 (TBD)
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** EACH (3)
+
+**Actionable tasks**  
+
+* appoint key personnel
+* review current data management plan and details
+* identify patient subgroups; access types; safeguards
+* feedback on DMP from patient representatives
+* feedback from medical professionals
+* make plan publicly and internally available/within apps/platform
+
+### Implement feedback system
+
+**Description** A system to flag violations to privacy or data integrity must be implemented within the platform and a corresponding process protocol drawn up. 
+
+**Owner**  
+
+* WP2
+
+**Key Personnel**
+
+* design staff
+* WP1 (TBD)
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** ALL
+
+**Actionable tasks**  
+
+* appoint key personnel
+* design system
+* draft process protocol
+* feedback on prototype by end-users
 
 ## Data governance
 
-**Questions:**
+### ALTAI Assessment {.unnumbered}
 
--   Is your AI system being trained, or was it developed, by using or processing personal data (including special categories of personal data)?
--   Did you put in place any of the following measures some of which are mandatory under the General Data Protection Regulation (GDPR), or a non-European equivalent?
--   Data Protection Impact Assessment (DPIA)
--   Designate a Data Protection Officer (DPO) and include them at an early state in the development, procurement or use phase of the AI system
--   Oversight mechanisms for data processing (including limiting access to qualified personnel, mechanisms for logging data access and making modifications);
--   Measures to achieve privacy-by-design and default (e.g. encryption, pseudonymisation, aggregation, anonymisation)
--   Data minimisation, in particular personal data (including special categories of data);
--   Did you implement the right to withdraw consent, the right to object and the right to be forgotten into the development of the AI system?
--   Did you consider the privacy and data protection implications of data collected, generated or processed over the course of the AI system's life cycle?
--   Did you consider the privacy and data protection implications of the AI system's non-personal training-data or other processed non-personal data?
--   Did you align the AI system with relevant standards (e.g. ISO25, IEEE26) or widely adopted protocols for (daily) data management and governance?
+STRATIF-AI is trained using personal healthcare records and will be continually informed by private and securely transferred data within the Personal Data Vault. A Data Protection Impact Assessment will be executed, relevant Data Protection Officers will be appointed, and the requirements under General Data Protection Regulation will be adhered to. In addition, mechanisms to ensure oversight of data processing, data transformation and data harmonization within the Federated Learning environment will be drafted. Data minimization possibilities will need to be investigated. The right to withdraw consent, right to object, and right to be forgotten will be revised and communicated to end-users. The AI system will be aligned with relevant standards and widely adopted protocols within the relevant regulatory framework.
 
-**Solutions:**
+### Assess data quality 
 
-100% of datasets fulfill quality criteria:To be defined with regards to (Missing data, errors, inaccuracies, interoperability) before final model training for demonstrator.
+**Description** A quality control system to ensure different ***data types*** fulfil ***quality critera*** will be implemented and made available to ***end-users*** before use for model training or prediction. 
+
+***data type:*** datasets; training data; Personal Data Vault  
+***quality criteria:*** TBD; missing data; inaccuracies; errors; relevant thresholds  
+***end-users:*** patients; medical professionals  
+
+**Owner**  
+
+* WP1
+
+**Key Personnel**
+
+* design staff (TBD)
+* technical staff (TBD)
+* WP1 (TBD)
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** ALL
+
+**Actionable tasks**  
+
+* appoint key personnel
+* define quality control metrics and acceptable thresholds
+* update any existing process protocols
+* produce quantitative assessments for existing data/prototype data
+* translate assessment for end-users
+
+### Standardize Federated Learning data procedures
+
+**Description** The ***procedures*** involved in manipulating training data for Federated Learning across project ***partners*** must be standardized. 
+
+Standardise the complex procedures and protocols involved in federated learning across project organizations and countries. Ensure that data recording, preprocessing, evaluation, forecasting, validation, and ML monitoring processes are normalized and follow similar guidelines, even in countries with potentially different regulatory frameworks. Establish shared schemas and protocols to facilitate effective federated learning outcomes.
+
+***procedures:*** TBD; pre-processing; evaluation; forecasting; validation; ML monitoring  
+***partners:*** TBD; each hospital/data contributor  
+
+**Owner**  
+
+* WP1
+
+**Key Personnel**
+
+* technical staff (TBD)
+* WP4
+* WP5
+* WP6
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** ALL
+
+**Actionable tasks**  
+
+* appoint key personnel
+* define set of procedures
+* identify partner set and any potential need for discrepancies/specific operationalization
+* standardize procedures through iterative process with partners
+* audit adherence
+* report adherence and publish procedures
+
+### Standardize data harmonization procedures
+
+**Description** The ***parameters*** of the harmonization process for making data interoperable must be defined and be reviewed ***periodically***. 
+
+***parameters:*** TBD; drift detection; retraining procedure; will harmonization happen every time new data is added; how will the process be governed?  
+***periodically:*** TBD  
+
+**Owner**  
+
+* WP1
+
+**Key Personnel**
+
+* technical staff (TBD)
+* WP4
+* WP5
+* WP6
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** ALL
+
+**Actionable tasks**  
+
+* appoint key personnel
+* define parameters for harmonization process
+* create SOP for harmonization so this information is available to partners
+* feedback from partners
+
+### Acquire informed consent
+
+**Description** A process protocol for obtaining consent must be drafted, which outlines ***access rights***, ***restrictions*** once consent has been provided, and is tailored to specific ***patient subgroups***.
+
+***access rights:*** TBD; which physicians/medical staff will have access; stewardship in event of disability;  
+***patient subgroups:*** language; age; education; disability    
+***restrictions***: TBD; withdraw consent; right to object; right to be forgotten; how will models be retrained if consent is withdrawn;  
+
+**Owner**  
+
+* WP4
+* WP5
+* WP6
+
+**Key Personnel**
+
+* WP3
+* WP1 (TBD)
+* medical staff
+* patient representatives
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** EACH (3)
+
+**Actionable tasks**  
+
+* appoint key personnel
+* draft consent forms
+* define parameters for forms
+* tailor to each stroke phase
+* feedback from patient representatives 
+
+### Adhere to GDPR
+
+**Description** Relevant requirements under General Data Protection Regulation will be adhered to. 
+
+**Owner**  
+
+* WP1   
+
+**Key Personnel**
+
+* TBD 
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** ALL
+
+**Actionable tasks**  
+
+* check if this is part of DMP
+* create additional document providing translation for patients/end-users
+
+### Investigate data minimization
+
+**Description** Data collected in clinical studies and throughout the planned use of the STRATIF-AI platform will be highly intimate. The costs of collecting invasive data collected need to be balanced against the risks to patients' trust/privacy. 
+
+**Owner**  
+
+* WP3
+
+**Key Personnel**
+
+* WP4 (TBD)
+* WP5 (TBD)
+* WP6 (TBD)
+* patient representatives
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** EACH (3)
+
+**Actionable tasks**  
+
+* incorporate in trust study
+* research about potential data minimization
+* elicit patient/expert feedback on costs/benefits of highly invasive data

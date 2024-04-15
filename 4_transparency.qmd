@@ -1,46 +1,244 @@
 # Transparency  
 
-**Principle:**   
-
-**Requirements:**  
-(1) traceability  
-(2) explainability: building trust  
-(3) open communication/ limitations  
+A key requirement for ethical AI is transparency. Transparency includes traceability of the AI system and its decisions, i.e., all information and procedures which led to the system's predictions. Such traceability is essential to enable the identification of errors and improvement of future results. Traceability is closely linked to explainability, which is the ability to explain the technical processes and the human oversight procedures in place within the AI system. STRATIF-AI is a complex CDSS involving numerous technological solutions and a HIC governance process---the limits of which should be clearly communicated to end-users. High explainability may come at the cost of system accuracy: if increases in accuracy necessitate a high degree of complexity. The degree to which AI predictions affect human decisions should be balanced with the ability to explain the rationale behind such decisions. Finally, the the degree to which human decisions depend on AI predictions, and the underlying limitations of the system and its predictions, must be communicated in an interpretable manner to a diversity end-users. 
 
 **Keywords:**  
 AI System, end-user, explicability, lifecycle, subject, traceability, workflow of the model
 
 ## Traceability
 
-**Questions:**   
+### ALTAI Assessment {.unnumbered}
 
-- Did you put in place measures that address the traceability of the AI system during its entire lifecycle?
-- Did you put in place measures to continuously assess the quality of the input data to the AI system?
-- Can you trace back which data was used by the AI system to make a certain decision(s) or recommendation(s)?
-- Can you trace back which AI model or rules led to the decision(s) or recommendation(s) of the AI system?
-- Did you put in place measures to continuously assess the quality of the output(s) of the AI system?
-- Did you put adequate logging practices in place to record the decision(s) or recommendation(s) of the AI system?
+Traceability is difficult to achieve for complex data-driven AI systems. STRATIF-AI will be engineered with measures to enable traceability of the system as far as possible. The ability to trace back data, data quality, and decision rules of the system will be quantified, assessed, and reported to end-users. The decisions of the system and the associated "quality" of such decisions will be continuously monitored.
+
+### Enable system traceability
+
+**Description**  The ability to trace back key ***system parameters*** will be ***assessed*** systematically and translated for a diversity of ***end-users***. 
+
+***system parameters:*** TBD; data collection; data source; data demographics; patient-specific data; model parameters; model calibration metrics;  
+***assessed:*** TBD; a system within the platform to report data  
+***end-users:*** medical professionals; patients;  
+
+**Owner**  
+
+- WP2
+
+**Key Personnel**
+
+* technical staff (TBD)
+* medical staff (TBD)
+* patient representatives
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** EACH (3)
+
+**Actionable tasks**  
+
+* appoint key personnel
+* define system parameters that should be identified
+* design platform/system to assess/enable info
+* feedback from end-users on system and params
+* translation of outputs
+* feedback from end-users on interpretability of output
+* publication of traceability system
+
+### Quality control of predictions
+
+**Description**  The ***decisions*** of the system must be ***systematically compared*** with ***human feedback*** to infer prediction ***quality***. 
+
+***decisions:*** TBD; predictions; prediction intervals; data output  
+***systematically compared:*** TBD; design of study comparison;  
+***human feedback:*** TBD; discrepancy with medical decision; patient discomfort; related to req 1.1.;    
+***quality:*** TBD; construct a quality score 
+
+**Owner**  
+
+- WP2
+
+**Key Personnel**
+
+* WP3
+* technical staff (TBD)
+* medical staff (TBD)
+* patient representatives
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** EACH (3)
+
+**Actionable tasks**  
+
+* appoint key personnel
+* define decisions to be recorded and feedback format
+* design platform within app to do so
+* construct quality score
+* study design and preregistration
+* publication of quality of decisions/ update to system
 
 ## Explainability
 
-**Questions:**  
+### ALTAI Assessment {.unnumbered}
 
-- Did you explain the decision(s) of the AI system to the users?29
-- Do you continuously survey the users if they understand the decision(s) of the AI
-system?
+STRATIF-AI is a clinical decision support-system. Both doctors and medical professionals must be provided with a reasonable understanding of the decisions made by the system. 
 
-**Solutions:**  
+### Provide decision-making parameters to end-users
+
+**Description** Information about the relevant ***parameters*** that led to an algorithmic decision will be available in a simplified format to ***end-users***. 
+
+***parameters:*** TBD; modelling parameters; training data summary; own data key parameters;    
+***end users:*** TBD; medical professionals; experience levels; patients; education; age; language; disability;   
+
+**Owner**  
+
+- WP2
+
+**Key Personnel**
+
+* technical staff (TBD)
+* design staff
+* medical staff (TBD)
+* patient representatives
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** EACH (3)
+
+**Actionable tasks**  
+
+* appoint key personnel
+* define parameters
+* interview/feedback from key personnel
+* create in-app design
+* feedback on prototype in pilot study
+
+### Monitor explainability
+
+**Description** Establishing the explainability of the STRATIF-AI platform could serve as a blueprint for digital-twin based/personalized medicine projects. The ***satisfaction*** of ***end-users*** with the explainability of the platform over the course of its use should be continuously monitored.
+
+***satisfaction:*** TBD; means to assess suitability of explanatory materials/information; combined with feedback reporting loop;  
+***end-users:*** TBD; medical professionals; experience levels; patients; education; age; language; disability;  
+
+**Owner**  
+
+* WP2
+
+**Key Personnel**
+
+* WP7
+* technical staff (TBD)
+* medical staff (TBD)
+* patient representatives
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** EACH (3)
+
+**Actionable tasks**  
+
+* appoint key personnel
+* decide on study or in-app reporting system
+* define satisfaction criteria
+* design and validate system
+* combine with feedback reporting loop?
+
+### Assess costs of model explainability
+
+**Description** The costs of explainability for the model parameters and decision-rules will be traded off against their accuracy. During model development and training such ***costs*** should be systematically assessed, recorded and disseminated to ***end-users***. 
+
+***costs:*** TBD; format to quantify explainability versus accuracy tradeoff;  
+***end-users:*** TBD; medical professionals; experience levels; patients; education; age; language; disability;  
+
+**Owner**  
+
+* WP2
+
+**Key Personnel**
+
+* WP3
+* technical staff (TBD)
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** ALL
+
+**Actionable tasks**  
+
+* appoint key personnel
+* define explainability metrics
+* design system to record/assess
+* is this part of existing modelling protocol
+* publication of explainability/accuracy tradeoff assessment
+* translation of materials for end-users
 
 ## Communication
 
-**Questions:**  
+### ALTAI Assessment {.unnumbered}
 
-- In cases of interactive AI systems (e.g., chatbots, robo-lawyers), do you communicate to users that they are interacting with an AI system instead of a human?
-- Did you establish mechanisms to inform users about the purpose, criteria and limitations of the decision(s) generated by the AI system?
-- Did you communicate the benefits of the AI system to users?
-- Did you communicate the technical limitations and potential risks of the AI
-system to users, such as its level of accuracy and/ or error rates?
-- Did you provide appropriate training material and disclaimers to users on how
-to adequately use the AI system?
+There is little risk of the AI system being interpreted as a human. However, the HIC governance concept must be clearly communicated to end-users. The benefits, technical limitations, potential risks must additionally be communicated to end-users in a transparent and explainable manner. A comprehensive training protocol for end-users---particularly medical personnel---must be developed in collaboration with the system developers. 
 
-**Solutions:**  
+### Standardize training materials
+
+**Description** The recommendations for ***proper use*** of the STRATIF-AI must be ***translated*** for a diversity ***end-users***. 
+
+***proper use:*** TBD; technical limitations; potential risks; error rates; evidence-based health benefits;  
+***translated:*** TBD; written manual; visual (presentation); flyer; video  
+***end-users:*** TBD; medical professionals; experience levels; patients; education; age; language; disability;  
+
+**Owner**  
+
+- WP7
+
+**Key Personnel**
+
+* technical staff (TBD)
+* medical staff (TBD)
+* patient representatives
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** EACH (3)
+
+**Actionable tasks**  
+
+* appoint key personnel
+* define proper use parameters
+* interview/feedback from key personnel
+* make prototype written and flyer materials
+* outsource video/audio materials
+* translation for disability, language, education, age
+* publication of materials
+
+### Tailor explainability material
+
+**Description** An overview of STRATIF-AI system ***functions*** will be communicated in a diversity of ***formats***, designed specifically for different groups of ***end-users***. 
+
+***functions:*** TBD; modelling framework; modelling maps; decision-making process; training data; private data vault; security protocols; human oversight; evidence of efficacy; rationale for using tool;  
+***formats:*** TBD; written manual; visual (presentation); flyer; video  
+***end-users:*** TBD; medical professionals; experience levels; patients; education; age; language; disability;  
+
+**Owner**  
+
+- WP3
+
+**Key Personnel**
+
+* WP7
+* technical staff (TBD)
+* medical staff (TBD)
+* patient representatives
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** EACH (3)
+
+**Actionable tasks**  
+
+* appoint key personnel
+* define parameters
+* interview/feedback from key personnel
+* refine content
+* make prototype written and flyer materials
+* outsource video/audio materials
+* translation for disability, language, education, age
+* publication of materials

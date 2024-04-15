@@ -34,5 +34,26 @@
   },
   "0_rights.qmd": {
     "0_rights.html": "7f9ee195"
+  },
+  "1_socio-technical-scenario.qmd": {
+    "1_socio-technical-scenario.html": "8d4bebcc"
+  },
+  "cover.qmd": {
+    "cover.html": "a57ec162"
+  },
+  "overview.qmd": {
+    "overview.html": "e0a8a9de"
+  },
+  "framework.qmd": {
+    "framework.html": "15e37d02"
+  },
+  "scenarios.qmd": {
+    "scenarios.html": "49878d2f"
+  },
+  "workshops.qmd": {
+    "workshops.html": "a420133e"
+  },
+  "abstract.qmd": {
+    "abstract.html": "4a2e479f"
   }
 }

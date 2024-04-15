@@ -1,0 +1,15 @@
+# Co-creation Workshops {.unnumbered}
+
+A series of workshops were conducted with STRATIF-AI consortium members to define issues, requirements and solutions regarding the design of an ethical and trustworthy AI system. The workshops were designed following feedback from a similar program, which was developed for the VALIDATE project and executed in 2023. 
+
+## Methodology
+
+Four workshops were conducted in March 2024 and comprised a diversity of participants from within the consortium. Workshops were conducted online on Microsoft Teams, and with the use of the online whiteboard Mural. The full workshop report and associated documents are available online (). 
+
+## Output
+
+Reflections on workshop series. 
+
+Description of general themes. 
+
+Utility of requirements. 

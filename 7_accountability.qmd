@@ -21,3 +21,33 @@ accountability, AI Ethics Review Board, redress by design
 - Does this process foster revision of the risk management process?
 - For applications that can adversely affect individuals, have redress by design
 mechanisms been put in place?
+
+
+Algorithmic impact assessment via relevant method:To be determined performed by the end of the project.
+
+
+Requirement Title
+Transparency, and Performance Measurement
+Description of requirement
+To address concerns related to the effectiveness, trust, and transparency of the diagnostic tool, it is essential to establish clear requirements for accuracy, transparency, and performance measurement. This requirement focuses on quantifying the accuracy of the tool, ensuring transparency in its predictions, and defining key performance metrics.
+
+
+
+Requirement Title
+Post-Prediction Outcome Feedback Collection Mechanism
+Description of requirement
+The ability of doctors and other healthcare professionals to provide feedback on incorrect predictions or patient outcomes, it is essential to establish a mechanism for post-prediction outcome feedback. This requirement focuses on creating a structured process for clinicians to report any discrepancies between predictions and actual patient outcomes. This focuses on the collection of this feedback
+
+
+Requirement Title
+Continuous Medical Professional Feedback Integration
+Description of requirement
+Ongoing medical professional feedback regarding medical applicability, it is crucial to establish a continuous feedback integration process. This requirement focuses on creating a system that allows medical professionals to provide feedback on the tool’s effectiveness, relevance, and alignment with evolving medical knowledge and practices. The aim is to ensure that the tool remains applicable and beneficial in the dynamic field of healthcare.
+
+Requirement Title
+Cost-Benefit and Budget Impact Analysis for Healthcare System
+Description of requirement
+Concerns about the tool’s cost-effectiveness compared to its value to the healthcare system, a comprehensive cost-benefit and budget impact analysis must be conducted. This requirement aims to ensure that the tool’s implementation is economically justified for the healthcare system, and aligns with its potential benefits.
+
+
+

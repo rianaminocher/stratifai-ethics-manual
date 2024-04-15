@@ -1,1 +1,16 @@
-# Summary
+---
+title: "Your Book Title"
+author: "Your Name"
+date: "April 15, 2024"
+output: 
+  pdf_document:
+    keep_tex: true
+---
+
+# Your Book Title
+
+## Subtitle or any additional information
+
+Author: Your Name
+
+Date: April 15, 2024

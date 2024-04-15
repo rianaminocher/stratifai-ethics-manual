@@ -1,0 +1,40 @@
+# Framework {.unnumbered}
+
+The framework for ethical and trustworthy design of the STRATIF-AI platform has been designed in concordance with the EU Guidelines for Trustworthy AI. Contents of the manual have been developed based on a series of co-creation workshops, preparation of a systematic review, and previous ethical frameworks developed for the EU-Horizon blueprint project "VALIDATE". The contents will be updated following audits of the STRATIF-AI consortium's adherence to the framework, and an external Z-inspection of the ethical solution.
+
+## Regulatory Context
+
+The EU Guidelines for Trustworthy AI were developed on 8 April 2019 by the High-Level Expert Group (HLEG) on AI. The guidelines aim to promote three key principles to support the development and deployment of safe AI systems---i.e., lawfulness, ethics and robustness. The principles are expounded as seven key requirements.
+
+![](eu_req.jpg)
+Our manual was derived by following the self-assessment checklist---Assessment List for Trustworthy AI (ALTAI)---developed by the HLEG in 2020. The ALTAI checklist is intended to help organizations identify key elements and concepts to design ethical AI systems, and serves as a practical instrument for assessing the compliance of AI systems with the EU's ethical principles. 
+
+## Structure
+
+The first draft of the framework has been structured in concordance with the EU Guidelines for Trustworthy AI. Each section corresponds to one of seven requirements. Each section first describes the preliminary assessment following the Assessment List for Trustworthy AI (ALTAI checklist). The section then lists the set of suggested requirements for the STRATIF-AI project.  
+
+The framework is hosted online, on the Charité server, and has been made available under password protection to the STRATIF-AI consortium. The framework in a html format manual will be used by consortium members ("owners") throughout the audit process to fill in information, report progress on actionable tasks, and provide updates on requirements. 
+
+## Requirement Template
+
+**Description** We describe each requirement briefly and nominate specific ***parameters*** which need to be expounded or addressed. 
+
+***parameters:*** Based loosely on the concept "Planguage", we identify specific parameters within each requirement to delineate progress. 
+
+**Owner**  
+
+* Each requirement has an "Owner", who is responsible for organizing its implementation.
+
+**Key Personnel**
+
+* Several stakeholders may serve as key personnel to contribute to or facilitate progress towards this requirement.
+
+**Schedule**  A preliminary schedule will be devised. 
+
+**Stroke Phase** We identify whether this requirement pertains to all phases of stroke (prevention, acute treatment, rehabilitation) that the STRATIF-AI tool intends to treat.
+
+**Actionable tasks**  
+
+* Here we list a set of tasks 
+* These are a set of tasks which must be executed 
+* In order to meet this requirement
