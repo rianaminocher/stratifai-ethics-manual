@@ -13,10 +13,9 @@ In the event of technical faults, misuse or defect, STRATIF-AI could have damagi
 
 ### Define trade-offs in Federated Learning
 
-**Description** Measures to assess whether federated learning exposes patients to ***risks*** by various ***parties*** must be established, assessed and reported.   
+**Description** Measures to assess whether federated learning exposes patients to ***risks*** must be established, assessed and reported.   
  
 ***risks:*** model inversion (information in parameters to reconstruct data); data leakage; data poisoning  
-***parties:*** internal (consortium); beneficiaries (collaborators); external  
 
 **Owner**  
 
@@ -63,9 +62,10 @@ In the event of technical faults, misuse or defect, STRATIF-AI could have damagi
 
 ### Establish emergency protocols
 
-**Description** In the event of a breach to security, a process protocol based on the ***severity*** of the attack must be followed. 
+**Description** In the event of a breach to security, a process protocol based on the ***severity*** and ***type*** of attack must be followed. 
  
-***severity:*** TBD; data poisoning; model evasion;  
+***severity:*** *define metrics to measure security breach, and scale of severity*
+***type:*** data poisoning; model evasion; *define types*
 
 **Owner**  
 
@@ -95,9 +95,10 @@ The risks associated with the AI system for each use-case will be assessed throu
 
 ### Assess risk of use
 
-**Description** An independent risk assessment of use of the STRATIF-AI platform for different ***end-users*** must be carried out.
+**Description** An independent ***risk assessment*** of use of the STRATIF-AI platform for different ***end-users*** must be carried out.
 
-***end-users:*** TBD; patients; patients with stroke; patients at risk of stroke; patients without stroke; language; education; age; disability; medical professionals; doctors; physiotherapists; psychologists; care-workers; proficiency-levels; learner; proficient; expert  
+***risk assessment:*** *a standardized risk assessment must be designed*
+***end-users:*** patients; patients with stroke; patients at risk of stroke; patients without stroke; *language; education; age; disability; medical professionals; doctors; physiotherapists; psychologists; care-workers; proficiency-levels; learner; proficient; expert*
 
 **Owner**  
 
@@ -113,7 +114,7 @@ The risks associated with the AI system for each use-case will be assessed throu
 
 **Schedule**  At any point, before end of project. 
 
-**Stroke Phase** ALL
+**Stroke Phase** EACH (3)
 
 **Actionable tasks**  
 
@@ -125,11 +126,11 @@ The risks associated with the AI system for each use-case will be assessed throu
 
 ### Implement risk-assessment feedback loop
 
-**Description** A system to assess ***levels*** of ***risk*** should be established within the platform and ***periodically*** be evaluated.
+**Description** A system to assess ***risk*** for ***different types of end-users*** should be established within the platform and ***periodically*** be evaluated.
 
-***levels:*** TBD; stakeholder risk levels; patients  
-***risk:*** TBD; threat to safety; validity; misuse; reliability; metrics  
-***periodically:*** TBD  
+***risk:*** threat to safety; threat to validity; risk of misuse; issues with reliability; *additional risks?*  
+***end-users:*** medical professionals; patients
+***periodically:*** *TBD*
 
 **Stroke Phase** ALL
 
@@ -149,16 +150,20 @@ The risks associated with the AI system for each use-case will be assessed throu
 * determine evaluation schedule
 * design and validate system
 
+::: {.callout-note}
+A system for feedback reporting, with both automated and non-automated components, must be designed and integrated into the STRATIF-AI platform, to address several requirements together, including this one.
+::: 
+
 ### Communicate risks to patients   
 
-**Description**  A standardized procedure for explaining ***technical risks*** of the system customized for ***patients*** must be designed.  
+**Description**  A standardized procedure for explaining ***technical risks*** of the system customized for patients of different ***subgroups*** must be designed.  
 
-***technical risks:*** TBD; vulnerability to misuse; technical robustness metrics
-***patients:*** language; education; age; disability  
+***technical risks:*** vulnerability to misuse; technical robustness metrics
+***patients:*** language capabilities; educational experience; age groups; degree/type of disability; 
 
 **Schedule**  At any point, before end of project.  
 
-**Stroke Phase** ALL
+**Stroke Phase** EACH (3)
 
 **Owner**  
 
@@ -184,6 +189,10 @@ The risks associated with the AI system for each use-case will be assessed throu
 * adaptation for mentally impaired
 * assessment by disability experts
 * additional feedback from patients/patient representatives
+
+::: {.callout-note}
+To address several requirements, including this one, a comprehensive set of patient subgroups will need to be defined, which should include all potentially vulnerable or marginalized patient profiles. 
+::: 
 
 ### Process protocol for technical updates
 
@@ -222,8 +231,8 @@ Effective and safe use of the STRATIF-AI platform hinges upon a high level of ac
 
 **Description**  The accuracy of the Federated Learning system under different ***scenarios*** must be analyzed and monitored ***periodically***. 
 
-***scenarios:*** TBD; missing data; data interoperability; heterogeneity of data; updates to data types  
-***periodically:*** TBD  
+***scenarios:*** *missing data; data interoperability; heterogeneity of data; updates to data types*  
+***periodically:*** *TBD*  
 
 **Schedule**  At any point, before end of project.  
 
@@ -246,14 +255,14 @@ Effective and safe use of the STRATIF-AI platform hinges upon a high level of ac
 
 ### Establish internal validity
 
-**Description** The behaviour of the tool, based on a set of core ***performance metrics*** will not differ under different ***data contexts***, validated within a randomized clinical trial design or prospective follow-up study design. 
+**Description** The behaviour of the tool, based on a set of core ***performance metrics*** will not differ under different ***contexts***. 
 
-***performance metrics:*** discrepancies between physician and system; discrepancies/discomfort of patient with system; other technical error reports; TBD  
-***data contexts:*** type of stroke; patient demography; age; education; socio-economic background; ethnicity; TBD  
+***performance metrics:*** *sensitivity; specificity; area-under-curve; error reporting frequency*   
+***data contexts:*** *clinical settings*  
 
 **Schedule**  At any point, before end of project.  
 
-**Stroke Phase** EACH (prevention, acute, monitoring)
+**Stroke Phase** EACH (3)
 
 **Owner**  
 
@@ -278,10 +287,10 @@ Effective and safe use of the STRATIF-AI platform hinges upon a high level of ac
 
 ### Establish external validity
 
-**Description** The generalizability of modelling ***predictions*** across a ***diversity*** of end-users must be established. 
+**Description** The ***output*** of the models should not differ across end-users of different ***subgroups***. 
  
-***predictions:*** TBD; core metrics to assess behaviour  
-***diversity:*** patient subgroups; geography; ethnicity; gender; socio-economic background; health history; disability; TBD  
+***output:*** *prediction types*
+***subgroups:*** *patient subgroups; geography; ethnicity; gender; socio-economic background; health history; disability;*  
 
 **Schedule**  At any point, before end of project.  
 
@@ -306,36 +315,6 @@ Effective and safe use of the STRATIF-AI platform hinges upon a high level of ac
 * design study for external validation
 * feedback on study design
 * publication of external validity
-
-### Disseminate metrics of accuracy and validity   
-
-**Description**  A standardized procedure for disseminating established metrics of ***accuracy*** and ***validity*** of the system customized for ***patients*** must be designed.  
-
-***accuracy:*** metrics TBD   
-***validity:*** metrics TBD  
-***patients:*** language; education; age; disability  
-
-**Schedule**  At any point, before end of project.  
-
-**Stroke Phase** ALL
-
-**Owner**  
-
-* WP7
-
-**Key Personnel**
-
-* technical staff (TBD)
-* design staff (TBD)
-* WP3
-
-**Actionable tasks**
-
-* appoint key personnel
-* define metrics of accuracy and validity 
-* feedback on metric interpretability from patients/representatives
-* adaptation in formats 
-* publication of initial metrics (internal/otherwise)
 
 ## Reliability and reproducibility
 
@@ -377,8 +356,8 @@ Reliability and reproducibility will play a crucial role along the entire STRATI
 
 This involves addressing data scarcity challenges and handling variations in healthcare practices, particularly in countries with different approaches to guideline adherence. 
 
-***evolving treatment guidelines:*** variation in healthcare practice; countries with different norms/guidelines; TBD  
-***predictive accuracy:*** boundaries of accuracy; TBD  
+***evolving treatment guidelines:*** variation in healthcare practice; countries with different guidelines; changing regulations;
+***predictive accuracy:*** *acceptable range TBD*
 
 **Schedule**  At any point, before end of project.  
 
@@ -400,3 +379,7 @@ This involves addressing data scarcity challenges and handling variations in hea
 * define boundaries for predictive accuracy/acceptable range
 * define evolving treatment guidelines
 * develop process protocol for evaluation
+
+::: {.callout-note}
+Several requirements, including this one, refer to the *predictive accuracy* of the output; this parameter will be defined through the implementation of requirement 1.1.2 Communicate prediction uncertainty.
+:::

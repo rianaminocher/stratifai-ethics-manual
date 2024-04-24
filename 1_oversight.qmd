@@ -18,9 +18,10 @@ STRATIF-AI is intended to guide decisions made by human end-users---i.e., both d
 
 ### Define epistemic authority
 
-**Description**  In the events where there is a clear conflict between the predictions of the tool and the medical opinion of the doctor, a process protocol for epistemic authority dilemmas customized for ***physician expertise level*** must be described.  
- 
-***physician expertise level***: learner; proficient; expert
+**Description**  In the events where there is a ***discrepancy*** between the predictions of the tool and the medical opinion of the doctor, a process protocol for epistemic authority dilemmas customized for ***physician expertise level*** must be described.  
+
+***discrepancy:*** difference in recommended course of treatment; difference in output *from existing medical device*; 
+***physician expertise level:*** early; proficient; expert
 
 **Owner**  
 
@@ -35,12 +36,13 @@ STRATIF-AI is intended to guide decisions made by human end-users---i.e., both d
 
 **Schedule**  At any point, before end of project.  
 
-**Stroke Phase** ALL
+**Stroke Phase** EACH (3)
 
 **Actionable tasks**  
 
 * appoint key personnel
-* clarify when comparison of AI and clinician will be conducted
+* define discrepancy
+* clarify if comparison of AI and clinician will be conducted in clinical study
 * prepare process protocol outline
 * define physician expertise levels
 * completion of process protocol
@@ -49,10 +51,11 @@ STRATIF-AI is intended to guide decisions made by human end-users---i.e., both d
 
 ### Communicate prediction uncertainty
 
-**Description** A ***valid methodology*** for measuring and communicating quantitative prediction uncertainty to ***end-users*** must be established.
+**Description** A ***methodology*** for measuring and communicating quantitative prediction uncertainty to ***end-users*** must be established and ***validated***.
  
-***valid methodology***: TBD  
+***valid methodology***: *TBD*; *set of ways in which predictions will be shown in platform*   
 ***end-users***: medical professionals, patients 
+***validated:*** validated in clinical setting; validated in external clinical setting; validated through feedback from experts
 
 **Owner**  
 
@@ -66,7 +69,7 @@ STRATIF-AI is intended to guide decisions made by human end-users---i.e., both d
 
 **Schedule**  At any point, before end of project.  
 
-**Stroke Phase** ALL
+**Stroke Phase** EACH (3)
 
 **Actionable tasks**  
 
@@ -80,14 +83,15 @@ STRATIF-AI is intended to guide decisions made by human end-users---i.e., both d
 
 ### Foster patient autonomy   
 
-**Description**  A standardized procedure for explaining ***risks*** of oversight customized for ***patients*** must be designed.  
+**Description**  A standardized ***procedure*** for explaining ***risks*** of oversight customized for patient ***subgroups*** must be designed.  
 
-***risks:***: procedures for epistemic authority; HIC governance structure; AI system  
-***patients:***: language; education; age; disability  
+***procedure:*** video; written material; training protocol for medical staff;  
+***risks:*** procedures for epistemic authority; HIC governance structure; AI system overview    
+***subgroups:***: *speaking different languages; different education levels; different age groups; degree of disability*   
 
 **Schedule**  At any point, before end of project.  
 
-**Stroke Phase** ALL
+**Stroke Phase** EACH (3)
 
 **Owner**  
 
@@ -114,8 +118,9 @@ STRATIF-AI is intended to guide decisions made by human end-users---i.e., both d
 
 ### Establish degree of trust
 
-**Description** Degree of trust in the STRATIF-AI platform, determined by ***end-users***, should be quantified.
+**Description** Degree of ***trust*** in the STRATIF-AI platform, determined by ***end-users***, should be quantified.
 
+***trust:*** *operational definitions of trust*
 ***end-users:*** medical professionals; patients with stroke; patients at risk of stroke; patients without stroke
 
 **Schedule**  At any point, before end of project. 
@@ -178,11 +183,11 @@ STRATIF-AI must be constructed as a Human-in-Command system. Medical professiona
 
 ### Institute reporting feedback loop
 
-**Description** A system for ***end-users*** to make reports about ***discrepancies*** should be established within the platform and ***periodically*** be evaluated.
+**Description** A system for ***end-users*** to make reports about ***discrepancies*** should be established within the platform and ***periodically*** be evaluated. 
 
 ***end-users:*** medical professionals, patients  
 ***discrepancies:*** disagreement between system recommendation and end-user decision; end-user discomfort with system recommendation; indication of errors  
-***periodically:*** TBD  
+***periodically:*** *TBD*  
 
 **Stroke Phase** ALL
 
@@ -203,9 +208,10 @@ STRATIF-AI must be constructed as a Human-in-Command system. Medical professiona
 
 ### Manage patient expectations 
 
-**Description** In the events where there is a clear conflict between the predictions of the tool and the perspective or opinion of the patient, a process protocol for managing expectations, customized for ***patients*** must be described.
- 
-***patients:***: with stroke; at risk of stroke; without stroke; age; education; disability
+**Description** In the events where there is a ***discrepancy*** between the predictions of the tool and the perspective or opinion of the patient, a process protocol for managing expectations, customized for patients of different ***subgroups*** must be described.
+
+***discrepancy:*** *acceptable threshold for difference*
+***subgroups:*** *stroke risk category; age groups; education levels; degree of disability*
 
 **Owner**  
 
@@ -219,7 +225,7 @@ STRATIF-AI must be constructed as a Human-in-Command system. Medical professiona
 
 **Schedule**  At any point, before end of project.  
 
-**Stroke Phase** ALL
+**Stroke Phase** EACH (3)
 
 **Actionable tasks**  
 
@@ -228,12 +234,16 @@ STRATIF-AI must be constructed as a Human-in-Command system. Medical professiona
 * feedback on process protocol from medical staff
 * feedback on process protocol from patient representatives
 
+::: {.callout-note}
+This requirement is closely related to 1.1.1; 1.1.2; and 1.2.2---this requirement is tailored to end-users who are patients. Requirement 1.2.2 will enable reporting discrepancies for patients, and the execution of 1.1.2 will inform the process protocol for this requiremnt.
+:::
+
 ### Enable autonomy of end-users
 
 **Description** ***End-users*** should have sufficient control over platform ***parameters*** to foster independent use and trust in the system predictions. 
 
-***end-users:*** medical staff, patients  
-***parameters:*** metrics or summary statistics about training data and real-time data; predictive model type (TBD)  
+***end-users:*** medical staff, patients   
+***parameters:*** predictive model type; *data to be used for predictions; data to be ommitted for predictions;*   
 
 **Owner**
 
@@ -247,7 +257,7 @@ STRATIF-AI must be constructed as a Human-in-Command system. Medical professiona
 
 **Schedule**  At any point, before end of project.  
 
-**Stroke Phase** ALL
+**Stroke Phase** EACH (3)
 
 **Actionable tasks**  
 

@@ -1,55 +1,133 @@
 # Societal and Environmental Well-being
 
-**Principle:**   
-prevention of harm and fairness
+The impacts of the AI system on the wellbeing of society must be considered throughout the AI system's life cycle. A system which is encountered in aspects of daily life---e.g., healthcare---has the potential to negatively impact mental health and emotional wellbeing. Such effects must be carefully considered and mitigated. Additonally, the sustainability of the AI system under development must be a point of discussion, such that the development and utilization of an AI system benefits all human beings, including future generations. Finally, the system must not undermine democratic processes or pose a threat to democratic society. 
 
-**Requirements:**  
-(1) sustainability and ecological responsibility  
-(2) beneficial to all human beings and future generations  
-(3) foster democratic processes  
+## Environmental Wellbeing
 
-## Sustainable and environmentally friendly AI
+AI systems should be as environmentally friendly as possible. The development, deployment and use-processes must therefore be assessed in terms of energy consumption and resource demands, in order to minimize waste. During the development of the STRATIF-AI project, the potential of negative harm on the environment needs to be systematically considered. Measuring the environmental impact through energy consumed and carbon emissions will be built into the development pipeline. Measures to reduce these impacts will be subsequently explored. 
+
+### Identify environmental impact of model development
+
+**Description** The ***environmental impacts*** of ***system development processes*** need to be measured or estimated.
+ 
+***environmental impacts:*** carbon emissions; energy used;
+***system development processes***: model training; *other process with footprint?*
+
+**Owner**  
+
+* WP2
+
+**Key Personnel**
+
+* technical staff
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** ALL
+
+**Actionable tasks**  
+
+* appoint key personnel
+* define parameters (environmental and possibly costly processes)
+* define method to estimate costs
+* report costs to consortium/in documentation 
+
+### Reduce environmental impact
+
+**Description** A SOP which outlines acceptable ***thresholds*** and a resulting process protocol must be developed to mitigate environmental impacts. 
+ 
+***thresholds:*** *limit for carbon emissions for model training; limit for time spent model training* 
+
+**Owner**  
+
+* WP2
+
+**Key Personnel**
+
+* technical staff
+* WP3
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** ALL
+
+**Actionable tasks**  
+
+* appoint key personnel
+* define parameters/ thresholds and procedures
+* draft SOP (WP3)
+* develop SOP for modelling team
+* publish SOP
+
+## Impact on Work and Skills
 
 ### ALTAI Assessment {.unnumbered}
 
-- Are there potential negative impacts of the AI system on the environment? o Which potential impact(s) do you identify?
-- Where possible, did you establish mechanisms to evaluate the environmental impact of the AI system’s development, deployment and/or use (for example, the amount of energy used and carbon emissions)?
-- Did you define measures to reduce the environmental impact of the AI system throughout its lifecycle?
+STRATIF-AI will be designed with the objective of enabling a governance system conducive to human-in-command and prioritizing the epistemic authority of physicians. However, as a clinical decision-support system, STRATIF-AI will potentially have significant impacts on human work and work arrangements, necessitating a thorough assessment through an implementation strategy. While medical professionals will play a central role in the development pipeline of STRATIF-AI, broader inclusion and consultation with potentially affected workers and their representatives will be carried out. Measures to minimize the system's impact on human work will be implemented, following an in-depth investigation of STRATIF-AI's potential risks regarding the de-skilling of doctors or the alteration of training procedures and experiential learning.
 
-## Social impact
+### Investigate impact on work arrangements
+
+**Description** Assess concerns of potentially affected ***workers*** to inform implementation strategy. 
+ 
+***workers:*** doctors; nurses; insurance personnel; training personnel; rehabilitation specialists; physiotherapists; *any affected working persons involved in the care of stroke patients* 
+
+**Owner**  
+
+* WP3
+
+**Key Personnel**
+
+* WP4
+* WP5
+* WP6
+* WP7
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** EACH (3)
+
+**Actionable tasks**  
+
+* appoint key personnel
+* define full set of at-risk workers
+* conduct workshops with key personnel 
+* design interview to elicit concerns from workers
+* write process protocol for implementation strategy
+* feed into HIC concept
+
+::: {.callout-note}
+In the initial co-creation workshop series, participants expressed concerns that integrating the STRATIF-AI platform into clinical practice too early and without warning may limit the natural experience-building process that physicians generally undergo.
+:::
+
+##  Impact on Society at large or Democracy
 
 ### ALTAI Assessment {.unnumbered}
 
-- Does the AI system impact human work and work arrangements?
-- Did you pave the way for the introduction of the AI system in your organisation by informing and consulting with impacted workers and their representatives (trade
-unions, (European) work councils) in advance?
-- Did you adopt measures to ensure that the impacts of the AI system on human work
-are well understood?
-- Did you ensure that workers understand how the AI system operates, which
-capabilities it has and which it does not have?
-- Could the AI system create the risk of de-skilling of the workforce?
-- Did you take measures to counteract de-skilling risks? 
-- Does the system promote or require new (digital) skills?
-- Did you provide training opportunities and materials for re- and up-skilling?
+Potential ramifications on society at large and democracy will be considered throughout the STRATIF-AI project cycle. To assess the societal impact of the AI system's utilization beyond those to immediate end-users and subjects, we will solicit feedback throughout planned pilot and clinical trial studies. A key aspect of the STRATIF-AI platform is developing an infrastructure to empower citizens to monitor their overall health and wellbeing while screening for risk of stroke---which will contribute to the benefit of society at large. The STRATIF-AI platform is not at risk of undermining democratic principles or adversely affecting democracy. 
 
-## Society and democracy
+### Solicit citizen feedback
 
-### ALTAI Assessment {.unnumbered}
+**Description** Include diverse ***stakeholders*** in discussions at relevant ***stages*** of the STRATIF-AI pipeline. 
+ 
+***stakeholders:*** citizens; hospital workers; *persons who may be overlooked in stakeholder discussions* 
+***stages:*** pilot study; interview study (WP3); *any upcoming implementation discussions*
 
-- Could the AI system have a negative impact on society at large or democracy?
-- Did you assess the societal impact of the AI system’s use beyond the (end-)user and subject, such as potentially indirectly affected stakeholders or society at large?
-- Did you take action to minimize potential societal harm of the AI system? o Did you take measures that ensure that the AI system does not negatively impact democracy?
+**Owner**  
 
-VALIDATE machine learning engineers follow an SOP to reduce the environmental impact of model training.
+* WP3
 
-Environmental Impact of AI System in Healthcare
-Description of requirement
-Training AI models and running sophisticated algorithms require significant computational power, which can lead to high energy consumption, potentially leading to a larger carbon footprint.
+**Key Personnel**
 
+* all WP leads
 
-Monitoring and Analysis of Cost-Benefit for Patients Description of requirement To address the dilemma of cost versus benefits in using the diagnostic tool, it is crucial to establish a comprehensive cost benefit analysis and monitoring framework that focuses on patient outcome and well-being.
+**Schedule**  At any point, before end of project.  
 
-Trade-off
-Monetary Cost vs. Benefits to Patient
-Description In order for the tool to be worthwhile, the developers must show that it provides a positive return on investment for all stakeholders, especially the patients. If the cost of using the tool is greater than the potential life-saving benefits, then it should not be used.
+**Stroke Phase** ALL
 
+**Actionable tasks**  
+
+* appoint key personnel/ WP leads
+* define parameters, i.e. stakeholders who may be overlooked
+* clarify potential procedures within WP tasks to incorporate discussions
+* assess input from stakeholders
+* disseminate information 

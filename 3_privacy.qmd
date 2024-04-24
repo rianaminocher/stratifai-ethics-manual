@@ -2,6 +2,7 @@
 
 To prevent undue harm to society, the fundamental right to privacy must be protected. Data-driven AI systems like STRATIF-AI may pose substantial risks to individuals' privacy, and as such, a comprehensive data governance protocol is necessary to maintain integrity and privacy of data. 
 
+**Relevant resources:**
 https://gdpr.eu/data-protection-impact-assessment-template/. https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation- gdpr/accountability-and-governance/data-protection-officers/.
 
 ## Privacy
@@ -14,8 +15,8 @@ In the event of data leakage or misuse, STRATIF-AI could have significant impact
 
 **Description** The Federated Learning platform transfers model parameters rather than data; ***vulnerabilities*** of the system for data privacy must be ***quantified***. 
 
-***vulnerabilities:*** TBD; potential to reconstruct training data; glean private information; model inversion   
-***quantified:*** TBD; levels of security identified    
+***vulnerabilities:*** potential to reconstruct training data; glean private information; model inversion   
+***quantified:*** *levels of security to be identified*  
 
 **Owner**  
 
@@ -40,12 +41,12 @@ In the event of data leakage or misuse, STRATIF-AI could have significant impact
 
 ### Allocate data usage and access rights
 
-**Description** Data management plan for different ***data types*** detailing ***access*** and ***safeguards*** for ***vulnerable*** patient groups must be made available. 
+**Description** Design for different ***data types*** detailing ***access*** and ***safeguards*** for ***vulnerable patient groups*** must be made available within the Data Management Plan. 
 
 ***data types:*** training data; Personal Data Vault  
 ***access:*** rights to access; location of storage; potential re-use; encryption  
 ***safeguards:*** stewardship upon death; stewardship in event of disability;   stewardship of carers/wards    
-***vulnerabilities:*** language; age; ethnicity; disability   
+***vulnerable patient groups:*** *speaking different languages; age groups; ethnicity; disability*  
 
 **Owner**  
 
@@ -59,7 +60,11 @@ In the event of data leakage or misuse, STRATIF-AI could have significant impact
 * WP5 (TBD)
 * WP6 (TBD)
 
-**Schedule**  At any point, before end of project.  
+**Schedule**  At any point, before end of project. 
+
+::: {.callout-note}
+The STRATIF-AI project includes a Data Management Plan (DMP) as a recurring deliverable. This requirement will be addressed within the scope of upcoming DMPs. 
+::: 
 
 **Stroke Phase** EACH (3)
 
@@ -104,10 +109,10 @@ STRATIF-AI is trained using personal healthcare records and will be continually 
 
 ### Assess data quality 
 
-**Description** A quality control system to ensure different ***data types*** fulfil ***quality critera*** will be implemented and made available to ***end-users*** before use for model training or prediction. 
+**Description** A quality control system to ensure different ***data types*** fulfill ***quality critera*** will be implemented and made available to ***end-users*** before use for model training or prediction. 
 
-***data type:*** datasets; training data; Personal Data Vault  
-***quality criteria:*** TBD; missing data; inaccuracies; errors; relevant thresholds  
+***data type:*** training data; Personal Data Vault  
+***quality criteria:*** robust to missing data; robust to inaccuracies; robust to input errors; *relevant thresholds*  
 ***end-users:*** patients; medical professionals  
 
 **Owner**  
@@ -138,8 +143,8 @@ STRATIF-AI is trained using personal healthcare records and will be continually 
 
 Standardise the complex procedures and protocols involved in federated learning across project organizations and countries. Ensure that data recording, preprocessing, evaluation, forecasting, validation, and ML monitoring processes are normalized and follow similar guidelines, even in countries with potentially different regulatory frameworks. Establish shared schemas and protocols to facilitate effective federated learning outcomes.
 
-***procedures:*** TBD; pre-processing; evaluation; forecasting; validation; ML monitoring  
-***partners:*** TBD; each hospital/data contributor  
+***procedures:*** pre-processing; evaluation; forecasting; validation; ML monitoring  
+***partners:*** *each hospital/data contributor*
 
 **Owner**  
 
@@ -169,8 +174,8 @@ Standardise the complex procedures and protocols involved in federated learning 
 
 **Description** The ***parameters*** of the harmonization process for making data interoperable must be defined and be reviewed ***periodically***. 
 
-***parameters:*** TBD; drift detection; retraining procedure; will harmonization happen every time new data is added; how will the process be governed?  
-***periodically:*** TBD  
+***parameters:*** drift detection; retraining procedure;  
+***periodically:*** *TBD* 
 
 **Owner**  
 
@@ -193,6 +198,10 @@ Standardise the complex procedures and protocols involved in federated learning 
 * define parameters for harmonization process
 * create SOP for harmonization so this information is available to partners
 * feedback from partners
+
+::: {.callout-note}
+During co-creation workshops, a lack of clarity about the data harmonization process when the STRATIF-AI platform is operational emerged. How the harmonization process will be governed after the model training procedure is complete must be clarified within this requirement.  
+::: 
 
 ### Acquire informed consent
 
@@ -229,7 +238,8 @@ Standardise the complex procedures and protocols involved in federated learning 
 
 ### Adhere to GDPR
 
-**Description** Relevant requirements under General Data Protection Regulation will be adhered to. 
+**Description** ***Relevant requirements*** under General Data Protection Regulation must be adhered to. 
+***Relevant requirements:*** *the applicability of requirements must be translated for the STRATIF-AI platform and included in the DMP*
 
 **Owner**  
 
@@ -237,7 +247,7 @@ Standardise the complex procedures and protocols involved in federated learning 
 
 **Key Personnel**
 
-* TBD 
+* *TBD* 
 
 **Schedule**  At any point, before end of project.  
 
@@ -250,7 +260,10 @@ Standardise the complex procedures and protocols involved in federated learning 
 
 ### Investigate data minimization
 
-**Description** Data collected in clinical studies and throughout the planned use of the STRATIF-AI platform will be highly intimate. The costs of collecting invasive data collected need to be balanced against the risks to patients' trust/privacy. 
+**Description** The ***costs*** of collecting intimate data from patients must be balanced against violation of patient trust, and validated by appropriate ***methodology***. 
+
+***costs:*** *perceived harm; erosion of trust*
+***methodology:*** *cost-benefit analysis; qualitative judgement; Delphi consensus;*
 
 **Owner**  
 

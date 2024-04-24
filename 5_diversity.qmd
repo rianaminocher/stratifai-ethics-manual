@@ -15,8 +15,8 @@ To mitigate inadvertent creation of, or perpetuation of, biased outcomes within 
 
 **Description** Inclusive representation of patients of specific (under-represented) ***subgroups*** in training data will be assessed against an acceptable ***threshold*** and rectified or reported accordingly. 
 
-***subgroups:*** TBD; patients; patients with stroke; patients at risk of stroke; patients without stroke; language; education; age; disability; ethnicity; gender; migration status; socio-economic status;  
-***threshold:*** TBD; reasonable representation; if zero; report in prediction uncertainty  
+***subgroups:*** patients; patients with stroke; patients at risk of stroke; patients without stroke; *language; education; age; disability; ethnicity; gender; migration status; socio-economic status;*
+***threshold:*** *reasonable representation; if zero; report in prediction uncertainty* 
 
 **Owner**  
 
@@ -82,9 +82,9 @@ To mitigate inadvertent creation of, or perpetuation of, biased outcomes within 
 
 **Description** System ***outputs*** will be assessed to ensure there is no  ***difference*** between patient ***subgroups***. 
 
-***outputs:*** TBD; model predictions; divergence between clinician prediction and model prediction;  
-***difference:*** TBD; quantitative threshold; acceptable margin of error;  
-***subgroups*** TBD; gender; sex; ethnicity; education; health history; disability; socio-economic background
+***outputs:*** model predictions; discrepancy  
+***difference:*** *quantitative threshold; acceptable margin of error;*  
+***subgroups*** *gender; sex; ethnicity; education; health history; disability; socio-economic background*
 
 **Owner**  
 
@@ -108,40 +108,13 @@ To mitigate inadvertent creation of, or perpetuation of, biased outcomes within 
 * feedback on thresholds
 * publication of results
 
-### Assess efficiency/diversity tradeoff
-
-**Description** ***Methods*** to weigh risk of producing predictions which are not ***generalizable*** against the need to represent diverse data and communicated to end-users. 
-
-***methods:*** TBD; modelling metrics;  
-***generalizable:*** TBD; acceptable prediction interval/agreement with medical professional    
-
-**Owner**  
-
-- WP2
-
-**Key Personnel**
-
-- technical staff (TBD)
-- WP3
-
-**Schedule**  At any point, before end of project. 
-
-**Stroke Phase** ALL
-
-**Actionable tasks**  
-
-* appoint key personnel
-* create testing metrics/methods
-* define problem of generalizability/ acceptable threshold
-* publication of results
-
 ### Implement bias reporting system
 
 **Description** A system for ***end-users*** to make reports about ***bias*** should be established within the platform and ***periodically*** be evaluated.
 
 ***end-users:*** medical professionals, patients  
-***bias:*** TBD; any discrimination; process protocol for what constitutes bias; response;       
-***periodically:*** TBD;      
+***bias:*** *any discrimination; process protocol for what constitutes bias; response;*   
+***periodically:*** *TBD*     
 
 **Owner**  
 
@@ -167,7 +140,7 @@ To mitigate inadvertent creation of, or perpetuation of, biased outcomes within 
 
 **Description** A ***strategy*** to ensure awareness about ethical issues and accountability for the system, tailored to specific ***stakeholders***, will be designed and executed. 
 
-***strategy:*** workshops; training materials; accountability declaration;   
+***strategy:*** workshop series; training programme; accountability declaration;   
 ***stakeholders:*** developers; doctors; clinicians; care-workers; patients; family members; technical designers; project managers; 
 
 **Owner**  
@@ -194,7 +167,7 @@ To mitigate inadvertent creation of, or perpetuation of, biased outcomes within 
 
 **Description** The fairness of system ***outputs*** across different ***use-settings*** needs to be quantitatively evaluated to minimize risk of unfair prediction values for specific locations/services. 
 
-***outputs:*** TBD; prediction intervals; prediction types; accessibility; speed;     
+***outputs:*** *prediction intervals; prediction types; accessibility; speed;*     
 ***use-settings:*** hospitals; homes; resource differences; medical equipment; medical staff;   
 
 **Owner**  
@@ -223,10 +196,11 @@ To mitigate inadvertent creation of, or perpetuation of, biased outcomes within 
 
 ### Assess and build trust within vulnerable patient groups
 
-**Description** Degree of trust in the STRATIF-AI platform, determined by ***end-users***, will be quantified. An assessment of trust within specifically vulnerable patient and care-work ***subgroups*** will be assessed and measures to respond to discrepancies between subgroups devised. 
+**Description** Degree of ***trust*** in the STRATIF-AI platform, determined by ***end-users***, will be quantified. An assessment of trust within specifically vulnerable patient and care-work ***subgroups*** will be assessed and measures to respond to discrepancies between subgroups devised. 
 
+***trust:*** *operational definition of trust*
 ***end-users:*** medical professionals; patients with stroke; patients at risk of stroke; patients without stroke  
-***subgroups:*** TBD; language; education; age; disability; ethnicity; gender; migration status; socio-economic status;  
+***subgroups:*** *language; education; age; disability; ethnicity; gender; migration status; socio-economic status;*  
 
 **Schedule**  At any point, before end of project. 
 
@@ -253,17 +227,21 @@ To mitigate inadvertent creation of, or perpetuation of, biased outcomes within 
 * disseminate outcomes in STRATIF-AI pilot studies and solicit feedback
 * publication on trust and diversity in digital twins
 
+::: {.callout-note}
+This requirement will constitute a part of the trust study designed to fulfill Requirement 1.1.4 Establish degree of trust.
+::: 
+
 ### Implement fairness reporting system
 
 **Description** A system to report whether the system ***outputs*** are evaluated as ***feasible*** must be implemented within the platform for ***end-users***, and the results quantitatively assessed. 
 
-***outputs:** TBD; prediction intervals; recommendations; rehab demos;   
-***feasible:*** TBD; language; comprehension; resource access; time;    
+***outputs:** *prediction intervals; recommendations; rehab demos;*   
+***feasible:*** comprehensible in language; feasible to varying levels of resource access; feasible within time budgets;    
 ***end-users:*** patients; medical staff
 
 **Schedule**  At any point, before end of project. 
 
-**Stroke Phase** ALL
+**Stroke Phase** EACH (3)
 
 **Owner**  
 
@@ -294,9 +272,9 @@ Measures to prioritize inclusivity and accessibility of STRATIF-AI to a wide and
 
 **Description** The platform must be designed, tested, and trained to account for ***needs*** of vulnerable ***subgroups*** of ***end-users***. 
 
-***needs:** TBD;   
+***needs:** *TBD*  
 ***end-users:*** medical staff; patients;  
-***subgroups:*** TBD; language; ethnicity; socio-economic background; health history; trust;  
+***subgroups:*** *language; ethnicity; socio-economic background; health history; trust;*  
 
 **Schedule**  At any point, before end of project. 
 
@@ -365,9 +343,9 @@ STRATIF-AI is a project with a significant diversity in stakeholders. Consistent
 
 **Description** Feedback and perspectives about system ***functions*** from representatives of patient ***subgroups*** will be solicited ***periodically*** and incorporated into system development.
 
-***subgroups:*** TBD; gender; disability; ethnicity; socio-economic status;   
-***periodically:*** TBD;  
-***functions:*** TBD; prediction intervals; design; overall trust; use;  
+***subgroups:*** gender; disability; ethnicity; socio-economic status;    
+***periodically:*** *TBD*  
+***functions:*** *prediction intervals; design; overall trust; use;*    
 
 **Schedule**  At any point, before end of project. 
 
@@ -397,8 +375,8 @@ STRATIF-AI is a project with a significant diversity in stakeholders. Consistent
 **Description** A system for ***end-users*** to provide ***feedback*** should be established within the platform and ***periodically*** be evaluated.
 
 ***end-users:*** medical professionals, patients;    
-***discrepancies:*** TBD; format of feedback;   
-***periodically:*** TBD;  
+***discrepancies:*** *format of feedback;*   
+***periodically:*** *TBD;* 
 
 **Stroke Phase** ALL
 

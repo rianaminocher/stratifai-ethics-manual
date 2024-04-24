@@ -4,18 +4,22 @@
 |---------|------|--------|--------------|-------------|
 | 0.1 | 09.04.2024 | Riana Minocher | Charité | First draft|
 
-: **Revision History** {.unnumbered}
 
-Date of delivery | Contractual:| 30.04.2024 | Actual:|  |
+Date of delivery | |  | |  |
 -----------------|-------------|------------|--------|--|
-Status | final [x] | |
+Contractual: | 30.04.2024 | Actual: | |
+-------------| |  | |  |
+Status|-------------
+-------|----------------------
+final [x]|---------------------
 
 Abstract | This document describes the plan for ethical and trustworthy design of the STRATIF-AI platform.|
 ---------|-----------------------------------|
 Keywords | ethics, trustworthy AI |
 
+![](stratifai_round.png){width=30%}
 
-::: {.callout-note appearance="minimal" icon=false}
+::: {.callout-note icon=false}
 
 ## Statement of originality
 

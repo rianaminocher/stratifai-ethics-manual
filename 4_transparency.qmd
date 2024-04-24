@@ -15,8 +15,8 @@ Traceability is difficult to achieve for complex data-driven AI systems. STRATIF
 
 **Description**  The ability to trace back key ***system parameters*** will be ***assessed*** systematically and translated for a diversity of ***end-users***. 
 
-***system parameters:*** TBD; data collection; data source; data demographics; patient-specific data; model parameters; model calibration metrics;  
-***assessed:*** TBD; a system within the platform to report data  
+***system parameters:*** data source; data demographics; patient-specific data; model parameters; model calibration metrics;  
+***assessed:*** *a system within the platform to report data* 
 ***end-users:*** medical professionals; patients;  
 
 **Owner**  
@@ -47,10 +47,10 @@ Traceability is difficult to achieve for complex data-driven AI systems. STRATIF
 
 **Description**  The ***decisions*** of the system must be ***systematically compared*** with ***human feedback*** to infer prediction ***quality***. 
 
-***decisions:*** TBD; predictions; prediction intervals; data output  
-***systematically compared:*** TBD; design of study comparison;  
-***human feedback:*** TBD; discrepancy with medical decision; patient discomfort; related to req 1.1.;    
-***quality:*** TBD; construct a quality score 
+***decisions:*** predictions; prediction intervals; data output  
+***systematically compared:*** *design of study comparison*
+***human feedback:*** *discrepancy with medical decision; patient discomfort;*  
+***quality:*** *construct a quality score* 
 
 **Owner**  
 
@@ -76,6 +76,10 @@ Traceability is difficult to achieve for complex data-driven AI systems. STRATIF
 * study design and preregistration
 * publication of quality of decisions/ update to system
 
+::: {.callout-note}
+This requirement is closely connected with requirements under [Human Agency and Oversight](1_oversight.qmd).
+::: 
+
 ## Explainability
 
 ### ALTAI Assessment {.unnumbered}
@@ -84,10 +88,11 @@ STRATIF-AI is a clinical decision support-system. Both doctors and medical profe
 
 ### Provide decision-making parameters to end-users
 
-**Description** Information about the relevant ***parameters*** that led to an algorithmic decision will be available in a simplified format to ***end-users***. 
+**Description** Information about the relevant ***parameters*** that led to an algorithmic decision will be validated and available in a ***simplified format*** to ***end-users***.
 
-***parameters:*** TBD; modelling parameters; training data summary; own data key parameters;    
-***end users:*** TBD; medical professionals; experience levels; patients; education; age; language; disability;   
+***simplified format:*** video; written material;
+***parameters:*** modelling parameters; training data parameters; Data Vault parameters;    
+***end users:*** medical professionals;  patients;  
 
 **Owner**  
 
@@ -144,10 +149,9 @@ STRATIF-AI is a clinical decision support-system. Both doctors and medical profe
 
 ### Assess costs of model explainability
 
-**Description** The costs of explainability for the model parameters and decision-rules will be traded off against their accuracy. During model development and training such ***costs*** should be systematically assessed, recorded and disseminated to ***end-users***. 
+**Description** The costs of explainability for the model parameters and decision-rules will be traded off against their accuracy. During model development and training such ***costs*** should be systematically assessed and recorded.
 
-***costs:*** TBD; format to quantify explainability versus accuracy tradeoff;  
-***end-users:*** TBD; medical professionals; experience levels; patients; education; age; language; disability;  
+***costs:*** TBD; format to quantify explainability versus accuracy tradeoff; 
 
 **Owner**  
 
@@ -176,7 +180,6 @@ STRATIF-AI is a clinical decision support-system. Both doctors and medical profe
 ### ALTAI Assessment {.unnumbered}
 
 There is little risk of the AI system being interpreted as a human. However, the HIC governance concept must be clearly communicated to end-users. The benefits, technical limitations, potential risks must additionally be communicated to end-users in a transparent and explainable manner. A comprehensive training protocol for end-users---particularly medical personnel---must be developed in collaboration with the system developers. 
-
 ### Standardize training materials
 
 **Description** The recommendations for ***proper use*** of the STRATIF-AI must be ***translated*** for a diversity ***end-users***. 
@@ -242,3 +245,7 @@ There is little risk of the AI system being interpreted as a human. However, the
 * outsource video/audio materials
 * translation for disability, language, education, age
 * publication of materials
+
+::: {.callout-note}
+Requirements 4.3.1 and 4.3.2 are closely related. Requirement 4.3.1 involves the creation of training materials for use of the platform, i.e., serving as the guide for use, while Requirement 4.3.2 will deliver the explainability materials, i.e., serving as a background or primer on the AI system.  
+::: 

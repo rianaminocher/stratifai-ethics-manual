@@ -1,53 +1,133 @@
 # Accountability
 
+The principle of accountability highlights the need to establish mechanisms to guarantee responsibility throughout the lifecycle of AI systems. This principle intersects closely with risk management practices, which involve transparently identifying and mitigating risks that can be comprehended and audited by external parties. In instances where unjust or adverse impacts arise, accessible mechanisms for accountability must be established, to facilitate the opportunity for redress to affected parties.
+
 **Keywords:**  
 accountability, AI Ethics Review Board, redress by design
 
 ## Auditability
 
-- Did you establish mechanisms that facilitate the AI system’s auditability (e.g. traceability of the development process, the sourcing of training data and the logging of the AI system’s processes, outcomes, positive and negative impact)?
-- Did you ensure that the AI system can be audited by independent third parties?
+### ALTAI Assessment {.unnumbered}
+
+The auditability of STRATIF-AI's workflow and system lifecycle is a fundamental aspect of our ethical plan. By creating a living document, we aim to establish a transparent and traceable log of all measures taken to adhere to ethical principles and legal requirements. To ensure the AI system can be audited by independent third parties, the ethical plan will be made available or disseminated accordingly. 
+
+### Facilitate auditability
+
+**Description** ***Means*** to facilitate external audits of STRATIF-AI processes will be instituted and validated.
+
+**Means:*** A publicly available and version-controlled ethical plan; *any additional implementation strategies?*
+
+**Owner**  
+
+* WP3
+
+**Key Personnel**
+
+* WP7
+* WP2
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** ALL
+
+**Actionable tasks**  
+
+* appoint key personnel
+* define additional outputs?
+* discuss site prototype and any legal barriers
+* solicit feedback on prototype
+* create sub-page to report important parameters
+* define important parameters
+* e.g. traceability of the development process, the sourcing of training data and the logging of the AI system’s processes, outcomes, positive and negative impact
+* make pages public
 
 ## Tradeoffs/ Risk-management
 
-- Did you foresee any kind of external guidance or third-party auditing processes to oversee ethical concerns and accountability measures?
-- Does the involvement of these third parties go beyond the development phase?
-- Did you organise risk training and, if so, does this also inform about the potential legal framework applicable to the AI system?
-- Did you consider establishing an AI ethics review board or a similar mechanism to discuss the overall accountability and ethics practices, including potential unclear grey areas?
-- Did you establish a process to discuss and continuously monitor and assess the AI system's adherence to this Assessment List for Trustworthy AI (ALTAI)?
-- Does this process include identification and documentation of conflicts between the 6 aforementioned requirements or between different ethical principles and explanation of the 'trade-off' decisions made?
-- Did you provide appropriate training to those involved in such a process and does this also cover the legal framework applicable to the AI system?
-- Did you establish a process for third parties (e.g. suppliers, end-users, subjects, distributors/vendors or workers) to report potential vulnerabilities, risks or biases in the AI system?
-- Does this process foster revision of the risk management process?
-- For applications that can adversely affect individuals, have redress by design
-mechanisms been put in place?
+### ALTAI Assessment {.unnumbered}
 
+Ensuring both the ability to report on actions or decisions contributing to the outcomes of AI systems and to address the consequences of such outcomes is paramount. It is essential to identify, assess, document, and mitigate potential negative impacts of AI systems, particularly for those directly or indirectly affected. Safeguards must be in place to protect whistleblowers, NGOs, trade unions, and other entities reporting legitimate concerns about AI systems. As part of WP3 within the STRATIF-AI project, we will conduct an external Z-inspection assessment, which is a gold-standard and validated methodology to assess the ethical impacts of an AI tool. A comprehensive risk training protocol will be designed and adhere to any legal protocols. Our ethical plan has been designed in concordance with the Assessment List for Trustworthy AI (ALTAI), and, as such, will be continually evaluated throughout the AI system's lifecycle. 
 
-Algorithmic impact assessment via relevant method:To be determined performed by the end of the project.
+While implementing these requirements, tensions may arise, necessitating inevitable trade-offs. We will identify relevant interests and values implicated by the AI system and explicitly evaluate trade-offs in terms of their risk to safety and ethical principles, including fundamental rights. These decisions will be thoroughly documented throughout our ethical audit process. Additionally, a  a process for third parties (e.g. suppliers, end-users, subjects, distributors/vendors or workers) to report potential vulnerabilities, risks or biases in the AI system, and a following risk management protocol will be instituted. Accessible mechanisms to ensure adequate redress will be established.
 
+### Institute external reporting system
 
-Requirement Title
-Transparency, and Performance Measurement
-Description of requirement
-To address concerns related to the effectiveness, trust, and transparency of the diagnostic tool, it is essential to establish clear requirements for accuracy, transparency, and performance measurement. This requirement focuses on quantifying the accuracy of the tool, ensuring transparency in its predictions, and defining key performance metrics.
+**Description** A system for ***third-parties*** to make reports about ***risks*** should be established within the platform and ***periodically*** be evaluated.
 
+***third-parties:*** citizens; hospital workers; developers; *any contributors of technology or data*   
+***risks:***  vulnerabilities; errors; concerns   
+***periodically:*** *TBD*   
 
+**Stroke Phase** ALL
 
-Requirement Title
-Post-Prediction Outcome Feedback Collection Mechanism
-Description of requirement
-The ability of doctors and other healthcare professionals to provide feedback on incorrect predictions or patient outcomes, it is essential to establish a mechanism for post-prediction outcome feedback. This requirement focuses on creating a structured process for clinicians to report any discrepancies between predictions and actual patient outcomes. This focuses on the collection of this feedback
+**Owner**  
 
+* WP2
 
-Requirement Title
-Continuous Medical Professional Feedback Integration
-Description of requirement
-Ongoing medical professional feedback regarding medical applicability, it is crucial to establish a continuous feedback integration process. This requirement focuses on creating a system that allows medical professionals to provide feedback on the tool’s effectiveness, relevance, and alignment with evolving medical knowledge and practices. The aim is to ensure that the tool remains applicable and beneficial in the dynamic field of healthcare.
+**Key Personnel**
 
-Requirement Title
-Cost-Benefit and Budget Impact Analysis for Healthcare System
-Description of requirement
-Concerns about the tool’s cost-effectiveness compared to its value to the healthcare system, a comprehensive cost-benefit and budget impact analysis must be conducted. This requirement aims to ensure that the tool’s implementation is economically justified for the healthcare system, and aligns with its potential benefits.
+* design staff
+* technical staff
+* WP3
 
+**Actionable tasks**
 
+* appoint key personnel
+* define all parameters
+* define link to feedback reporting loop
+* implement/design procedure
+* feedback from third parties to validate
+* test system
 
+### Collect post-prediction feedback
+
+**Description** A system for ***end-users*** to provide feedback about ***medical applicability*** should be established within the platform. This is closely related to the requirement under Section [Human Agency and Oversight](1_oversight.qmd); Institute reporting feedback loop.
+
+***end-users:*** medical professionals  
+***medical applicability:*** effectiveness; relevance; alignment with evolving medical knowledge and practices; 
+
+**Stroke Phase** EACH (3)
+
+**Owner**  
+
+* WP4
+* WP5
+* WP6
+
+**Key Personnel**
+
+* medical staff
+* design staff
+* technical staff
+
+**Actionable tasks**
+
+* appoint key personnel
+* medical professionals to define key parameters
+* prototype for system/information parameters
+* implementation by WP2/ design staff
+* design and validate system
+
+### Conduct budget impact analysis
+
+**Description** The economic justification of the implementation of the STRATIF-AI platform for different ***stakeholders*** must be made via cost-benefit analyses.
+
+***stakeholders:*** hospitals; insurance companies; patients; rehab centers; *any affected institutional parties?*
+
+**Stroke Phase** EACH (3)
+
+**Owner**  
+
+* WP7
+
+**Key Personnel**
+
+* medical staff
+
+**Actionable tasks**
+
+* appoint key personnel
+* define parameters 
+* design budget impact/ cost-benefit analysis study
+* conduct analysis
+* report results
+* publication/dissemination of results

@@ -11,14 +11,13 @@ book:
     - overview.qmd
     - framework.qmd
     - workshops.qmd
-    - 0_rights.qmd
     - 1_oversight.qmd
     - 2_technical.qmd
     - 3_privacy.qmd
     - 4_transparency.qmd
     - 5_diversity.qmd
-    - summary.qmd
-    - references.qmd
+    - 6_societal.qmd
+    - 7_accountability.qmd
 
 bibliography: references.bib
 
@@ -27,8 +26,8 @@ format:
     theme: cosmo
   pdf:
     documentclass: scrreport
-    mainfont: "Avenir"
-    sansfont: "Avenir"
+    mainfont: "Arial"
+    sansfont: "Arial"
     include-before-body: "main.tex"
     include-in-header: 
       text: |
@@ -42,3 +41,5 @@ format:
         \usepackage{wrapfig}
         \usepackage{blindtext}
         \usepackage{subfiles}
+        \usepackage{multirow}
+        \usepackage[table,xcdraw]{xcolor}

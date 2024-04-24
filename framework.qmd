@@ -1,33 +1,73 @@
 # Framework {.unnumbered}
 
-The framework for ethical and trustworthy design of the STRATIF-AI platform has been designed in concordance with the EU Guidelines for Trustworthy AI. Contents of the manual have been developed based on a series of co-creation workshops, preparation of a systematic review, and previous ethical frameworks developed for the EU-Horizon blueprint project "VALIDATE". The contents will be updated following audits of the STRATIF-AI consortium's adherence to the framework, and an external Z-inspection of the ethical solution.
+Deliverable 3.2 presents a snapshot of the **Framework for Ethical and Trustworthy Design of the STRATIF-AI platform**. 
+
+The goal of the framework is to enumerate project-specific requirements that can help to mitigate ethical risks and increase trustworthiness throughout the STRATIF-AI project's development process (see: [Introduction](overview.qmd)). 
+
+## Design and Use
+
+Our framework has been designed to be a living document[^1], and, as such, will be revised following upcoming workshops, audits, and external validation. Deliverable D3.2 is a PDF document which captures a static version of the framework. The live version of the framework is is hosted [online](https://s-quest.bihealth.org/stratif-ai-ethics/) on the Charité server. The site is currently available under password protection to the STRATIF-AI consortium[^2], and can be made publicly available upon its finalization. 
+
+[^1]:a document that is continually edited and updated.
+[^2]:username: stratifai, password: Mulch_Snout_Devotion
+
+The contents of the first version of the framework were developed based on a series of co-creation workshops (see: [Workshops](workshops.qmd)). 
+
+The framework will be updated dynamically. Planned updates will follow **(1) a focused stakeholder workshop series**, **(2) upcoming audits** of current framework adherence and **(3) an external Z-inspection** of the AI system. 
+
+**(1) A focused stakeholder workshop series** will be conducted to complete the requirements outlined in this document. More specifically, many requirements have been planned preliminarily, but still lack specific information about parameters, methods, key personnel or planned output. These details will be completed in an iterative process during a forthcoming workshop series. 
+
+**(2) Audits** are planned at five time points during the project, at 6-month increments, to assess adherence to the framework, potential challenges, and suggest changes to resolve issues. 
+
+**(3) An external Z-inspection** will be conducted to assess the trustworthiness of the STRATIF-AI platform. Z-inspection is a published and validated gold standard method by which external experts use sociotechnical scenarios to derive AI trustworthiness requirements. The results of the Z-inspection process will be integrated into the framework.
 
 ## Regulatory Context
 
-The EU Guidelines for Trustworthy AI were developed on 8 April 2019 by the High-Level Expert Group (HLEG) on AI. The guidelines aim to promote three key principles to support the development and deployment of safe AI systems---i.e., lawfulness, ethics and robustness. The principles are expounded as seven key requirements.
+The Framework for Ethical and Trustworthy Design of the STRATIF-AI platform has been designed in concordance with the (1) **EU Guidelines for Trustworthy AI** and (2) **Assessment List for Trustworthy Artificial Intelligence (ALTAI)**. 
 
-![](eu_req.jpg)
-Our manual was derived by following the self-assessment checklist---Assessment List for Trustworthy AI (ALTAI)---developed by the HLEG in 2020. The ALTAI checklist is intended to help organizations identify key elements and concepts to design ethical AI systems, and serves as a practical instrument for assessing the compliance of AI systems with the EU's ethical principles. 
+**The EU Guidelines for Trustworthy AI** were developed on 8 April 2019 by the High-Level Expert Group (HLEG) on AI. The guidelines aim to promote three key principles to support the development and deployment of safe AI systems---i.e., lawfulness, ethics and robustness. The principles are expounded as seven key requirements (Figure 1).
+
+![EU Guidelines for Trustworthy AI.](eu_req.jpg){width=60%}
+
+**The  Assessment List for Trustworthy Artificial Intelligence (ALTAI)** was derived on 17 July 2020 by the High-Level Expert Group on Artificial Intelligence (AI HLEG), to aid AI developers in implementing ethical principles in practice. This tool serves as a practical instrument for assessing the compliance of AI systems with the current legal and ethical framework. 
 
 ## Structure
 
-The first draft of the framework has been structured in concordance with the EU Guidelines for Trustworthy AI. Each section corresponds to one of seven requirements. Each section first describes the preliminary assessment following the Assessment List for Trustworthy AI (ALTAI checklist). The section then lists the set of suggested requirements for the STRATIF-AI project.  
+Our framework is divided into seven sections, each corresponding to one of seven requirements set forth by the EU Guidelines for Trustworthy AI: 
 
-The framework is hosted online, on the Charité server, and has been made available under password protection to the STRATIF-AI consortium. The framework in a html format manual will be used by consortium members ("owners") throughout the audit process to fill in information, report progress on actionable tasks, and provide updates on requirements. 
+* [Human Agency and Oversight](1_oversight.qmd)
+* [Technical Robustness and Safety](2_technical.qmd)
+* [Privacy and Data Governance](3_privacy.qmd)
+* [Transparency](4_transparency.qmd)
+* [Diversity, non-discrimination, and Fairness](5_diversity.qmd)
+* [Societal and Environmental Wellbeing](6_societal.qmd)
+* [Accountability](7_accountability.qmd)
 
-## Requirement Template
+Under each section, we provide a preliminary assessment following the questions included in the Assessment List for Trustworthy AI (ALTAI) checklist. 
+
+We then describe a set of project-specific requirements. Under each project-specific requirement, we outline a set of relevant information that is either planned or *requires revision.* 
+
+::: {.callout-note}
+Under each requirement, we delineate information that requires revision and will be updated following workshops/audits in *italic text*. 
+:::
+
+### Requirement Template {.unnumbered .unlisted}
 
 **Description** We describe each requirement briefly and nominate specific ***parameters*** which need to be expounded or addressed. 
 
-***parameters:*** Based loosely on the concept "Planguage", we identify specific parameters within each requirement to delineate progress. 
+***parameters:*** We identify specific parameters within each requirement. 
+
+::: {.callout-note}
+When a parameter has been defined, it is delineated by plain text. If a parameter is yet to be defined, we provide *prompts which will help to define parameters in future workshops, which are delineated by italic text*.  
+::: 
 
 **Owner**  
 
-* Each requirement has an "Owner", who is responsible for organizing its implementation.
+* Each requirement has an "Owner", who is responsible for its implementation.
 
 **Key Personnel**
 
-* Several stakeholders may serve as key personnel to contribute to or facilitate progress towards this requirement.
+* Several stakeholders may serve as key personnel to contribute to or facilitate progress towards this requirement. *Named personnel* will be identified in upcoming workshops.  
 
 **Schedule**  A preliminary schedule will be devised. 
 
@@ -36,5 +76,4 @@ The framework is hosted online, on the Charité server, and has been made availa
 **Actionable tasks**  
 
 * Here we list a set of tasks 
-* These are a set of tasks which must be executed 
-* In order to meet this requirement
+* Which will be executed in order to meet this requirement
