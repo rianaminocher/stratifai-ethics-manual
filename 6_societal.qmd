@@ -1,6 +1,6 @@
 # Societal and Environmental Well-being
 
-The impacts of the AI system on the wellbeing of society must be considered throughout the AI system's life cycle. A system which is encountered in aspects of daily life---e.g., healthcare---has the potential to negatively impact mental health and emotional wellbeing. Such effects must be carefully considered and mitigated. Additonally, the sustainability of the AI system under development must be a point of discussion, such that the development and utilization of an AI system benefits all human beings, including future generations. Finally, the system must not undermine democratic processes or pose a threat to democratic society. 
+The impacts of the AI system on the wellbeing of society must be considered throughout its life cycle. A system which is encountered in aspects of daily life---e.g., healthcare---has the potential to negatively impact mental health and emotional wellbeing. Such effects must be carefully considered and mitigated. Additonally, the sustainability of the AI system under development must be a point of discussion, such that the development and utilization of an AI system benefits all human beings, including future generations. Finally, the system must not undermine democratic processes or pose a threat to democratic society. 
 
 ## Environmental Wellbeing
 
@@ -8,11 +8,12 @@ AI systems should be as environmentally friendly as possible. The development, d
 
 ### Identify environmental impact of model development
 
-**Description** The ***environmental impacts*** of ***system development processes*** need to be measured or estimated.
+**Description** The ***environmental impacts*** of ***system development processes*** need to be measured or estimated by appropriate ***methodologies***.
  
-***environmental impacts:*** carbon emissions; energy used;
-***system development processes***: model training; *other process with footprint?*
-
+***environmental impacts:*** carbon emissions; energy used;    
+***system development processes***: model training; *other process with footprint?*   
+***methodologies:*** *TBD*  
+ 
 **Owner**  
 
 * WP2
@@ -34,9 +35,10 @@ AI systems should be as environmentally friendly as possible. The development, d
 
 ### Reduce environmental impact
 
-**Description** A SOP which outlines acceptable ***thresholds*** and a resulting process protocol must be developed to mitigate environmental impacts. 
+**Description** A SOP which outlines acceptable ***thresholds*** and a resulting process protocol must be developed within an ***appropriate timeframe*** to mitigate environmental impacts. 
  
-***thresholds:*** *limit for carbon emissions for model training; limit for time spent model training* 
+***thresholds:*** *limit for carbon emissions for model training; limit for time spent model training*  
+***appropriate timeframe:*** *TBD*  
 
 **Owner**  
 
@@ -63,13 +65,15 @@ AI systems should be as environmentally friendly as possible. The development, d
 
 ### ALTAI Assessment {.unnumbered}
 
-STRATIF-AI will be designed with the objective of enabling a governance system conducive to human-in-command and prioritizing the epistemic authority of physicians. However, as a clinical decision-support system, STRATIF-AI will potentially have significant impacts on human work and work arrangements, necessitating a thorough assessment through an implementation strategy. While medical professionals will play a central role in the development pipeline of STRATIF-AI, broader inclusion and consultation with potentially affected workers and their representatives will be carried out. Measures to minimize the system's impact on human work will be implemented, following an in-depth investigation of STRATIF-AI's potential risks regarding the de-skilling of doctors or the alteration of training procedures and experiential learning.
+STRATIF-AI will be designed with a human-in-command governance system and to prioritize the epistemic authority of physicians. However, as a clinical decision-support system, STRATIF-AI will potentially have significant impacts on human work and work arrangements, necessitating a thorough assessment through an implementation strategy. While medical professionals will play a central role in the development pipeline of STRATIF-AI, broader inclusion and consultation with potentially affected workers and their representatives will be carried out. Measures to minimize the system's impact on human work will be implemented, following an in-depth investigation of STRATIF-AI's potential risks regarding the de-skilling of doctors or the alteration of training procedures and experiential learning.
 
 ### Investigate impact on work arrangements
 
-**Description** Assess concerns of potentially affected ***workers*** to inform implementation strategy. 
+**Description** ***Methodology*** to assess ***concerns*** of potentially affected ***workers*** must be devised to inform the platform's implementation strategy. 
  
-***workers:*** doctors; nurses; insurance personnel; training personnel; rehabilitation specialists; physiotherapists; *any affected working persons involved in the care of stroke patients* 
+***methodology:*** *TBD; stakeholder interviews; workshops; focus groups*  
+***concerns:*** *TBD; de-skilling; mistrust*  
+***workers:*** doctors; nurses; insurance personnel; training personnel; rehabilitation specialists; physiotherapists; *any affected working persons involved in the care of stroke patients*  
 
 **Owner**  
 
@@ -107,10 +111,10 @@ Potential ramifications on society at large and democracy will be considered thr
 
 ### Solicit citizen feedback
 
-**Description** Include diverse ***stakeholders*** in discussions at relevant ***stages*** of the STRATIF-AI pipeline. 
+**Description** Include diverse ***citizens*** in discussions at relevant ***stages*** of the STRATIF-AI pipeline. 
  
-***stakeholders:*** citizens; hospital workers; *persons who may be overlooked in stakeholder discussions* 
-***stages:*** pilot study; interview study (WP3); *any upcoming implementation discussions*
+***citizens:*** citizens; hospital workers; *persons who may be overlooked in stakeholder discussions*  
+***stages:*** *TBD; public representation of STRATIF-AI project; youtube; reddit*  
 
 **Owner**  
 

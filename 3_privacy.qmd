@@ -2,9 +2,6 @@
 
 To prevent undue harm to society, the fundamental right to privacy must be protected. Data-driven AI systems like STRATIF-AI may pose substantial risks to individuals' privacy, and as such, a comprehensive data governance protocol is necessary to maintain integrity and privacy of data. 
 
-**Relevant resources:**
-https://gdpr.eu/data-protection-impact-assessment-template/. https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation- gdpr/accountability-and-governance/data-protection-officers/.
-
 ## Privacy
 
 ### ALTAI Assessment {.unnumbered}
@@ -25,7 +22,7 @@ In the event of data leakage or misuse, STRATIF-AI could have significant impact
 **Key Personnel**
 
 * WP2
-* modelling staff (TBD)
+* modelling staff *TBD*
 
 **Schedule**  At any point, before end of project.  
 
@@ -39,12 +36,16 @@ In the event of data leakage or misuse, STRATIF-AI could have significant impact
 * assess performance
 * publish results
 
+::: {.callout-note}
+This requirement is closely linked to requirement 2.1.1. 
+:::
+
 ### Allocate data usage and access rights
 
 **Description** Design for different ***data types*** detailing ***access*** and ***safeguards*** for ***vulnerable patient groups*** must be made available within the Data Management Plan. 
 
 ***data types:*** training data; Personal Data Vault  
-***access:*** rights to access; location of storage; potential re-use; encryption  
+***access:*** rights to access; location of storage; potential to re-use; encryption  
 ***safeguards:*** stewardship upon death; stewardship in event of disability;   stewardship of carers/wards    
 ***vulnerable patient groups:*** *speaking different languages; age groups; ethnicity; disability*  
 
@@ -54,11 +55,11 @@ In the event of data leakage or misuse, STRATIF-AI could have significant impact
 
 **Key Personnel**
 
-* WP7 (TBD)
-* patient representatives (TBD)
-* WP4 (TBD)
-* WP5 (TBD)
-* WP6 (TBD)
+* WP7 *TBD*
+* patient representatives *TBD*
+* WP4 *TBD*
+* WP5 *TBD*
+* WP6 *TBD*
 
 **Schedule**  At any point, before end of project. 
 
@@ -79,7 +80,10 @@ The STRATIF-AI project includes a Data Management Plan (DMP) as a recurring deli
 
 ### Implement feedback system
 
-**Description** A system to flag violations to privacy or data integrity must be implemented within the platform and a corresponding process protocol drawn up. 
+**Description** A system with ***relevant specifications*** to flag ***violations*** must be implemented within the platform and a corresponding process protocol drawn up. 
+
+***relevant specifications:*** *TBD*  
+***violations:*** *TBD; violation to privacy; violation to data integrity;*  
 
 **Owner**  
 
@@ -88,7 +92,7 @@ The STRATIF-AI project includes a Data Management Plan (DMP) as a recurring deli
 **Key Personnel**
 
 * design staff
-* WP1 (TBD)
+* WP1 *TBD*
 
 **Schedule**  At any point, before end of project.  
 
@@ -112,8 +116,8 @@ STRATIF-AI is trained using personal healthcare records and will be continually 
 **Description** A quality control system to ensure different ***data types*** fulfill ***quality critera*** will be implemented and made available to ***end-users*** before use for model training or prediction. 
 
 ***data type:*** training data; Personal Data Vault  
-***quality criteria:*** robust to missing data; robust to inaccuracies; robust to input errors; *relevant thresholds*  
-***end-users:*** patients; medical professionals  
+***quality criteria:*** robust to missing data; robust to inaccuracies; robust to input errors; *additional criteria and pre-defined thresholds*   
+***end-users:*** patients; medical professionals   
 
 **Owner**  
 
@@ -121,9 +125,9 @@ STRATIF-AI is trained using personal healthcare records and will be continually 
 
 **Key Personnel**
 
-* design staff (TBD)
-* technical staff (TBD)
-* WP1 (TBD)
+* design staff *TBD*
+* technical staff *TBD*
+* WP1 *TBD*
 
 **Schedule**  At any point, before end of project.  
 
@@ -137,14 +141,13 @@ STRATIF-AI is trained using personal healthcare records and will be continually 
 * produce quantitative assessments for existing data/prototype data
 * translate assessment for end-users
 
-### Standardize Federated Learning data procedures
+### Standardize data preparation procedures
 
-**Description** The ***procedures*** involved in manipulating training data for Federated Learning across project ***partners*** must be standardized. 
-
-Standardise the complex procedures and protocols involved in federated learning across project organizations and countries. Ensure that data recording, preprocessing, evaluation, forecasting, validation, and ML monitoring processes are normalized and follow similar guidelines, even in countries with potentially different regulatory frameworks. Establish shared schemas and protocols to facilitate effective federated learning outcomes.
+**Description** The ***procedures*** involved in manipulating training data for Federated Learning across project ***partners*** must be ***standardized***. 
 
 ***procedures:*** pre-processing; evaluation; forecasting; validation; ML monitoring  
-***partners:*** *each hospital/data contributor*
+***partners:*** *each hospital/data contributor*  
+***standardized:*** *created in a format/schema/protocol*  
 
 **Owner**  
 
@@ -152,7 +155,7 @@ Standardise the complex procedures and protocols involved in federated learning 
 
 **Key Personnel**
 
-* technical staff (TBD)
+* technical staff *TBD*
 * WP4
 * WP5
 * WP6
@@ -174,7 +177,7 @@ Standardise the complex procedures and protocols involved in federated learning 
 
 **Description** The ***parameters*** of the harmonization process for making data interoperable must be defined and be reviewed ***periodically***. 
 
-***parameters:*** drift detection; retraining procedure;  
+***parameters:*** drift detection; retraining procedure; relevant ontologies 
 ***periodically:*** *TBD* 
 
 **Owner**  
@@ -183,7 +186,7 @@ Standardise the complex procedures and protocols involved in federated learning 
 
 **Key Personnel**
 
-* technical staff (TBD)
+* technical staff *TBD*
 * WP4
 * WP5
 * WP6
@@ -200,16 +203,16 @@ Standardise the complex procedures and protocols involved in federated learning 
 * feedback from partners
 
 ::: {.callout-note}
-During co-creation workshops, a lack of clarity about the data harmonization process when the STRATIF-AI platform is operational emerged. How the harmonization process will be governed after the model training procedure is complete must be clarified within this requirement.  
+During co-creation workshops, a lack of clarity about the data harmonization process, particularly when new patient data is added, emerged. How the harmonization process will be governed after the model training procedure is complete must be clarified within this requirement.  
 ::: 
 
 ### Acquire informed consent
 
 **Description** A process protocol for obtaining consent must be drafted, which outlines ***access rights***, ***restrictions*** once consent has been provided, and is tailored to specific ***patient subgroups***.
 
-***access rights:*** TBD; which physicians/medical staff will have access; stewardship in event of disability;  
-***patient subgroups:*** language; age; education; disability    
-***restrictions***: TBD; withdraw consent; right to object; right to be forgotten; how will models be retrained if consent is withdrawn;  
+***access rights:*** *which physicians/medical staff will have access; stewardship in event of disability;*
+***patient subgroups:*** *language; age; education; disability*   
+***restrictions***: withdraw consent; right to object; right to be forgotten; how will models be retrained if consent is withdrawn;  
 
 **Owner**  
 
@@ -220,7 +223,7 @@ During co-creation workshops, a lack of clarity about the data harmonization pro
 **Key Personnel**
 
 * WP3
-* WP1 (TBD)
+* WP1 *TBD*
 * medical staff
 * patient representatives
 
@@ -239,7 +242,8 @@ During co-creation workshops, a lack of clarity about the data harmonization pro
 ### Adhere to GDPR
 
 **Description** ***Relevant requirements*** under General Data Protection Regulation must be adhered to. 
-***Relevant requirements:*** *the applicability of requirements must be translated for the STRATIF-AI platform and included in the DMP*
+
+***relevant requirements:*** *TBD*  
 
 **Owner**  
 
@@ -260,10 +264,11 @@ During co-creation workshops, a lack of clarity about the data harmonization pro
 
 ### Investigate data minimization
 
-**Description** The ***costs*** of collecting intimate data from patients must be balanced against violation of patient trust, and validated by appropriate ***methodology***. 
+**Description** The ***costs*** of collecting intimate data from patients must be balanced against ***violation of patient trust***, and validated by appropriate ***methodology***. 
 
-***costs:*** *perceived harm; erosion of trust*
-***methodology:*** *cost-benefit analysis; qualitative judgement; Delphi consensus;*
+***costs:*** *perceived harm; erosion of trust*  
+***violation of patient trust:*** *operational definition of trust, threshold for violation*   
+***methodology:*** *cost-benefit analysis; qualitative judgement; Delphi consensus*  
 
 **Owner**  
 
@@ -271,9 +276,9 @@ During co-creation workshops, a lack of clarity about the data harmonization pro
 
 **Key Personnel**
 
-* WP4 (TBD)
-* WP5 (TBD)
-* WP6 (TBD)
+* WP4 *TBD*
+* WP5 *TBD*
+* WP6 *TBD*
 * patient representatives
 
 **Schedule**  At any point, before end of project.  

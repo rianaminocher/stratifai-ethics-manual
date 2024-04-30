@@ -8,7 +8,7 @@ A series of workshops were conducted with STRATIF-AI consortium members to defin
 
 Workshops were conducted in March 2024 and comprised a diversity of participants from within the STRATIF-AI consortium. The planned duration of each workshop was 3.5 hours; the final workshop duration was between 3 and 3.5 hours. All workshops, with the exception of the first, were facilitated by Riana Minocher (CUB). The first workshop was facilitated by Riana Minocher (CUB) with assistance from Gabriele Pluktaite (CUB). All consortium members who are subscribed to the STRATIF-AI email list were invited to register their participation via a Google form. 
 
-#### Table 1: Date conducted and number of participants
+#### Date conducted and number of participants
 
 | Workshop number | Date conducted | Number of participants |
 |-----------------|----------------|------------------------|
@@ -17,45 +17,30 @@ Workshops were conducted in March 2024 and comprised a diversity of participants
 | 3               | 20.03.2024     | 4                      |
 | 4               | 27.03.2024     | 2                      |
 
-#### Table 2: Details about participants in Workshop 1
+#### Details about participants in Workshops
 
-| Participant name   | Consortium partner | Role in STRATIF-AI                             | Workshop number |
-|--------------------|---------------------|------------------------------------------------|-----------------|
-| Lucia Gregorio     | TREE                | Leading development of federated learning architecture | 1           |
-| Elizabeth Hunter   | TUD                 | Programming ML models for prevention          | 1               |
-| Jesper Fellenius   | Z2                  | Development of Personal Data Vault to store patient data | 1 |
-| Rachele Terragni   | FINCB               | Clinician                                      | 1               |
-| Giorgia Camarda    | FINCB               | Clinician                                      | 1               |
-| Johan Holsmater    | LIU (ext)           | Providing input on prevention/health as a lifestyle | 1          |
-
-#### Table 3: Details about participants in Workshop 2
-
-| Participant name       | Consortium partner | Role in STRATIF-AI                                    | Workshop number |
-|------------------------|--------------------|-------------------------------------------------------|-----------------|
-| Silvia Schiavolin      | FINCB              | Clinical partner/psychologist                         | 2               |
-| Serge Timsit           | BREST              | Clinical studies on hemorrhage and minor stroke       | 2               |
-| Catalina Martínez Costa| UM                 | Semantic interoperability and data reuse              | 2               |
-| Ville Piispanen        | RV                 | Computer simulation technology                        | 2               |
-
-#### Table 4: Details about participants in Workshop 3
-
-| Participant name           | Consortium partner | Role in STRATIF-AI                                      | Workshop number |
-|----------------------------|--------------------|---------------------------------------------------------|-----------------|
-| Alejandro Garcia Rudolph   | GUT                | Cognitive and Physical rehab, predictive models, integrate digital twins into cognitive app | 3 |
-| Gelu Onose                 |                    | Clinician                                               | 3               |
-| Daniel Clark               | SHE                | Project manager D4D                                     | 3               |
-| Jerome Edmond Bickenbach   | SPF                | Implementation strategy for STRATIF-AI                  | 3               |
-
-#### Table 5: Details about participants in Workshop 4
-
-| Participant name       | Consortium partner | Role in STRATIF-AI                                   | Workshop number |
-|------------------------|--------------------|------------------------------------------------------|-----------------|
-| T. N. Que Nguyen       | TUD                | Data scientist, working on model development         | 4               |
-| Mark Wright            | GUT                | Rehabilitation physiotherapist                       | 4               |
+| Workshop number | Beneficiary         | Position                                      |
+|-----------------|---------------------|------------------------------------------------|
+| 1               | TREE                | Data scientist                                 |
+| 1               | TUD                 | ML scientist                                   |
+| 1               | Z2                  | Data expert                                    |
+| 1               | FINCB               | Clinician                                      |
+| 1               | FINCB               | Clinician                                      |
+| 1               | LIU (ext)           | Prevention expert                              |
+| 2               | FINCB               | Psychologist                                   |
+| 2               | BREST               | Clinician                                      |
+| 2               | UM                  | Data scientist                                 |
+| 2               | RV                  | Simulation scientist                           |
+| 3               | GUT                 | Rehab physician                                |
+| 3               |                     | Clinician                                      |
+| 3               | SHE                 | Project manager                                |
+| 3               | SPF                 | Implementation strategist                      |
+| 4               | TUD                 | Data scientist                                 |
+| 4               | GUT                 | Rehabilitation therapist                       |
 
 ## Methodology
 
-The first workshop functioned as a pilot session. Resources/exercises were consequently modified following the first session to accommodate feedback from participants and informal reflections. Participants received an email the day before the workshop with information and instructions on how to participate. Workshops were conducted on Microsoft Teams. Mural was used to disseminate materials and facilitate note-taking during discussions.
+The first workshop functioned as a pilot session. Resources/exercises were modified following the first session to accommodate feedback from participants and informal reflections. Participants received an email the day before the workshop with information and instructions on how to participate. Workshops were conducted on Microsoft Teams. Mural was used to disseminate materials and facilitate note-taking during discussions.
 
 Each workshop was divided into three sections:
 
@@ -82,16 +67,18 @@ The phase "Understand concepts" was intended to serve as a primer for participan
 
 ### General Reflections 
 
-The workshops were generally well-received. In Workshop 1, participants discussed topics within their expertise with enthusiasm, but some noted the insufficient time to cover all possible content. The suggestion for follow-up workshops, which could be tailored to specific stakeholder roles, was made. Workshop 2 saw broad awareness of potential risks and discussion of potential abuse of AI within healthcare. Workshop 3 faced some technical challenges, due to difficulties with using Mural effectively, but this did not prevent a serious discussion about risks, roles and responsibilities. Finally, Workshop 4 engaged participants from diverse backgrounds, fostering detailed and productive discussions, particularly about the trade-offs between data protection and model performance. Overall, the workshops provided valuable insights and highlighted the need for ongoing dialogue and clarification on roles and ethical considerations within the STRATIF-AI project.
+The workshops were generally well-received. In Workshop 1, participants discussed topics within their expertise with enthusiasm, but some noted the insufficient time to cover all possible content. The suggestion for follow-up workshops, which could be tailored to specific stakeholder roles, was made. Workshop 2 saw broad awareness of potential risks and discussion of potential abuse of AI within healthcare. Workshop 3 faced some technical challenges, due to difficulties with using Mural effectively, but this did not prevent a serious discussion about risks, roles and responsibilities. Finally, Workshop 4 engaged only two participants, but of complementary backgrounds, which fostered a detailed discussion about the trade-offs between data protection and model performance. Overall, the workshops provided valuable insights and highlighted the need for ongoing dialogue about ethical considerations within the STRATIF-AI project.
 
 ### Key Themes
 
+Discussion during workshops highlighted several recurrent themes that appeared important to resolve. We summarize these below to help contextualize the content of different requirements within the Framework for Ethical and Trustworthy Design of the STRATIF-AI platform (See: [Framework](framework.qmd)). 
+
 1. **Data Ownership**: Participants discussed considerations regarding data ownership, re-use, quality, and bias extensively. They emphasized the importance of patient data control, particularly regarding stewardship of data in the event of death or disability, the potential to re-use data for studies, the process of obtaining informed consent for data use, and the novel challenges presented by the data harmonization and federated learning processes. 
 
-2. **Transparency**: A significant focus was placed on ensuring transparency in AI systems to empower patients and clinicians, and maintain their trust. Discussions highlighted the need to communicate prediction uncertainties effectively to patients who may not be medical or quantitative experts. Similarly, the challenge of developing transparent models which are accessible to clinicians and patients who have varying goals and experience was discussed. 
+2. **Transparency**: A significant focus was placed on ensuring transparency in AI systems to empower patients and clinicians, and maintain their trust. Discussions highlighted the challenge of effectively conveying the meaning behind technical terms such as "prediction uncertainty" to citizens. Similarly, the challenge of developing transparent models which are accessible to clinicians and patients of varying goals and experience was discussed. 
 
-3. **Patient Empowerment**: Workshops underscored the importance of patient empowerment in the AI-driven healthcare landscape. Participants emphasized the need for patients to have control over their data, and for AI systems to provide understandable and actionable insights to empower informed decision-making. The need to communicate insights without causing harm to mental or emotional wellbeing was identified. 
+3. **Patient Empowerment**: Discussion in workshops underscored the importance of patient empowerment in the AI-driven healthcare landscape. Participants emphasized the need for patients to have control over their data, and for AI systems to provide understandable and actionable insights to empower informed decision-making. The need to communicate insights without causing harm to mental or emotional wellbeing was identified. 
 
-4. **Personalized Prevention**: Workshops emphasized the significance of a user-centric approach, especially in tailoring prevention programs to diversity of end-users. The potential benefits of personalized health coaching through digital twins were explored, to drive behavioral change and contribute to broader societal wellbeing.
+4. **Personalized Prevention**: Participants emphasized the significance of a user-centric approach, especially in tailoring prevention programs to diversity of end-users. In addition to fostering patient control, physicians should also have autonomy over the type of model and outcome used to make predictions. The potential benefits of personalized health coaching through digital twins were also discussed as potentially driving behavioral change and contributing to broader societal wellbeing.
 
-5. **A Common Language for Health**: Workshops emphasized the importance of integrating discussions across diverse stakeholder groups and defining a common language for health. Addressing disparities in health literacy and ensuring equitable distribution of AI platforms across communities were highlighted as key considerations.
+5. **A Common Language for Health**: Several participants raised the importance of integrating discussions across diverse stakeholder groups and defining a common language for health. Addressing disparities in health literacy and ensuring equitable distribution of AI platforms across communities were highlighted as key considerations.

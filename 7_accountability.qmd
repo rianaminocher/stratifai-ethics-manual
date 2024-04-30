@@ -2,9 +2,6 @@
 
 The principle of accountability highlights the need to establish mechanisms to guarantee responsibility throughout the lifecycle of AI systems. This principle intersects closely with risk management practices, which involve transparently identifying and mitigating risks that can be comprehended and audited by external parties. In instances where unjust or adverse impacts arise, accessible mechanisms for accountability must be established, to facilitate the opportunity for redress to affected parties.
 
-**Keywords:**  
-accountability, AI Ethics Review Board, redress by design
-
 ## Auditability
 
 ### ALTAI Assessment {.unnumbered}
@@ -13,9 +10,10 @@ The auditability of STRATIF-AI's workflow and system lifecycle is a fundamental 
 
 ### Facilitate auditability
 
-**Description** ***Means*** to facilitate external audits of STRATIF-AI processes will be instituted and validated.
+**Description** ***Methodology*** to facilitate external audits of STRATIF-AI processes will be instituted and ***validated***.
 
-**Means:*** A publicly available and version-controlled ethical plan; *any additional implementation strategies?*
+***Methodology:*** A publicly available and version-controlled ethical plan; *TBD*  
+***validated:*** validated by Z-inspection process; validated within Delphi study    
 
 **Owner**  
 
@@ -45,7 +43,7 @@ The auditability of STRATIF-AI's workflow and system lifecycle is a fundamental 
 
 ### ALTAI Assessment {.unnumbered}
 
-Ensuring both the ability to report on actions or decisions contributing to the outcomes of AI systems and to address the consequences of such outcomes is paramount. It is essential to identify, assess, document, and mitigate potential negative impacts of AI systems, particularly for those directly or indirectly affected. Safeguards must be in place to protect whistleblowers, NGOs, trade unions, and other entities reporting legitimate concerns about AI systems. As part of WP3 within the STRATIF-AI project, we will conduct an external Z-inspection assessment, which is a gold-standard and validated methodology to assess the ethical impacts of an AI tool. A comprehensive risk training protocol will be designed and adhere to any legal protocols. Our ethical plan has been designed in concordance with the Assessment List for Trustworthy AI (ALTAI), and, as such, will be continually evaluated throughout the AI system's lifecycle. 
+It is essential to identify, assess, document, and mitigate potential negative impacts of AI systems, particularly for those directly or indirectly affected. Safeguards must be in place to protect whistleblowers, NGOs, trade unions, and other entities reporting legitimate concerns about AI systems. As part of WP3 within the STRATIF-AI project, we will conduct an external Z-inspection assessment, which is a gold-standard and validated methodology to assess the ethical impacts of an AI tool. A comprehensive risk training protocol will be designed and adhere to any legal protocols. Our ethical plan has been designed in concordance with the Assessment List for Trustworthy AI (ALTAI), and, as such, will be continually evaluated throughout the AI system's lifecycle. 
 
 While implementing these requirements, tensions may arise, necessitating inevitable trade-offs. We will identify relevant interests and values implicated by the AI system and explicitly evaluate trade-offs in terms of their risk to safety and ethical principles, including fundamental rights. These decisions will be thoroughly documented throughout our ethical audit process. Additionally, a  a process for third parties (e.g. suppliers, end-users, subjects, distributors/vendors or workers) to report potential vulnerabilities, risks or biases in the AI system, and a following risk management protocol will be instituted. Accessible mechanisms to ensure adequate redress will be established.
 
@@ -78,9 +76,17 @@ While implementing these requirements, tensions may arise, necessitating inevita
 * feedback from third parties to validate
 * test system
 
+::: {.callout-note}
+In relation to requirement 6.3.1, it will be necessary to solicit and encourage feedback from non-users and potential users to mitigate risks of misuse or under-user of the STRATIF-AI platform.
+:::
+
 ### Collect post-prediction feedback
 
-**Description** A system for ***end-users*** to provide feedback about ***medical applicability*** should be established within the platform. This is closely related to the requirement under Section [Human Agency and Oversight](1_oversight.qmd); Institute reporting feedback loop.
+**Description** A system for ***end-users*** to provide feedback about ***medical applicability*** should be established within the platform. 
+
+::: {.callout-note}
+This is closely related to the requirement 1.2.2 [Human Agency and Oversight](1_oversight.qmd); Institute reporting feedback loop.
+:::
 
 ***end-users:*** medical professionals  
 ***medical applicability:*** effectiveness; relevance; alignment with evolving medical knowledge and practices; 

@@ -2,16 +2,13 @@
 
 AI systems must be technically robust to prevent harm, unintentional or otherwise, to human dignity, mental and physical integrity. The system must be guard against vulnerability to attack by third parties which could compromise its integrity or alter its behaviour. Safety procedures to enact in the event of errors or risks must be instituted. The accuracy of the system is of critical importance where the case for AI-assisted medical decision-making. Finally, reproducibility and reliability help to ensure that the performance and behaviour of AI system can be critically assessed.
 
-**Keywords:**
-accuracy, AI Bias, AI System, AI Reliability, AI Reproducibility, (Low) Confidence Score, Continual Learning, Data Poisoning, Model Evasion, Model Inversion, Pen Test, Red-team
-
 ## Resilience to attack and security
 
 ### ALTAI Assessment {.unnumbered}
 
 In the event of technical faults, misuse or defect, STRATIF-AI could have damaging effects to human safety. The risk of vulnerability to cyber-attacks will be evaluated to ensure the system is made compliant with security standards under the Cybersecurity Act in Europe. Vulnerability to data poisoning, model evasion, model inversion will be addressed throughout model validation and testing. Measures to ensure robustness to attacks after the system has been deployed will be designed. The expected timeframe of validity for security measures need to be defined. 
 
-### Define trade-offs in Federated Learning
+### Define risks of Federated Learning
 
 **Description** Measures to assess whether federated learning exposes patients to ***risks*** must be established, assessed and reported.   
  
@@ -23,7 +20,7 @@ In the event of technical faults, misuse or defect, STRATIF-AI could have damagi
 
 **Key Personnel**
 
--   technical staff (TBD)
+-   technical staff *TBD*
 
 **Schedule**  During model training.  
 
@@ -39,9 +36,9 @@ In the event of technical faults, misuse or defect, STRATIF-AI could have damagi
 
 ### Comply with cybersecurity law
 
-**Description** The system must be made compliant with the ***relevant cybersecurity legislation***. 
+**Description** The system must be made compliant with the ***relevant cybersecurity norms and legislation***. 
  
-***relevant cybersecurity legislation***: EU; country-specific; global
+***relevant cybersecurity norms and legislation***: EU; country-specific; global
 
 **Owner**  
 
@@ -49,7 +46,7 @@ In the event of technical faults, misuse or defect, STRATIF-AI could have damagi
 
 **Key Personnel**
 
-- technical staff (TBD)
+- technical staff *TBD*
 
 **Schedule**  At any point, before end of project. 
 
@@ -64,8 +61,8 @@ In the event of technical faults, misuse or defect, STRATIF-AI could have damagi
 
 **Description** In the event of a breach to security, a process protocol based on the ***severity*** and ***type*** of attack must be followed. 
  
-***severity:*** *define metrics to measure security breach, and scale of severity*
-***type:*** data poisoning; model evasion; *define types*
+***severity:*** *TBD define metrics to measure security breach, and scale of severity*  
+***type:*** data poisoning; model evasion; *TBD define types*  
 
 **Owner**  
 
@@ -73,7 +70,7 @@ In the event of technical faults, misuse or defect, STRATIF-AI could have damagi
 
 **Key Personnel**
 
-- technical staff (TBD)
+- technical staff *TBD*
 - WP7
 
 **Schedule**  At any point, before end of project. 
@@ -91,14 +88,14 @@ In the event of technical faults, misuse or defect, STRATIF-AI could have damagi
 
 ### ALTAI Assessment {.unnumbered}
 
-The risks associated with the AI system for each use-case will be assessed through pilot and clinical studies. Procedures to continuously measure and access risks will be devised, validated and implemented. A plan to inform end-users of existing and potential risks will be disseminated. STRATIF-AI is a novel concept and technology; possible threats and vulnerability to misuse will additionally be explored through a systematic literature review of ethical dilemmas regarding the use of digital twins in healthcare. Stability and reliability of the system will continually be assessed throughout model development. A plan to regularly evaluate the system, upon changes to technical infrastructure, will also be devised. 
+The risks associated with the AI system for each use-case will be assessed through pilot and clinical studies. Procedures to continuously measure and access risks will be devised, validated and implemented. A plan to inform end-users of existing and potential risks will be made. STRATIF-AI is a novel concept and technology; possible threats and vulnerability to misuse should additionally be explored through additional research. Stability and reliability of the system will continually be assessed throughout model development. A plan to regularly evaluate the system, upon changes to technical infrastructure, will also be devised. 
 
 ### Assess risk of use
 
 **Description** An independent ***risk assessment*** of use of the STRATIF-AI platform for different ***end-users*** must be carried out.
 
-***risk assessment:*** *a standardized risk assessment must be designed*
-***end-users:*** patients; patients with stroke; patients at risk of stroke; patients without stroke; *language; education; age; disability; medical professionals; doctors; physiotherapists; psychologists; care-workers; proficiency-levels; learner; proficient; expert*
+***risk assessment:*** *a standardized risk assessment must be designed*  
+***end-users:*** patients; patients with stroke; patients at risk of stroke; patients without stroke; *language; education; age; disability; medical professionals; doctors; physiotherapists; psychologists; care-workers; proficiency-levels; learner; proficient; expert*  
 
 **Owner**  
 
@@ -108,8 +105,8 @@ The risks associated with the AI system for each use-case will be assessed throu
 
 **Key Personnel**
 
-- medical staff (TBD)
-- patients/patient representatives (TBD)
+- medical staff *TBD*
+- patients/patient representatives *TBD*
 - WP3
 
 **Schedule**  At any point, before end of project. 
@@ -124,13 +121,17 @@ The risks associated with the AI system for each use-case will be assessed throu
 * conduct risk assessment 
 * publish risk assessment
 
+::: {.callout-note}
+This requirement will focus on creating a general risk assessment for the tool. The requirement 2.1.1 is additionally necessary to specifically define the risks of data leakage or vulnerability to attack due to the Federated Learning process. Thus, requirement 2.1.1 will likely feed into the general risk assessment necessitated here.
+:::
+
 ### Implement risk-assessment feedback loop
 
-**Description** A system to assess ***risk*** for ***different types of end-users*** should be established within the platform and ***periodically*** be evaluated.
+**Description** A system to assess and report ***risk*** customized for ***end-users*** should be established within the platform and ***periodically*** be evaluated.
 
-***risk:*** threat to safety; threat to validity; risk of misuse; issues with reliability; *additional risks?*  
-***end-users:*** medical professionals; patients
-***periodically:*** *TBD*
+***risk:*** *risks from risk asessment must be mapped; threat to safety; threat to validity; risk of misuse; issues with reliability;*  
+***end-users:*** medical professionals; patients  
+***periodically:*** *TBD*  
 
 **Stroke Phase** ALL
 
@@ -148,7 +149,10 @@ The risks associated with the AI system for each use-case will be assessed throu
 
 * appoint key personnel
 * determine evaluation schedule
-* design and validate system
+* translate risk assessment risk types
+* define parameters
+* prototype
+* validate system
 
 ::: {.callout-note}
 A system for feedback reporting, with both automated and non-automated components, must be designed and integrated into the STRATIF-AI platform, to address several requirements together, including this one.
@@ -156,10 +160,11 @@ A system for feedback reporting, with both automated and non-automated component
 
 ### Communicate risks to patients   
 
-**Description**  A standardized procedure for explaining ***technical risks*** of the system customized for patients of different ***subgroups*** must be designed.  
+**Description**  A standardized ***procedure*** for explaining ***risks*** of the system customized for patients of different ***subgroups*** must be designed.  
 
-***technical risks:*** vulnerability to misuse; technical robustness metrics
-***patients:*** language capabilities; educational experience; age groups; degree/type of disability; 
+***procedure:*** video; written material; training protocol for medical staff;  
+***technical risks:*** *to define risks for patients*  
+***patients:*** language capabilities; educational experience; age groups; degree/type of disability;  
 
 **Schedule**  At any point, before end of project.  
 
@@ -172,8 +177,8 @@ A system for feedback reporting, with both automated and non-automated component
 **Key Personnel**
 
 * patient representatives
-* technical staff (TBD)
-* design staff (TBD)
+* technical staff *TBD*
+* design staff *TBD*
 * WP3
 
 **Actionable tasks**
@@ -192,13 +197,16 @@ A system for feedback reporting, with both automated and non-automated component
 
 ::: {.callout-note}
 To address several requirements, including this one, a comprehensive set of patient subgroups will need to be defined, which should include all potentially vulnerable or marginalized patient profiles. 
+
+This requirement is closely related to requirement 1.1.3
 ::: 
 
-### Process protocol for technical updates
+### Derive process protocol for technical updates
 
-**Description**  A process protocol for assessing ***system functions*** following any technical developments or changes to infrastructure should be designed and followed.
+**Description**  A process protocol for assessing ***system functions*** following ***system updates*** should be designed and followed.
 
-***system functions:*** TBD; validity; risks to safety; evaluation metrics  
+***system functions:*** *validity; risks to safety; precision; other metrics to assess system performance*  
+***system updates:*** *periodic changes, error reporting, feedback reporting*
 
 **Schedule**  At any point, before end of project.  
 
@@ -210,8 +218,8 @@ To address several requirements, including this one, a comprehensive set of pati
 
 **Key Personnel**
 
-* technical staff (TBD)
-* design staff (TBD)
+* technical staff *TBD*
+* design staff *TBD*
 
 **Actionable tasks**
 
@@ -225,7 +233,7 @@ To address several requirements, including this one, a comprehensive set of pati
 
 ### ALTAI Assessment {.unnumbered}
 
-Effective and safe use of the STRATIF-AI platform hinges upon a high level of accuracy. As such, various measures to ensure data is of high quality, representative, and continuously monitored for accuracy will be put in place. The external and internal validity of the system will similarly be established and periodically reviewed. Levels of accuracy and validity established for the STRATIF-AI platform will clearly be communicated to end-users. 
+Effective and safe use of the STRATIF-AI platform hinges upon a high level of accuracy. Measures to ensure data is of high quality, representative, and continuously monitored for accuracy will be put in place. The external and internal validity of the system will be established and periodically reviewed. Levels of accuracy and validity established for the STRATIF-AI platform will clearly be communicated to end-users. 
 
 ### Evaluate data accuracy within Federated Learning
 
@@ -244,7 +252,34 @@ Effective and safe use of the STRATIF-AI platform hinges upon a high level of ac
 
 **Key Personnel**
 
-* technical staff (TBD)
+* technical staff *TBD*
+
+**Actionable tasks**
+
+* appoint key personnel
+* define scenarios to assess validity
+* define periodic intervals for assessment
+* design system
+
+### Evaluate accuracy of model predictions
+
+**Description**  The accuracy of the ***model output*** under different ***scenarios*** must be analyzed and monitored ***periodically***. 
+
+***model output:*** *prediction; biomarkers; simulations*  
+***scenarios:*** *missing data; data interoperability; heterogeneity of data; updates to data types*  
+***periodically:*** *TBD*   
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** EACH (3)
+
+**Owner**  
+
+* WP2
+
+**Key Personnel**
+
+* technical staff *TBD*
 
 **Actionable tasks**
 
@@ -255,10 +290,10 @@ Effective and safe use of the STRATIF-AI platform hinges upon a high level of ac
 
 ### Establish internal validity
 
-**Description** The behaviour of the tool, based on a set of core ***performance metrics*** will not differ under different ***contexts***. 
+**Description** The behaviour of the tool, based on a set of core ***performance metrics*** will not differ under different ***data contexts***. 
 
 ***performance metrics:*** *sensitivity; specificity; area-under-curve; error reporting frequency*   
-***data contexts:*** *clinical settings*  
+***data contexts:*** *TBD; split of training data*  
 
 **Schedule**  At any point, before end of project.  
 
@@ -287,10 +322,10 @@ Effective and safe use of the STRATIF-AI platform hinges upon a high level of ac
 
 ### Establish external validity
 
-**Description** The ***output*** of the models should not differ across end-users of different ***subgroups***. 
+**Description** The ***model output*** of should not differ across patient end-users of different ***subgroups***. 
  
-***output:*** *prediction types*
-***subgroups:*** *patient subgroups; geography; ethnicity; gender; socio-economic background; health history; disability;*  
+***model output:*** *prediction; biomarkers; simulations*  
+***subgroups:*** *patient subgroups; geography; ethnicity; gender;   socio-economic background; health history; disability;*  
 
 **Schedule**  At any point, before end of project.  
 
@@ -302,7 +337,7 @@ Effective and safe use of the STRATIF-AI platform hinges upon a high level of ac
 
 **Key Personnel**
 
-* technical staff (TBD)
+* technical staff *TBD*
 * WP3
 * WP7
 * patient representatives
@@ -316,6 +351,10 @@ Effective and safe use of the STRATIF-AI platform hinges upon a high level of ac
 * feedback on study design
 * publication of external validity
 
+::: {.callout-note}
+The implementation of this requirement is closely related to several requirements under the section [Diversity, non-discrimination and Fairness](5_diversity.qmd).
+:::
+
 ## Reliability and reproducibility
 
 ### ALTAI Assessment {.unnumbered}
@@ -326,7 +365,7 @@ Reliability and reproducibility will play a crucial role along the entire STRATI
 
 **Description**  A system to track, trace, and report ***errors*** within the platform must be implemented. 
 
-***errors*** error type; TBD
+***errors*** *TBD; different types of output and internal errors*
 
 **Schedule**  At any point, before end of project.  
 
@@ -338,8 +377,8 @@ Reliability and reproducibility will play a crucial role along the entire STRATI
 
 **Key Personnel**
 
-* technical staff (TBD)
-* design staff (TBD)
+* technical staff *TBD*
+* design staff *TBD*
 
 **Actionable tasks**
 
@@ -354,10 +393,12 @@ Reliability and reproducibility will play a crucial role along the entire STRATI
 
 **Description**  Measures to ensure that the system is able to adapt to ***evolving treatment guidelines*** while maintaining ***predictive accuracy*** will be taken. 
 
-This involves addressing data scarcity challenges and handling variations in healthcare practices, particularly in countries with different approaches to guideline adherence. 
+::: {.callout-note}
+This addresses data scarcity challenges and handling variations in healthcare practices, particularly in countries with different approaches to guideline adherence.
+:::
 
-***evolving treatment guidelines:*** variation in healthcare practice; countries with different guidelines; changing regulations;
-***predictive accuracy:*** *acceptable range TBD*
+***evolving treatment guidelines:*** variation in healthcare practice; countries with different guidelines; changing regulations   
+***predictive accuracy:*** *acceptable range TBD*  
 
 **Schedule**  At any point, before end of project.  
 
@@ -381,5 +422,5 @@ This involves addressing data scarcity challenges and handling variations in hea
 * develop process protocol for evaluation
 
 ::: {.callout-note}
-Several requirements, including this one, refer to the *predictive accuracy* of the output; this parameter will be defined through the implementation of requirement 1.1.2 Communicate prediction uncertainty.
+Several requirements, including this one, refer to the *predictive accuracy* of the output; this parameter will be defined through the implementation of requirements1.1.2 and 2.3.2.
 :::

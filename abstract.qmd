@@ -2,20 +2,22 @@
 
 |Revision | Date | Author | Organization | Description |
 |---------|------|--------|--------------|-------------|
-| 0.1 | 09.04.2024 | Riana Minocher | Charité | First draft|
+| 0.1 | 09.04.2024 | Riana Minocher | Charité | First draft |
+| 0.2 | 16.04.2024 | Vince I. Madai | Charité | Commented draft |
+| 0.3 | 24.04.2024 | Riana Minocher | Charité | Second draft |
+| 0.4 | 28.04.2024 | Riana Minocher | Charité | Third draft |
+| 0.5 | 29.04.2024 | Vince I. Madai | Charité | Commented draft |
+| 1.0 | 29.04.2024 | Riana Minocher | Charité | Final version |
 
 
-Date of delivery | |  | |  |
------------------|-------------|------------|--------|--|
-Contractual: | 30.04.2024 | Actual: | |
--------------| |  | |  |
-Status|-------------
--------|----------------------
-final [x]|---------------------
+| Delivery Date | Contractual | Actual |
+|---------------|-------------|--------|
+|               | 30.04.2024  | 30.04.2024 | 
+| Status        |             | final [x] |
 
-Abstract | This document describes the plan for ethical and trustworthy design of the STRATIF-AI platform.|
+Abstract | This document describes the plan for ethical and trustworthy design of the STRATIF-AI platform. The plan focuses on translating ethical principles defined by governing bodies into actionable steps tailored to the STRATIF-AI project's specific needs. In collaboration with diverse stakeholders and in line with current regulations, we have derived a set of comprehensive, feasible and auditable requirements. With the goal of proactively identifying and mitigating ethical risks, our plan is intended to enhance the STRATIF-AI project's societal impact and trustworthiness.
 ---------|-----------------------------------|
-Keywords | ethics, trustworthy AI |
+Keywords | ethics, trustworthy AI, AI HLEG, ALTAI |
 
 ![](stratifai_round.png){width=30%}
 

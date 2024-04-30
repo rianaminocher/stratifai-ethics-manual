@@ -16,7 +16,7 @@ Traceability is difficult to achieve for complex data-driven AI systems. STRATIF
 **Description**  The ability to trace back key ***system parameters*** will be ***assessed*** systematically and translated for a diversity of ***end-users***. 
 
 ***system parameters:*** data source; data demographics; patient-specific data; model parameters; model calibration metrics;  
-***assessed:*** *a system within the platform to report data* 
+***assessed:*** *a system within the platform to report data*  
 ***end-users:*** medical professionals; patients;  
 
 **Owner**  
@@ -25,8 +25,8 @@ Traceability is difficult to achieve for complex data-driven AI systems. STRATIF
 
 **Key Personnel**
 
-* technical staff (TBD)
-* medical staff (TBD)
+* technical staff *TBD*
+* medical staff *TBD*
 * patient representatives
 
 **Schedule**  At any point, before end of project.  
@@ -48,9 +48,9 @@ Traceability is difficult to achieve for complex data-driven AI systems. STRATIF
 **Description**  The ***decisions*** of the system must be ***systematically compared*** with ***human feedback*** to infer prediction ***quality***. 
 
 ***decisions:*** predictions; prediction intervals; data output  
-***systematically compared:*** *design of study comparison*
-***human feedback:*** *discrepancy with medical decision; patient discomfort;*  
-***quality:*** *construct a quality score* 
+***systematically compared:*** *design of study comparison*  
+***human feedback:*** *discrepancy with medical decision; patient discomfort;*    
+***quality:*** *construct a quality score*  
 
 **Owner**  
 
@@ -59,8 +59,8 @@ Traceability is difficult to achieve for complex data-driven AI systems. STRATIF
 **Key Personnel**
 
 * WP3
-* technical staff (TBD)
-* medical staff (TBD)
+* technical staff *TBD*
+* medical staff *TBD*
 * patient representatives
 
 **Schedule**  At any point, before end of project.  
@@ -77,7 +77,7 @@ Traceability is difficult to achieve for complex data-driven AI systems. STRATIF
 * publication of quality of decisions/ update to system
 
 ::: {.callout-note}
-This requirement is closely connected with requirements under [Human Agency and Oversight](1_oversight.qmd).
+This requirement is closely connected with requirements under section [Human Agency and Oversight](1_oversight.qmd).
 ::: 
 
 ## Explainability
@@ -90,9 +90,9 @@ STRATIF-AI is a clinical decision support-system. Both doctors and medical profe
 
 **Description** Information about the relevant ***parameters*** that led to an algorithmic decision will be validated and available in a ***simplified format*** to ***end-users***.
 
-***simplified format:*** video; written material;
-***parameters:*** modelling parameters; training data parameters; Data Vault parameters;    
-***end users:*** medical professionals;  patients;  
+***simplified format:*** video; written material; user interface  
+***parameters:*** modelling parameters; training data parameters; Data Vault parameters;  
+***end users:*** medical professionals;  patients;   
 
 **Owner**  
 
@@ -100,10 +100,10 @@ STRATIF-AI is a clinical decision support-system. Both doctors and medical profe
 
 **Key Personnel**
 
-* technical staff (TBD)
-* design staff
-* medical staff (TBD)
-* patient representatives
+* technical staff *TBD*
+* design staff *TBD*
+* medical staff *TBD*
+* patient representatives *TBD*
 
 **Schedule**  At any point, before end of project.  
 
@@ -121,8 +121,8 @@ STRATIF-AI is a clinical decision support-system. Both doctors and medical profe
 
 **Description** Establishing the explainability of the STRATIF-AI platform could serve as a blueprint for digital-twin based/personalized medicine projects. The ***satisfaction*** of ***end-users*** with the explainability of the platform over the course of its use should be continuously monitored.
 
-***satisfaction:*** TBD; means to assess suitability of explanatory materials/information; combined with feedback reporting loop;  
-***end-users:*** TBD; medical professionals; experience levels; patients; education; age; language; disability;  
+***satisfaction:*** *measured as suitability of explanatory materials/information; combined with feedback reporting loop;*  
+***end-users:*** *medical professionals; experience levels; patients; education; age; language; disability;*
 
 **Owner**  
 
@@ -131,9 +131,9 @@ STRATIF-AI is a clinical decision support-system. Both doctors and medical profe
 **Key Personnel**
 
 * WP7
-* technical staff (TBD)
-* medical staff (TBD)
-* patient representatives
+* technical staff *TBD*
+* medical staff *TBD*
+* patient representatives *TBD*
 
 **Schedule**  At any point, before end of project.  
 
@@ -151,7 +151,7 @@ STRATIF-AI is a clinical decision support-system. Both doctors and medical profe
 
 **Description** The costs of explainability for the model parameters and decision-rules will be traded off against their accuracy. During model development and training such ***costs*** should be systematically assessed and recorded.
 
-***costs:*** TBD; format to quantify explainability versus accuracy tradeoff; 
+***costs:*** *TBD; format to quantify explainability versus accuracy tradeoff;*
 
 **Owner**  
 
@@ -160,7 +160,7 @@ STRATIF-AI is a clinical decision support-system. Both doctors and medical profe
 **Key Personnel**
 
 * WP3
-* technical staff (TBD)
+* technical staff *TBD*
 
 **Schedule**  At any point, before end of project.  
 
@@ -180,13 +180,15 @@ STRATIF-AI is a clinical decision support-system. Both doctors and medical profe
 ### ALTAI Assessment {.unnumbered}
 
 There is little risk of the AI system being interpreted as a human. However, the HIC governance concept must be clearly communicated to end-users. The benefits, technical limitations, potential risks must additionally be communicated to end-users in a transparent and explainable manner. A comprehensive training protocol for end-users---particularly medical personnel---must be developed in collaboration with the system developers. 
+
 ### Standardize training materials
 
-**Description** The recommendations for ***proper use*** of the STRATIF-AI must be ***translated*** for a diversity ***end-users***. 
+**Description** Instructions about ***appropriate application*** of the STRATIF-AI must be ***adapted*** for a ***end-users*** of different ***subgroups***. 
 
-***proper use:*** TBD; technical limitations; potential risks; error rates; evidence-based health benefits;  
-***translated:*** TBD; written manual; visual (presentation); flyer; video  
-***end-users:*** TBD; medical professionals; experience levels; patients; education; age; language; disability;  
+***appropriate application:*** technical limitations; potential risks; error rates; evidence-based health benefits;  
+***adapted:*** available as written manual; flyer; video   
+***end-users:*** medical professionals; patients    
+***subgroups:*** *experience levels; patients; education; age; language; disability*
 
 **Owner**  
 
@@ -214,11 +216,13 @@ There is little risk of the AI system being interpreted as a human. However, the
 
 ### Tailor explainability material
 
-**Description** An overview of STRATIF-AI system ***functions*** will be communicated in a diversity of ***formats***, designed specifically for different groups of ***end-users***. 
+**Description** An overview of STRATIF-AI system ***functions*** and ***outputs*** will be communicated in a diversity of ***formats***, designed specifically for ***end-users*** of different ***subgroups***. 
 
-***functions:*** TBD; modelling framework; modelling maps; decision-making process; training data; private data vault; security protocols; human oversight; evidence of efficacy; rationale for using tool;  
-***formats:*** TBD; written manual; visual (presentation); flyer; video  
-***end-users:*** TBD; medical professionals; experience levels; patients; education; age; language; disability;  
+***functions:*** modelling framework; modelling maps; decision-making process; training data; private data vault; security protocols; human oversight; evidence of efficacy; rationale for using tool;   ]
+***outputs:*** *TBD; model output*
+***formats:*** available as written manual; video; flyer;   
+***end-users:*** medical professionals; patients  
+***subgroups:*** *education; age; language; disability*  
 
 **Owner**  
 
@@ -227,8 +231,8 @@ There is little risk of the AI system being interpreted as a human. However, the
 **Key Personnel**
 
 * WP7
-* technical staff (TBD)
-* medical staff (TBD)
+* technical staff *TBD*
+* medical staff *TBD*
 * patient representatives
 
 **Schedule**  At any point, before end of project.  

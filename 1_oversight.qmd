@@ -1,9 +1,6 @@
 # Human Agency and Oversight
 
-The need to ensure respect for human autonomy encompasses the respect for a democratic, flourishing, and equitable society; the prioritization of user agency; and the necessity of human oversight for activities/uses of the AI system. This requirement is particularly important for AI systems which guide or influence human decision-making---and is thus of central importance to the STRATIF-AI project. 
-
-**Keywords:**
-guiding, influencing, decision-making (e.g., prediction systems, predictive policing, decision-support); human-like; trust and (in)dependence
+Respect for human autonomy encompasses respect for a democratic, flourishing, and equitable society. This involves the prioritization of user agency and necessitating human oversight of the AI system. This requirement is particularly important for AI systems which guide or influence human decision-making---and is thus of central importance to the STRATIF-AI project. 
 
 **Definitions:**
 human-in-the-loop (HITL): capability for human intervention in every decision cycle of the system
@@ -14,14 +11,14 @@ human-in-command (HIC): capability to oversee the overall activity of the AI sys
 
 ### ALTAI assessment {.unnumbered}
 
-STRATIF-AI is intended to guide decisions made by human end-users---i.e., both doctors and patients---, which are in turn projected to impact end-users (patients' health and autonomy, as well as doctors' autonomy) and society in general. To ensure STRATIF-AI does not generate confusion about the extent to which decision-making is guided by algorithms and the allocation of epistemic authority, a plan to disseminate information in an accessible manner to a diversity of end-users will be necessary. The risk of interpretation of a digital twin or ``personalized health coach'' as a human rather than AI system is generally believed to be low, but a risk assessment needs to be made to rule out this possibility. The risk of addiction or unhealthy attachment to the system are again deemed low, but measures to mitigate or minimize the risk of such activities need to be developed. The risk of manipulation needs to be investigated. 
+STRATIF-AI is intended to guide decisions made by human end-users---i.e., both doctors and patients---, and these decisions are in turn projected to impact the decisions of end-users (patients' health and autonomy, as well as doctors' autonomy) and society in general. To ensure STRATIF-AI does not generate confusion about the extent the allocation of epistemic authority, a plan to disseminate information in an accessible manner to a diversity of end-users will be necessary. The risk of interpretation of a digital twin as a human rather than AI system is potentially low, but a risk assessment needs to be made to rule out this possibility. The risk of addiction or unhealthy attachment to the system are again deemed low, but measures to mitigate or minimize the risk of such activities need to be developed. The risk of manipulation needs to be investigated. 
 
 ### Define epistemic authority
 
 **Description**  In the events where there is a ***discrepancy*** between the predictions of the tool and the medical opinion of the doctor, a process protocol for epistemic authority dilemmas customized for ***physician expertise level*** must be described.  
 
-***discrepancy:*** difference in recommended course of treatment; difference in output *from existing medical device*; 
-***physician expertise level:*** early; proficient; expert
+***discrepancy:*** difference in recommended course of treatment; difference in output *from existing medical device*;  
+***physician expertise level:*** early; proficient; expert  
 
 **Owner**  
 
@@ -31,8 +28,9 @@ STRATIF-AI is intended to guide decisions made by human end-users---i.e., both d
 
 **Key Personnel**
 
--   medical staff (TBD)
--   design staff (TBD)
+- WP3
+-   medical staff *TBD*
+-   design staff *TBD*
 
 **Schedule**  At any point, before end of project.  
 
@@ -43,19 +41,22 @@ STRATIF-AI is intended to guide decisions made by human end-users---i.e., both d
 * appoint key personnel
 * define discrepancy
 * clarify if comparison of AI and clinician will be conducted in clinical study
+* pilot study quantify discrepancy
+* assess discrepancy
 * prepare process protocol outline
 * define physician expertise levels
 * completion of process protocol
 * feedback from medical staff
 * publication/research design about epistemic authority
 
-### Communicate prediction uncertainty
+### Explain model output
 
-**Description** A ***methodology*** for measuring and communicating quantitative prediction uncertainty to ***end-users*** must be established and ***validated***.
- 
-***valid methodology***: *TBD*; *set of ways in which predictions will be shown in platform*   
-***end-users***: medical professionals, patients 
-***validated:*** validated in clinical setting; validated in external clinical setting; validated through feedback from experts
+**Description** A ***methodology*** for measuring and communicating ***model output*** to ***end-users*** must be established and ***validated***.
+
+***valid methodology:*** *set of ways in which predictions will be shown in platform*   
+***model output:*** *e.g. behavioural recommendations, biomarkers, simulations*  
+***end-users***: medical professionals, patients   
+***validated:*** validated in clinical setting; validated in external clinical setting; validated through feedback from   experts
 
 **Owner**  
 
@@ -83,11 +84,11 @@ STRATIF-AI is intended to guide decisions made by human end-users---i.e., both d
 
 ### Foster patient autonomy   
 
-**Description**  A standardized ***procedure*** for explaining ***risks*** of oversight customized for patient ***subgroups*** must be designed.  
+**Description**  A standardized ***procedure*** for explaining ***risks*** customized for patient ***subgroups*** must be designed.  
 
 ***procedure:*** video; written material; training protocol for medical staff;  
 ***risks:*** procedures for epistemic authority; HIC governance structure; AI system overview    
-***subgroups:***: *speaking different languages; different education levels; different age groups; degree of disability*   
+***subgroups:*** *speaking different languages; different education levels; different age groups; degree of disability*  
 
 **Schedule**  At any point, before end of project.  
 
@@ -118,10 +119,10 @@ STRATIF-AI is intended to guide decisions made by human end-users---i.e., both d
 
 ### Establish degree of trust
 
-**Description** Degree of ***trust*** in the STRATIF-AI platform, determined by ***end-users***, should be quantified.
+**Description** Degree of ***trust*** in the STRATIF-AI platform, determined by ***end-users***, will be assessed.
 
-***trust:*** *operational definitions of trust*
-***end-users:*** medical professionals; patients with stroke; patients at risk of stroke; patients without stroke
+***trust:*** *TBD; operational definitions of trust*  
+***end-users:*** medical professionals; patients with stroke; patients at risk of stroke; patients without stroke  
 
 **Schedule**  At any point, before end of project. 
 
@@ -152,7 +153,7 @@ STRATIF-AI is intended to guide decisions made by human end-users---i.e., both d
 
 ### ALTAI assessment {.unnumbered}
 
-STRATIF-AI must be constructed as a Human-in-Command system. Medical professionals need to be trained to exercise oversight according to a process protocol that has been validated. A system to detect and report misuse or adverse effects of the system must be constructed. STRATIF-AI is a self-learning system; autonomy in predictions needs to be specified to ensure human oversight/control over the type of prediction generated. 
+STRATIF-AI will be constructed as a Human-in-Command system. Medical professionals will be trained to exercise oversight according to a process protocol that has been validated. A system to detect and report misuse or adverse effects of the system will be implemented, and autonomy in predictions needs to be specified to ensure human oversight of the type of prediction generated. 
 
 ### Establish HIC governance
 
@@ -167,7 +168,7 @@ STRATIF-AI must be constructed as a Human-in-Command system. Medical professiona
 **Key Personnel**
 
 * WP7
-* design staff (TBD)
+* design staff *TBD*
 
 **Schedule**  At any point, before end of project.  
 
@@ -185,8 +186,8 @@ STRATIF-AI must be constructed as a Human-in-Command system. Medical professiona
 
 **Description** A system for ***end-users*** to make reports about ***discrepancies*** should be established within the platform and ***periodically*** be evaluated. 
 
-***end-users:*** medical professionals, patients  
-***discrepancies:*** disagreement between system recommendation and end-user decision; end-user discomfort with system recommendation; indication of errors  
+***end-users:*** medical professionals, patients    
+***discrepancies:*** disagreement between system   recommendation and end-user decision; end-user discomfort with system recommendation; indication of errors  
 ***periodically:*** *TBD*  
 
 **Stroke Phase** ALL
@@ -210,8 +211,8 @@ STRATIF-AI must be constructed as a Human-in-Command system. Medical professiona
 
 **Description** In the events where there is a ***discrepancy*** between the predictions of the tool and the perspective or opinion of the patient, a process protocol for managing expectations, customized for patients of different ***subgroups*** must be described.
 
-***discrepancy:*** *acceptable threshold for difference*
-***subgroups:*** *stroke risk category; age groups; education levels; degree of disability*
+***discrepancy:*** *acceptable threshold for difference based on previously defined discrepancy types*. 
+***subgroups:*** *stroke risk category; age groups; education levels; degree of disability*. 
 
 **Owner**  
 
@@ -221,7 +222,7 @@ STRATIF-AI must be constructed as a Human-in-Command system. Medical professiona
 
 **Key Personnel**
 
--   medical staff
+-   medical staff *TBD*
 
 **Schedule**  At any point, before end of project.  
 
@@ -235,7 +236,7 @@ STRATIF-AI must be constructed as a Human-in-Command system. Medical professiona
 * feedback on process protocol from patient representatives
 
 ::: {.callout-note}
-This requirement is closely related to 1.1.1; 1.1.2; and 1.2.2---this requirement is tailored to end-users who are patients. Requirement 1.2.2 will enable reporting discrepancies for patients, and the execution of 1.1.2 will inform the process protocol for this requiremnt.
+This requirement is closely related to 1.1.1; 1.1.2; and 1.2.2. Requirement 1.2.2 will enable reporting discrepancies for patients, and the execution of 1.1.2 will inform the process protocol for this requiremnt.
 :::
 
 ### Enable autonomy of end-users
@@ -243,7 +244,7 @@ This requirement is closely related to 1.1.1; 1.1.2; and 1.2.2---this requiremen
 **Description** ***End-users*** should have sufficient control over platform ***parameters*** to foster independent use and trust in the system predictions. 
 
 ***end-users:*** medical staff, patients   
-***parameters:*** predictive model type; *data to be used for predictions; data to be ommitted for predictions;*   
+***parameters:*** predictive model type; stroke type; *data to be used for predictions; data to be ommitted for predictions;*   
 
 **Owner**
 
@@ -251,9 +252,9 @@ This requirement is closely related to 1.1.1; 1.1.2; and 1.2.2---this requiremen
 
 **Key Personnel**
 
-- medical staff (TBD)
-- technical staff (TBD)
-- design staff (TBD)
+- medical staff *TBD*
+- technical staff *TBD*
+- design staff *TBD*
 
 **Schedule**  At any point, before end of project.  
 

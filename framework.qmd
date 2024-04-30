@@ -2,48 +2,48 @@
 
 Deliverable 3.2 presents a snapshot of the **Framework for Ethical and Trustworthy Design of the STRATIF-AI platform**. 
 
-The goal of the framework is to enumerate project-specific requirements that can help to mitigate ethical risks and increase trustworthiness throughout the STRATIF-AI project's development process (see: [Introduction](overview.qmd)). 
+The goal of the framework is to enumerate project-specific requirements that can help to mitigate ethical risks and increase trustworthiness throughout the STRATIF-AI development process.  
 
 ## Design and Use
 
-Our framework has been designed to be a living document[^1], and, as such, will be revised following upcoming workshops, audits, and external validation. Deliverable D3.2 is a PDF document which captures a static version of the framework. The live version of the framework is is hosted [online](https://s-quest.bihealth.org/stratif-ai-ethics/) on the Charité server. The site is currently available under password protection to the STRATIF-AI consortium[^2], and can be made publicly available upon its finalization. 
+Our framework has been designed to be a living document[^1], and, as such, will be revised following upcoming workshops, audits, and through external validation. Deliverable D3.2 is a PDF document which captures a static version of the framework at the current time point. The live version of the framework is is hosted [online](https://s-quest.bihealth.org/stratif-ai-ethics/) on the Charité server. The site is currently available under password protection to members of the STRATIF-AI consortium[^2], and can be made publicly available upon its finalization and upon request. 
 
 [^1]:a document that is continually edited and updated.
 [^2]:username: stratifai, password: Mulch_Snout_Devotion
 
 The contents of the first version of the framework were developed based on a series of co-creation workshops (see: [Workshops](workshops.qmd)). 
 
-The framework will be updated dynamically. Planned updates will follow **(1) a focused stakeholder workshop series**, **(2) upcoming audits** of current framework adherence and **(3) an external Z-inspection** of the AI system. 
+Planned updates to the framework will follow **(1) a focused stakeholder workshop series**, **(2) upcoming audits** of current framework adherence and **(3) an external Z-inspection** of the AI system. 
 
-**(1) A focused stakeholder workshop series** will be conducted to complete the requirements outlined in this document. More specifically, many requirements have been planned preliminarily, but still lack specific information about parameters, methods, key personnel or planned output. These details will be completed in an iterative process during a forthcoming workshop series. 
+**(1) A focused stakeholder workshop series** will be conducted to complete the requirements outlined in this document. More specifically, some requirements have been planned according to the current expertise, knowledge, and timeline, but still lack specific information about parameters, methods, key personnel or planned output. These details will be completed in an iterative process during the forthcoming workshop series. 
 
-**(2) Audits** are planned at five time points during the project, at 6-month increments, to assess adherence to the framework, potential challenges, and suggest changes to resolve issues. 
+**(2) Audits** are planned at five time points during the project, at 6-month increments, to assess adherence to the framework, nominate potential challenges, and suggest changes to resolve issues.
 
 **(3) An external Z-inspection** will be conducted to assess the trustworthiness of the STRATIF-AI platform. Z-inspection is a published and validated gold standard method by which external experts use sociotechnical scenarios to derive AI trustworthiness requirements. The results of the Z-inspection process will be integrated into the framework.
 
 ## Regulatory Context
 
-The Framework for Ethical and Trustworthy Design of the STRATIF-AI platform has been designed in concordance with the (1) **EU Guidelines for Trustworthy AI** and (2) **Assessment List for Trustworthy Artificial Intelligence (ALTAI)**. 
+The Framework for Ethical and Trustworthy Design of the STRATIF-AI platform has been designed in concordance with the (1) [**EU Guidelines for Trustworthy AI**](https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai) and (2) [**Assessment List for Trustworthy Artificial Intelligence (ALTAI)**](https://digital-strategy.ec.europa.eu/en/library/assessment-list-trustworthy-artificial-intelligence-altai-self-assessment). 
 
-**The EU Guidelines for Trustworthy AI** were developed on 8 April 2019 by the High-Level Expert Group (HLEG) on AI. The guidelines aim to promote three key principles to support the development and deployment of safe AI systems---i.e., lawfulness, ethics and robustness. The principles are expounded as seven key requirements (Figure 1).
+**The EU Guidelines for Trustworthy AI** were developed on 8 April 2019 by the High-Level Expert Group on Artificial Intelligence (AI HLEG). The guidelines aim to promote three key principles to support the development and deployment of safe AI systems---i.e., lawfulness, ethics and robustness. The principles are expounded as seven key requirements (Figure 1).
 
-![EU Guidelines for Trustworthy AI.](eu_req.jpg){width=60%}
+![EU Guidelines for Trustworthy AI. source: [AI HLEG](https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai)](eu_req.jpg){width=60%}
 
-**The  Assessment List for Trustworthy Artificial Intelligence (ALTAI)** was derived on 17 July 2020 by the High-Level Expert Group on Artificial Intelligence (AI HLEG), to aid AI developers in implementing ethical principles in practice. This tool serves as a practical instrument for assessing the compliance of AI systems with the current legal and ethical framework. 
+**The  Assessment List for Trustworthy Artificial Intelligence (ALTAI)** was derived on 17 July 2020 by the High-Level Expert Group on Artificial Intelligence (AI HLEG), to aid AI developers in implementing regulatory requirements in practice. This tool serves as a practical instrument for assessing the compliance of AI systems with the current legal and ethical framework. 
 
 ## Structure
 
 Our framework is divided into seven sections, each corresponding to one of seven requirements set forth by the EU Guidelines for Trustworthy AI: 
 
-* [Human Agency and Oversight](1_oversight.qmd)
-* [Technical Robustness and Safety](2_technical.qmd)
-* [Privacy and Data Governance](3_privacy.qmd)
-* [Transparency](4_transparency.qmd)
-* [Diversity, non-discrimination, and Fairness](5_diversity.qmd)
-* [Societal and Environmental Wellbeing](6_societal.qmd)
-* [Accountability](7_accountability.qmd)
+1. [Human Agency and Oversight](1_oversight.qmd)
+2. [Technical Robustness and Safety](2_technical.qmd)
+3. [Privacy and Data Governance](3_privacy.qmd)
+4. [Transparency](4_transparency.qmd)
+5. [Diversity, non-discrimination, and Fairness](5_diversity.qmd)
+6. [Societal and Environmental Wellbeing](6_societal.qmd)
+7. [Accountability](7_accountability.qmd)
 
-Under each section, we provide a preliminary assessment following the questions included in the Assessment List for Trustworthy AI (ALTAI) checklist. 
+Under each section, we provide a preliminary assessment of the STRATIF-AI platform following the questions included in the Assessment List for Trustworthy AI (ALTAI) checklist. 
 
 We then describe a set of project-specific requirements. Under each project-specific requirement, we outline a set of relevant information that is either planned or *requires revision.* 
 
@@ -51,11 +51,11 @@ We then describe a set of project-specific requirements. Under each project-spec
 Under each requirement, we delineate information that requires revision and will be updated following workshops/audits in *italic text*. 
 :::
 
-### Requirement Template {.unnumbered .unlisted}
+### Requirement Template {.unnumbered}
 
 **Description** We describe each requirement briefly and nominate specific ***parameters*** which need to be expounded or addressed. 
 
-***parameters:*** We identify specific parameters within each requirement. 
+***parameters:*** We identify specific parameters within each requirement. These parameters help to add precision to the attribute, goal, or entity described by the parameter word.
 
 ::: {.callout-note}
 When a parameter has been defined, it is delineated by plain text. If a parameter is yet to be defined, we provide *prompts which will help to define parameters in future workshops, which are delineated by italic text*.  
@@ -67,13 +67,66 @@ When a parameter has been defined, it is delineated by plain text. If a paramete
 
 **Key Personnel**
 
-* Several stakeholders may serve as key personnel to contribute to or facilitate progress towards this requirement. *Named personnel* will be identified in upcoming workshops.  
+* Several stakeholders may serve as key personnel to contribute to or facilitate progress towards this requirement. Named personnel are *TBD* and will be identified in upcoming workshops.  
 
-**Schedule**  A preliminary schedule will be devised. 
+::: {.callout-note}
+Some information will need to be completed in upcoming focused stakeholder workshops and planned audits. We use *TBD* (to be determined) to delineate information that needs to be addressed in workshops and audits. 
+::: 
 
-**Stroke Phase** We identify whether this requirement pertains to all phases of stroke (prevention, acute treatment, rehabilitation) that the STRATIF-AI tool intends to treat.
+**Schedule**  A preliminary schedule will be devised.
+
+**Stroke Phase** We identify whether this requirement pertains to all phases of stroke (prevention, acute treatment, rehabilitation) that the STRATIF-AI tool intends to treat. 
 
 **Actionable tasks**  
 
 * Here we list a set of tasks 
-* Which will be executed in order to meet this requirement
+* Which will be executed 
+* In order to successfully meet this requirement
+* These lists will be updated in subsequent audits
+
+### Requirement Example {.unnumbered}
+
+**Description** Explainability materials will be ***customized*** for specific ***end-users***. 
+
+***end-users:*** patients; medical professionals   
+***customized:*** available in video format; available in written format
+
+::: {.callout-tip}
+"End-user" could refer to a variety of entities---e.g., patients or medical professionals. 
+Parameterizing attributes, goals, or entities mentioned in requirements helps to make the requirement more flexible, less ambiguous, and easier to implement.  
+::: 
+
+**Owner**  
+
+* WP3
+
+**Key Personnel**
+
+* WP2
+* WP1
+* technical staff *TBD*
+* modelling staff *TBD*
+* medical staff *TBD*
+* patient representatives *TBD*
+
+::: {.callout-tip}
+To complete this requirement, we will require input from modellers/WP2, data scientists/WP1, as well as feedback from end-users---clinicians and patients.*TBD* denotes that key personnel will need to be named ("to be determined") in upcoming workshops and audits. 
+::: 
+
+**Schedule**  At any point, before the end of the project. 
+
+**Stroke Phase** EACH (3)
+
+::: {.callout-tip}
+This requirement will need to be addressed for all intended use-cases of the STRATIF-AI platform. This means that the tasks necessary to complete the requirement, and the planned output (here: video/written material), should be completed each for patients at risk of stroke (prevention phase), patients with stroke (acute phase), and patients recovering from stroke (rehabilitation phase).
+::: 
+
+**Actionable tasks**  
+
+* appoint key personnel
+* create prototype for explainability
+* feedback from WP1/WP2/technical staff
+* update prototype
+* translate for different end-users
+* feedback from end-users
+
