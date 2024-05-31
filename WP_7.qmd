@@ -1,0 +1,47 @@
+# Work Package 7 {.unnumbered}
+
+**Coordination, Dissemination, Implementation, and exploitation**
+
+## Human Agency and Oversight
+
+*Human agency and autonomy*
+
+[Foster patient autonomy](1_oversight.qmd#foster-patient-autonomy)
+
+## Technical Robustness and Safety
+
+*Resilience to attack and security*
+
+[Comply with cybersecurity law](2_technical.qmd#comply-with-cybersecurity-law)
+
+*General safety*
+
+[Communicate risks to patients](2_technical.qmd#communicate-risks-to-patients)
+
+*Reliability and reproducibility*
+
+[Ensure continuous adaptation](2_technical.qmd#ensure-continuous-adaptation)
+
+## Transparency
+
+*Communication*
+
+[Standardize training materials](3_privacy.qmd#standardize-training-materials)
+
+## Diversity, Non-discrimination and Fairness
+
+*Avoidance of unfair bias*
+
+[Assess fairness across use-setting](5_diversity.qmd#assess-fairness-across-use-setting)
+
+[Implement fairness reporting system](5_diversity.qmd#implement-fairness-reporting-system)
+
+*Accessibility and universal design*
+
+[Assess financial risk of unfair design](5_diversity.qmd#assess-financial-risk-of-unfair-design)
+
+## Accountability
+
+*Tradeoffs/ Risk-management*
+
+[Conduct budget impact analysis](7_accountability.qmd#conduct-budget-impact-analysis)

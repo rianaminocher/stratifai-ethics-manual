@@ -1,0 +1,57 @@
+# Work Package 3 {.unnumbered}
+
+**Ethical and trustworthy design**
+
+## Human Agency and Oversight
+
+*Human agency and autonomy*
+
+[Establish degree of trust](1_oversight.qmd#establish-degree-of-trust)
+
+*Human oversight*
+
+[Establish HIC governance](1_oversight.qmd#establish-hic-governance)
+
+## Privacy and Data Governance
+
+*Data governance*
+
+[Investigate data minimization](2_technical.qmd#investigate-data-minimization)
+
+## Transparency
+
+*4.3. Communication*
+
+[Tailor explainability material](4_transparency.qmd#tailor-explainability-material)
+
+## Diversity, Non-discrimination and Fairness
+
+ *Avoidance of unfair bias*
+
+[Cultivate ethical awareness](5_diversity.qmd#cultivate-ethical-awareness)
+
+[Assess and build trust within vulnerable patient groups](5_diversity.qmd#assess-and-build-trust-within-vulnerable-patient-groups)
+
+*Accessibility and universal design*
+
+[Utilize inclusive design principles](5_diversity.qmd#utilize-inclusive-design-principles)
+
+*Stakeholder participation*
+
+[Incorporate patient perspectives](5_diversity.qmd#incorporate-patient-perspectives)
+
+## Societal and Environmental Well-being
+
+*Impact on Work and Skills*
+
+[Investigate impact on work arrangements](6_societal.qmd#investigate-impact-on-work-arrangements)
+
+*Impact on Society at large or Democracy*
+
+[Solicit citizen feedback](6_societal.qmd#solicit-citizen-feedback)
+
+## Accountability
+
+*Auditability*
+
+[Facilitate auditability](7_accountability.qmd#facilitate-auditability)

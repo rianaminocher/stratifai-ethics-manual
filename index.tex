@@ -1,0 +1,5171 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrreport}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
+  \setmainfont[]{Arial}
+  \setsansfont[]{Arial}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{5}
+% Make \paragraph and \subparagraph free-standing
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage{scrlayer-scrpage}
+\clearpairofpagestyles
+\cohead[{\includegraphics[width=5cm]{stratifai_logo.png}}]{}
+\lofoot{STRATIF-AI D3.2}
+\rofoot{April 24}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{wrapfig}
+\usepackage{blindtext}
+\usepackage{subfiles}
+\usepackage{multirow}
+\usepackage[table,xcdraw]{xcolor}
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
+\definecolor{quarto-callout-color}{HTML}{909090}
+\definecolor{quarto-callout-note-color}{HTML}{0758E5}
+\definecolor{quarto-callout-important-color}{HTML}{CC1914}
+\definecolor{quarto-callout-warning-color}{HTML}{EB9113}
+\definecolor{quarto-callout-tip-color}{HTML}{00A047}
+\definecolor{quarto-callout-caution-color}{HTML}{FC5300}
+\definecolor{quarto-callout-color-frame}{HTML}{acacac}
+\definecolor{quarto-callout-note-color-frame}{HTML}{4582ec}
+\definecolor{quarto-callout-important-color-frame}{HTML}{d9534f}
+\definecolor{quarto-callout-warning-color-frame}{HTML}{f0ad4e}
+\definecolor{quarto-callout-tip-color-frame}{HTML}{02b875}
+\definecolor{quarto-callout-caution-color-frame}{HTML}{fd7e14}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Plan for Ethical and Trustworthy Design of the STRATIF-AI project},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Plan for Ethical and Trustworthy Design of the STRATIF-AI
+project}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+\begin{center}
+\includegraphics[width=0.7\textwidth]{stratifai_logo.png}    
+\end{center}
+
+\hrule
+\vspace{0.2cm}
+
+\begin{center}
+\huge \textbf{Deliverable}
+\end{center}
+
+\begin{center}
+\Large D3.2 Ethical Plan
+\end{center}
+
+\vspace{0.2cm}
+\hrule
+
+\vspace{0.2cm}
+
+\large \noindent Project Acronym: \textbf{STRATIF-AI}  
+
+\vspace{0.2cm}
+
+\large \noindent Project Title: \textbf{Continuous stratification for improved prevention, treatment, and rehabilitation of stroke patients using digital twins and AI}  
+
+\vspace{0.2cm}
+
+\large \noindent Grant Agreement Number: \textbf{101080875} 
+
+\vspace{0.2cm}
+
+\begin{wrapfigure}{l}{0.25\textwidth}
+  \includegraphics[width=0.25\textwidth]{EU_flag.jpg}
+\end{wrapfigure}
+
+\noindent \newline \newline \small This project has received funding from the European Union’s Horizon 2022 programme under Grant Agreement No. 101080875
+
+\vspace{0.2cm}
+
+\begin{table}[b]
+\begin{tabular}{llllll}
+\textbf{Authors and Contributors}             & \multicolumn{4}{l}{Riana Minocher (CUB); Vince I. Madai (CUB)}                                                         \\ 
+                                              & \multicolumn{2}{l}{Riana Minocher} & \textbf{Email:}  &  riana.minocher@bih-charite.de  \\ 
+\multirow{-2}{*}{\textbf{Responsible Author}} & \textbf{Beneficiary}              & CUB       &                  &  \\ \hline
+                                              & \textbf{Work Package}   & 3   & \textbf{Deliverable}              & D3.2 Ethical Plan \\ 
+                                              & \cellcolor[HTML]{D0CECE}\textbf{} & \cellcolor[HTML]{D0CECE} & \cellcolor[HTML]{D0CECE}\textbf{} & \cellcolor[HTML]{D0CECE}                                      \\
+\multirow{-3}{*}{Work package information}    & \multicolumn{3}{l}{Dissemination Level}                                                          & Public                           
+\end{tabular}
+\end{table}
+
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, interior hidden, borderline west={3pt}{0pt}{shadecolor}, enhanced, sharp corners, boxrule=0pt, frame hidden]}{\end{tcolorbox}}\fi
+
+\renewcommand*\contentsname{Table of contents}
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\bookmarksetup{startatroot}
+
+\hypertarget{overview}{%
+\chapter*{Overview}\label{overview}}
+
+\markboth{Overview}{Overview}
+
+The application of artificial intelligence (AI) in healthcare poses
+ethical risks. Dedicated efforts are essential to ensure that AI systems
+in healthcare adhere to principles of lawfulness, ethics, and
+robustness. We have developed a plan which outlines steps to mitigate
+ethical risks and increase trustworthiness throughout the lifecycle of
+the STRATIF-AI project. We draw on interdisciplinary expertise and align
+our approach with three core strategies:
+
+\textbf{(1) Operationalization:} Existing guidelines for AI development
+often provide broad, high-level principles, which are suitable for a
+wide range of AI systems. High-level principles must be translated to
+actionable steps that are tailored to the specific traits of individual
+AI systems. Our approach is designed to ensure that ethical principles
+do not remain theoretical concepts---but are instead effectively
+embedded into the design, implementation, and continuous management of
+the STRATIF-AI system.
+
+\textbf{(2) Co-creation:} We have adopted a co-creation process to
+ensure equitable development of solutions. The content for this manual
+has been developed in collaboration with key stakeholders within the
+STRATIF-AI project, including clinicians, data scientists, medical
+researchers, representatives from patient organizations, and project
+coordinators. Engaging diverse stakeholders allows us to thoroughly
+assess the risks and benefits associated with specific requirements. The
+collaborative process fosters the creation of ethical requirements that
+are not only necessary and feasible but also auditable, thus
+contributing to the overall integrity and reliability of the STRATIF-AI
+system.
+
+\textbf{(3) Anticipation:} The STRATIF-AI project introduces several
+novel technological solutions. Novel challenges may fall outside the
+scope of existing ethical guidelines, and may thus be difficult to
+address by simply adhering to current regulations or previously
+published frameworks. To help mitigate novel ethical risks, we pay close
+attention in our workshops and research to issues or concerns relevant
+to digital twins in healthcare which may be yet unprecedented.
+
+Overall, our ethical plan has been designed to facilitate the early
+identification of potential ethical risks of the STRATIF-AI project and
+ultimately enhance the system's trustworthiness and societal impact.
+
+\bookmarksetup{startatroot}
+
+\hypertarget{overview-1}{%
+\chapter*{Overview}\label{overview-1}}
+\addcontentsline{toc}{chapter}{Overview}
+
+\markboth{Overview}{Overview}
+
+The application of artificial intelligence (AI) in healthcare poses
+ethical risks. Dedicated efforts are essential to ensure that AI systems
+in healthcare adhere to principles of lawfulness, ethics, and
+robustness. We have developed a plan which outlines steps to mitigate
+ethical risks and increase trustworthiness throughout the lifecycle of
+the STRATIF-AI project. We draw on interdisciplinary expertise and align
+our approach with three core strategies:
+
+\textbf{(1) Operationalization:} Existing guidelines for AI development
+often provide broad, high-level principles, which are suitable for a
+wide range of AI systems. High-level principles must be translated to
+actionable steps that are tailored to the specific traits of individual
+AI systems. Our approach is designed to ensure that ethical principles
+do not remain theoretical concepts---but are instead effectively
+embedded into the design, implementation, and continuous management of
+the STRATIF-AI system.
+
+\textbf{(2) Co-creation:} We have adopted a co-creation process to
+ensure equitable development of solutions. The content for this manual
+has been developed in collaboration with key stakeholders within the
+STRATIF-AI project, including clinicians, data scientists, medical
+researchers, representatives from patient organizations, and project
+coordinators. Engaging diverse stakeholders allows us to thoroughly
+assess the risks and benefits associated with specific requirements. The
+collaborative process fosters the creation of ethical requirements that
+are not only necessary and feasible but also auditable, thus
+contributing to the overall integrity and reliability of the STRATIF-AI
+system.
+
+\textbf{(3) Anticipation:} The STRATIF-AI project introduces several
+novel technological solutions. Novel challenges may fall outside the
+scope of existing ethical guidelines, and may thus be difficult to
+address by simply adhering to current regulations or previously
+published frameworks. To help mitigate novel ethical risks, we pay close
+attention in our workshops and research to issues or concerns relevant
+to digital twins in healthcare which may be yet unprecedented.
+
+Overall, our ethical plan has been designed to facilitate the early
+identification of potential ethical risks of the STRATIF-AI project and
+ultimately enhance the system's trustworthiness and societal impact.
+
+\bookmarksetup{startatroot}
+
+\hypertarget{framework}{%
+\chapter*{Framework}\label{framework}}
+\addcontentsline{toc}{chapter}{Framework}
+
+\markboth{Framework}{Framework}
+
+The goal of the framework is to enumerate project-specific requirements
+that can help to mitigate ethical risks and increase trustworthiness
+throughout the STRATIF-AI development process.
+
+\hypertarget{design-and-use}{%
+\section*{Design and Use}\label{design-and-use}}
+\addcontentsline{toc}{section}{Design and Use}
+
+\markright{Design and Use}
+
+Our framework has been designed to be a living document, and, as such,
+will be revised following upcoming workshops, audits, and through
+external validation.
+
+The contents of the first version of the framework were developed based
+on a series of co-creation workshops (see:
+\protect\hyperlink{co-creation-workshops}{Workshops}).
+
+Planned updates to the framework will follow \textbf{(1) a focused
+stakeholder workshop series}, \textbf{(2) upcoming audits} of current
+framework adherence and \textbf{(3) an external Z-inspection} of the AI
+system.
+
+\textbf{(1) A focused stakeholder workshop series} will be conducted to
+complete the requirements outlined in this document. More specifically,
+some requirements have been planned according to the current expertise,
+knowledge, and timeline, but still lack specific information about
+parameters, methods, key personnel or planned output. These details will
+be completed in an iterative process during the forthcoming workshop
+series.
+
+\textbf{(2) Audits} are planned at five time points during the project,
+at 6-month increments, to assess adherence to the framework, nominate
+potential challenges, and suggest changes to resolve issues.
+
+\textbf{(3) An external Z-inspection} will be conducted to assess the
+trustworthiness of the STRATIF-AI platform. Z-inspection is a published
+and validated gold standard method by which external experts use
+sociotechnical scenarios to derive AI trustworthiness requirements. The
+results of the Z-inspection process will be integrated into the
+framework.
+
+\hypertarget{regulatory-context}{%
+\section*{Regulatory Context}\label{regulatory-context}}
+\addcontentsline{toc}{section}{Regulatory Context}
+
+\markright{Regulatory Context}
+
+The Framework for Ethical and Trustworthy Design of the STRATIF-AI
+platform has been designed in concordance with the (1)
+\href{https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai}{\textbf{EU
+Guidelines for Trustworthy AI}} and (2)
+\href{https://digital-strategy.ec.europa.eu/en/library/assessment-list-trustworthy-artificial-intelligence-altai-self-assessment}{\textbf{Assessment
+List for Trustworthy Artificial Intelligence (ALTAI)}}.
+
+\textbf{The EU Guidelines for Trustworthy AI} were developed on 8 April
+2019 by the High-Level Expert Group on Artificial Intelligence (AI
+HLEG). The guidelines aim to promote three key principles to support the
+development and deployment of safe AI systems---i.e., lawfulness, ethics
+and robustness. The principles are expounded as seven key requirements
+(Figure 1).
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.6\textwidth,height=\textheight]{eu_req.jpg}
+
+}
+
+\caption{EU Guidelines for Trustworthy AI. source:
+\href{https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai}{AI
+HLEG}}
+
+\end{figure}
+
+\textbf{The Assessment List for Trustworthy Artificial Intelligence
+(ALTAI)} was derived on 17 July 2020 by the High-Level Expert Group on
+Artificial Intelligence (AI HLEG), to aid AI developers in implementing
+regulatory requirements in practice. This tool serves as a practical
+instrument for assessing the compliance of AI systems with the current
+legal and ethical framework.
+
+\hypertarget{structure}{%
+\section*{Structure}\label{structure}}
+\addcontentsline{toc}{section}{Structure}
+
+\markright{Structure}
+
+Our framework is divided into seven sections, each corresponding to one
+of seven requirements set forth by the EU Guidelines for Trustworthy AI:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \protect\hyperlink{human-agency-and-oversight}{Human Agency and
+  Oversight}
+\item
+  \protect\hyperlink{technical-robustness-and-safety}{Technical
+  Robustness and Safety}
+\item
+  \protect\hyperlink{privacy-and-data-governance}{Privacy and Data
+  Governance}
+\item
+  \protect\hyperlink{transparency}{Transparency}
+\item
+  \protect\hyperlink{diversity-non-discrimination-and-fairness}{Diversity,
+  non-discrimination, and Fairness}
+\item
+  \protect\hyperlink{societal-and-environmental-well-being}{Societal and
+  Environmental Wellbeing}
+\item
+  \protect\hyperlink{accountability}{Accountability}
+\end{enumerate}
+
+Under each section, we provide a preliminary assessment of the
+STRATIF-AI platform following the questions included in the Assessment
+List for Trustworthy AI (ALTAI) checklist.
+
+We then describe a set of project-specific requirements. Under each
+project-specific requirement, we outline a set of relevant information
+that is either planned or \emph{requires revision.}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, breakable, coltitle=black, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, toprule=.15mm, left=2mm, bottomrule=.15mm, opacitybacktitle=0.6, titlerule=0mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, bottomtitle=1mm, colframe=quarto-callout-note-color-frame, leftrule=.75mm, rightrule=.15mm]
+
+Under each requirement, we delineate information that requires revision
+and will be updated following workshops/audits in \emph{italic text}.
+
+\end{tcolorbox}
+
+\hypertarget{requirement-template}{%
+\subsection*{Requirement Template}\label{requirement-template}}
+\addcontentsline{toc}{subsection}{Requirement Template}
+
+\textbf{Description} We describe each requirement briefly and nominate
+specific \textbf{\emph{parameters}} which need to be expounded or
+addressed.
+
+\textbf{\emph{parameters:}} We identify specific parameters within each
+requirement. These parameters help to add precision to the attribute,
+goal, or entity described by the parameter word.
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, breakable, coltitle=black, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, toprule=.15mm, left=2mm, bottomrule=.15mm, opacitybacktitle=0.6, titlerule=0mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, bottomtitle=1mm, colframe=quarto-callout-note-color-frame, leftrule=.75mm, rightrule=.15mm]
+
+When a parameter has been defined, it is delineated by plain text. If a
+parameter is yet to be defined, we provide \emph{prompts which will help
+to define parameters in future workshops, which are delineated by italic
+text}.
+
+\end{tcolorbox}
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  Each requirement has an ``Owner'', who is responsible for its
+  implementation.
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  Several stakeholders may serve as key personnel to contribute to or
+  facilitate progress towards this requirement. Named personnel are
+  \emph{TBD} and will be identified in upcoming workshops.
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, breakable, coltitle=black, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, toprule=.15mm, left=2mm, bottomrule=.15mm, opacitybacktitle=0.6, titlerule=0mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, bottomtitle=1mm, colframe=quarto-callout-note-color-frame, leftrule=.75mm, rightrule=.15mm]
+
+Some information will need to be completed in upcoming focused
+stakeholder workshops and planned audits. We use \emph{TBD} (to be
+determined) to delineate information that needs to be addressed in
+workshops and audits.
+
+\end{tcolorbox}
+
+\textbf{Schedule} A preliminary schedule will be devised.
+
+\textbf{Stroke Phase} We identify whether this requirement pertains to
+all phases of stroke (prevention, acute treatment, rehabilitation) that
+the STRATIF-AI tool intends to treat.
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  Here we list a set of tasks
+\item
+  Which will be executed
+\item
+  In order to successfully meet this requirement
+\item
+  These lists will be updated in subsequent audits
+\end{itemize}
+
+\hypertarget{requirement-example}{%
+\subsection*{Requirement Example}\label{requirement-example}}
+\addcontentsline{toc}{subsection}{Requirement Example}
+
+\textbf{Description} Explainability materials will be
+\textbf{\emph{customized}} for specific \textbf{\emph{end-users}}.
+
+\textbf{\emph{end-users:}} patients; medical professionals\\
+\textbf{\emph{customized:}} available in video format; available in
+written format
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, breakable, coltitle=black, toptitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, left=2mm, bottomrule=.15mm, opacitybacktitle=0.6, titlerule=0mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, bottomtitle=1mm, colframe=quarto-callout-tip-color-frame, leftrule=.75mm, rightrule=.15mm]
+
+``End-user'' could refer to a variety of entities---e.g., patients or
+medical professionals. Parameterizing attributes, goals, or entities
+mentioned in requirements helps to make the requirement more flexible,
+less ambiguous, and easier to implement.
+
+\end{tcolorbox}
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP3
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  WP2
+\item
+  WP1
+\item
+  technical staff \emph{TBD}
+\item
+  modelling staff \emph{TBD}
+\item
+  medical staff \emph{TBD}
+\item
+  patient representatives \emph{TBD}
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, breakable, coltitle=black, toptitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, left=2mm, bottomrule=.15mm, opacitybacktitle=0.6, titlerule=0mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, bottomtitle=1mm, colframe=quarto-callout-tip-color-frame, leftrule=.75mm, rightrule=.15mm]
+
+To complete this requirement, we will require input from modellers/WP2,
+data scientists/WP1, as well as feedback from end-users---clinicians and
+patients.\emph{TBD} denotes that key personnel will need to be named
+(``to be determined'') in upcoming workshops and audits.
+
+\end{tcolorbox}
+
+\textbf{Schedule} At any point, before the end of the project.
+
+\textbf{Stroke Phase} EACH (3)
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, breakable, coltitle=black, toptitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, left=2mm, bottomrule=.15mm, opacitybacktitle=0.6, titlerule=0mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, bottomtitle=1mm, colframe=quarto-callout-tip-color-frame, leftrule=.75mm, rightrule=.15mm]
+
+This requirement will need to be addressed for all intended use-cases of
+the STRATIF-AI platform. This means that the tasks necessary to complete
+the requirement, and the planned output (here: video/written material),
+should be completed each for patients at risk of stroke (prevention
+phase), patients with stroke (acute phase), and patients recovering from
+stroke (rehabilitation phase).
+
+\end{tcolorbox}
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  create prototype for explainability
+\item
+  feedback from WP1/WP2/technical staff
+\item
+  update prototype
+\item
+  translate for different end-users
+\item
+  feedback from end-users
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{co-creation-workshops}{%
+\chapter*{Co-creation Workshops}\label{co-creation-workshops}}
+\addcontentsline{toc}{chapter}{Co-creation Workshops}
+
+\markboth{Co-creation Workshops}{Co-creation Workshops}
+
+\hypertarget{overview-2}{%
+\section*{Overview}\label{overview-2}}
+\addcontentsline{toc}{section}{Overview}
+
+\markright{Overview}
+
+A series of workshops were conducted with STRATIF-AI consortium members
+to define issues, requirements, and solutions regarding the design of an
+ethical and trustworthy AI system. The workshops were designed following
+feedback from a similar program, which was developed for the EU Horizon
+project ``VALIDATE'' and executed in 2023.
+
+\hypertarget{schedule-and-participants}{%
+\section*{Schedule and participants}\label{schedule-and-participants}}
+\addcontentsline{toc}{section}{Schedule and participants}
+
+\markright{Schedule and participants}
+
+Workshops were conducted in March 2024 and comprised a diversity of
+participants from within the STRATIF-AI consortium. The planned duration
+of each workshop was 3.5 hours; the final workshop duration was between
+3 and 3.5 hours. All workshops, with the exception of the first, were
+facilitated by Riana Minocher (CUB). The first workshop was facilitated
+by Riana Minocher (CUB) with assistance from Gabriele Pluktaite (CUB).
+All consortium members who are subscribed to the STRATIF-AI email list
+were invited to register their participation via a Google form.
+
+\hypertarget{date-conducted-and-number-of-participants}{%
+\subsubsection*{Date conducted and number of
+participants}\label{date-conducted-and-number-of-participants}}
+\addcontentsline{toc}{subsubsection}{Date conducted and number of
+participants}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Workshop number & Date conducted & Number of participants \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & 05.03.2024 & 6 \\
+2 & 13.03.2024 & 4 \\
+3 & 20.03.2024 & 4 \\
+4 & 27.03.2024 & 2 \\
+\end{longtable}
+
+\hypertarget{details-about-participants-in-workshops}{%
+\subsubsection*{Details about participants in
+Workshops}\label{details-about-participants-in-workshops}}
+\addcontentsline{toc}{subsubsection}{Details about participants in
+Workshops}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1977}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2442}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5581}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Workshop number
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Beneficiary
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Position
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & TREE & Data scientist \\
+1 & TUD & ML scientist \\
+1 & Z2 & Data expert \\
+1 & FINCB & Clinician \\
+1 & FINCB & Clinician \\
+1 & LIU (ext) & Prevention expert \\
+2 & FINCB & Psychologist \\
+2 & BREST & Clinician \\
+2 & UM & Data scientist \\
+2 & RV & Simulation scientist \\
+3 & GUT & Rehab physician \\
+3 & & Clinician \\
+3 & SHE & Project manager \\
+3 & SPF & Implementation strategist \\
+4 & TUD & Data scientist \\
+4 & GUT & Rehabilitation therapist \\
+\end{longtable}
+
+\hypertarget{methodology}{%
+\section*{Methodology}\label{methodology}}
+\addcontentsline{toc}{section}{Methodology}
+
+\markright{Methodology}
+
+The first workshop functioned as a pilot session. Resources/exercises
+were modified following the first session to accommodate feedback from
+participants and informal reflections. Participants received an email
+the day before the workshop with information and instructions on how to
+participate. Workshops were conducted on Microsoft Teams. Mural was used
+to disseminate materials and facilitate note-taking during discussions.
+
+Each workshop was divided into three sections:
+
+\textbf{1. Introduction and warmup}:
+
+\begin{itemize}
+\tightlist
+\item
+  Introduction by facilitator to list workshop goals and overview
+\item
+  Participant introductions using sticky-notes in Mural
+\item
+  Creativity game: to warm up and practice using Mural
+\end{itemize}
+
+\textbf{2. Understand concepts}:
+
+\begin{itemize}
+\tightlist
+\item
+  Free-list in answer to prompt ``What ethical concerns come to mind
+  when you think of STRATIF-AI?''
+\item
+  Discuss EU requirements meanings/associations
+\item
+  Map EU requirements to STRATIF-AI project workflow
+\end{itemize}
+
+\textbf{3. Define concrete requirements}:
+
+\begin{itemize}
+\tightlist
+\item
+  Demo of STRATIF-AI framework site
+\item
+  Discuss requirements/solutions within groups
+\end{itemize}
+
+The phase ``Understand concepts'' was intended to serve as a primer for
+participants about various ethical issues that have been defined by
+governing bodies, and to begin to think about how such issues might be
+related to the STRATIF-AI project. Exposure to requirements and
+terminology was deemed necessary to guide discussion in the phase
+``Define concrete requirements''. In this phase, participants were
+expected to highlight project-specific concerns, which may pertain to
+their expertise, interest or own personal health history.
+
+\hypertarget{output}{%
+\section*{Output}\label{output}}
+\addcontentsline{toc}{section}{Output}
+
+\markright{Output}
+
+\hypertarget{general-reflections}{%
+\subsection*{General Reflections}\label{general-reflections}}
+\addcontentsline{toc}{subsection}{General Reflections}
+
+The workshops were generally well-received. In Workshop 1, participants
+discussed topics within their expertise with enthusiasm, but some noted
+the insufficient time to cover all possible content. The suggestion for
+follow-up workshops, which could be tailored to specific stakeholder
+roles, was made. Workshop 2 saw broad awareness of potential risks and
+discussion of potential abuse of AI within healthcare. Workshop 3 faced
+some technical challenges, due to difficulties with using Mural
+effectively, but this did not prevent a serious discussion about risks,
+roles and responsibilities. Finally, Workshop 4 engaged only two
+participants, but of complementary backgrounds, which fostered a
+detailed discussion about the trade-offs between data protection and
+model performance. Overall, the workshops provided valuable insights and
+highlighted the need for ongoing dialogue about ethical considerations
+within the STRATIF-AI project.
+
+\hypertarget{key-themes}{%
+\subsection*{Key Themes}\label{key-themes}}
+\addcontentsline{toc}{subsection}{Key Themes}
+
+Discussion during workshops highlighted several recurrent themes that
+appeared important to resolve. We summarize these below to help
+contextualize the content of different requirements within the Framework
+for Ethical and Trustworthy Design of the STRATIF-AI platform (See:
+\protect\hyperlink{framework}{Framework}).
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Data Ownership}: Participants discussed considerations
+  regarding data ownership, re-use, quality, and bias extensively. They
+  emphasized the importance of patient data control, particularly
+  regarding stewardship of data in the event of death or disability, the
+  potential to re-use data for studies, the process of obtaining
+  informed consent for data use, and the novel challenges presented by
+  the data harmonization and federated learning processes.
+\item
+  \textbf{Transparency}: A significant focus was placed on ensuring
+  transparency in AI systems to empower patients and clinicians, and
+  maintain their trust. Discussions highlighted the challenge of
+  effectively conveying the meaning behind technical terms such as
+  ``prediction uncertainty'' to citizens. Similarly, the challenge of
+  developing transparent models which are accessible to clinicians and
+  patients of varying goals and experience was discussed.
+\item
+  \textbf{Patient Empowerment}: Discussion in workshops underscored the
+  importance of patient empowerment in the AI-driven healthcare
+  landscape. Participants emphasized the need for patients to have
+  control over their data, and for AI systems to provide understandable
+  and actionable insights to empower informed decision-making. The need
+  to communicate insights without causing harm to mental or emotional
+  wellbeing was identified.
+\item
+  \textbf{Personalized Prevention}: Participants emphasized the
+  significance of a user-centric approach, especially in tailoring
+  prevention programs to diversity of end-users. In addition to
+  fostering patient control, physicians should also have autonomy over
+  the type of model and outcome used to make predictions. The potential
+  benefits of personalized health coaching through digital twins were
+  also discussed as potentially driving behavioral change and
+  contributing to broader societal wellbeing.
+\item
+  \textbf{A Common Language for Health}: Several participants raised the
+  importance of integrating discussions across diverse stakeholder
+  groups and defining a common language for health. Addressing
+  disparities in health literacy and ensuring equitable distribution of
+  AI platforms across communities were highlighted as key
+  considerations.
+\end{enumerate}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{human-agency-and-oversight}{%
+\chapter{Human Agency and Oversight}\label{human-agency-and-oversight}}
+
+Respect for human autonomy encompasses respect for a democratic,
+flourishing, and equitable society. This involves the prioritization of
+user agency and necessitating human oversight of the AI system. This
+requirement is particularly important for AI systems which guide or
+influence human decision-making---and is thus of central importance to
+the STRATIF-AI project.
+
+\textbf{Definitions:} human-in-the-loop (HITL): capability for human
+intervention in every decision cycle of the system human-on-the-loop
+(HOTL): capability for human intervention during the design cycle of the
+system and monitoring the system's operation human-in-command (HIC):
+capability to oversee the overall activity of the AI system (including
+its broader economic, societal, legal and ethical impact) and the
+ability to decide when and how to use the AI system in any particular
+situation---e.g., override decision or discontinue use
+
+\hypertarget{human-agency-and-autonomy}{%
+\section{Human agency and autonomy}\label{human-agency-and-autonomy}}
+
+\hypertarget{altai-assessment}{%
+\subsection*{ALTAI assessment}\label{altai-assessment}}
+\addcontentsline{toc}{subsection}{ALTAI assessment}
+
+STRATIF-AI is intended to guide decisions made by human
+end-users---i.e., both doctors and patients---, and these decisions are
+in turn projected to impact the decisions of end-users (patients' health
+and autonomy, as well as doctors' autonomy) and society in general. To
+ensure STRATIF-AI does not generate confusion about the extent the
+allocation of epistemic authority, a plan to disseminate information in
+an accessible manner to a diversity of end-users will be necessary. The
+risk of interpretation of a digital twin as a human rather than AI
+system is potentially low, but a risk assessment needs to be made to
+rule out this possibility. The risk of addiction or unhealthy attachment
+to the system are again deemed low, but measures to mitigate or minimize
+the risk of such activities need to be developed. The risk of
+manipulation needs to be investigated.
+
+\hypertarget{define-epistemic-authority}{%
+\subsection{Define epistemic
+authority}\label{define-epistemic-authority}}
+
+\textbf{Description} In the events where there is a
+\textbf{\emph{discrepancy}} between the predictions of the tool and the
+medical opinion of the doctor, a process protocol for epistemic
+authority dilemmas customized for \textbf{\emph{physician expertise
+level}} must be described.
+
+\textbf{\emph{discrepancy:}} difference in recommended course of
+treatment; difference in output \emph{from existing medical device};\\
+\textbf{\emph{physician expertise level:}} early; proficient; expert
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP4
+\item
+  WP5
+\item
+  WP6
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  WP3
+\item
+  medical staff \emph{TBD}
+\item
+  design staff \emph{TBD}
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define discrepancy
+\item
+  clarify if comparison of AI and clinician will be conducted in
+  clinical study
+\item
+  pilot study quantify discrepancy
+\item
+  assess discrepancy
+\item
+  prepare process protocol outline
+\item
+  define physician expertise levels
+\item
+  completion of process protocol
+\item
+  feedback from medical staff
+\item
+  publication/research design about epistemic authority
+\end{itemize}
+
+\hypertarget{explain-model-output}{%
+\subsection{Explain model output}\label{explain-model-output}}
+
+\textbf{Description} A \textbf{\emph{methodology}} for measuring and
+communicating \textbf{\emph{model output}} to \textbf{\emph{end-users}}
+must be established and \textbf{\emph{validated}}.
+
+\textbf{\emph{valid methodology:}} \emph{set of ways in which
+predictions will be shown in platform}\\
+\textbf{\emph{model output:}} \emph{e.g.~behavioural recommendations,
+biomarkers, simulations}\\
+\textbf{\emph{end-users}}: medical professionals, patients\\
+\textbf{\emph{validated:}} validated in clinical setting; validated in
+external clinical setting; validated through feedback from experts
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP2
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  medical staff (TBD)
+\item
+  technical staff
+\item
+  design staff
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define methods to communicate prediction interval
+\item
+  validation of methods
+\item
+  feedback from medical staff
+\item
+  feedback from patients and patient representatives
+\item
+  development of front-end communication for patients with specific
+  conditions, age, education
+\item
+  publication of validation and methodology
+\end{itemize}
+
+\hypertarget{foster-patient-autonomy}{%
+\subsection{Foster patient autonomy}\label{foster-patient-autonomy}}
+
+\textbf{Description} A standardized \textbf{\emph{procedure}} for
+explaining \textbf{\emph{risks}} customized for patient
+\textbf{\emph{subgroups}} must be designed.
+
+\textbf{\emph{procedure:}} video; written material; training protocol
+for medical staff;\\
+\textbf{\emph{risks:}} procedures for epistemic authority; HIC
+governance structure; AI system overview\\
+\textbf{\emph{subgroups:}} \emph{speaking different languages; different
+education levels; different age groups; degree of disability}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP7
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  patient representatives
+\item
+  technical staff (TBD)
+\item
+  design staff (TBD)
+\end{itemize}
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  draft documentation
+\item
+  feedback from patients/patient representatives
+\item
+  translation of documentation
+\item
+  adaptation in simple and complex format
+\item
+  adaptation for youth
+\item
+  adaptation for visually impaired
+\item
+  adaptation for mentally impaired
+\item
+  assessment by disability experts
+\item
+  additional feedback from patients/patient representatives
+\end{itemize}
+
+\hypertarget{establish-degree-of-trust}{%
+\subsection{Establish degree of trust}\label{establish-degree-of-trust}}
+
+\textbf{Description} Degree of \textbf{\emph{trust}} in the STRATIF-AI
+platform, determined by \textbf{\emph{end-users}}, will be assessed.
+
+\textbf{\emph{trust:}} \emph{TBD; operational definitions of trust}\\
+\textbf{\emph{end-users:}} medical professionals; patients with stroke;
+patients at risk of stroke; patients without stroke
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} ALL
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP3
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  patient representatives
+\item
+  medical staff
+\end{itemize}
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define degrees of trust or conception of trust
+\item
+  design questionnaire/interview to survey trust of system
+\item
+  pre-register survey
+\item
+  execute survey with key personnel
+\item
+  report outcomes
+\item
+  translate outcomes for end-users in platform
+\item
+  disseminate outcomes in STRATIF-AI pilot studies and solicit feedback
+\item
+  publication on trust in digital twins
+\end{itemize}
+
+\hypertarget{human-oversight}{%
+\section{Human oversight}\label{human-oversight}}
+
+\hypertarget{altai-assessment-1}{%
+\subsection*{ALTAI assessment}\label{altai-assessment-1}}
+\addcontentsline{toc}{subsection}{ALTAI assessment}
+
+STRATIF-AI will be constructed as a Human-in-Command system. Medical
+professionals will be trained to exercise oversight according to a
+process protocol that has been validated. A system to detect and report
+misuse or adverse effects of the system will be implemented, and
+autonomy in predictions needs to be specified to ensure human oversight
+of the type of prediction generated.
+
+\hypertarget{establish-hic-governance}{%
+\subsection{Establish HIC governance}\label{establish-hic-governance}}
+
+\textbf{Description} Tool is designed with \textbf{\emph{capabilities}}
+to enable a Human in Command (HIC) governance structure.
+
+\textbf{\emph{capbilities}}: oversee the overall activity of the AI
+system; ability to decide whether, when and how to use the system in any
+particular situation; ability to override a decision made by a system
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP3
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  WP7
+\item
+  design staff \emph{TBD}
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} ALL
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  create governance structure draft
+\item
+  disseminate structure
+\item
+  feedback from medical staff and implementation staff
+\item
+  publication/research design about epistemic authority
+\end{itemize}
+
+\hypertarget{institute-reporting-feedback-loop}{%
+\subsection{Institute reporting feedback
+loop}\label{institute-reporting-feedback-loop}}
+
+\textbf{Description} A system for \textbf{\emph{end-users}} to make
+reports about \textbf{\emph{discrepancies}} should be established within
+the platform and \textbf{\emph{periodically}} be evaluated.
+
+\textbf{\emph{end-users:}} medical professionals, patients\\
+\textbf{\emph{discrepancies:}} disagreement between system
+recommendation and end-user decision; end-user discomfort with system
+recommendation; indication of errors\\
+\textbf{\emph{periodically:}} \emph{TBD}
+
+\textbf{Stroke Phase} ALL
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP2
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  design staff
+\item
+  technical staff
+\end{itemize}
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  determine evaluation schedule
+\item
+  design and validate system
+\end{itemize}
+
+\hypertarget{manage-patient-expectations}{%
+\subsection{Manage patient
+expectations}\label{manage-patient-expectations}}
+
+\textbf{Description} In the events where there is a
+\textbf{\emph{discrepancy}} between the predictions of the tool and the
+perspective or opinion of the patient, a process protocol for managing
+expectations, customized for patients of different
+\textbf{\emph{subgroups}} must be described.
+
+\textbf{\emph{discrepancy:}} \emph{acceptable threshold for difference
+based on previously defined discrepancy types}.
+\textbf{\emph{subgroups:}} \emph{stroke risk category; age groups;
+education levels; degree of disability}.
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP4
+\item
+  WP5
+\item
+  WP6
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  medical staff \emph{TBD}
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  completion of process protocol
+\item
+  report number of discrepancies
+\item
+  feedback on process protocol from medical staff
+\item
+  feedback on process protocol from patient representatives
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, breakable, coltitle=black, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, toprule=.15mm, left=2mm, bottomrule=.15mm, opacitybacktitle=0.6, titlerule=0mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, bottomtitle=1mm, colframe=quarto-callout-note-color-frame, leftrule=.75mm, rightrule=.15mm]
+
+This requirement is closely related to 1.1.1; 1.1.2; and 1.2.2.
+Requirement 1.2.2 will enable reporting discrepancies for patients, and
+the execution of 1.1.2 will inform the process protocol for this
+requiremnt.
+
+\end{tcolorbox}
+
+\hypertarget{enable-autonomy-of-end-users}{%
+\subsection{Enable autonomy of
+end-users}\label{enable-autonomy-of-end-users}}
+
+\textbf{Description} \textbf{\emph{End-users}} should have sufficient
+control over platform \textbf{\emph{parameters}} to foster independent
+use and trust in the system predictions.
+
+\textbf{\emph{end-users:}} medical staff, patients\\
+\textbf{\emph{parameters:}} predictive model type; stroke type;
+\emph{data to be used for predictions; data to be ommitted for
+predictions;}
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP2
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  medical staff \emph{TBD}
+\item
+  technical staff \emph{TBD}
+\item
+  design staff \emph{TBD}
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  determine parameters which can be controlled at end-use
+\item
+  design interface to select parameters
+\item
+  feedback from medical staff
+\item
+  feedback from patients
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{technical-robustness-and-safety}{%
+\chapter{Technical Robustness and
+Safety}\label{technical-robustness-and-safety}}
+
+AI systems must be technically robust to prevent harm, unintentional or
+otherwise, to human dignity, mental and physical integrity. The system
+must be guard against vulnerability to attack by third parties which
+could compromise its integrity or alter its behaviour. Safety procedures
+to enact in the event of errors or risks must be instituted. The
+accuracy of the system is of critical importance where the case for
+AI-assisted medical decision-making. Finally, reproducibility and
+reliability help to ensure that the performance and behaviour of AI
+system can be critically assessed.
+
+\hypertarget{resilience-to-attack-and-security}{%
+\section{Resilience to attack and
+security}\label{resilience-to-attack-and-security}}
+
+\hypertarget{altai-assessment-2}{%
+\subsection*{ALTAI Assessment}\label{altai-assessment-2}}
+\addcontentsline{toc}{subsection}{ALTAI Assessment}
+
+In the event of technical faults, misuse or defect, STRATIF-AI could
+have damaging effects to human safety. The risk of vulnerability to
+cyber-attacks will be evaluated to ensure the system is made compliant
+with security standards under the Cybersecurity Act in Europe.
+Vulnerability to data poisoning, model evasion, model inversion will be
+addressed throughout model validation and testing. Measures to ensure
+robustness to attacks after the system has been deployed will be
+designed. The expected timeframe of validity for security measures need
+to be defined.
+
+\hypertarget{define-risks-of-federated-learning}{%
+\subsection{Define risks of Federated
+Learning}\label{define-risks-of-federated-learning}}
+
+\textbf{Description} Measures to assess whether federated learning
+exposes patients to \textbf{\emph{risks}} must be established, assessed
+and reported.
+
+\textbf{\emph{risks:}} model inversion (information in parameters to
+reconstruct data); data leakage; data poisoning
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP1
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  technical staff \emph{TBD}
+\end{itemize}
+
+\textbf{Schedule} During model training.
+
+\textbf{Stroke Phase} ALL
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define list of risks and parties
+\item
+  document measures to assess risks
+\item
+  verify metrics are sufficient to dissuade concerns about vulnerability
+\item
+  publish validation study
+\end{itemize}
+
+\hypertarget{comply-with-cybersecurity-law}{%
+\subsection{Comply with cybersecurity
+law}\label{comply-with-cybersecurity-law}}
+
+\textbf{Description} The system must be made compliant with the
+\textbf{\emph{relevant cybersecurity norms and legislation}}.
+
+\textbf{\emph{relevant cybersecurity norms and legislation}}: EU;
+country-specific; global
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP7
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  technical staff \emph{TBD}
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} ALL
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define relevant legislation/ compliance categories
+\end{itemize}
+
+\hypertarget{establish-emergency-protocols}{%
+\subsection{Establish emergency
+protocols}\label{establish-emergency-protocols}}
+
+\textbf{Description} In the event of a breach to security, a process
+protocol based on the \textbf{\emph{severity}} and \textbf{\emph{type}}
+of attack must be followed.
+
+\textbf{\emph{severity:}} \emph{TBD define metrics to measure security
+breach, and scale of severity}\\
+\textbf{\emph{type:}} data poisoning; model evasion; \emph{TBD define
+types}
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP2
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  technical staff \emph{TBD}
+\item
+  WP7
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} ALL
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define severity levels for attack
+\item
+  define parameters for process protocols
+\item
+  external validation of process protocols
+\end{itemize}
+
+\hypertarget{general-safety}{%
+\section{General safety}\label{general-safety}}
+
+\hypertarget{altai-assessment-3}{%
+\subsection*{ALTAI Assessment}\label{altai-assessment-3}}
+\addcontentsline{toc}{subsection}{ALTAI Assessment}
+
+The risks associated with the AI system for each use-case will be
+assessed through pilot and clinical studies. Procedures to continuously
+measure and access risks will be devised, validated and implemented. A
+plan to inform end-users of existing and potential risks will be made.
+STRATIF-AI is a novel concept and technology; possible threats and
+vulnerability to misuse should additionally be explored through
+additional research. Stability and reliability of the system will
+continually be assessed throughout model development. A plan to
+regularly evaluate the system, upon changes to technical infrastructure,
+will also be devised.
+
+\hypertarget{assess-risk-of-use}{%
+\subsection{Assess risk of use}\label{assess-risk-of-use}}
+
+\textbf{Description} An independent \textbf{\emph{risk assessment}} of
+use of the STRATIF-AI platform for different \textbf{\emph{end-users}}
+must be carried out.
+
+\textbf{\emph{risk assessment:}} \emph{a standardized risk assessment
+must be designed}\\
+\textbf{\emph{end-users:}} patients; patients with stroke; patients at
+risk of stroke; patients without stroke; \emph{language; education; age;
+disability; medical professionals; doctors; physiotherapists;
+psychologists; care-workers; proficiency-levels; learner; proficient;
+expert}
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP4
+\item
+  WP5
+\item
+  WP6
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  medical staff \emph{TBD}
+\item
+  patients/patient representatives \emph{TBD}
+\item
+  WP3
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define end-users and risk assessment framework
+\item
+  develop protocol for clinical study/pilot study
+\item
+  conduct risk assessment
+\item
+  publish risk assessment
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, breakable, coltitle=black, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, toprule=.15mm, left=2mm, bottomrule=.15mm, opacitybacktitle=0.6, titlerule=0mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, bottomtitle=1mm, colframe=quarto-callout-note-color-frame, leftrule=.75mm, rightrule=.15mm]
+
+This requirement will focus on creating a general risk assessment for
+the tool. The requirement 2.1.1 is additionally necessary to
+specifically define the risks of data leakage or vulnerability to attack
+due to the Federated Learning process. Thus, requirement 2.1.1 will
+likely feed into the general risk assessment necessitated here.
+
+\end{tcolorbox}
+
+\hypertarget{implement-risk-assessment-feedback-loop}{%
+\subsection{Implement risk-assessment feedback
+loop}\label{implement-risk-assessment-feedback-loop}}
+
+\textbf{Description} A system to assess and report \textbf{\emph{risk}}
+customized for \textbf{\emph{end-users}} should be established within
+the platform and \textbf{\emph{periodically}} be evaluated.
+
+\textbf{\emph{risk:}} \emph{risks from risk asessment must be mapped;
+threat to safety; threat to validity; risk of misuse; issues with
+reliability;}\\
+\textbf{\emph{end-users:}} medical professionals; patients\\
+\textbf{\emph{periodically:}} \emph{TBD}
+
+\textbf{Stroke Phase} ALL
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP2
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  design staff
+\item
+  technical staff
+\item
+  WP3
+\end{itemize}
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  determine evaluation schedule
+\item
+  translate risk assessment risk types
+\item
+  define parameters
+\item
+  prototype
+\item
+  validate system
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, breakable, coltitle=black, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, toprule=.15mm, left=2mm, bottomrule=.15mm, opacitybacktitle=0.6, titlerule=0mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, bottomtitle=1mm, colframe=quarto-callout-note-color-frame, leftrule=.75mm, rightrule=.15mm]
+
+A system for feedback reporting, with both automated and non-automated
+components, must be designed and integrated into the STRATIF-AI
+platform, to address several requirements together, including this one.
+
+\end{tcolorbox}
+
+\hypertarget{communicate-risks-to-patients}{%
+\subsection{Communicate risks to
+patients}\label{communicate-risks-to-patients}}
+
+\textbf{Description} A standardized \textbf{\emph{procedure}} for
+explaining \textbf{\emph{risks}} of the system customized for patients
+of different \textbf{\emph{subgroups}} must be designed.
+
+\textbf{\emph{procedure:}} video; written material; training protocol
+for medical staff;\\
+\textbf{\emph{technical risks:}} \emph{to define risks for patients}\\
+\textbf{\emph{patients:}} language capabilities; educational experience;
+age groups; degree/type of disability;
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP7
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  patient representatives
+\item
+  technical staff \emph{TBD}
+\item
+  design staff \emph{TBD}
+\item
+  WP3
+\end{itemize}
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define technical risks
+\item
+  draft documentation
+\item
+  feedback from patients/patient representatives
+\item
+  translation of documentation
+\item
+  adaptation in simple and complex format
+\item
+  adaptation for youth
+\item
+  adaptation for visually impaired
+\item
+  adaptation for mentally impaired
+\item
+  assessment by disability experts
+\item
+  additional feedback from patients/patient representatives
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, breakable, coltitle=black, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, toprule=.15mm, left=2mm, bottomrule=.15mm, opacitybacktitle=0.6, titlerule=0mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, bottomtitle=1mm, colframe=quarto-callout-note-color-frame, leftrule=.75mm, rightrule=.15mm]
+
+To address several requirements, including this one, a comprehensive set
+of patient subgroups will need to be defined, which should include all
+potentially vulnerable or marginalized patient profiles.
+
+This requirement is closely related to requirement 1.1.3
+
+\end{tcolorbox}
+
+\hypertarget{derive-process-protocol-for-technical-updates}{%
+\subsection{Derive process protocol for technical
+updates}\label{derive-process-protocol-for-technical-updates}}
+
+\textbf{Description} A process protocol for assessing
+\textbf{\emph{system functions}} following \textbf{\emph{system
+updates}} should be designed and followed.
+
+\textbf{\emph{system functions:}} \emph{validity; risks to safety;
+precision; other metrics to assess system performance}\\
+\textbf{\emph{system updates:}} \emph{periodic changes, error reporting,
+feedback reporting}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} ALL
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP2
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  technical staff \emph{TBD}
+\item
+  design staff \emph{TBD}
+\end{itemize}
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define regular system function metrics
+\item
+  design process protocol
+\item
+  feedback from experts/ external review
+\item
+  dissemination of protocol
+\end{itemize}
+
+\hypertarget{accuracy}{%
+\section{Accuracy}\label{accuracy}}
+
+\hypertarget{altai-assessment-4}{%
+\subsection*{ALTAI Assessment}\label{altai-assessment-4}}
+\addcontentsline{toc}{subsection}{ALTAI Assessment}
+
+Effective and safe use of the STRATIF-AI platform hinges upon a high
+level of accuracy. Measures to ensure data is of high quality,
+representative, and continuously monitored for accuracy will be put in
+place. The external and internal validity of the system will be
+established and periodically reviewed. Levels of accuracy and validity
+established for the STRATIF-AI platform will clearly be communicated to
+end-users.
+
+\hypertarget{evaluate-data-accuracy-within-federated-learning}{%
+\subsection{Evaluate data accuracy within Federated
+Learning}\label{evaluate-data-accuracy-within-federated-learning}}
+
+\textbf{Description} The accuracy of the Federated Learning system under
+different \textbf{\emph{scenarios}} must be analyzed and monitored
+\textbf{\emph{periodically}}.
+
+\textbf{\emph{scenarios:}} \emph{missing data; data interoperability;
+heterogeneity of data; updates to data types}\\
+\textbf{\emph{periodically:}} \emph{TBD}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} ALL
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP1
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  technical staff \emph{TBD}
+\end{itemize}
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define scenarios to assess validity
+\item
+  define periodic intervals for assessment
+\item
+  design system
+\end{itemize}
+
+\hypertarget{evaluate-accuracy-of-model-predictions}{%
+\subsection{Evaluate accuracy of model
+predictions}\label{evaluate-accuracy-of-model-predictions}}
+
+\textbf{Description} The accuracy of the \textbf{\emph{model output}}
+under different \textbf{\emph{scenarios}} must be analyzed and monitored
+\textbf{\emph{periodically}}.
+
+\textbf{\emph{model output:}} \emph{prediction; biomarkers;
+simulations}\\
+\textbf{\emph{scenarios:}} \emph{missing data; data interoperability;
+heterogeneity of data; updates to data types}\\
+\textbf{\emph{periodically:}} \emph{TBD}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP2
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  technical staff \emph{TBD}
+\end{itemize}
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define scenarios to assess validity
+\item
+  define periodic intervals for assessment
+\item
+  design system
+\end{itemize}
+
+\hypertarget{establish-internal-validity}{%
+\subsection{Establish internal
+validity}\label{establish-internal-validity}}
+
+\textbf{Description} The behaviour of the tool, based on a set of core
+\textbf{\emph{performance metrics}} will not differ under different
+\textbf{\emph{data contexts}}.
+
+\textbf{\emph{performance metrics:}} \emph{sensitivity; specificity;
+area-under-curve; error reporting frequency}\\
+\textbf{\emph{data contexts:}} \emph{TBD; split of training data}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP2
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  technical staff (TBD)
+\item
+  WP3
+\item
+  patients/patient representatives
+\end{itemize}
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  verify whether this is planned in clinical studies
+\item
+  appoint key personnel
+\item
+  define performance metrics
+\item
+  define data contexts to assess
+\item
+  design study protocol
+\item
+  feedback from patient representatives
+\item
+  validate in pilot study
+\item
+  publish validation
+\end{itemize}
+
+\hypertarget{establish-external-validity}{%
+\subsection{Establish external
+validity}\label{establish-external-validity}}
+
+\textbf{Description} The \textbf{\emph{model output}} of should not
+differ across patient end-users of different \textbf{\emph{subgroups}}.
+
+\textbf{\emph{model output:}} \emph{prediction; biomarkers;
+simulations}\\
+\textbf{\emph{subgroups:}} \emph{patient subgroups; geography;
+ethnicity; gender; socio-economic background; health history;
+disability;}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP2
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  technical staff \emph{TBD}
+\item
+  WP3
+\item
+  WP7
+\item
+  patient representatives
+\end{itemize}
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define patient subgroups
+\item
+  define performance metrics
+\item
+  design study for external validation
+\item
+  feedback on study design
+\item
+  publication of external validity
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, breakable, coltitle=black, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, toprule=.15mm, left=2mm, bottomrule=.15mm, opacitybacktitle=0.6, titlerule=0mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, bottomtitle=1mm, colframe=quarto-callout-note-color-frame, leftrule=.75mm, rightrule=.15mm]
+
+The implementation of this requirement is closely related to several
+requirements under the section
+\protect\hyperlink{diversity-non-discrimination-and-fairness}{Diversity,
+non-discrimination and Fairness}.
+
+\end{tcolorbox}
+
+\hypertarget{reliability-and-reproducibility}{%
+\section{Reliability and
+reproducibility}\label{reliability-and-reproducibility}}
+
+\hypertarget{altai-assessment-5}{%
+\subsection*{ALTAI Assessment}\label{altai-assessment-5}}
+\addcontentsline{toc}{subsection}{ALTAI Assessment}
+
+Reliability and reproducibility will play a crucial role along the
+entire STRATIF-AI workflow. Reproducibility metrics will be defined and
+evaluated periodically. Methods of verification of
+reproducibility/reliability will clearly be documented. A procedure to
+track errors and trace their source will be developed. A continual
+learning system to adapt system performance to evolving medical
+guidelines or diverse medical principles will also be instated.
+
+\hypertarget{track-system-errors}{%
+\subsection{Track system errors}\label{track-system-errors}}
+
+\textbf{Description} A system to track, trace, and report
+\textbf{\emph{errors}} within the platform must be implemented.
+
+\textbf{\emph{errors}} \emph{TBD; different types of output and internal
+errors}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} ALL
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP2
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  technical staff \emph{TBD}
+\item
+  design staff \emph{TBD}
+\end{itemize}
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define error reporting metrics
+\item
+  design error reporting system
+\item
+  verification by technical experts
+\item
+  publication (internal) of system
+\item
+  publication of reports
+\end{itemize}
+
+\hypertarget{ensure-continuous-adaptation}{%
+\subsection{Ensure continuous
+adaptation}\label{ensure-continuous-adaptation}}
+
+\textbf{Description} Measures to ensure that the system is able to adapt
+to \textbf{\emph{evolving treatment guidelines}} while maintaining
+\textbf{\emph{predictive accuracy}} will be taken.
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, breakable, coltitle=black, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, toprule=.15mm, left=2mm, bottomrule=.15mm, opacitybacktitle=0.6, titlerule=0mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, bottomtitle=1mm, colframe=quarto-callout-note-color-frame, leftrule=.75mm, rightrule=.15mm]
+
+This addresses data scarcity challenges and handling variations in
+healthcare practices, particularly in countries with different
+approaches to guideline adherence.
+
+\end{tcolorbox}
+
+\textbf{\emph{evolving treatment guidelines:}} variation in healthcare
+practice; countries with different guidelines; changing regulations\\
+\textbf{\emph{predictive accuracy:}} \emph{acceptable range TBD}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP7
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  technical staff (TBD)
+\item
+  design staff (TBD)
+\item
+  WP3
+\end{itemize}
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define boundaries for predictive accuracy/acceptable range
+\item
+  define evolving treatment guidelines
+\item
+  develop process protocol for evaluation
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, breakable, coltitle=black, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, toprule=.15mm, left=2mm, bottomrule=.15mm, opacitybacktitle=0.6, titlerule=0mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, bottomtitle=1mm, colframe=quarto-callout-note-color-frame, leftrule=.75mm, rightrule=.15mm]
+
+Several requirements, including this one, refer to the \emph{predictive
+accuracy} of the output; this parameter will be defined through the
+implementation of requirements1.1.2 and 2.3.2.
+
+\end{tcolorbox}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{privacy-and-data-governance}{%
+\chapter{Privacy and Data
+Governance}\label{privacy-and-data-governance}}
+
+To prevent undue harm to society, the fundamental right to privacy must
+be protected. Data-driven AI systems like STRATIF-AI may pose
+substantial risks to individuals' privacy, and as such, a comprehensive
+data governance protocol is necessary to maintain integrity and privacy
+of data.
+
+\hypertarget{privacy}{%
+\section{Privacy}\label{privacy}}
+
+\hypertarget{altai-assessment-6}{%
+\subsection*{ALTAI Assessment}\label{altai-assessment-6}}
+\addcontentsline{toc}{subsection}{ALTAI Assessment}
+
+In the event of data leakage or misuse, STRATIF-AI could have
+significant impacts on the rights to privacy, physical, mental and moral
+integrity, and data protection. A process protocol to report violations
+to privacy or data integrity must be developed and implemented.
+
+\hypertarget{investigate-right-to-privacy-within-federated-learning}{%
+\subsection{Investigate right to privacy within Federated
+Learning}\label{investigate-right-to-privacy-within-federated-learning}}
+
+\textbf{Description} The Federated Learning platform transfers model
+parameters rather than data; \textbf{\emph{vulnerabilities}} of the
+system for data privacy must be \textbf{\emph{quantified}}.
+
+\textbf{\emph{vulnerabilities:}} potential to reconstruct training data;
+glean private information; model inversion\\
+\textbf{\emph{quantified:}} \emph{levels of security to be identified}
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP1
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  WP2
+\item
+  modelling staff \emph{TBD}
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} ALL
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  identify potential vulnerabilities
+\item
+  identify metrics to quantify scale/severity of vulnerability
+\item
+  assess performance
+\item
+  publish results
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, breakable, coltitle=black, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, toprule=.15mm, left=2mm, bottomrule=.15mm, opacitybacktitle=0.6, titlerule=0mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, bottomtitle=1mm, colframe=quarto-callout-note-color-frame, leftrule=.75mm, rightrule=.15mm]
+
+This requirement is closely linked to requirement 2.1.1.
+
+\end{tcolorbox}
+
+\hypertarget{allocate-data-usage-and-access-rights}{%
+\subsection{Allocate data usage and access
+rights}\label{allocate-data-usage-and-access-rights}}
+
+\textbf{Description} Design for different \textbf{\emph{data types}}
+detailing \textbf{\emph{access}} and \textbf{\emph{safeguards}} for
+\textbf{\emph{vulnerable patient groups}} must be made available within
+the Data Management Plan.
+
+\textbf{\emph{data types:}} training data; Personal Data Vault\\
+\textbf{\emph{access:}} rights to access; location of storage; potential
+to re-use; encryption\\
+\textbf{\emph{safeguards:}} stewardship upon death; stewardship in event
+of disability; stewardship of carers/wards\\
+\textbf{\emph{vulnerable patient groups:}} \emph{speaking different
+languages; age groups; ethnicity; disability}
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP1
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  WP7 \emph{TBD}
+\item
+  patient representatives \emph{TBD}
+\item
+  WP4 \emph{TBD}
+\item
+  WP5 \emph{TBD}
+\item
+  WP6 \emph{TBD}
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, breakable, coltitle=black, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, toprule=.15mm, left=2mm, bottomrule=.15mm, opacitybacktitle=0.6, titlerule=0mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, bottomtitle=1mm, colframe=quarto-callout-note-color-frame, leftrule=.75mm, rightrule=.15mm]
+
+The STRATIF-AI project includes a Data Management Plan (DMP) as a
+recurring deliverable. This requirement will be addressed within the
+scope of upcoming DMPs.
+
+\end{tcolorbox}
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  review current data management plan and details
+\item
+  identify patient subgroups; access types; safeguards
+\item
+  feedback on DMP from patient representatives
+\item
+  feedback from medical professionals
+\item
+  make plan publicly and internally available/within apps/platform
+\end{itemize}
+
+\hypertarget{implement-feedback-system}{%
+\subsection{Implement feedback system}\label{implement-feedback-system}}
+
+\textbf{Description} A system with \textbf{\emph{relevant
+specifications}} to flag \textbf{\emph{violations}} must be implemented
+within the platform and a corresponding process protocol drawn up.
+
+\textbf{\emph{relevant specifications:}} \emph{TBD}\\
+\textbf{\emph{violations:}} \emph{TBD; violation to privacy; violation
+to data integrity;}
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP2
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  design staff
+\item
+  WP1 \emph{TBD}
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} ALL
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  design system
+\item
+  draft process protocol
+\item
+  feedback on prototype by end-users
+\end{itemize}
+
+\hypertarget{data-governance}{%
+\section{Data governance}\label{data-governance}}
+
+\hypertarget{altai-assessment-7}{%
+\subsection*{ALTAI Assessment}\label{altai-assessment-7}}
+\addcontentsline{toc}{subsection}{ALTAI Assessment}
+
+STRATIF-AI is trained using personal healthcare records and will be
+continually informed by private and securely transferred data within the
+Personal Data Vault. A Data Protection Impact Assessment will be
+executed, relevant Data Protection Officers will be appointed, and the
+requirements under General Data Protection Regulation will be adhered
+to. In addition, mechanisms to ensure oversight of data processing, data
+transformation and data harmonization within the Federated Learning
+environment will be drafted. Data minimization possibilities will need
+to be investigated. The right to withdraw consent, right to object, and
+right to be forgotten will be revised and communicated to end-users. The
+AI system will be aligned with relevant standards and widely adopted
+protocols within the relevant regulatory framework.
+
+\hypertarget{assess-data-quality}{%
+\subsection{Assess data quality}\label{assess-data-quality}}
+
+\textbf{Description} A quality control system to ensure different
+\textbf{\emph{data types}} fulfill \textbf{\emph{quality critera}} will
+be implemented and made available to \textbf{\emph{end-users}} before
+use for model training or prediction.
+
+\textbf{\emph{data type:}} training data; Personal Data Vault\\
+\textbf{\emph{quality criteria:}} robust to missing data; robust to
+inaccuracies; robust to input errors; \emph{additional criteria and
+pre-defined thresholds}\\
+\textbf{\emph{end-users:}} patients; medical professionals
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP1
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  design staff \emph{TBD}
+\item
+  technical staff \emph{TBD}
+\item
+  WP1 \emph{TBD}
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} ALL
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define quality control metrics and acceptable thresholds
+\item
+  update any existing process protocols
+\item
+  produce quantitative assessments for existing data/prototype data
+\item
+  translate assessment for end-users
+\end{itemize}
+
+\hypertarget{standardize-data-preparation-procedures}{%
+\subsection{Standardize data preparation
+procedures}\label{standardize-data-preparation-procedures}}
+
+\textbf{Description} The \textbf{\emph{procedures}} involved in
+manipulating training data for Federated Learning across project
+\textbf{\emph{partners}} must be \textbf{\emph{standardized}}.
+
+\textbf{\emph{procedures:}} pre-processing; evaluation; forecasting;
+validation; ML monitoring\\
+\textbf{\emph{partners:}} \emph{each hospital/data contributor}\\
+\textbf{\emph{standardized:}} \emph{created in a format/schema/protocol}
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP1
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  technical staff \emph{TBD}
+\item
+  WP4
+\item
+  WP5
+\item
+  WP6
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} ALL
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define set of procedures
+\item
+  identify partner set and any potential need for discrepancies/specific
+  operationalization
+\item
+  standardize procedures through iterative process with partners
+\item
+  audit adherence
+\item
+  report adherence and publish procedures
+\end{itemize}
+
+\hypertarget{standardize-data-harmonization-procedures}{%
+\subsection{Standardize data harmonization
+procedures}\label{standardize-data-harmonization-procedures}}
+
+\textbf{Description} The \textbf{\emph{parameters}} of the harmonization
+process for making data interoperable must be defined and be reviewed
+\textbf{\emph{periodically}}.
+
+\textbf{\emph{parameters:}} drift detection; retraining procedure;
+relevant ontologies \textbf{\emph{periodically:}} \emph{TBD}
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP1
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  technical staff \emph{TBD}
+\item
+  WP4
+\item
+  WP5
+\item
+  WP6
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} ALL
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define parameters for harmonization process
+\item
+  create SOP for harmonization so this information is available to
+  partners
+\item
+  feedback from partners
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, breakable, coltitle=black, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, toprule=.15mm, left=2mm, bottomrule=.15mm, opacitybacktitle=0.6, titlerule=0mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, bottomtitle=1mm, colframe=quarto-callout-note-color-frame, leftrule=.75mm, rightrule=.15mm]
+
+During co-creation workshops, a lack of clarity about the data
+harmonization process, particularly when new patient data is added,
+emerged. How the harmonization process will be governed after the model
+training procedure is complete must be clarified within this
+requirement.
+
+\end{tcolorbox}
+
+\hypertarget{acquire-informed-consent}{%
+\subsection{Acquire informed consent}\label{acquire-informed-consent}}
+
+\textbf{Description} A process protocol for obtaining consent must be
+drafted, which outlines \textbf{\emph{access rights}},
+\textbf{\emph{restrictions}} once consent has been provided, and is
+tailored to specific \textbf{\emph{patient subgroups}}.
+
+\textbf{\emph{access rights:}} \emph{which physicians/medical staff will
+have access; stewardship in event of disability;} \textbf{\emph{patient
+subgroups:}} \emph{language; age; education; disability}\\
+\textbf{\emph{restrictions}}: withdraw consent; right to object; right
+to be forgotten; how will models be retrained if consent is withdrawn;
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP4
+\item
+  WP5
+\item
+  WP6
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  WP3
+\item
+  WP1 \emph{TBD}
+\item
+  medical staff
+\item
+  patient representatives
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  draft consent forms
+\item
+  define parameters for forms
+\item
+  tailor to each stroke phase
+\item
+  feedback from patient representatives
+\end{itemize}
+
+\hypertarget{adhere-to-gdpr}{%
+\subsection{Adhere to GDPR}\label{adhere-to-gdpr}}
+
+\textbf{Description} \textbf{\emph{Relevant requirements}} under General
+Data Protection Regulation must be adhered to.
+
+\textbf{\emph{relevant requirements:}} \emph{TBD}
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP1
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{TBD}
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} ALL
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  check if this is part of DMP
+\item
+  create additional document providing translation for
+  patients/end-users
+\end{itemize}
+
+\hypertarget{investigate-data-minimization}{%
+\subsection{Investigate data
+minimization}\label{investigate-data-minimization}}
+
+\textbf{Description} The \textbf{\emph{costs}} of collecting intimate
+data from patients must be balanced against \textbf{\emph{violation of
+patient trust}}, and validated by appropriate
+\textbf{\emph{methodology}}.
+
+\textbf{\emph{costs:}} \emph{perceived harm; erosion of trust}\\
+\textbf{\emph{violation of patient trust:}} \emph{operational definition
+of trust, threshold for violation}\\
+\textbf{\emph{methodology:}} \emph{cost-benefit analysis; qualitative
+judgement; Delphi consensus}
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP3
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  WP4 \emph{TBD}
+\item
+  WP5 \emph{TBD}
+\item
+  WP6 \emph{TBD}
+\item
+  patient representatives
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  incorporate in trust study
+\item
+  research about potential data minimization
+\item
+  elicit patient/expert feedback on costs/benefits of highly invasive
+  data
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{transparency}{%
+\chapter{Transparency}\label{transparency}}
+
+A key requirement for ethical AI is transparency. Transparency includes
+traceability of the AI system and its decisions, i.e., all information
+and procedures which led to the system's predictions. Such traceability
+is essential to enable the identification of errors and improvement of
+future results. Traceability is closely linked to explainability, which
+is the ability to explain the technical processes and the human
+oversight procedures in place within the AI system. STRATIF-AI is a
+complex CDSS involving numerous technological solutions and a HIC
+governance process---the limits of which should be clearly communicated
+to end-users. High explainability may come at the cost of system
+accuracy: if increases in accuracy necessitate a high degree of
+complexity. The degree to which AI predictions affect human decisions
+should be balanced with the ability to explain the rationale behind such
+decisions. Finally, the the degree to which human decisions depend on AI
+predictions, and the underlying limitations of the system and its
+predictions, must be communicated in an interpretable manner to a
+diversity end-users.
+
+\textbf{Keywords:}\\
+AI System, end-user, explicability, lifecycle, subject, traceability,
+workflow of the model
+
+\hypertarget{traceability}{%
+\section{Traceability}\label{traceability}}
+
+\hypertarget{altai-assessment-8}{%
+\subsection*{ALTAI Assessment}\label{altai-assessment-8}}
+\addcontentsline{toc}{subsection}{ALTAI Assessment}
+
+Traceability is difficult to achieve for complex data-driven AI systems.
+STRATIF-AI will be engineered with measures to enable traceability of
+the system as far as possible. The ability to trace back data, data
+quality, and decision rules of the system will be quantified, assessed,
+and reported to end-users. The decisions of the system and the
+associated ``quality'' of such decisions will be continuously monitored.
+
+\hypertarget{enable-system-traceability}{%
+\subsection{Enable system
+traceability}\label{enable-system-traceability}}
+
+\textbf{Description} The ability to trace back key \textbf{\emph{system
+parameters}} will be \textbf{\emph{assessed}} systematically and
+translated for a diversity of \textbf{\emph{end-users}}.
+
+\textbf{\emph{system parameters:}} data source; data demographics;
+patient-specific data; model parameters; model calibration metrics;\\
+\textbf{\emph{assessed:}} \emph{a system within the platform to report
+data}\\
+\textbf{\emph{end-users:}} medical professionals; patients;
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP2
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  technical staff \emph{TBD}
+\item
+  medical staff \emph{TBD}
+\item
+  patient representatives
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define system parameters that should be identified
+\item
+  design platform/system to assess/enable info
+\item
+  feedback from end-users on system and params
+\item
+  translation of outputs
+\item
+  feedback from end-users on interpretability of output
+\item
+  publication of traceability system
+\end{itemize}
+
+\hypertarget{quality-control-of-predictions}{%
+\subsection{Quality control of
+predictions}\label{quality-control-of-predictions}}
+
+\textbf{Description} The \textbf{\emph{decisions}} of the system must be
+\textbf{\emph{systematically compared}} with \textbf{\emph{human
+feedback}} to infer prediction \textbf{\emph{quality}}.
+
+\textbf{\emph{decisions:}} predictions; prediction intervals; data
+output\\
+\textbf{\emph{systematically compared:}} \emph{design of study
+comparison}\\
+\textbf{\emph{human feedback:}} \emph{discrepancy with medical decision;
+patient discomfort;}\\
+\textbf{\emph{quality:}} \emph{construct a quality score}
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP2
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  WP3
+\item
+  technical staff \emph{TBD}
+\item
+  medical staff \emph{TBD}
+\item
+  patient representatives
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define decisions to be recorded and feedback format
+\item
+  design platform within app to do so
+\item
+  construct quality score
+\item
+  study design and preregistration
+\item
+  publication of quality of decisions/ update to system
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, breakable, coltitle=black, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, toprule=.15mm, left=2mm, bottomrule=.15mm, opacitybacktitle=0.6, titlerule=0mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, bottomtitle=1mm, colframe=quarto-callout-note-color-frame, leftrule=.75mm, rightrule=.15mm]
+
+This requirement is closely connected with requirements under section
+\protect\hyperlink{human-agency-and-oversight}{Human Agency and
+Oversight}.
+
+\end{tcolorbox}
+
+\hypertarget{explainability}{%
+\section{Explainability}\label{explainability}}
+
+\hypertarget{altai-assessment-9}{%
+\subsection*{ALTAI Assessment}\label{altai-assessment-9}}
+\addcontentsline{toc}{subsection}{ALTAI Assessment}
+
+STRATIF-AI is a clinical decision support-system. Both doctors and
+medical professionals must be provided with a reasonable understanding
+of the decisions made by the system.
+
+\hypertarget{provide-decision-making-parameters-to-end-users}{%
+\subsection{Provide decision-making parameters to
+end-users}\label{provide-decision-making-parameters-to-end-users}}
+
+\textbf{Description} Information about the relevant
+\textbf{\emph{parameters}} that led to an algorithmic decision will be
+validated and available in a \textbf{\emph{simplified format}} to
+\textbf{\emph{end-users}}.
+
+\textbf{\emph{simplified format:}} video; written material; user
+interface\\
+\textbf{\emph{parameters:}} modelling parameters; training data
+parameters; Data Vault parameters;\\
+\textbf{\emph{end users:}} medical professionals; patients;
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP2
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  technical staff \emph{TBD}
+\item
+  design staff \emph{TBD}
+\item
+  medical staff \emph{TBD}
+\item
+  patient representatives \emph{TBD}
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define parameters
+\item
+  interview/feedback from key personnel
+\item
+  create in-app design
+\item
+  feedback on prototype in pilot study
+\end{itemize}
+
+\hypertarget{monitor-explainability}{%
+\subsection{Monitor explainability}\label{monitor-explainability}}
+
+\textbf{Description} Establishing the explainability of the STRATIF-AI
+platform could serve as a blueprint for digital-twin based/personalized
+medicine projects. The \textbf{\emph{satisfaction}} of
+\textbf{\emph{end-users}} with the explainability of the platform over
+the course of its use should be continuously monitored.
+
+\textbf{\emph{satisfaction:}} \emph{measured as suitability of
+explanatory materials/information; combined with feedback reporting
+loop;}\\
+\textbf{\emph{end-users:}} \emph{medical professionals; experience
+levels; patients; education; age; language; disability;}
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP2
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  WP7
+\item
+  technical staff \emph{TBD}
+\item
+  medical staff \emph{TBD}
+\item
+  patient representatives \emph{TBD}
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  decide on study or in-app reporting system
+\item
+  define satisfaction criteria
+\item
+  design and validate system
+\item
+  combine with feedback reporting loop?
+\end{itemize}
+
+\hypertarget{assess-costs-of-model-explainability}{%
+\subsection{Assess costs of model
+explainability}\label{assess-costs-of-model-explainability}}
+
+\textbf{Description} The costs of explainability for the model
+parameters and decision-rules will be traded off against their accuracy.
+During model development and training such \textbf{\emph{costs}} should
+be systematically assessed and recorded.
+
+\textbf{\emph{costs:}} \emph{TBD; format to quantify explainability
+versus accuracy tradeoff;}
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP2
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  WP3
+\item
+  technical staff \emph{TBD}
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} ALL
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define explainability metrics
+\item
+  design system to record/assess
+\item
+  is this part of existing modelling protocol
+\item
+  publication of explainability/accuracy tradeoff assessment
+\item
+  translation of materials for end-users
+\end{itemize}
+
+\hypertarget{communication}{%
+\section{Communication}\label{communication}}
+
+\hypertarget{altai-assessment-10}{%
+\subsection*{ALTAI Assessment}\label{altai-assessment-10}}
+\addcontentsline{toc}{subsection}{ALTAI Assessment}
+
+There is little risk of the AI system being interpreted as a human.
+However, the HIC governance concept must be clearly communicated to
+end-users. The benefits, technical limitations, potential risks must
+additionally be communicated to end-users in a transparent and
+explainable manner. A comprehensive training protocol for
+end-users---particularly medical personnel---must be developed in
+collaboration with the system developers.
+
+\hypertarget{standardize-training-materials}{%
+\subsection{Standardize training
+materials}\label{standardize-training-materials}}
+
+\textbf{Description} Instructions about \textbf{\emph{appropriate
+application}} of the STRATIF-AI must be \textbf{\emph{adapted}} for a
+\textbf{\emph{end-users}} of different \textbf{\emph{subgroups}}.
+
+\textbf{\emph{appropriate application:}} technical limitations;
+potential risks; error rates; evidence-based health benefits;\\
+\textbf{\emph{adapted:}} available as written manual; flyer; video\\
+\textbf{\emph{end-users:}} medical professionals; patients\\
+\textbf{\emph{subgroups:}} \emph{experience levels; patients; education;
+age; language; disability}
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP7
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  technical staff (TBD)
+\item
+  medical staff (TBD)
+\item
+  patient representatives
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define proper use parameters
+\item
+  interview/feedback from key personnel
+\item
+  make prototype written and flyer materials
+\item
+  outsource video/audio materials
+\item
+  translation for disability, language, education, age
+\item
+  publication of materials
+\end{itemize}
+
+\hypertarget{tailor-explainability-material}{%
+\subsection{Tailor explainability
+material}\label{tailor-explainability-material}}
+
+\textbf{Description} An overview of STRATIF-AI system
+\textbf{\emph{functions}} and \textbf{\emph{outputs}} will be
+communicated in a diversity of \textbf{\emph{formats}}, designed
+specifically for \textbf{\emph{end-users}} of different
+\textbf{\emph{subgroups}}.
+
+\textbf{\emph{functions:}} modelling framework; modelling maps;
+decision-making process; training data; private data vault; security
+protocols; human oversight; evidence of efficacy; rationale for using
+tool; {]} \textbf{\emph{outputs:}} \emph{TBD; model output}
+\textbf{\emph{formats:}} available as written manual; video; flyer;\\
+\textbf{\emph{end-users:}} medical professionals; patients\\
+\textbf{\emph{subgroups:}} \emph{education; age; language; disability}
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP3
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  WP7
+\item
+  technical staff \emph{TBD}
+\item
+  medical staff \emph{TBD}
+\item
+  patient representatives
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define parameters
+\item
+  interview/feedback from key personnel
+\item
+  refine content
+\item
+  make prototype written and flyer materials
+\item
+  outsource video/audio materials
+\item
+  translation for disability, language, education, age
+\item
+  publication of materials
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, breakable, coltitle=black, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, toprule=.15mm, left=2mm, bottomrule=.15mm, opacitybacktitle=0.6, titlerule=0mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, bottomtitle=1mm, colframe=quarto-callout-note-color-frame, leftrule=.75mm, rightrule=.15mm]
+
+Requirements 4.3.1 and 4.3.2 are closely related. Requirement 4.3.1
+involves the creation of training materials for use of the platform,
+i.e., serving as the guide for use, while Requirement 4.3.2 will deliver
+the explainability materials, i.e., serving as a background or primer on
+the AI system.
+
+\end{tcolorbox}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{diversity-non-discrimination-and-fairness}{%
+\chapter{Diversity, Non-discrimination and
+Fairness}\label{diversity-non-discrimination-and-fairness}}
+
+To ensure the trustworthiness of the STRATIF-AI platform, priority
+should be given to inclusion and diversity at every stage of the project
+lifecycle. Efforts to address historical biases, incompleteness, and
+governance models to mitigate the risk of unintended prejudice and
+discrimination should be made. The design of STRATIF-AI system will
+adhere to a user-centric approach, facilitating accessibility for all
+individuals, irrespective of demographic factors. This will specifically
+include ensuring accessibility for persons with disabilities.
+
+\hypertarget{avoidance-of-unfair-bias}{%
+\section{Avoidance of unfair bias}\label{avoidance-of-unfair-bias}}
+
+\hypertarget{altai-assessment-11}{%
+\subsection*{ALTAI Assessment}\label{altai-assessment-11}}
+\addcontentsline{toc}{subsection}{ALTAI Assessment}
+
+Throughout development, consideration will be given to the diversity and
+representativeness of end-users and subjects within training data.
+Testing protocols will be tailored to rectify potential biases, to
+ensure integrity and impartiality of the platform across user
+demographics and application scenarios. Educational initiatives aimed at
+cultivating awareness among AI designers and developers regarding bias
+and its ethical ramifications will be initiated, fostering a culture of
+accountability. Mechanisms for identifying and resolving issues
+pertaining to bias or discrimination within the STRATIF-AI platform will
+be established within clear communication channels. Discourse with
+impacted communities, particularly at-risk patient subgroups, will be
+conducted to ensure that the STRATIF-AI project consortium's conception
+of fairness resonates with diverse perspectives. A quantitative
+analytical framework will be embraced to measure and evaluate the
+efficacy the applied definition of fairness, and institute mechanisms to
+achieve as such.
+
+\hypertarget{represent-diversity-in-training-data}{%
+\subsection{Represent diversity in training
+data}\label{represent-diversity-in-training-data}}
+
+\textbf{Description} Inclusive representation of patients of specific
+(under-represented) \textbf{\emph{subgroups}} in training data will be
+assessed against an acceptable \textbf{\emph{threshold}} and rectified
+or reported accordingly.
+
+\textbf{\emph{subgroups:}} patients; patients with stroke; patients at
+risk of stroke; patients without stroke; \emph{language; education; age;
+disability; ethnicity; gender; migration status; socio-economic
+status;}\\
+\textbf{\emph{threshold:}} \emph{reasonable representation; if zero;
+report in prediction uncertainty}
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP4
+\item
+  WP5
+\item
+  WP6
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  medical staff \emph{TBD}
+\item
+  patients/patient representatives \emph{TBD}
+\item
+  WP3
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define at-risk patient subgroups
+\item
+  define acceptable thresholds
+\item
+  feedback from patient representatives/experts
+\item
+  assess training data
+\item
+  report in publication
+\item
+  note challenge of oversimplified categorization
+\end{itemize}
+
+\hypertarget{monitor-bias}{%
+\subsection{Monitor bias}\label{monitor-bias}}
+
+\textbf{Description} A \textbf{\emph{system}} to
+\textbf{\emph{periodically}} monitor bias in different project
+\textbf{\emph{stages}} must be implemented.
+
+\textbf{\emph{system:}} \emph{prototype for system}\\
+\textbf{\emph{periodically:}} \emph{TBD}\\
+\textbf{\emph{stages:}} training data preparation; federated learning;
+model tweaking; prediction modelling
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP2
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  technical staff \emph{TBD}
+\item
+  WP4
+\item
+  WP5
+\item
+  WP6
+\item
+  WP3
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} ALL
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  create bias testing pipelines
+\item
+  define parameters
+\item
+  send pipelines to necessary spaces (e.g., clinical partners)
+\item
+  pilot bias testing in preliminary study
+\item
+  report output
+\item
+  publication of tool/pipeline
+\end{itemize}
+
+\hypertarget{assess-prediction-bias}{%
+\subsection{Assess prediction bias}\label{assess-prediction-bias}}
+
+\textbf{Description} System \textbf{\emph{outputs}} will be assessed to
+ensure there is no acceptable \textbf{\emph{difference}} between patient
+\textbf{\emph{subgroups}}.
+
+\textbf{\emph{outputs:}} \emph{model output parameters; discrepancy}\\
+\textbf{\emph{difference:}} \emph{TBD; quantitative threshold;
+acceptable margin of error;}\\
+\textbf{\emph{subgroups}} \emph{gender; sex; ethnicity; education;
+health history; disability; socio-economic background}
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP2
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  technical staff \emph{TBD}
+\item
+  WP3
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} ALL
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define parameters model outputs
+\item
+  define patient subgroups
+\item
+  define thresholds
+\item
+  feedback on thresholds
+\item
+  publication of results
+\end{itemize}
+
+\hypertarget{implement-bias-reporting-system}{%
+\subsection{Implement bias reporting
+system}\label{implement-bias-reporting-system}}
+
+\textbf{Description} A system for \textbf{\emph{end-users}} to make
+reports about \textbf{\emph{bias}} should be established within the
+platform and \textbf{\emph{periodically}} be evaluated.
+
+\textbf{\emph{end-users:}} medical professionals, patients\\
+\textbf{\emph{bias:}} \emph{any discrimination; process protocol for
+what constitutes bias; response;}\\
+\textbf{\emph{periodically:}} \emph{TBD}
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP2
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  technical staff \emph{TBD}
+\item
+  design staff
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} ALL
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  determine evaluation schedule
+\item
+  outline process protocol for updates upon substantial bias
+\item
+  design and validate system
+\end{itemize}
+
+\hypertarget{cultivate-ethical-awareness}{%
+\subsection{Cultivate ethical
+awareness}\label{cultivate-ethical-awareness}}
+
+\textbf{Description} A \textbf{\emph{strategy}} to ensure awareness
+about ethical issues and accountability for the system, tailored to
+specific \textbf{\emph{stakeholders}}, will be designed and executed.
+
+\textbf{\emph{strategy:}} workshop series; training programme;
+accountability declaration;\\
+\textbf{\emph{stakeholders:}} developers; doctors; clinicians;
+care-workers; patients; family members; technical designers; project
+managers;
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP3
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  all relevant leads
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} ALL
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  write up workshop paper
+\item
+  create training package materials
+\item
+  interview study with experts
+\item
+  design accountability declaration for project partners
+\item
+  publish memorandum
+\end{itemize}
+
+\hypertarget{assess-fairness-across-use-setting}{%
+\subsection{Assess fairness across
+use-setting}\label{assess-fairness-across-use-setting}}
+
+\textbf{Description} The fairness of system \textbf{\emph{outputs}}
+across different \textbf{\emph{use-settings}} needs to be quantitatively
+evaluated to minimize risk of unfair prediction values for specific
+locations/services.
+
+\textbf{\emph{outputs:}} \emph{prediction intervals; prediction types;
+accessibility; speed;}\\
+\textbf{\emph{use-settings:}} hospitals; homes; resource differences;
+medical equipment; medical staff;
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP7
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  WP4
+\item
+  WP5
+\item
+  WP6
+\item
+  WP3
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  design study to assess fairness across contexts
+\item
+  define parameters to study
+\item
+  pre-register study
+\item
+  pilot with prototype of tool or collect data within clinical trials
+\item
+  publication of results
+\end{itemize}
+
+\hypertarget{assess-and-build-trust-within-vulnerable-patient-groups}{%
+\subsection{Assess and build trust within vulnerable patient
+groups}\label{assess-and-build-trust-within-vulnerable-patient-groups}}
+
+\textbf{Description} Degree of \textbf{\emph{trust}} in the STRATIF-AI
+platform, determined by \textbf{\emph{end-users}}, will be quantified.
+An assessment of trust within specifically vulnerable patient and
+care-work \textbf{\emph{subgroups}} will be assessed and measures to
+respond to discrepancies between subgroups devised.
+
+\textbf{\emph{trust:}} \emph{TBD; operational definition of trust}\\
+\textbf{\emph{end-users:}} medical professionals; patients with stroke;
+patients at risk of stroke; patients without stroke\\
+\textbf{\emph{subgroups:}} \emph{language; education; age; disability;
+ethnicity; gender; migration status; socio-economic status;}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} ALL
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP3
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  patient representatives
+\item
+  medical staff
+\end{itemize}
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define degrees of trust or conception of trust
+\item
+  design questionnaire/interview to survey trust of system
+\item
+  pre-register survey
+\item
+  execute survey with key personnel
+\item
+  report outcomes
+\item
+  assess how outcomes vary within patient subgroups
+\item
+  disseminate outcomes in STRATIF-AI pilot studies and solicit feedback
+\item
+  publication on trust and diversity in digital twins
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, breakable, coltitle=black, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, toprule=.15mm, left=2mm, bottomrule=.15mm, opacitybacktitle=0.6, titlerule=0mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, bottomtitle=1mm, colframe=quarto-callout-note-color-frame, leftrule=.75mm, rightrule=.15mm]
+
+This requirement will constitute a part of the trust study designed to
+fulfill Requirement 1.1.4 Establish degree of trust.
+
+\end{tcolorbox}
+
+\hypertarget{implement-fairness-reporting-system}{%
+\subsection{Implement fairness reporting
+system}\label{implement-fairness-reporting-system}}
+
+\textbf{Description} A system to report whether the system
+\textbf{\emph{outputs}} are evaluated as \textbf{\emph{accessible}} must
+be implemented within the platform for \textbf{\emph{end-users}}.
+
+\emph{\textbf{outputs:} }prediction intervals; recommendations; rehab
+demos;*\\
+\textbf{\emph{accessible:}} comprehensible in language; available to
+varying levels of resource access; feasible within time budgets;\\
+\textbf{\emph{end-users:}} patients; medical staff
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP7
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  patient representatives
+\item
+  medical staff
+\item
+  design staff \emph{TBD}
+\end{itemize}
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define parameters output and feasibility
+\item
+  prototype system in apps/platform
+\item
+  pilot study
+\item
+  report results
+\item
+  publication
+\end{itemize}
+
+\hypertarget{accessibility-and-universal-design}{%
+\section{Accessibility and universal
+design}\label{accessibility-and-universal-design}}
+
+\hypertarget{altai-assessment-12}{%
+\subsection*{ALTAI Assessment}\label{altai-assessment-12}}
+\addcontentsline{toc}{subsection}{ALTAI Assessment}
+
+Measures to prioritize inclusivity and accessibility of STRATIF-AI to a
+wide and diverse user-base will be taken. Assessment will be conducted
+to gauge the usability of the AI system's user interface for individuals
+with special needs, disabilities, or those at risk of exclusion. Efforts
+will be made to guarantee that information about the AI system, as well
+as its user interface, remains accessible and usable for users of
+assistive technologies, particularly those relevant for patients of
+stroke. Furthermore, Universal Design principles will be integrated into
+various stages of planning and development, where applicable, to enhance
+accessibility for all users.
+
+\hypertarget{utilize-inclusive-design-principles}{%
+\subsection{Utilize inclusive design
+principles}\label{utilize-inclusive-design-principles}}
+
+\textbf{Description} The platform must be designed, tested, and trained
+by \textbf{\emph{methods}} to account for \textbf{\emph{needs}} of
+vulnerable \textbf{\emph{subgroups}} of \textbf{\emph{end-users}}.
+
+\textbf{\emph{methods:}} \emph{TBD} \textbf{\emph{needs:}} \emph{TBD}\\
+\textbf{\emph{end-users:}} medical staff; patients;\\
+\textbf{\emph{subgroups:}} \emph{language; ethnicity; socio-economic
+background; health history; trust;}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP3
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  patient representatives \emph{TBD}
+\item
+  medical staff \emph{TBD}
+\item
+  design staff \emph{TBD}
+\end{itemize}
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  this will move to a different owner after preliminary assessment
+\item
+  define set of needs that should be accessible
+\item
+  identify different patient subgroups
+\item
+  conduct interviews/solicit patient feedback
+\item
+  design protocol to evaluate prototype design
+\item
+  move WP owner to design staff
+\item
+  pilot design and solicit feedback
+\end{itemize}
+
+\hypertarget{assess-financial-risk-of-unfair-design}{%
+\subsection{Assess financial risk of unfair
+design}\label{assess-financial-risk-of-unfair-design}}
+
+\textbf{Description} The system \textbf{\emph{outputs}} must be
+critically evaluated to avoid \textbf{\emph{risks}} of financial misuse
+in different \textbf{\emph{clinical settings}}.
+
+\textbf{\emph{outputs:}} \emph{prediction intervals; discrepancy between
+clinician and prediction; discrepancy between patient and clinician;}\\
+\textbf{\emph{risks:}} \emph{insurance system; financial overhead; costs
+of stay}\\
+\textbf{\emph{clinical settings:}} hospitals; rehab centers
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP7
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  patient representatives
+\item
+  medical staff
+\item
+  design staff (TBD)
+\item
+  technical staff (TBD)
+\end{itemize}
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define parameters
+\item
+  perform evaluation
+\item
+  e.g., via experimental study/ pilot/ lit review
+\item
+  update outputs
+\item
+  institute necessary data protections
+\end{itemize}
+
+\hypertarget{stakeholder-participation}{%
+\section{Stakeholder participation}\label{stakeholder-participation}}
+
+\hypertarget{altai-assessment-13}{%
+\subsection*{ALTAI Assessment}\label{altai-assessment-13}}
+\addcontentsline{toc}{subsection}{ALTAI Assessment}
+
+STRATIF-AI is a project with a significant diversity in stakeholders.
+Consistent feedback and co-creation will be maintained with stakeholders
+during early stages of project development. Mechanisms to ensure
+sustained stakeholder involvement after the implementation of the
+platform will also be designed.
+
+\hypertarget{incorporate-patient-perspectives}{%
+\subsection{Incorporate patient
+perspectives}\label{incorporate-patient-perspectives}}
+
+\textbf{Description} Feedback and perspectives about system
+\textbf{\emph{functions}} from representatives of patient
+\textbf{\emph{subgroups}} will be solicited \textbf{\emph{periodically}}
+and incorporated into system development.
+
+\textbf{\emph{subgroups:}} \emph{gender; disability; ethnicity;
+socio-economic status}\\
+\textbf{\emph{periodically:}} \emph{TBD}\\
+\textbf{\emph{functions:}} \emph{model output, prediction intervals;
+design; overall trust; use;}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP3
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  patient representatives
+\end{itemize}
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define parameters
+\item
+  design study or format
+\item
+  design a reproducible questionnaire that can easily be answered
+\item
+  pass to WP4, WP5, WP6
+\item
+  design process protocol for responding to feedback
+\item
+  design procedure for disseminating feedback
+\item
+  publication on patient perspectives
+\end{itemize}
+
+\hypertarget{foster-end-user-feedback}{%
+\subsection{Foster end-user feedback}\label{foster-end-user-feedback}}
+
+\textbf{Description} A system for \textbf{\emph{end-users}} to provide
+\textbf{\emph{feedback}} should be established within the platform and
+\textbf{\emph{periodically}} be evaluated.
+
+\textbf{\emph{end-users:}} medical professionals, patients;\\
+\textbf{\emph{discrepancies:}} \emph{format of feedback;}\\
+\textbf{\emph{periodically:}} \emph{TBD;}
+
+\textbf{Stroke Phase} ALL
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP2
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  design staff
+\item
+  technical staff
+\end{itemize}
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  determine evaluation schedule
+\item
+  design and validate system
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, breakable, coltitle=black, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, toprule=.15mm, left=2mm, bottomrule=.15mm, opacitybacktitle=0.6, titlerule=0mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, bottomtitle=1mm, colframe=quarto-callout-note-color-frame, leftrule=.75mm, rightrule=.15mm]
+
+Requirements 5.2.1; 5.3.1; and 5.3.2 are closely related. Requirement
+5.2.1 is concerned with design of the platform for end-users who may be
+patients or medical staff with diverse accessibility needs. Requirement
+5.3.1 is concerned with more general inclusivity of specifically
+patients in the overall development and goals of the STRATIF-AI
+platform. Requirement 5.3.2 refers to a feedback system---again closely
+linked with several other requirements---to provide information to
+enable the fulfillment of requirements 5.2.1 and 5.3.1.
+
+\end{tcolorbox}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{societal-and-environmental-well-being}{%
+\chapter{Societal and Environmental
+Well-being}\label{societal-and-environmental-well-being}}
+
+The impacts of the AI system on the wellbeing of society must be
+considered throughout its life cycle. A system which is encountered in
+aspects of daily life---e.g., healthcare---has the potential to
+negatively impact mental health and emotional wellbeing. Such effects
+must be carefully considered and mitigated. Additonally, the
+sustainability of the AI system under development must be a point of
+discussion, such that the development and utilization of an AI system
+benefits all human beings, including future generations. Finally, the
+system must not undermine democratic processes or pose a threat to
+democratic society.
+
+\hypertarget{environmental-wellbeing}{%
+\section{Environmental Wellbeing}\label{environmental-wellbeing}}
+
+AI systems should be as environmentally friendly as possible. The
+development, deployment and use-processes must therefore be assessed in
+terms of energy consumption and resource demands, in order to minimize
+waste. During the development of the STRATIF-AI project, the potential
+of negative harm on the environment needs to be systematically
+considered. Measuring the environmental impact through energy consumed
+and carbon emissions will be built into the development pipeline.
+Measures to reduce these impacts will be subsequently explored.
+
+\hypertarget{identify-environmental-impact-of-model-development}{%
+\subsection{Identify environmental impact of model
+development}\label{identify-environmental-impact-of-model-development}}
+
+\textbf{Description} The \textbf{\emph{environmental impacts}} of
+\textbf{\emph{system development processes}} need to be measured or
+estimated by appropriate \textbf{\emph{methodologies}}.
+
+\textbf{\emph{environmental impacts:}} carbon emissions; energy used;\\
+\textbf{\emph{system development processes}}: model training;
+\emph{other process with footprint?}\\
+\textbf{\emph{methodologies:}} \emph{TBD}
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP2
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  technical staff
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} ALL
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define parameters (environmental and possibly costly processes)
+\item
+  define method to estimate costs
+\item
+  report costs to consortium/in documentation
+\end{itemize}
+
+\hypertarget{reduce-environmental-impact}{%
+\subsection{Reduce environmental
+impact}\label{reduce-environmental-impact}}
+
+\textbf{Description} A SOP which outlines acceptable
+\textbf{\emph{thresholds}} and a resulting process protocol must be
+developed within an \textbf{\emph{appropriate timeframe}} to mitigate
+environmental impacts.
+
+\textbf{\emph{thresholds:}} \emph{limit for carbon emissions for model
+training; limit for time spent model training}\\
+\textbf{\emph{appropriate timeframe:}} \emph{TBD}
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP2
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  technical staff
+\item
+  WP3
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} ALL
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define parameters/ thresholds and procedures
+\item
+  draft SOP (WP3)
+\item
+  develop SOP for modelling team
+\item
+  publish SOP
+\end{itemize}
+
+\hypertarget{impact-on-work-and-skills}{%
+\section{Impact on Work and Skills}\label{impact-on-work-and-skills}}
+
+\hypertarget{altai-assessment-14}{%
+\subsection*{ALTAI Assessment}\label{altai-assessment-14}}
+\addcontentsline{toc}{subsection}{ALTAI Assessment}
+
+STRATIF-AI will be designed with a human-in-command governance system
+and to prioritize the epistemic authority of physicians. However, as a
+clinical decision-support system, STRATIF-AI will potentially have
+significant impacts on human work and work arrangements, necessitating a
+thorough assessment through an implementation strategy. While medical
+professionals will play a central role in the development pipeline of
+STRATIF-AI, broader inclusion and consultation with potentially affected
+workers and their representatives will be carried out. Measures to
+minimize the system's impact on human work will be implemented,
+following an in-depth investigation of STRATIF-AI's potential risks
+regarding the de-skilling of doctors or the alteration of training
+procedures and experiential learning.
+
+\hypertarget{investigate-impact-on-work-arrangements}{%
+\subsection{Investigate impact on work
+arrangements}\label{investigate-impact-on-work-arrangements}}
+
+\textbf{Description} \textbf{\emph{Methodology}} to assess
+\textbf{\emph{concerns}} of potentially affected \textbf{\emph{workers}}
+must be devised to inform the platform's implementation strategy.
+
+\textbf{\emph{methodology:}} \emph{TBD; stakeholder interviews;
+workshops; focus groups}\\
+\textbf{\emph{concerns:}} \emph{TBD; de-skilling; mistrust}\\
+\textbf{\emph{workers:}} doctors; nurses; insurance personnel; training
+personnel; rehabilitation specialists; physiotherapists; \emph{any
+affected working persons involved in the care of stroke patients}
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP3
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  WP4
+\item
+  WP5
+\item
+  WP6
+\item
+  WP7
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define full set of at-risk workers
+\item
+  conduct workshops with key personnel
+\item
+  design interview to elicit concerns from workers
+\item
+  write process protocol for implementation strategy
+\item
+  feed into HIC concept
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, breakable, coltitle=black, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, toprule=.15mm, left=2mm, bottomrule=.15mm, opacitybacktitle=0.6, titlerule=0mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, bottomtitle=1mm, colframe=quarto-callout-note-color-frame, leftrule=.75mm, rightrule=.15mm]
+
+In the initial co-creation workshop series, participants expressed
+concerns that integrating the STRATIF-AI platform into clinical practice
+too early and without warning may limit the natural experience-building
+process that physicians generally undergo.
+
+\end{tcolorbox}
+
+\hypertarget{impact-on-society-at-large-or-democracy}{%
+\section{Impact on Society at large or
+Democracy}\label{impact-on-society-at-large-or-democracy}}
+
+\hypertarget{altai-assessment-15}{%
+\subsection*{ALTAI Assessment}\label{altai-assessment-15}}
+\addcontentsline{toc}{subsection}{ALTAI Assessment}
+
+Potential ramifications on society at large and democracy will be
+considered throughout the STRATIF-AI project cycle. To assess the
+societal impact of the AI system's utilization beyond those to immediate
+end-users and subjects, we will solicit feedback throughout planned
+pilot and clinical trial studies. A key aspect of the STRATIF-AI
+platform is developing an infrastructure to empower citizens to monitor
+their overall health and wellbeing while screening for risk of
+stroke---which will contribute to the benefit of society at large. The
+STRATIF-AI platform is not at risk of undermining democratic principles
+or adversely affecting democracy.
+
+\hypertarget{solicit-citizen-feedback}{%
+\subsection{Solicit citizen feedback}\label{solicit-citizen-feedback}}
+
+\textbf{Description} Include diverse \textbf{\emph{citizens}} in
+discussions at relevant \textbf{\emph{stages}} of the STRATIF-AI
+pipeline.
+
+\textbf{\emph{citizens:}} citizens; hospital workers; \emph{persons who
+may be overlooked in stakeholder discussions}\\
+\textbf{\emph{stages:}} \emph{TBD; public representation of STRATIF-AI
+project; youtube; reddit}
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP3
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  all WP leads
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} ALL
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel/ WP leads
+\item
+  define parameters, i.e.~stakeholders who may be overlooked
+\item
+  clarify potential procedures within WP tasks to incorporate
+  discussions
+\item
+  assess input from stakeholders
+\item
+  disseminate information
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{accountability}{%
+\chapter{Accountability}\label{accountability}}
+
+The principle of accountability highlights the need to establish
+mechanisms to guarantee responsibility throughout the lifecycle of AI
+systems. This principle intersects closely with risk management
+practices, which involve transparently identifying and mitigating risks
+that can be comprehended and audited by external parties. In instances
+where unjust or adverse impacts arise, accessible mechanisms for
+accountability must be established, to facilitate the opportunity for
+redress to affected parties.
+
+\hypertarget{auditability}{%
+\section{Auditability}\label{auditability}}
+
+\hypertarget{altai-assessment-16}{%
+\subsection*{ALTAI Assessment}\label{altai-assessment-16}}
+\addcontentsline{toc}{subsection}{ALTAI Assessment}
+
+The auditability of STRATIF-AI's workflow and system lifecycle is a
+fundamental aspect of our ethical plan. By creating a living document,
+we aim to establish a transparent and traceable log of all measures
+taken to adhere to ethical principles and legal requirements. To ensure
+the AI system can be audited by independent third parties, the ethical
+plan will be made available or disseminated accordingly.
+
+\hypertarget{facilitate-auditability}{%
+\subsection{Facilitate auditability}\label{facilitate-auditability}}
+
+\textbf{Description} \textbf{\emph{Methodology}} to facilitate external
+audits of STRATIF-AI processes will be instituted and
+\textbf{\emph{validated}}.
+
+\textbf{\emph{Methodology:}} A publicly available and version-controlled
+ethical plan; \emph{TBD}\\
+\textbf{\emph{validated:}} validated by Z-inspection process; validated
+within Delphi study
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP3
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  WP7
+\item
+  WP2
+\end{itemize}
+
+\textbf{Schedule} At any point, before end of project.
+
+\textbf{Stroke Phase} ALL
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define additional outputs?
+\item
+  discuss site prototype and any legal barriers
+\item
+  solicit feedback on prototype
+\item
+  create sub-page to report important parameters
+\item
+  define important parameters
+\item
+  e.g.~traceability of the development process, the sourcing of training
+  data and the logging of the AI system's processes, outcomes, positive
+  and negative impact
+\item
+  make pages public
+\end{itemize}
+
+\hypertarget{tradeoffs-risk-management}{%
+\section{Tradeoffs/ Risk-management}\label{tradeoffs-risk-management}}
+
+\hypertarget{altai-assessment-17}{%
+\subsection*{ALTAI Assessment}\label{altai-assessment-17}}
+\addcontentsline{toc}{subsection}{ALTAI Assessment}
+
+It is essential to identify, assess, document, and mitigate potential
+negative impacts of AI systems, particularly for those directly or
+indirectly affected. Safeguards must be in place to protect
+whistleblowers, NGOs, trade unions, and other entities reporting
+legitimate concerns about AI systems. As part of WP3 within the
+STRATIF-AI project, we will conduct an external Z-inspection assessment,
+which is a gold-standard and validated methodology to assess the ethical
+impacts of an AI tool. A comprehensive risk training protocol will be
+designed and adhere to any legal protocols. Our ethical plan has been
+designed in concordance with the Assessment List for Trustworthy AI
+(ALTAI), and, as such, will be continually evaluated throughout the AI
+system's lifecycle.
+
+While implementing these requirements, tensions may arise, necessitating
+inevitable trade-offs. We will identify relevant interests and values
+implicated by the AI system and explicitly evaluate trade-offs in terms
+of their risk to safety and ethical principles, including fundamental
+rights. These decisions will be thoroughly documented throughout our
+ethical audit process. Additionally, a a process for third parties
+(e.g.~suppliers, end-users, subjects, distributors/vendors or workers)
+to report potential vulnerabilities, risks or biases in the AI system,
+and a following risk management protocol will be instituted. Accessible
+mechanisms to ensure adequate redress will be established.
+
+\hypertarget{institute-external-reporting-system}{%
+\subsection{Institute external reporting
+system}\label{institute-external-reporting-system}}
+
+\textbf{Description} A system for \textbf{\emph{third-parties}} to make
+reports about \textbf{\emph{risks}} should be established within the
+platform and \textbf{\emph{periodically}} be evaluated.
+
+\textbf{\emph{third-parties:}} citizens; hospital workers; developers;
+\emph{any contributors of technology or data}\\
+\textbf{\emph{risks:}} vulnerabilities; errors; concerns\\
+\textbf{\emph{periodically:}} \emph{TBD}
+
+\textbf{Stroke Phase} ALL
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP2
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  design staff
+\item
+  technical staff
+\item
+  WP3
+\end{itemize}
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define all parameters
+\item
+  define link to feedback reporting loop
+\item
+  implement/design procedure
+\item
+  feedback from third parties to validate
+\item
+  test system
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, breakable, coltitle=black, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, toprule=.15mm, left=2mm, bottomrule=.15mm, opacitybacktitle=0.6, titlerule=0mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, bottomtitle=1mm, colframe=quarto-callout-note-color-frame, leftrule=.75mm, rightrule=.15mm]
+
+In relation to requirement 6.3.1, it will be necessary to solicit and
+encourage feedback from non-users and potential users to mitigate risks
+of misuse or under-user of the STRATIF-AI platform.
+
+\end{tcolorbox}
+
+\hypertarget{collect-post-prediction-feedback}{%
+\subsection{Collect post-prediction
+feedback}\label{collect-post-prediction-feedback}}
+
+\textbf{Description} A system for \textbf{\emph{end-users}} to provide
+feedback about \textbf{\emph{medical applicability}} should be
+established within the platform.
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, breakable, coltitle=black, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, toprule=.15mm, left=2mm, bottomrule=.15mm, opacitybacktitle=0.6, titlerule=0mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, bottomtitle=1mm, colframe=quarto-callout-note-color-frame, leftrule=.75mm, rightrule=.15mm]
+
+This is closely related to the requirement 1.2.2
+\protect\hyperlink{human-agency-and-oversight}{Human Agency and
+Oversight}; Institute reporting feedback loop.
+
+\end{tcolorbox}
+
+\textbf{\emph{end-users:}} medical professionals\\
+\textbf{\emph{medical applicability:}} effectiveness; relevance;
+alignment with evolving medical knowledge and practices;
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP4
+\item
+  WP5
+\item
+  WP6
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  medical staff
+\item
+  design staff
+\item
+  technical staff
+\end{itemize}
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  medical professionals to define key parameters
+\item
+  prototype for system/information parameters
+\item
+  implementation by WP2/ design staff
+\item
+  design and validate system
+\end{itemize}
+
+\hypertarget{conduct-budget-impact-analysis}{%
+\subsection{Conduct budget impact
+analysis}\label{conduct-budget-impact-analysis}}
+
+\textbf{Description} The economic justification of the implementation of
+the STRATIF-AI platform for different \textbf{\emph{stakeholders}} must
+be made via cost-benefit analyses.
+
+\textbf{\emph{stakeholders:}} hospitals; insurance companies; patients;
+rehab centers; \emph{any affected institutional parties?}
+
+\textbf{Stroke Phase} EACH (3)
+
+\textbf{Owner}
+
+\begin{itemize}
+\tightlist
+\item
+  WP7
+\end{itemize}
+
+\textbf{Key Personnel}
+
+\begin{itemize}
+\tightlist
+\item
+  medical staff
+\end{itemize}
+
+\textbf{Actionable tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  appoint key personnel
+\item
+  define parameters
+\item
+  design budget impact/ cost-benefit analysis study
+\item
+  conduct analysis
+\item
+  report results
+\item
+  publication/dissemination of results
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{work-package-1}{%
+\chapter*{Work Package 1}\label{work-package-1}}
+\addcontentsline{toc}{chapter}{Work Package 1}
+
+\markboth{Work Package 1}{Work Package 1}
+
+\textbf{Semantic interoperability and federated learning platform}
+
+\hypertarget{technical-robustness-and-safety-1}{%
+\section*{Technical Robustness and
+Safety}\label{technical-robustness-and-safety-1}}
+\addcontentsline{toc}{section}{Technical Robustness and Safety}
+
+\markright{Technical Robustness and Safety}
+
+\emph{Resilience to attack and security}
+
+\protect\hyperlink{define-risks-of-federated-learning}{Define risks of
+Federated Learning}
+
+\emph{Accuracy}
+
+\protect\hyperlink{evaluate-data-accuracy-within-federated-learning}{Evaluate
+data accuracy within Federated Learning}
+
+\hypertarget{privacy-and-data-governance-1}{%
+\section*{Privacy and Data
+Governance}\label{privacy-and-data-governance-1}}
+\addcontentsline{toc}{section}{Privacy and Data Governance}
+
+\markright{Privacy and Data Governance}
+
+\emph{Privacy}
+
+\protect\hyperlink{investigate-right-to-privacy-within-federated-learning}{Investigate
+right to privacy within Federated Learning}
+
+\protect\hyperlink{allocate-data-usage-and-access-rights}{Allocate data
+usage and access rights}
+
+\emph{Data governance}
+
+\protect\hyperlink{assess-data-quality}{Assess data quality}
+
+\protect\hyperlink{standardize-data-preparation-procedures}{Standardize
+data preparation procedures}
+
+\protect\hyperlink{standardize-data-harmonization-procedures}{Standardize
+data harmonization procedures}
+
+\protect\hyperlink{adhere-to-gdpr}{Adhere to GDPR}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{work-package-2}{%
+\chapter*{Work Package 2}\label{work-package-2}}
+\addcontentsline{toc}{chapter}{Work Package 2}
+
+\markboth{Work Package 2}{Work Package 2}
+
+\textbf{STRATIF-AI platform development and hybrid modelling}
+
+\hypertarget{human-agency-and-oversight-1}{%
+\section*{Human Agency and
+Oversight}\label{human-agency-and-oversight-1}}
+\addcontentsline{toc}{section}{Human Agency and Oversight}
+
+\markright{Human Agency and Oversight}
+
+\emph{Human agency and autonomy}
+
+\protect\hyperlink{explain-model-output}{Explain model output}
+
+\emph{Human oversight}
+
+\protect\hyperlink{institute-reporting-feedback-loop}{Institute
+reporting feedback loop}
+
+\protect\hyperlink{enable-autonomy-of-end-users}{Enable autonomy of
+end-users}
+
+\hypertarget{technical-robustness-and-safety-2}{%
+\section*{Technical Robustness and
+Safety}\label{technical-robustness-and-safety-2}}
+\addcontentsline{toc}{section}{Technical Robustness and Safety}
+
+\markright{Technical Robustness and Safety}
+
+\emph{Resilience to attack and security}
+
+\protect\hyperlink{establish-emergency-protocols}{Establish emergency
+protocols}
+
+\emph{General safety}
+
+\protect\hyperlink{implement-risk-assessment-feedback-loop}{Implement
+risk-assessment feedback loop}
+
+\protect\hyperlink{derive-process-protocol-for-technical-updates}{Derive
+process protocol for technical updates}
+
+\emph{Accuracy}
+
+\protect\hyperlink{evaluate-accuracy-of-model-predictions}{Evaluate
+accuracy of model predictions}
+
+\protect\hyperlink{establish-internal-validity}{Establish internal
+validity}
+
+\protect\hyperlink{establish-external-validity}{Establish external
+validity}
+
+\emph{Reliability and reproducibility}
+
+\protect\hyperlink{track-system-errors}{Track system errors}
+
+\hypertarget{privacy-and-data-governance-2}{%
+\section*{Privacy and Data
+Governance}\label{privacy-and-data-governance-2}}
+\addcontentsline{toc}{section}{Privacy and Data Governance}
+
+\markright{Privacy and Data Governance}
+
+\emph{Privacy}
+
+\protect\hyperlink{implement-feedback-system}{Implement feedback system}
+
+\hypertarget{transparency-1}{%
+\section*{Transparency}\label{transparency-1}}
+\addcontentsline{toc}{section}{Transparency}
+
+\markright{Transparency}
+
+\emph{Traceability}
+
+\protect\hyperlink{enable-system-traceability}{Enable system
+traceability}
+
+\protect\hyperlink{quality-control-of-predictions}{Quality control of
+predictions}
+
+\emph{Explainability}
+
+\protect\hyperlink{provide-decision-making-parameters-to-end-users}{Provide
+decision-making parameters to end-users}
+
+\protect\hyperlink{monitor-explainability}{Monitor explainability}
+
+\protect\hyperlink{assess-costs-of-model-explainability}{Assess costs of
+model explainability}
+
+\hypertarget{diversity-non-discrimination-and-fairness-1}{%
+\section*{Diversity, Non-discrimination and
+Fairness}\label{diversity-non-discrimination-and-fairness-1}}
+\addcontentsline{toc}{section}{Diversity, Non-discrimination and
+Fairness}
+
+\markright{Diversity, Non-discrimination and Fairness}
+
+\emph{Avoidance of unfair bias}
+
+\protect\hyperlink{monitor-bias}{Monitor bias}
+
+\protect\hyperlink{assess-prediction-bias}{Assess prediction bias}
+
+\protect\hyperlink{implement-bias-reporting-system}{Implement bias
+reporting system}
+
+\emph{Stakeholder participation}
+
+\protect\hyperlink{foster-end-user-feedback}{Foster end-user feedback}
+
+\hypertarget{societal-and-environmental-well-being-1}{%
+\section*{Societal and Environmental
+Well-being}\label{societal-and-environmental-well-being-1}}
+\addcontentsline{toc}{section}{Societal and Environmental Well-being}
+
+\markright{Societal and Environmental Well-being}
+
+\emph{Environmental Wellbeing}
+
+\protect\hyperlink{identify-environmental-impact-of-model-development}{Identify
+environmental impact of model development}
+
+\protect\hyperlink{reduce-environmental-impact}{Reduce environmental
+impact}
+
+\hypertarget{accountability-1}{%
+\section*{Accountability}\label{accountability-1}}
+\addcontentsline{toc}{section}{Accountability}
+
+\markright{Accountability}
+
+\emph{Tradeoffs/ Risk-management}
+
+\protect\hyperlink{institute-external-reporting-system}{Institute
+external reporting system}
+
+\protect\hyperlink{collect-post-prediction-feedback}{Collect
+post-prediction feedback}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{work-package-3}{%
+\chapter*{Work Package 3}\label{work-package-3}}
+\addcontentsline{toc}{chapter}{Work Package 3}
+
+\markboth{Work Package 3}{Work Package 3}
+
+\textbf{Ethical and trustworthy design}
+
+\hypertarget{human-agency-and-oversight-2}{%
+\section*{Human Agency and
+Oversight}\label{human-agency-and-oversight-2}}
+\addcontentsline{toc}{section}{Human Agency and Oversight}
+
+\markright{Human Agency and Oversight}
+
+\emph{Human agency and autonomy}
+
+\protect\hyperlink{establish-degree-of-trust}{Establish degree of trust}
+
+\emph{Human oversight}
+
+\protect\hyperlink{establish-hic-governance}{Establish HIC governance}
+
+\hypertarget{privacy-and-data-governance-3}{%
+\section*{Privacy and Data
+Governance}\label{privacy-and-data-governance-3}}
+\addcontentsline{toc}{section}{Privacy and Data Governance}
+
+\markright{Privacy and Data Governance}
+
+\emph{Data governance}
+
+\protect\hyperlink{investigate-data-minimization}{Investigate data
+minimization}
+
+\hypertarget{transparency-2}{%
+\section*{Transparency}\label{transparency-2}}
+\addcontentsline{toc}{section}{Transparency}
+
+\markright{Transparency}
+
+\emph{4.3. Communication}
+
+\protect\hyperlink{tailor-explainability-material}{Tailor explainability
+material}
+
+\hypertarget{diversity-non-discrimination-and-fairness-2}{%
+\section*{Diversity, Non-discrimination and
+Fairness}\label{diversity-non-discrimination-and-fairness-2}}
+\addcontentsline{toc}{section}{Diversity, Non-discrimination and
+Fairness}
+
+\markright{Diversity, Non-discrimination and Fairness}
+
+\emph{Avoidance of unfair bias}
+
+\protect\hyperlink{cultivate-ethical-awareness}{Cultivate ethical
+awareness}
+
+\protect\hyperlink{assess-and-build-trust-within-vulnerable-patient-groups}{Assess
+and build trust within vulnerable patient groups}
+
+\emph{Accessibility and universal design}
+
+\protect\hyperlink{utilize-inclusive-design-principles}{Utilize
+inclusive design principles}
+
+\emph{Stakeholder participation}
+
+\protect\hyperlink{incorporate-patient-perspectives}{Incorporate patient
+perspectives}
+
+\hypertarget{societal-and-environmental-well-being-2}{%
+\section*{Societal and Environmental
+Well-being}\label{societal-and-environmental-well-being-2}}
+\addcontentsline{toc}{section}{Societal and Environmental Well-being}
+
+\markright{Societal and Environmental Well-being}
+
+\emph{Impact on Work and Skills}
+
+\protect\hyperlink{investigate-impact-on-work-arrangements}{Investigate
+impact on work arrangements}
+
+\emph{Impact on Society at large or Democracy}
+
+\protect\hyperlink{solicit-citizen-feedback}{Solicit citizen feedback}
+
+\hypertarget{accountability-2}{%
+\section*{Accountability}\label{accountability-2}}
+\addcontentsline{toc}{section}{Accountability}
+
+\markright{Accountability}
+
+\emph{Auditability}
+
+\protect\hyperlink{facilitate-auditability}{Facilitate auditability}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{work-package-4}{%
+\chapter*{Work Package 4}\label{work-package-4}}
+\addcontentsline{toc}{chapter}{Work Package 4}
+
+\markboth{Work Package 4}{Work Package 4}
+
+\textbf{Prevention}
+
+\hypertarget{human-agency-and-oversight-3}{%
+\section*{Human Agency and
+Oversight}\label{human-agency-and-oversight-3}}
+\addcontentsline{toc}{section}{Human Agency and Oversight}
+
+\markright{Human Agency and Oversight}
+
+\emph{Human agency and autonomy}
+
+\protect\hyperlink{define-epistemic-authority}{Define epistemic
+authority}
+
+\emph{Human oversight}
+
+\protect\hyperlink{manage-patient-expectations}{Manage patient
+expectations}
+
+\hypertarget{technical-robustness-and-safety-3}{%
+\section*{Technical Robustness and
+Safety}\label{technical-robustness-and-safety-3}}
+\addcontentsline{toc}{section}{Technical Robustness and Safety}
+
+\markright{Technical Robustness and Safety}
+
+\emph{General safety}
+
+\protect\hyperlink{assess-risk-of-use}{Assess risk of use}
+
+\hypertarget{privacy-and-data-governance-4}{%
+\section*{Privacy and Data
+Governance}\label{privacy-and-data-governance-4}}
+\addcontentsline{toc}{section}{Privacy and Data Governance}
+
+\markright{Privacy and Data Governance}
+
+\emph{Data governance}
+
+\protect\hyperlink{acquire-informed-consent}{Acquire informed consent}
+
+\hypertarget{diversity-non-discrimination-and-fairness-3}{%
+\section*{Diversity, Non-discrimination and
+Fairness}\label{diversity-non-discrimination-and-fairness-3}}
+\addcontentsline{toc}{section}{Diversity, Non-discrimination and
+Fairness}
+
+\markright{Diversity, Non-discrimination and Fairness}
+
+\emph{Avoidance of unfair bias}
+
+\protect\hyperlink{represent-diversity-in-training-data}{Represent
+diversity in training data}
+
+\hypertarget{accountability-3}{%
+\section*{Accountability}\label{accountability-3}}
+\addcontentsline{toc}{section}{Accountability}
+
+\markright{Accountability}
+
+\emph{Tradeoffs/ Risk-management}
+
+\protect\hyperlink{collect-post-prediction-feedback}{Collect
+post-prediction feedback}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{work-package-5}{%
+\chapter*{Work Package 5}\label{work-package-5}}
+\addcontentsline{toc}{chapter}{Work Package 5}
+
+\markboth{Work Package 5}{Work Package 5}
+
+\textbf{Acute treatment and monitoring}
+
+\hypertarget{human-agency-and-oversight-4}{%
+\section*{Human Agency and
+Oversight}\label{human-agency-and-oversight-4}}
+\addcontentsline{toc}{section}{Human Agency and Oversight}
+
+\markright{Human Agency and Oversight}
+
+\emph{Human agency and autonomy}
+
+\protect\hyperlink{define-epistemic-authority}{Define epistemic
+authority}
+
+\emph{Human oversight}
+
+\protect\hyperlink{manage-patient-expectations}{Manage patient
+expectations}
+
+\hypertarget{technical-robustness-and-safety-4}{%
+\section*{Technical Robustness and
+Safety}\label{technical-robustness-and-safety-4}}
+\addcontentsline{toc}{section}{Technical Robustness and Safety}
+
+\markright{Technical Robustness and Safety}
+
+\emph{General safety}
+
+\protect\hyperlink{assess-risk-of-use}{Assess risk of use}
+
+\hypertarget{privacy-and-data-governance-5}{%
+\section*{Privacy and Data
+Governance}\label{privacy-and-data-governance-5}}
+\addcontentsline{toc}{section}{Privacy and Data Governance}
+
+\markright{Privacy and Data Governance}
+
+\emph{Data governance}
+
+\protect\hyperlink{acquire-informed-consent}{Acquire informed consent}
+
+\hypertarget{diversity-non-discrimination-and-fairness-4}{%
+\section*{Diversity, Non-discrimination and
+Fairness}\label{diversity-non-discrimination-and-fairness-4}}
+\addcontentsline{toc}{section}{Diversity, Non-discrimination and
+Fairness}
+
+\markright{Diversity, Non-discrimination and Fairness}
+
+\emph{Avoidance of unfair bias}
+
+\protect\hyperlink{represent-diversity-in-training-data}{Represent
+diversity in training data}
+
+\textbf{Accountability}
+
+\emph{Tradeoffs/ Risk-management}
+
+\protect\hyperlink{collect-post-prediction-feedback}{Collect
+post-prediction feedback}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{work-package-6}{%
+\chapter*{Work Package 6}\label{work-package-6}}
+\addcontentsline{toc}{chapter}{Work Package 6}
+
+\markboth{Work Package 6}{Work Package 6}
+
+\textbf{Rehabilitation and follow-up of chronic condition}
+
+\hypertarget{human-agency-and-oversight-5}{%
+\section*{Human Agency and
+Oversight}\label{human-agency-and-oversight-5}}
+\addcontentsline{toc}{section}{Human Agency and Oversight}
+
+\markright{Human Agency and Oversight}
+
+\emph{Human agency and autonomy}
+
+\protect\hyperlink{define-epistemic-authority}{Define epistemic
+authority}
+
+\emph{Human oversight}
+
+\protect\hyperlink{manage-patient-expectations}{Manage patient
+expectations}
+
+\hypertarget{technical-robustness-and-safety-5}{%
+\section*{Technical Robustness and
+Safety}\label{technical-robustness-and-safety-5}}
+\addcontentsline{toc}{section}{Technical Robustness and Safety}
+
+\markright{Technical Robustness and Safety}
+
+\emph{General safety}
+
+\protect\hyperlink{assess-risk-of-use}{Assess risk of use}
+
+\hypertarget{privacy-and-data-governance-6}{%
+\section*{Privacy and Data
+Governance}\label{privacy-and-data-governance-6}}
+\addcontentsline{toc}{section}{Privacy and Data Governance}
+
+\markright{Privacy and Data Governance}
+
+\emph{Data governance}
+
+\protect\hyperlink{acquire-informed-consent}{Acquire informed consent}
+
+\hypertarget{diversity-non-discrimination-and-fairness-5}{%
+\section*{Diversity, Non-discrimination and
+Fairness}\label{diversity-non-discrimination-and-fairness-5}}
+\addcontentsline{toc}{section}{Diversity, Non-discrimination and
+Fairness}
+
+\markright{Diversity, Non-discrimination and Fairness}
+
+\emph{Avoidance of unfair bias}
+
+\protect\hyperlink{represent-diversity-in-training-data}{Represent
+diversity in training data}
+
+\hypertarget{accountability-4}{%
+\section*{Accountability}\label{accountability-4}}
+\addcontentsline{toc}{section}{Accountability}
+
+\markright{Accountability}
+
+\emph{Tradeoffs/ Risk-management}
+
+\protect\hyperlink{collect-post-prediction-feedback}{Collect
+post-prediction feedback}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{work-package-7}{%
+\chapter*{Work Package 7}\label{work-package-7}}
+\addcontentsline{toc}{chapter}{Work Package 7}
+
+\markboth{Work Package 7}{Work Package 7}
+
+\textbf{Coordination, Dissemination, Implementation, and exploitation}
+
+\hypertarget{human-agency-and-oversight-6}{%
+\section*{Human Agency and
+Oversight}\label{human-agency-and-oversight-6}}
+\addcontentsline{toc}{section}{Human Agency and Oversight}
+
+\markright{Human Agency and Oversight}
+
+\emph{Human agency and autonomy}
+
+\protect\hyperlink{foster-patient-autonomy}{Foster patient autonomy}
+
+\hypertarget{technical-robustness-and-safety-6}{%
+\section*{Technical Robustness and
+Safety}\label{technical-robustness-and-safety-6}}
+\addcontentsline{toc}{section}{Technical Robustness and Safety}
+
+\markright{Technical Robustness and Safety}
+
+\emph{Resilience to attack and security}
+
+\protect\hyperlink{comply-with-cybersecurity-law}{Comply with
+cybersecurity law}
+
+\emph{General safety}
+
+\protect\hyperlink{communicate-risks-to-patients}{Communicate risks to
+patients}
+
+\emph{Reliability and reproducibility}
+
+\protect\hyperlink{ensure-continuous-adaptation}{Ensure continuous
+adaptation}
+
+\hypertarget{transparency-3}{%
+\section*{Transparency}\label{transparency-3}}
+\addcontentsline{toc}{section}{Transparency}
+
+\markright{Transparency}
+
+\emph{Communication}
+
+\protect\hyperlink{standardize-training-materials}{Standardize training
+materials}
+
+\hypertarget{diversity-non-discrimination-and-fairness-6}{%
+\section*{Diversity, Non-discrimination and
+Fairness}\label{diversity-non-discrimination-and-fairness-6}}
+\addcontentsline{toc}{section}{Diversity, Non-discrimination and
+Fairness}
+
+\markright{Diversity, Non-discrimination and Fairness}
+
+\emph{Avoidance of unfair bias}
+
+\protect\hyperlink{assess-fairness-across-use-setting}{Assess fairness
+across use-setting}
+
+\protect\hyperlink{implement-fairness-reporting-system}{Implement
+fairness reporting system}
+
+\emph{Accessibility and universal design}
+
+\protect\hyperlink{assess-financial-risk-of-unfair-design}{Assess
+financial risk of unfair design}
+
+\hypertarget{accountability-5}{%
+\section*{Accountability}\label{accountability-5}}
+\addcontentsline{toc}{section}{Accountability}
+
+\markright{Accountability}
+
+\emph{Tradeoffs/ Risk-management}
+
+\protect\hyperlink{conduct-budget-impact-analysis}{Conduct budget impact
+analysis}
+
+
+
+\end{document}

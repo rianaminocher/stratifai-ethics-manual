@@ -1,15 +1,10 @@
 # Framework {.unnumbered}
 
-Deliverable 3.2 presents a snapshot of the **Framework for Ethical and Trustworthy Design of the STRATIF-AI platform**. 
-
 The goal of the framework is to enumerate project-specific requirements that can help to mitigate ethical risks and increase trustworthiness throughout the STRATIF-AI development process.  
 
 ## Design and Use
 
-Our framework has been designed to be a living document[^1], and, as such, will be revised following upcoming workshops, audits, and through external validation. Deliverable D3.2 is a PDF document which captures a static version of the framework at the current time point. The live version of the framework is is hosted [online](https://s-quest.bihealth.org/stratif-ai-ethics/) on the Charité server. The site is currently available under password protection to members of the STRATIF-AI consortium[^2], and can be made publicly available upon its finalization and upon request. 
-
-[^1]:a document that is continually edited and updated.
-[^2]:username: stratifai, password: Mulch_Snout_Devotion
+Our framework has been designed to be a living document, and, as such, will be revised following upcoming workshops, audits, and through external validation. 
 
 The contents of the first version of the framework were developed based on a series of co-creation workshops (see: [Workshops](workshops.qmd)). 
 

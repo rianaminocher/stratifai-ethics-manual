@@ -2,13 +2,11 @@ project:
   type: book
 
 book:
-  title: "Deliverable 3.2 Ethical plan"
+  title: "Plan for Ethical and Trustworthy Design of the STRATIF-AI project"
   author: ""
   date: ""
   chapters:
     - index.qmd
-    - abstract.qmd
-    - overview.qmd
     - framework.qmd
     - workshops.qmd
     - 1_oversight.qmd
@@ -18,6 +16,7 @@ book:
     - 5_diversity.qmd
     - 6_societal.qmd
     - 7_accountability.qmd
+    - wp_tasks.qmd
 
 bibliography: references.bib
 

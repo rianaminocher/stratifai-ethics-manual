@@ -1,0 +1,91 @@
+# Work Package 2 {.unnumbered}
+
+**STRATIF-AI platform development and hybrid modelling**
+
+## Human Agency and Oversight 
+
+*Human agency and autonomy*
+
+[Explain model output](1_oversight.qmd#explain-model-output)
+
+*Human oversight*
+
+[Institute reporting feedback loop](1_oversight.qmd#institute-reporting-feedback-loop)
+
+[Enable autonomy of end-users](1_oversight.qmd#enable-autonomy-of-end-users)
+
+## Technical Robustness and Safety
+
+*Resilience to attack and security*
+
+[Establish emergency protocols](2_technical.qmd#establish-emergency-protocols)
+
+*General safety*
+
+[Implement risk-assessment feedback loop](2_technical.qmd#implement-risk-assessment-feedback-loop)
+
+[Derive process protocol for technical updates](2_technical.qmd#derive-process-protocol-for-technical-updates)
+
+*Accuracy*
+
+[Evaluate accuracy of model predictions](2_technical.qmd#evaluate-accuracy-of-model-predictions)
+
+[Establish internal validity](2_technical.qmd#establish-internal-validity)
+
+[Establish external validity](2_technical.qmd#establish-external-validity)
+
+*Reliability and reproducibility*
+
+[Track system errors](2_technical.qmd#track-system-errors)
+
+## Privacy and Data Governance 
+
+*Privacy*
+
+[Implement feedback system](3_privacy.qmd#implement-feedback-system)
+
+## Transparency
+
+*Traceability*
+
+[Enable system traceability](4_transparency.qmd#enable-system-traceability)
+
+[Quality control of predictions](4_transparency.qmd#quality-control-of-predictions)
+
+*Explainability*
+
+[Provide decision-making parameters to end-users](4_transparency.qmd#provide-decision-making-parameters-to-end-users)
+
+[Monitor explainability](4_transparency.qmd#monitor-explainability)
+
+[Assess costs of model explainability](4_transparency.qmd#assess-costs-of-model-explainability)
+
+## Diversity, Non-discrimination and Fairness
+
+*Avoidance of unfair bias*
+
+[Monitor bias](5_diversity.qmd#monitor-bias)
+
+[Assess prediction bias](5_diversity.qmd#assess-prediction-bias)
+
+[Implement bias reporting system](5_diversity.qmd#implement-bias-reporting-system)
+
+*Stakeholder participation*
+
+[Foster end-user feedback](5_diversity.qmd#foster-end-user-feedback)
+
+## Societal and Environmental Well-being
+
+*Environmental Wellbeing*
+
+[Identify environmental impact of model development](6_societal.qmd#identify-environmental-impact-of-model-development)
+
+[Reduce environmental impact](6_societal.qmd#reduce-environmental-impact)
+
+## Accountability 
+
+*Tradeoffs/ Risk-management*
+
+[Institute external reporting system](7_accountability.qmd#institute-external-reporting-system)
+
+[Collect post-prediction feedback](7_accountability.qmd#collect-post-prediction-feedback)

@@ -1,4 +1,4 @@
-# Introduction {.unnumbered}
+# Background {.unnumbered}
 
 The application of artificial intelligence (AI) in healthcare poses ethical risks. Dedicated efforts are essential to ensure that AI systems in healthcare adhere to principles of lawfulness, ethics, and robustness. We have developed a plan which outlines steps to mitigate ethical risks and increase trustworthiness throughout the lifecycle of the STRATIF-AI project. We draw on interdisciplinary expertise and align our approach with three core strategies:
 

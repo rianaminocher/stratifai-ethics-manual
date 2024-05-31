@@ -1,0 +1,351 @@
+# Work Packages {.unnumbered}
+
+To streamline navigation of this site, the requirements for each work package (WP) have been collected here, on a single page. 
+
+::: {.callout-tip}
+Each subsection corresponds to one of the 7 WPs within the STRATIF-AI project. The relevant links listed below direct the user to the requirement pages (e.g., [1 Human Agency and Oversight](1_oversight.qmd)). Thus, users from specific work packages can easily navigate the requirements which are assigned to them. 
+::: 
+
+# Work Package 1 {.unnumbered}
+
+**Semantic interoperability and federated learning platform**
+
+## Technical Robustness and Safety
+
+*Resilience to attack and security*
+
+[Define risks of Federated Learning](2_technical.qmd#define-risks-of-federated-learning)
+
+*Accuracy*
+
+[Evaluate data accuracy within Federated Learning](2_technical.qmd#evaluate-data-accuracy-within-federated-learning)
+
+## Privacy and Data Governance 
+
+*Privacy*
+
+[Investigate right to privacy within Federated Learning](3_privacy.qmd#investigate-right-to-privacy-within-federated-learning)
+
+[Allocate data usage and access rights](3_privacy.qmd#allocate-data-usage-and-access-rights)
+
+*Data governance*
+
+[Assess data quality](3_privacy.qmd#assess-data-quality)
+
+[Standardize data preparation procedures](3_privacy.qmd#standardize-data-preparation-procedures)
+
+[Standardize data harmonization procedures](3_privacy.qmd#standardize-data-harmonization-procedures)
+
+[Adhere to GDPR](3_privacy.qmd#adhere-to-gdpr)
+
+# Work Package 2 {.unnumbered}
+
+**STRATIF-AI platform development and hybrid modelling**
+
+## Human Agency and Oversight 
+
+*Human agency and autonomy*
+
+[Explain model output](1_oversight.qmd#explain-model-output)
+
+*Human oversight*
+
+[Institute reporting feedback loop](1_oversight.qmd#institute-reporting-feedback-loop)
+
+[Enable autonomy of end-users](1_oversight.qmd#enable-autonomy-of-end-users)
+
+## Technical Robustness and Safety
+
+*Resilience to attack and security*
+
+[Establish emergency protocols](2_technical.qmd#establish-emergency-protocols)
+
+*General safety*
+
+[Implement risk-assessment feedback loop](2_technical.qmd#implement-risk-assessment-feedback-loop)
+
+[Derive process protocol for technical updates](2_technical.qmd#derive-process-protocol-for-technical-updates)
+
+*Accuracy*
+
+[Evaluate accuracy of model predictions](2_technical.qmd#evaluate-accuracy-of-model-predictions)
+
+[Establish internal validity](2_technical.qmd#establish-internal-validity)
+
+[Establish external validity](2_technical.qmd#establish-external-validity)
+
+*Reliability and reproducibility*
+
+[Track system errors](2_technical.qmd#track-system-errors)
+
+## Privacy and Data Governance 
+
+*Privacy*
+
+[Implement feedback system](3_privacy.qmd#implement-feedback-system)
+
+## Transparency
+
+*Traceability*
+
+[Enable system traceability](4_transparency.qmd#enable-system-traceability)
+
+[Quality control of predictions](4_transparency.qmd#quality-control-of-predictions)
+
+*Explainability*
+
+[Provide decision-making parameters to end-users](4_transparency.qmd#provide-decision-making-parameters-to-end-users)
+
+[Monitor explainability](4_transparency.qmd#monitor-explainability)
+
+[Assess costs of model explainability](4_transparency.qmd#assess-costs-of-model-explainability)
+
+## Diversity, Non-discrimination and Fairness
+
+*Avoidance of unfair bias*
+
+[Monitor bias](5_diversity.qmd#monitor-bias)
+
+[Assess prediction bias](5_diversity.qmd#assess-prediction-bias)
+
+[Implement bias reporting system](5_diversity.qmd#implement-bias-reporting-system)
+
+*Stakeholder participation*
+
+[Foster end-user feedback](5_diversity.qmd#foster-end-user-feedback)
+
+## Societal and Environmental Well-being
+
+*Environmental Wellbeing*
+
+[Identify environmental impact of model development](6_societal.qmd#identify-environmental-impact-of-model-development)
+
+[Reduce environmental impact](6_societal.qmd#reduce-environmental-impact)
+
+## Accountability 
+
+*Tradeoffs/ Risk-management*
+
+[Institute external reporting system](7_accountability.qmd#institute-external-reporting-system)
+
+[Collect post-prediction feedback](7_accountability.qmd#collect-post-prediction-feedback)
+
+# Work Package 3 {.unnumbered}
+
+**Ethical and trustworthy design**
+
+## Human Agency and Oversight
+
+*Human agency and autonomy*
+
+[Establish degree of trust](1_oversight.qmd#establish-degree-of-trust)
+
+*Human oversight*
+
+[Establish HIC governance](1_oversight.qmd#establish-hic-governance)
+
+## Privacy and Data Governance
+
+*Data governance*
+
+[Investigate data minimization](2_technical.qmd#investigate-data-minimization)
+
+## Transparency
+
+*4.3. Communication*
+
+[Tailor explainability material](4_transparency.qmd#tailor-explainability-material)
+
+## Diversity, Non-discrimination and Fairness
+
+ *Avoidance of unfair bias*
+
+[Cultivate ethical awareness](5_diversity.qmd#cultivate-ethical-awareness)
+
+[Assess and build trust within vulnerable patient groups](5_diversity.qmd#assess-and-build-trust-within-vulnerable-patient-groups)
+
+*Accessibility and universal design*
+
+[Utilize inclusive design principles](5_diversity.qmd#utilize-inclusive-design-principles)
+
+*Stakeholder participation*
+
+[Incorporate patient perspectives](5_diversity.qmd#incorporate-patient-perspectives)
+
+## Societal and Environmental Well-being
+
+*Impact on Work and Skills*
+
+[Investigate impact on work arrangements](6_societal.qmd#investigate-impact-on-work-arrangements)
+
+*Impact on Society at large or Democracy*
+
+[Solicit citizen feedback](6_societal.qmd#solicit-citizen-feedback)
+
+## Accountability
+
+*Auditability*
+
+[Facilitate auditability](7_accountability.qmd#facilitate-auditability)
+
+# Work Package 4 {.unnumbered}
+
+**Prevention**
+
+## Human Agency and Oversight
+
+*Human agency and autonomy*
+
+[Define epistemic authority](1_oversight.qmd#define-epistemic-authority)
+
+*Human oversight*
+
+[Manage patient expectations](1_oversight.qmd#manage-patient-expectations)
+
+## Technical Robustness and Safety
+
+*General safety*
+
+[Assess risk of use](2_technical.qmd#assess-risk-of-use)
+
+## Privacy and Data Governance
+
+*Data governance*
+
+[Acquire informed consent](3_privacy.qmd#acquire-informed-consent)
+
+## Diversity, Non-discrimination and Fairness
+
+*Avoidance of unfair bias*
+
+[Represent diversity in training data](5_diversity.qmd#represent-diversity-in-training-data)
+
+## Accountability
+
+*Tradeoffs/ Risk-management*
+
+[Collect post-prediction feedback](7_accountability.qmd#collect-post-prediction-feedback)
+
+# Work Package 5 {.unnumbered}
+
+**Acute treatment and monitoring**
+
+## Human Agency and Oversight
+
+*Human agency and autonomy*
+
+[Define epistemic authority](1_oversight.qmd#define-epistemic-authority)
+
+*Human oversight*
+
+[Manage patient expectations](1_oversight.qmd#manage-patient-expectations)
+
+## Technical Robustness and Safety
+
+*General safety*
+
+[Assess risk of use](2_technical.qmd#assess-risk-of-use)
+
+## Privacy and Data Governance
+
+*Data governance*
+
+[Acquire informed consent](3_privacy.qmd#acquire-informed-consent)
+
+## Diversity, Non-discrimination and Fairness
+
+*Avoidance of unfair bias*
+
+[Represent diversity in training data](5_diversity.qmd#represent-diversity-in-training-data)
+
+**Accountability**
+
+*Tradeoffs/ Risk-management*
+
+[Collect post-prediction feedback](7_accountability.qmd#collect-post-prediction-feedback)
+
+# Work Package 6 {.unnumbered}
+
+**Rehabilitation and follow-up of chronic condition**
+
+## Human Agency and Oversight
+
+*Human agency and autonomy*
+
+[Define epistemic authority](1_oversight.qmd#define-epistemic-authority)
+
+*Human oversight*
+
+[Manage patient expectations](1_oversight.qmd#manage-patient-expectations)
+
+## Technical Robustness and Safety
+
+*General safety*
+
+[Assess risk of use](2_technical.qmd#assess-risk-of-use)
+
+## Privacy and Data Governance
+
+*Data governance*
+
+[Acquire informed consent](3_privacy.qmd#acquire-informed-consent)
+
+## Diversity, Non-discrimination and Fairness
+
+*Avoidance of unfair bias*
+
+[Represent diversity in training data](5_diversity.qmd#represent-diversity-in-training-data)
+
+## Accountability
+
+*Tradeoffs/ Risk-management*
+
+[Collect post-prediction feedback](7_accountability.qmd#collect-post-prediction-feedback)
+
+# Work Package 7 {.unnumbered}
+
+**Coordination, Dissemination, Implementation, and exploitation**
+
+## Human Agency and Oversight
+
+*Human agency and autonomy*
+
+[Foster patient autonomy](1_oversight.qmd#foster-patient-autonomy)
+
+## Technical Robustness and Safety
+
+*Resilience to attack and security*
+
+[Comply with cybersecurity law](2_technical.qmd#comply-with-cybersecurity-law)
+
+*General safety*
+
+[Communicate risks to patients](2_technical.qmd#communicate-risks-to-patients)
+
+*Reliability and reproducibility*
+
+[Ensure continuous adaptation](2_technical.qmd#ensure-continuous-adaptation)
+
+## Transparency
+
+*Communication*
+
+[Standardize training materials](3_privacy.qmd#standardize-training-materials)
+
+## Diversity, Non-discrimination and Fairness
+
+*Avoidance of unfair bias*
+
+[Assess fairness across use-setting](5_diversity.qmd#assess-fairness-across-use-setting)
+
+[Implement fairness reporting system](5_diversity.qmd#implement-fairness-reporting-system)
+
+*Accessibility and universal design*
+
+[Assess financial risk of unfair design](5_diversity.qmd#assess-financial-risk-of-unfair-design)
+
+## Accountability
+
+*Tradeoffs/ Risk-management*
+
+[Conduct budget impact analysis](7_accountability.qmd#conduct-budget-impact-analysis)
