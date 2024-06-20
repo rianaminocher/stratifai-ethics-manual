@@ -1,17 +1,17 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Plan for Ethical and Trustworthy Design of the STRATIF-AI project",
-    "section": "",
-    "text": "Overview\nThis framework has been developed in concordance with requirements within the EU Horizon Project STRATIF-AI [Grant No. 101080875].\n\n\nBackground\nThe application of artificial intelligence (AI) in healthcare poses ethical risks. Dedicated efforts are essential to ensure that AI systems in healthcare adhere to principles of lawfulness, ethics, and robustness. We have developed a plan which outlines steps to mitigate ethical risks and increase trustworthiness throughout the lifecycle of the STRATIF-AI project. We draw on interdisciplinary expertise and align our approach with three core strategies:\n(1) Operationalization: Existing guidelines for AI development often provide broad, high-level principles, which are suitable for a wide range of AI systems. High-level principles must be translated to actionable steps that are tailored to the specific traits of individual AI systems. Our approach is designed to ensure that ethical principles do not remain theoretical concepts—but are instead effectively embedded into the design, implementation, and continuous management of the STRATIF-AI system.\n(2) Co-creation: We have adopted a co-creation process to ensure equitable development of solutions. The content for this manual has been developed in collaboration with key stakeholders within the STRATIF-AI project, including clinicians, data scientists, medical researchers, representatives from patient organizations, and project coordinators. Engaging diverse stakeholders allows us to thoroughly assess the risks and benefits associated with specific requirements. The collaborative process fosters the creation of ethical requirements that are not only necessary and feasible but also auditable, thus contributing to the overall integrity and reliability of the STRATIF-AI system.\n(3) Anticipation: The STRATIF-AI project introduces several novel technological solutions. Novel challenges may fall outside the scope of existing ethical guidelines, and may thus be difficult to address by simply adhering to current regulations or previously published frameworks. To help mitigate novel ethical risks, we pay close attention in our workshops and research to issues or concerns relevant to digital twins in healthcare which may be yet unprecedented.\nOverall, our ethical plan has been designed to facilitate the early identification of potential ethical risks of the STRATIF-AI project and ultimately enhance the system’s trustworthiness and societal impact."
+    "objectID": "7_accountability.html#auditability",
+    "href": "7_accountability.html#auditability",
+    "title": "7  Accountability",
+    "section": "7.1 Auditability",
+    "text": "7.1 Auditability\n\nALTAI Assessment\nThe auditability of STRATIF-AI’s workflow and system lifecycle is a fundamental aspect of our ethical plan. By creating a living document, we aim to establish a transparent and traceable log of all measures taken to adhere to ethical principles and legal requirements. To ensure the AI system can be audited by independent third parties, the ethical plan will be made available or disseminated accordingly.\n\n\n7.1.1 Facilitate auditability\nDescription Methodology to facilitate external audits of STRATIF-AI processes will be instituted and validated.\nMethodology: A publicly available and version-controlled ethical plan; TBD\nvalidated: validated by Z-inspection process; validated within Delphi study\nOwner\n\nWP3\n\nKey Personnel\n\nWP7\nWP2\n\nSchedule At any point, before end of project.\nStroke Phase ALL\nActionable tasks\n\nappoint key personnel\ndefine additional outputs?\ndiscuss site prototype and any legal barriers\nsolicit feedback on prototype\ncreate sub-page to report important parameters\ndefine important parameters\ne.g. traceability of the development process, the sourcing of training data and the logging of the AI system’s processes, outcomes, positive and negative impact\nmake pages public"
   },
   {
-    "objectID": "overview.html",
-    "href": "overview.html",
-    "title": "Background",
-    "section": "",
-    "text": "The application of artificial intelligence (AI) in healthcare poses ethical risks. Dedicated efforts are essential to ensure that AI systems in healthcare adhere to principles of lawfulness, ethics, and robustness. We have developed a plan which outlines steps to mitigate ethical risks and increase trustworthiness throughout the lifecycle of the STRATIF-AI project. We draw on interdisciplinary expertise and align our approach with three core strategies:\n(1) Operationalization: Existing guidelines for AI development often provide broad, high-level principles, which are suitable for a wide range of AI systems. High-level principles must be translated to actionable steps that are tailored to the specific traits of individual AI systems. Our approach is designed to ensure that ethical principles do not remain theoretical concepts—but are instead effectively embedded into the design, implementation, and continuous management of the STRATIF-AI system.\n(2) Co-creation: We have adopted a co-creation process to ensure equitable development of solutions. The content for this manual has been developed in collaboration with key stakeholders within the STRATIF-AI project, including clinicians, data scientists, medical researchers, representatives from patient organizations, and project coordinators. Engaging diverse stakeholders allows us to thoroughly assess the risks and benefits associated with specific requirements. The collaborative process fosters the creation of ethical requirements that are not only necessary and feasible but also auditable, thus contributing to the overall integrity and reliability of the STRATIF-AI system.\n(3) Anticipation: The STRATIF-AI project introduces several novel technological solutions. Novel challenges may fall outside the scope of existing ethical guidelines, and may thus be difficult to address by simply adhering to current regulations or previously published frameworks. To help mitigate novel ethical risks, we pay close attention in our workshops and research to issues or concerns relevant to digital twins in healthcare which may be yet unprecedented.\nOverall, our ethical plan has been designed to facilitate the early identification of potential ethical risks of the STRATIF-AI project and ultimately enhance the system’s trustworthiness and societal impact."
+    "objectID": "7_accountability.html#tradeoffs-risk-management",
+    "href": "7_accountability.html#tradeoffs-risk-management",
+    "title": "7  Accountability",
+    "section": "7.2 Tradeoffs/ Risk-management",
+    "text": "7.2 Tradeoffs/ Risk-management\n\nALTAI Assessment\nIt is essential to identify, assess, document, and mitigate potential negative impacts of AI systems, particularly for those directly or indirectly affected. Safeguards must be in place to protect whistleblowers, NGOs, trade unions, and other entities reporting legitimate concerns about AI systems. As part of WP3 within the STRATIF-AI project, we will conduct an external Z-inspection assessment, which is a gold-standard and validated methodology to assess the ethical impacts of an AI tool. A comprehensive risk training protocol will be designed and adhere to any legal protocols. Our ethical plan has been designed in concordance with the Assessment List for Trustworthy AI (ALTAI), and, as such, will be continually evaluated throughout the AI system’s lifecycle.\nWhile implementing these requirements, tensions may arise, necessitating inevitable trade-offs. We will identify relevant interests and values implicated by the AI system and explicitly evaluate trade-offs in terms of their risk to safety and ethical principles, including fundamental rights. These decisions will be thoroughly documented throughout our ethical audit process. Additionally, a a process for third parties (e.g. suppliers, end-users, subjects, distributors/vendors or workers) to report potential vulnerabilities, risks or biases in the AI system, and a following risk management protocol will be instituted. Accessible mechanisms to ensure adequate redress will be established.\n\n\n7.2.1 Institute external reporting system\nDescription A system for third-parties to make reports about risks should be established within the platform and periodically be evaluated.\nthird-parties: citizens; hospital workers; developers; any contributors of technology or data\nrisks: vulnerabilities; errors; concerns\nperiodically: TBD\nStroke Phase ALL\nOwner\n\nWP2\n\nKey Personnel\n\ndesign staff\ntechnical staff\nWP3\n\nActionable tasks\n\nappoint key personnel\ndefine all parameters\ndefine link to feedback reporting loop\nimplement/design procedure\nfeedback from third parties to validate\ntest system\n\n\n\n\n\n\n\nNote\n\n\n\nIn relation to requirement 6.3.1, it will be necessary to solicit and encourage feedback from non-users and potential users to mitigate risks of misuse or under-user of the STRATIF-AI platform.\n\n\n\n\n7.2.2 Collect post-prediction feedback\nDescription A system for end-users to provide feedback about medical applicability should be established within the platform.\n\n\n\n\n\n\nNote\n\n\n\nThis is closely related to the requirement 1.2.2 Human Agency and Oversight; Institute reporting feedback loop.\n\n\nend-users: medical professionals\nmedical applicability: effectiveness; relevance; alignment with evolving medical knowledge and practices;\nStroke Phase EACH (3)\nOwner\n\nWP4\nWP5\nWP6\n\nKey Personnel\n\nmedical staff\ndesign staff\ntechnical staff\n\nActionable tasks\n\nappoint key personnel\nmedical professionals to define key parameters\nprototype for system/information parameters\nimplementation by WP2/ design staff\ndesign and validate system\n\n\n\n7.2.3 Conduct budget impact analysis\nDescription The economic justification of the implementation of the STRATIF-AI platform for different stakeholders must be made via cost-benefit analyses.\nstakeholders: hospitals; insurance companies; patients; rehab centers; any affected institutional parties?\nStroke Phase EACH (3)\nOwner\n\nWP7\n\nKey Personnel\n\nmedical staff\n\nActionable tasks\n\nappoint key personnel\ndefine parameters\ndesign budget impact/ cost-benefit analysis study\nconduct analysis\nreport results\npublication/dissemination of results"
   },
   {
     "objectID": "framework.html#design-and-use",
@@ -180,258 +180,6 @@
     "title": "6  Societal and Environmental Well-being",
     "section": "6.3 Impact on Society at large or Democracy",
     "text": "6.3 Impact on Society at large or Democracy\n\nALTAI Assessment\nPotential ramifications on society at large and democracy will be considered throughout the STRATIF-AI project cycle. To assess the societal impact of the AI system’s utilization beyond those to immediate end-users and subjects, we will solicit feedback throughout planned pilot and clinical trial studies. A key aspect of the STRATIF-AI platform is developing an infrastructure to empower citizens to monitor their overall health and wellbeing while screening for risk of stroke—which will contribute to the benefit of society at large. The STRATIF-AI platform is not at risk of undermining democratic principles or adversely affecting democracy.\n\n\n6.3.1 Solicit citizen feedback\nDescription Include diverse citizens in discussions at relevant stages of the STRATIF-AI pipeline.\ncitizens: citizens; hospital workers; persons who may be overlooked in stakeholder discussions\nstages: TBD; public representation of STRATIF-AI project; youtube; reddit\nOwner\n\nWP3\n\nKey Personnel\n\nall WP leads\n\nSchedule At any point, before end of project.\nStroke Phase ALL\nActionable tasks\n\nappoint key personnel/ WP leads\ndefine parameters, i.e. stakeholders who may be overlooked\nclarify potential procedures within WP tasks to incorporate discussions\nassess input from stakeholders\ndisseminate information"
-  },
-  {
-    "objectID": "7_accountability.html#auditability",
-    "href": "7_accountability.html#auditability",
-    "title": "7  Accountability",
-    "section": "7.1 Auditability",
-    "text": "7.1 Auditability\n\nALTAI Assessment\nThe auditability of STRATIF-AI’s workflow and system lifecycle is a fundamental aspect of our ethical plan. By creating a living document, we aim to establish a transparent and traceable log of all measures taken to adhere to ethical principles and legal requirements. To ensure the AI system can be audited by independent third parties, the ethical plan will be made available or disseminated accordingly.\n\n\n7.1.1 Facilitate auditability\nDescription Methodology to facilitate external audits of STRATIF-AI processes will be instituted and validated.\nMethodology: A publicly available and version-controlled ethical plan; TBD\nvalidated: validated by Z-inspection process; validated within Delphi study\nOwner\n\nWP3\n\nKey Personnel\n\nWP7\nWP2\n\nSchedule At any point, before end of project.\nStroke Phase ALL\nActionable tasks\n\nappoint key personnel\ndefine additional outputs?\ndiscuss site prototype and any legal barriers\nsolicit feedback on prototype\ncreate sub-page to report important parameters\ndefine important parameters\ne.g. traceability of the development process, the sourcing of training data and the logging of the AI system’s processes, outcomes, positive and negative impact\nmake pages public"
-  },
-  {
-    "objectID": "7_accountability.html#tradeoffs-risk-management",
-    "href": "7_accountability.html#tradeoffs-risk-management",
-    "title": "7  Accountability",
-    "section": "7.2 Tradeoffs/ Risk-management",
-    "text": "7.2 Tradeoffs/ Risk-management\n\nALTAI Assessment\nIt is essential to identify, assess, document, and mitigate potential negative impacts of AI systems, particularly for those directly or indirectly affected. Safeguards must be in place to protect whistleblowers, NGOs, trade unions, and other entities reporting legitimate concerns about AI systems. As part of WP3 within the STRATIF-AI project, we will conduct an external Z-inspection assessment, which is a gold-standard and validated methodology to assess the ethical impacts of an AI tool. A comprehensive risk training protocol will be designed and adhere to any legal protocols. Our ethical plan has been designed in concordance with the Assessment List for Trustworthy AI (ALTAI), and, as such, will be continually evaluated throughout the AI system’s lifecycle.\nWhile implementing these requirements, tensions may arise, necessitating inevitable trade-offs. We will identify relevant interests and values implicated by the AI system and explicitly evaluate trade-offs in terms of their risk to safety and ethical principles, including fundamental rights. These decisions will be thoroughly documented throughout our ethical audit process. Additionally, a a process for third parties (e.g. suppliers, end-users, subjects, distributors/vendors or workers) to report potential vulnerabilities, risks or biases in the AI system, and a following risk management protocol will be instituted. Accessible mechanisms to ensure adequate redress will be established.\n\n\n7.2.1 Institute external reporting system\nDescription A system for third-parties to make reports about risks should be established within the platform and periodically be evaluated.\nthird-parties: citizens; hospital workers; developers; any contributors of technology or data\nrisks: vulnerabilities; errors; concerns\nperiodically: TBD\nStroke Phase ALL\nOwner\n\nWP2\n\nKey Personnel\n\ndesign staff\ntechnical staff\nWP3\n\nActionable tasks\n\nappoint key personnel\ndefine all parameters\ndefine link to feedback reporting loop\nimplement/design procedure\nfeedback from third parties to validate\ntest system\n\n\n\n\n\n\n\nNote\n\n\n\nIn relation to requirement 6.3.1, it will be necessary to solicit and encourage feedback from non-users and potential users to mitigate risks of misuse or under-user of the STRATIF-AI platform.\n\n\n\n\n7.2.2 Collect post-prediction feedback\nDescription A system for end-users to provide feedback about medical applicability should be established within the platform.\n\n\n\n\n\n\nNote\n\n\n\nThis is closely related to the requirement 1.2.2 Human Agency and Oversight; Institute reporting feedback loop.\n\n\nend-users: medical professionals\nmedical applicability: effectiveness; relevance; alignment with evolving medical knowledge and practices;\nStroke Phase EACH (3)\nOwner\n\nWP4\nWP5\nWP6\n\nKey Personnel\n\nmedical staff\ndesign staff\ntechnical staff\n\nActionable tasks\n\nappoint key personnel\nmedical professionals to define key parameters\nprototype for system/information parameters\nimplementation by WP2/ design staff\ndesign and validate system\n\n\n\n7.2.3 Conduct budget impact analysis\nDescription The economic justification of the implementation of the STRATIF-AI platform for different stakeholders must be made via cost-benefit analyses.\nstakeholders: hospitals; insurance companies; patients; rehab centers; any affected institutional parties?\nStroke Phase EACH (3)\nOwner\n\nWP7\n\nKey Personnel\n\nmedical staff\n\nActionable tasks\n\nappoint key personnel\ndefine parameters\ndesign budget impact/ cost-benefit analysis study\nconduct analysis\nreport results\npublication/dissemination of results"
-  },
-  {
-    "objectID": "WP_1.html#technical-robustness-and-safety",
-    "href": "WP_1.html#technical-robustness-and-safety",
-    "title": "Work Package 1",
-    "section": "Technical Robustness and Safety",
-    "text": "Technical Robustness and Safety\nResilience to attack and security\nDefine risks of Federated Learning\nAccuracy\nEvaluate data accuracy within Federated Learning"
-  },
-  {
-    "objectID": "WP_1.html#privacy-and-data-governance",
-    "href": "WP_1.html#privacy-and-data-governance",
-    "title": "Work Package 1",
-    "section": "Privacy and Data Governance",
-    "text": "Privacy and Data Governance\nPrivacy\nInvestigate right to privacy within Federated Learning\nAllocate data usage and access rights\nData governance\nAssess data quality\nStandardize data preparation procedures\nStandardize data harmonization procedures\nAdhere to GDPR"
-  },
-  {
-    "objectID": "WP_2.html#human-agency-and-oversight",
-    "href": "WP_2.html#human-agency-and-oversight",
-    "title": "Work Package 2",
-    "section": "Human Agency and Oversight",
-    "text": "Human Agency and Oversight\nHuman agency and autonomy\nExplain model output\nHuman oversight\nInstitute reporting feedback loop\nEnable autonomy of end-users"
-  },
-  {
-    "objectID": "WP_2.html#technical-robustness-and-safety",
-    "href": "WP_2.html#technical-robustness-and-safety",
-    "title": "Work Package 2",
-    "section": "Technical Robustness and Safety",
-    "text": "Technical Robustness and Safety\nResilience to attack and security\nEstablish emergency protocols\nGeneral safety\nImplement risk-assessment feedback loop\nDerive process protocol for technical updates\nAccuracy\nEvaluate accuracy of model predictions\nEstablish internal validity\nEstablish external validity\nReliability and reproducibility\nTrack system errors"
-  },
-  {
-    "objectID": "WP_2.html#privacy-and-data-governance",
-    "href": "WP_2.html#privacy-and-data-governance",
-    "title": "Work Package 2",
-    "section": "Privacy and Data Governance",
-    "text": "Privacy and Data Governance\nPrivacy\nImplement feedback system"
-  },
-  {
-    "objectID": "WP_2.html#transparency",
-    "href": "WP_2.html#transparency",
-    "title": "Work Package 2",
-    "section": "Transparency",
-    "text": "Transparency\nTraceability\nEnable system traceability\nQuality control of predictions\nExplainability\nProvide decision-making parameters to end-users\nMonitor explainability\nAssess costs of model explainability"
-  },
-  {
-    "objectID": "WP_2.html#diversity-non-discrimination-and-fairness",
-    "href": "WP_2.html#diversity-non-discrimination-and-fairness",
-    "title": "Work Package 2",
-    "section": "Diversity, Non-discrimination and Fairness",
-    "text": "Diversity, Non-discrimination and Fairness\nAvoidance of unfair bias\nMonitor bias\nAssess prediction bias\nImplement bias reporting system\nStakeholder participation\nFoster end-user feedback"
-  },
-  {
-    "objectID": "WP_2.html#societal-and-environmental-well-being",
-    "href": "WP_2.html#societal-and-environmental-well-being",
-    "title": "Work Package 2",
-    "section": "Societal and Environmental Well-being",
-    "text": "Societal and Environmental Well-being\nEnvironmental Wellbeing\nIdentify environmental impact of model development\nReduce environmental impact"
-  },
-  {
-    "objectID": "WP_2.html#accountability",
-    "href": "WP_2.html#accountability",
-    "title": "Work Package 2",
-    "section": "Accountability",
-    "text": "Accountability\nTradeoffs/ Risk-management\nInstitute external reporting system\nCollect post-prediction feedback"
-  },
-  {
-    "objectID": "WP_3.html#human-agency-and-oversight",
-    "href": "WP_3.html#human-agency-and-oversight",
-    "title": "Work Package 3",
-    "section": "Human Agency and Oversight",
-    "text": "Human Agency and Oversight\nHuman agency and autonomy\nEstablish degree of trust\nHuman oversight\nEstablish HIC governance"
-  },
-  {
-    "objectID": "WP_3.html#privacy-and-data-governance",
-    "href": "WP_3.html#privacy-and-data-governance",
-    "title": "Work Package 3",
-    "section": "Privacy and Data Governance",
-    "text": "Privacy and Data Governance\nData governance\nInvestigate data minimization"
-  },
-  {
-    "objectID": "WP_3.html#transparency",
-    "href": "WP_3.html#transparency",
-    "title": "Work Package 3",
-    "section": "Transparency",
-    "text": "Transparency\n4.3. Communication\nTailor explainability material"
-  },
-  {
-    "objectID": "WP_3.html#diversity-non-discrimination-and-fairness",
-    "href": "WP_3.html#diversity-non-discrimination-and-fairness",
-    "title": "Work Package 3",
-    "section": "Diversity, Non-discrimination and Fairness",
-    "text": "Diversity, Non-discrimination and Fairness\nAvoidance of unfair bias\nCultivate ethical awareness\nAssess and build trust within vulnerable patient groups\nAccessibility and universal design\nUtilize inclusive design principles\nStakeholder participation\nIncorporate patient perspectives"
-  },
-  {
-    "objectID": "WP_3.html#societal-and-environmental-well-being",
-    "href": "WP_3.html#societal-and-environmental-well-being",
-    "title": "Work Package 3",
-    "section": "Societal and Environmental Well-being",
-    "text": "Societal and Environmental Well-being\nImpact on Work and Skills\nInvestigate impact on work arrangements\nImpact on Society at large or Democracy\nSolicit citizen feedback"
-  },
-  {
-    "objectID": "WP_3.html#accountability",
-    "href": "WP_3.html#accountability",
-    "title": "Work Package 3",
-    "section": "Accountability",
-    "text": "Accountability\nAuditability\nFacilitate auditability"
-  },
-  {
-    "objectID": "WP_4.html#human-agency-and-oversight",
-    "href": "WP_4.html#human-agency-and-oversight",
-    "title": "Work Package 4",
-    "section": "Human Agency and Oversight",
-    "text": "Human Agency and Oversight\nHuman agency and autonomy\nDefine epistemic authority\nHuman oversight\nManage patient expectations"
-  },
-  {
-    "objectID": "WP_4.html#technical-robustness-and-safety",
-    "href": "WP_4.html#technical-robustness-and-safety",
-    "title": "Work Package 4",
-    "section": "Technical Robustness and Safety",
-    "text": "Technical Robustness and Safety\nGeneral safety\nAssess risk of use"
-  },
-  {
-    "objectID": "WP_4.html#privacy-and-data-governance",
-    "href": "WP_4.html#privacy-and-data-governance",
-    "title": "Work Package 4",
-    "section": "Privacy and Data Governance",
-    "text": "Privacy and Data Governance\nData governance\nAcquire informed consent"
-  },
-  {
-    "objectID": "WP_4.html#diversity-non-discrimination-and-fairness",
-    "href": "WP_4.html#diversity-non-discrimination-and-fairness",
-    "title": "Work Package 4",
-    "section": "Diversity, Non-discrimination and Fairness",
-    "text": "Diversity, Non-discrimination and Fairness\nAvoidance of unfair bias\nRepresent diversity in training data"
-  },
-  {
-    "objectID": "WP_4.html#accountability",
-    "href": "WP_4.html#accountability",
-    "title": "Work Package 4",
-    "section": "Accountability",
-    "text": "Accountability\nTradeoffs/ Risk-management\nCollect post-prediction feedback"
-  },
-  {
-    "objectID": "WP_5.html#human-agency-and-oversight",
-    "href": "WP_5.html#human-agency-and-oversight",
-    "title": "Work Package 5",
-    "section": "Human Agency and Oversight",
-    "text": "Human Agency and Oversight\nHuman agency and autonomy\nDefine epistemic authority\nHuman oversight\nManage patient expectations"
-  },
-  {
-    "objectID": "WP_5.html#technical-robustness-and-safety",
-    "href": "WP_5.html#technical-robustness-and-safety",
-    "title": "Work Package 5",
-    "section": "Technical Robustness and Safety",
-    "text": "Technical Robustness and Safety\nGeneral safety\nAssess risk of use"
-  },
-  {
-    "objectID": "WP_5.html#privacy-and-data-governance",
-    "href": "WP_5.html#privacy-and-data-governance",
-    "title": "Work Package 5",
-    "section": "Privacy and Data Governance",
-    "text": "Privacy and Data Governance\nData governance\nAcquire informed consent"
-  },
-  {
-    "objectID": "WP_5.html#diversity-non-discrimination-and-fairness",
-    "href": "WP_5.html#diversity-non-discrimination-and-fairness",
-    "title": "Work Package 5",
-    "section": "Diversity, Non-discrimination and Fairness",
-    "text": "Diversity, Non-discrimination and Fairness\nAvoidance of unfair bias\nRepresent diversity in training data\nAccountability\nTradeoffs/ Risk-management\nCollect post-prediction feedback"
-  },
-  {
-    "objectID": "WP_6.html#human-agency-and-oversight",
-    "href": "WP_6.html#human-agency-and-oversight",
-    "title": "Work Package 6",
-    "section": "Human Agency and Oversight",
-    "text": "Human Agency and Oversight\nHuman agency and autonomy\nDefine epistemic authority\nHuman oversight\nManage patient expectations"
-  },
-  {
-    "objectID": "WP_6.html#technical-robustness-and-safety",
-    "href": "WP_6.html#technical-robustness-and-safety",
-    "title": "Work Package 6",
-    "section": "Technical Robustness and Safety",
-    "text": "Technical Robustness and Safety\nGeneral safety\nAssess risk of use"
-  },
-  {
-    "objectID": "WP_6.html#privacy-and-data-governance",
-    "href": "WP_6.html#privacy-and-data-governance",
-    "title": "Work Package 6",
-    "section": "Privacy and Data Governance",
-    "text": "Privacy and Data Governance\nData governance\nAcquire informed consent"
-  },
-  {
-    "objectID": "WP_6.html#diversity-non-discrimination-and-fairness",
-    "href": "WP_6.html#diversity-non-discrimination-and-fairness",
-    "title": "Work Package 6",
-    "section": "Diversity, Non-discrimination and Fairness",
-    "text": "Diversity, Non-discrimination and Fairness\nAvoidance of unfair bias\nRepresent diversity in training data"
-  },
-  {
-    "objectID": "WP_6.html#accountability",
-    "href": "WP_6.html#accountability",
-    "title": "Work Package 6",
-    "section": "Accountability",
-    "text": "Accountability\nTradeoffs/ Risk-management\nCollect post-prediction feedback"
-  },
-  {
-    "objectID": "WP_7.html#human-agency-and-oversight",
-    "href": "WP_7.html#human-agency-and-oversight",
-    "title": "Work Package 7",
-    "section": "Human Agency and Oversight",
-    "text": "Human Agency and Oversight\nHuman agency and autonomy\nFoster patient autonomy"
-  },
-  {
-    "objectID": "WP_7.html#technical-robustness-and-safety",
-    "href": "WP_7.html#technical-robustness-and-safety",
-    "title": "Work Package 7",
-    "section": "Technical Robustness and Safety",
-    "text": "Technical Robustness and Safety\nResilience to attack and security\nComply with cybersecurity law\nGeneral safety\nCommunicate risks to patients\nReliability and reproducibility\nEnsure continuous adaptation"
-  },
-  {
-    "objectID": "WP_7.html#transparency",
-    "href": "WP_7.html#transparency",
-    "title": "Work Package 7",
-    "section": "Transparency",
-    "text": "Transparency\nCommunication\nStandardize training materials"
-  },
-  {
-    "objectID": "WP_7.html#diversity-non-discrimination-and-fairness",
-    "href": "WP_7.html#diversity-non-discrimination-and-fairness",
-    "title": "Work Package 7",
-    "section": "Diversity, Non-discrimination and Fairness",
-    "text": "Diversity, Non-discrimination and Fairness\nAvoidance of unfair bias\nAssess fairness across use-setting\nImplement fairness reporting system\nAccessibility and universal design\nAssess financial risk of unfair design"
-  },
-  {
-    "objectID": "WP_7.html#accountability",
-    "href": "WP_7.html#accountability",
-    "title": "Work Package 7",
-    "section": "Accountability",
-    "text": "Accountability\nTradeoffs/ Risk-management\nConduct budget impact analysis"
   },
   {
     "objectID": "wp_tasks.html",
@@ -677,5 +425,12 @@
     "title": "Work Packages",
     "section": "Accountability",
     "text": "Accountability\nTradeoffs/ Risk-management\nConduct budget impact analysis"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Plan for Ethical and Trustworthy Design of the STRATIF-AI project",
+    "section": "",
+    "text": "Overview\nThis framework has been developed in concordance with requirements within the EU Horizon Project STRATIF-AI [Grant No. 101080875].\n\n\nBackground\nThe application of artificial intelligence (AI) in healthcare poses ethical risks. Dedicated efforts are essential to ensure that AI systems in healthcare adhere to principles of lawfulness, ethics, and robustness. We have developed a plan which outlines steps to mitigate ethical risks and increase trustworthiness throughout the lifecycle of the STRATIF-AI project. We draw on interdisciplinary expertise and align our approach with three core strategies:\n(1) Operationalization: Existing guidelines for AI development often provide broad, high-level principles, which are suitable for a wide range of AI systems. High-level principles must be translated to actionable steps that are tailored to the specific traits of individual AI systems. Our approach is designed to ensure that ethical principles do not remain theoretical concepts—but are instead effectively embedded into the design, implementation, and continuous management of the STRATIF-AI system.\n(2) Co-creation: We have adopted a co-creation process to ensure equitable development of solutions. The content for this manual has been developed in collaboration with key stakeholders within the STRATIF-AI project, including clinicians, data scientists, medical researchers, representatives from patient organizations, and project coordinators. Engaging diverse stakeholders allows us to thoroughly assess the risks and benefits associated with specific requirements. The collaborative process fosters the creation of ethical requirements that are not only necessary and feasible but also auditable, thus contributing to the overall integrity and reliability of the STRATIF-AI system.\n(3) Anticipation: The STRATIF-AI project introduces several novel technological solutions. Novel challenges may fall outside the scope of existing ethical guidelines, and may thus be difficult to address by simply adhering to current regulations or previously published frameworks. To help mitigate novel ethical risks, we pay close attention in our workshops and research to issues or concerns relevant to digital twins in healthcare which may be yet unprecedented.\nOverall, our ethical plan has been designed to facilitate the early identification of potential ethical risks of the STRATIF-AI project and ultimately enhance the system’s trustworthiness and societal impact."
   }
 ]
