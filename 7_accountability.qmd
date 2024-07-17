@@ -39,6 +39,40 @@ The auditability of STRATIF-AI's workflow and system lifecycle is a fundamental 
 * e.g. traceability of the development process, the sourcing of training data and the logging of the AI system’s processes, outcomes, positive and negative impact
 * make pages public
 
+### Adhere to ethical/open research norms
+
+**Description** Research work produced by the STRATIF-AI consortium must adhere to EU Horizon funding guidelines as well as ethical norms regarding the ***data availability***, ***reproducibility***, ***open access***, ***distribution***, ***confidentiality*** and ***originality*** of published work.
+
+***data availability:*** data made available in Zenodo repository; data adheres to FAIR principles; data is labelled as clearly associated research publication   
+***reproducibility:*** scientific code is made available on Github; scientific code is made available on Zenodo  
+***open access:*** research published under "gold" open access standards; research published in journal with CC-BY license   
+***distribution:*** authorship roles are allocated within CRediT taxonomy; fraudulent authorship is prevented ("guest", "gift", "ghost"); authors meet minimum authorship criteria;   
+***confidentiality:*** sensitive information about patients is protected; permission from primary author must be obtained before dissemination;  
+***originality:*** use of any AI-assisted technology is disclosed; reference to published/unoriginal work is appropriately cited;  
+
+::: {.callout-note}
+Further information on the CRediT taxonomy for assigning authorship is available online at
+https://credit.niso.org. The Royal Society Publishing Editorial team also provides tips on publishing ethics here https://royalsociety.org/blog/2022/03/authorship-contributions-disputes-misconduct/. 
+:::
+
+**Owner**  
+
+* WP3
+
+**Key Personnel**
+
+* all WP leads
+
+**Schedule**  At any point, before end of project.  
+
+**Stroke Phase** ALL
+
+**Actionable tasks**  
+
+* appoint key personnel
+* create publication guide, to be signed before publication by authors
+* implement SOP for publication within consortium
+
 ## Tradeoffs/ Risk-management
 
 ### ALTAI Assessment {.unnumbered}
