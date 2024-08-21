@@ -32,7 +32,7 @@ Workshops were conducted in March 2024 and comprised a diversity of participants
 | 2               | UM                  | Data scientist                                 |
 | 2               | RV                  | Simulation scientist                           |
 | 3               | GUT                 | Rehab physician                                |
-| 3               |                     | Clinician                                      |
+| 3               | SCUBA               | Clinician                                      |
 | 3               | SHE                 | Project manager                                |
 | 3               | SPF                 | Implementation strategist                      |
 | 4               | TUD                 | Data scientist                                 |
