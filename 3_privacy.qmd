@@ -87,7 +87,7 @@ The STRATIF-AI project includes a Data Management Plan (DMP) as a recurring deli
 
 **Owner**  
 
-* WP2
+* WP1
 
 **Key Personnel**
 
@@ -178,7 +178,7 @@ STRATIF-AI is trained using personal healthcare records and will be continually 
 **Description** The ***parameters*** of the harmonization process for making data interoperable must be defined and be reviewed ***periodically***. 
 
 ***parameters:*** drift detection; retraining procedure; relevant ontologies 
-***periodically:*** *TBD* 
+***periodically:*** after each new schema iteration
 
 **Owner**  
 
@@ -212,7 +212,7 @@ During co-creation workshops, a lack of clarity about the data harmonization pro
 
 ***access rights:*** *which physicians/medical staff will have access; stewardship in event of disability;*
 ***patient subgroups:*** *language; age; education; disability*   
-***restrictions***: withdraw consent; right to object; right to be forgotten; how will models be retrained if consent is withdrawn;  
+***restrictions***: withdraw consent; right to object; right to be forgotten; how will models be retrained if consent is withdrawn; post-mortem data use
 
 **Owner**  
 
@@ -241,13 +241,14 @@ During co-creation workshops, a lack of clarity about the data harmonization pro
 
 ### Adhere to GDPR
 
-**Description** ***Relevant requirements*** under General Data Protection Regulation must be adhered to. 
+**Description** ***Relevant requirements*** under General Data Protection Regulation must be adhered to, and ***data*** use defined. 
 
 ***relevant requirements:*** *TBD*  
+***data***: pseudo-anonymyzed data; fully-anonymyzed data
 
 **Owner**  
 
-* WP1   
+* WP2   
 
 **Key Personnel**
 
