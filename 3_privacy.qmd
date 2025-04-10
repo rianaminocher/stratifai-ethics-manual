@@ -1,109 +1,109 @@
 # Privacy and Data Governance
 
-To prevent undue harm to society, the fundamental right to privacy must be protected. Data-driven AI systems like STRATIF-AI may pose substantial risks to individuals' privacy, and as such, a comprehensive data governance protocol is necessary to maintain integrity and privacy of data. 
+To prevent undue harm to society, the fundamental right to privacy must be protected. Data-driven AI systems like STRATIF-AI may pose substantial risks to individuals' privacy, and as such, a comprehensive data governance protocol is necessary to maintain integrity and privacy of data.
 
 ## Privacy
 
 ### ALTAI Assessment {.unnumbered}
 
-In the event of data leakage or misuse, STRATIF-AI could have significant impacts on the rights to privacy, physical, mental and moral integrity, and data protection. A process protocol to report violations to privacy or data integrity must be developed and implemented. 
+In the event of data leakage or misuse, STRATIF-AI could have significant impacts on the rights to privacy, physical, mental and moral integrity, and data protection. A process protocol to report violations to privacy or data integrity must be developed and implemented.
 
 ### Investigate right to privacy within Federated Learning
 
-**Description** The Federated Learning platform transfers model parameters rather than data; ***vulnerabilities*** of the system for data privacy must be ***quantified***. 
+**Description** The Federated Learning platform transfers model parameters rather than data; ***vulnerabilities*** of the system for data privacy must be ***quantified***.
 
-***vulnerabilities:*** potential to reconstruct training data; glean private information; model inversion   
-***quantified:*** *levels of security to be identified*  
+***vulnerabilities:*** potential to reconstruct training data; glean private information; model inversion\
+***quantified:*** *levels of security to be identified*
 
-**Owner**  
+**Owner**
 
-* WP1
+-   WP1
 
 **Key Personnel**
 
-* WP2
-* modelling staff *TBD*
+-   WP2
+-   modelling staff *TBD*
 
-**Schedule**  At any point, before end of project.  
+**Schedule** At any point, before end of project.
 
 **Stroke Phase** ALL
 
-**Actionable tasks**  
+**Actionable tasks**
 
-* appoint key personnel
-* identify potential vulnerabilities
-* identify metrics to quantify scale/severity of vulnerability
-* assess performance
-* publish results
+-   appoint key personnel
+-   identify potential vulnerabilities
+-   identify metrics to quantify scale/severity of vulnerability
+-   assess performance
+-   publish results
 
-::: {.callout-note}
-This requirement is closely linked to requirement 2.1.1. 
+::: callout-note
+This requirement is closely linked to requirement 2.1.1.
 :::
 
 ### Allocate data usage and access rights
 
-**Description** Design for different ***data types*** detailing ***access*** and ***safeguards*** for ***vulnerable patient groups*** must be made available within the Data Management Plan. 
+**Description** Design for different ***data types*** detailing ***access*** and ***safeguards*** for ***vulnerable patient groups*** must be made available within the Data Management Plan.
 
-***data types:*** training data; Personal Data Vault  
-***access:*** rights to access; location of storage; potential to re-use; encryption  
-***safeguards:*** stewardship upon death; stewardship in event of disability;   stewardship of carers/wards    
-***vulnerable patient groups:*** *speaking different languages; age groups; ethnicity; disability*  
+***data types:*** training data; Personal Data Vault\
+***access:*** rights to access; location of storage; potential to re-use; encryption\
+***safeguards:*** stewardship upon death; stewardship in event of disability; stewardship of carers/wards\
+***vulnerable patient groups:*** *speaking different languages; age groups; ethnicity; disability*
 
-**Owner**  
+**Owner**
 
-* WP1
+-   WP1
 
 **Key Personnel**
 
-* WP7 *TBD*
-* patient representatives *TBD*
-* WP4 *TBD*
-* WP5 *TBD*
-* WP6 *TBD*
+-   WP7 *TBD*
+-   patient representatives *TBD*
+-   WP4 *TBD*
+-   WP5 *TBD*
+-   WP6 *TBD*
 
-**Schedule**  At any point, before end of project. 
+**Schedule** At any point, before end of project.
 
-::: {.callout-note}
-The STRATIF-AI project includes a Data Management Plan (DMP) as a recurring deliverable. This requirement will be addressed within the scope of upcoming DMPs. 
-::: 
+::: callout-note
+The STRATIF-AI project includes a Data Management Plan (DMP) as a recurring deliverable. This requirement will be addressed within the scope of upcoming DMPs.
+:::
 
 **Stroke Phase** EACH (3)
 
-**Actionable tasks**  
+**Actionable tasks**
 
-* appoint key personnel
-* review current data management plan and details
-* identify patient subgroups; access types; safeguards
-* feedback on DMP from patient representatives
-* feedback from medical professionals
-* make plan publicly and internally available/within apps/platform
+-   appoint key personnel
+-   review current data management plan and details
+-   identify patient subgroups; access types; safeguards
+-   feedback on DMP from patient representatives
+-   feedback from medical professionals
+-   make plan publicly and internally available/within apps/platform
 
 ### Implement feedback system
 
-**Description** A system with ***relevant specifications*** to flag ***violations*** must be implemented within the platform and a corresponding process protocol drawn up. 
+**Description** A system with ***relevant specifications*** to flag ***violations*** must be implemented within the platform and a corresponding process protocol drawn up.
 
-***relevant specifications:*** *TBD*  
-***violations:*** *TBD; violation to privacy; violation to data integrity;*  
+***relevant specifications:*** *TBD*\
+***violations:*** *TBD; violation to privacy; violation to data integrity;*
 
-**Owner**  
+**Owner**
 
-* WP2
+-   WP1
 
 **Key Personnel**
 
-* design staff
-* WP1 *TBD*
+-   design staff
+-   WP1 *TBD*
 
-**Schedule**  At any point, before end of project.  
+**Schedule** At any point, before end of project.
 
 **Stroke Phase** ALL
 
-**Actionable tasks**  
+**Actionable tasks**
 
-* appoint key personnel
-* design system
-* draft process protocol
-* feedback on prototype by end-users
+-   appoint key personnel
+-   design system
+-   draft process protocol
+-   feedback on prototype by end-users
 
 ## Data governance
 
@@ -111,182 +111,183 @@ The STRATIF-AI project includes a Data Management Plan (DMP) as a recurring deli
 
 STRATIF-AI is trained using personal healthcare records and will be continually informed by private and securely transferred data within the Personal Data Vault. A Data Protection Impact Assessment will be executed, relevant Data Protection Officers will be appointed, and the requirements under General Data Protection Regulation will be adhered to. In addition, mechanisms to ensure oversight of data processing, data transformation and data harmonization within the Federated Learning environment will be drafted. Data minimization possibilities will need to be investigated. The right to withdraw consent, right to object, and right to be forgotten will be revised and communicated to end-users. The AI system will be aligned with relevant standards and widely adopted protocols within the relevant regulatory framework.
 
-### Assess data quality 
+### Assess data quality
 
-**Description** A quality control system to ensure different ***data types*** fulfill ***quality critera*** will be implemented and made available to ***end-users*** before use for model training or prediction. 
+**Description** A quality control system to ensure different ***data types*** fulfill ***quality critera*** will be implemented and made available to ***end-users*** before use for model training or prediction.
 
-***data type:*** training data; Personal Data Vault  
-***quality criteria:*** robust to missing data; robust to inaccuracies; robust to input errors; *additional criteria and pre-defined thresholds*   
-***end-users:*** patients; medical professionals   
+***data type:*** training data; Personal Data Vault\
+***quality criteria:*** robust to missing data; robust to inaccuracies; robust to input errors; *additional criteria and pre-defined thresholds*\
+***end-users:*** patients; medical professionals
 
-**Owner**  
+**Owner**
 
-* WP1
+-   WP1
 
 **Key Personnel**
 
-* design staff *TBD*
-* technical staff *TBD*
-* WP1 *TBD*
+-   design staff *TBD*
+-   technical staff *TBD*
+-   WP1 *TBD*
 
-**Schedule**  At any point, before end of project.  
+**Schedule** At any point, before end of project.
 
 **Stroke Phase** ALL
 
-**Actionable tasks**  
+**Actionable tasks**
 
-* appoint key personnel
-* define quality control metrics and acceptable thresholds
-* update any existing process protocols
-* produce quantitative assessments for existing data/prototype data
-* translate assessment for end-users
+-   appoint key personnel
+-   define quality control metrics and acceptable thresholds
+-   update any existing process protocols
+-   produce quantitative assessments for existing data/prototype data
+-   translate assessment for end-users
 
 ### Standardize data preparation procedures
 
-**Description** The ***procedures*** involved in manipulating training data for Federated Learning across project ***partners*** must be ***standardized***. 
+**Description** The ***procedures*** involved in manipulating training data for Federated Learning across project ***partners*** must be ***standardized***.
 
-***procedures:*** pre-processing; evaluation; forecasting; validation; ML monitoring  
-***partners:*** *each hospital/data contributor*  
-***standardized:*** *created in a format/schema/protocol*  
+***procedures:*** pre-processing; evaluation; forecasting; validation; ML monitoring\
+***partners:*** *each hospital/data contributor*\
+***standardized:*** *created in a format/schema/protocol*
 
-**Owner**  
+**Owner**
 
-* WP1
+-   WP1
 
 **Key Personnel**
 
-* technical staff *TBD*
-* WP4
-* WP5
-* WP6
+-   technical staff *TBD*
+-   WP4
+-   WP5
+-   WP6
 
-**Schedule**  At any point, before end of project.  
+**Schedule** At any point, before end of project.
 
 **Stroke Phase** ALL
 
-**Actionable tasks**  
+**Actionable tasks**
 
-* appoint key personnel
-* define set of procedures
-* identify partner set and any potential need for discrepancies/specific operationalization
-* standardize procedures through iterative process with partners
-* audit adherence
-* report adherence and publish procedures
+-   appoint key personnel
+-   define set of procedures
+-   identify partner set and any potential need for discrepancies/specific operationalization
+-   standardize procedures through iterative process with partners
+-   audit adherence
+-   report adherence and publish procedures
 
 ### Standardize data harmonization procedures
 
-**Description** The ***parameters*** of the harmonization process for making data interoperable must be defined and be reviewed ***periodically***. 
+**Description** The ***parameters*** of the harmonization process for making data interoperable must be defined and be reviewed ***periodically***.
 
-***parameters:*** drift detection; retraining procedure; relevant ontologies 
-***periodically:*** *TBD* 
+***parameters:*** drift detection; retraining procedure; relevant ontologies\
+***periodically:*** after each new schema iteration
 
-**Owner**  
+**Owner**
 
-* WP1
+-   WP1
 
 **Key Personnel**
 
-* technical staff *TBD*
-* WP4
-* WP5
-* WP6
+-   technical staff *TBD*
+-   WP4
+-   WP5
+-   WP6
 
-**Schedule**  At any point, before end of project.  
+**Schedule** At any point, before end of project.
 
 **Stroke Phase** ALL
 
-**Actionable tasks**  
+**Actionable tasks**
 
-* appoint key personnel
-* define parameters for harmonization process
-* create SOP for harmonization so this information is available to partners
-* feedback from partners
+-   appoint key personnel
+-   define parameters for harmonization process
+-   create SOP for harmonization so this information is available to partners
+-   feedback from partners
 
-::: {.callout-note}
-During co-creation workshops, a lack of clarity about the data harmonization process, particularly when new patient data is added, emerged. How the harmonization process will be governed after the model training procedure is complete must be clarified within this requirement.  
-::: 
+::: callout-note
+During co-creation workshops, a lack of clarity about the data harmonization process, particularly when new patient data is added, emerged. How the harmonization process will be governed after the model training procedure is complete must be clarified within this requirement.
+:::
 
 ### Acquire informed consent
 
 **Description** A process protocol for obtaining consent must be drafted, which outlines ***access rights***, ***restrictions*** once consent has been provided, and is tailored to specific ***patient subgroups***.
 
-***access rights:*** *which physicians/medical staff will have access; stewardship in event of disability;*
-***patient subgroups:*** *language; age; education; disability*   
-***restrictions***: withdraw consent; right to object; right to be forgotten; how will models be retrained if consent is withdrawn;  
+***access rights:*** *which physicians/medical staff will have access; stewardship in event of disability;*\
+***patient subgroups:*** *language; age; education; disability*\
+***restrictions***: withdraw consent; right to object; right to be forgotten; how will models be retrained if consent is withdrawn; post-mortem data use
 
-**Owner**  
+**Owner**
 
-* WP4
-* WP5
-* WP6
+-   WP4
+-   WP5
+-   WP6
 
 **Key Personnel**
 
-* WP3
-* WP1 *TBD*
-* medical staff
-* patient representatives
+-   WP3
+-   WP1 *TBD*
+-   medical staff
+-   patient representatives
 
-**Schedule**  At any point, before end of project.  
+**Schedule** At any point, before end of project.
 
 **Stroke Phase** EACH (3)
 
-**Actionable tasks**  
+**Actionable tasks**
 
-* appoint key personnel
-* draft consent forms
-* define parameters for forms
-* tailor to each stroke phase
-* feedback from patient representatives 
+-   appoint key personnel
+-   draft consent forms
+-   define parameters for forms
+-   tailor to each stroke phase
+-   feedback from patient representatives
 
 ### Adhere to GDPR
 
-**Description** ***Relevant requirements*** under General Data Protection Regulation must be adhered to. 
+**Description** ***Relevant requirements*** under General Data Protection Regulation must be adhered to, and ***data*** use defined.
 
-***relevant requirements:*** *TBD*  
+***relevant requirements:*** *TBD*\
+***data***: pseudo-anonymyzed data; fully-anonymyzed data
 
-**Owner**  
+**Owner**
 
-* WP1   
+-   WP2
 
 **Key Personnel**
 
-* *TBD* 
+-   *TBD*
 
-**Schedule**  At any point, before end of project.  
+**Schedule** At any point, before end of project.
 
 **Stroke Phase** ALL
 
-**Actionable tasks**  
+**Actionable tasks**
 
-* check if this is part of DMP
-* create additional document providing translation for patients/end-users
+-   check if this is part of DMP
+-   create additional document providing translation for patients/end-users
 
 ### Investigate data minimization
 
-**Description** The ***costs*** of collecting intimate data from patients must be balanced against ***violation of patient trust***, and validated by appropriate ***methodology***. 
+**Description** The ***costs*** of collecting intimate data from patients must be balanced against ***violation of patient trust***, and validated by appropriate ***methodology***.
 
-***costs:*** *perceived harm; erosion of trust*  
-***violation of patient trust:*** *operational definition of trust, threshold for violation*   
-***methodology:*** *cost-benefit analysis; qualitative judgement; Delphi consensus*  
+***costs:*** *perceived harm; erosion of trust*\
+***violation of patient trust:*** *operational definition of trust, threshold for violation*\
+***methodology:*** *cost-benefit analysis; qualitative judgement; Delphi consensus*
 
-**Owner**  
+**Owner**
 
-* WP3
+-   WP3
 
 **Key Personnel**
 
-* WP4 *TBD*
-* WP5 *TBD*
-* WP6 *TBD*
-* patient representatives
+-   WP4 *TBD*
+-   WP5 *TBD*
+-   WP6 *TBD*
+-   patient representatives
 
-**Schedule**  At any point, before end of project.  
+**Schedule** At any point, before end of project.
 
 **Stroke Phase** EACH (3)
 
-**Actionable tasks**  
+**Actionable tasks**
 
-* incorporate in trust study
-* research about potential data minimization
-* elicit patient/expert feedback on costs/benefits of highly invasive data
+-   incorporate in trust study
+-   research about potential data minimization
+-   elicit patient/expert feedback on costs/benefits of highly invasive data

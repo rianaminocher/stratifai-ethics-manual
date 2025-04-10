@@ -11,8 +11,8 @@ AI systems should be as environmentally friendly as possible. The development, d
 **Description** The ***environmental impacts*** of ***system development processes*** need to be measured or estimated by appropriate ***methodologies***.
  
 ***environmental impacts:*** carbon emissions; energy used;    
-***system development processes***: model training; *other process with footprint?*   
-***methodologies:*** *TBD*  
+***system development processes***: model training; *other process with footprint?*
+***methodologies:*** environmental impact assessment tools, e.g., carbon tracking tools like CodeCarbon for Python
  
 **Owner**  
 

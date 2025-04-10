@@ -8,9 +8,9 @@ To ensure the trustworthiness of the STRATIF-AI platform, priority should be giv
 
 Throughout development, consideration will be given to the diversity and representativeness of end-users and subjects within training data. Testing protocols will be tailored to rectify potential biases, to ensure integrity and impartiality of the platform across user demographics and application scenarios. Educational initiatives aimed at cultivating awareness among AI designers and developers regarding bias and its ethical ramifications will be initiated, fostering a culture of accountability. Mechanisms for identifying and resolving issues pertaining to bias or discrimination within the STRATIF-AI platform will be established within clear communication channels. Discourse with impacted communities, particularly at-risk patient subgroups, will be conducted to ensure that the STRATIF-AI project consortium's conception of fairness resonates with diverse perspectives. A quantitative analytical framework will be embraced to measure and evaluate the efficacy the applied definition of fairness, and institute mechanisms to achieve as such. 
 
-### Represent diversity in training data
+### Represent diversity in data
 
-**Description** Inclusive representation of patients of specific (under-represented) ***subgroups*** in training data will be assessed against an acceptable ***threshold*** and rectified or reported accordingly. 
+**Description** Inclusive representation of patients of specific (under-represented) ***subgroups*** in data will be assessed against an acceptable ***threshold*** and rectified or reported accordingly. 
 
 ***subgroups:*** patients; patients with stroke; patients at risk of stroke; patients without stroke;   *language; education; age; disability; ethnicity; gender; migration status; socio-economic status;*  
 ***threshold:*** *reasonable representation; if zero; report in prediction uncertainty*  
@@ -37,7 +37,7 @@ Throughout development, consideration will be given to the diversity and represe
 * define at-risk patient subgroups
 * define acceptable thresholds
 * feedback from patient representatives/experts
-* assess training data
+* assess data
 * report in publication
 * note challenge of oversimplified categorization
 
@@ -79,7 +79,7 @@ Throughout development, consideration will be given to the diversity and represe
 
 **Description** System ***outputs*** will be assessed to ensure there is no acceptable  ***difference*** between patient ***subgroups***. 
 
-***outputs:*** *model output parameters; discrepancy*    
+***outputs:*** technical assessments bias (e.g., model output score and prediction discrepancy); clinical bias assessments (e.g., PROBAST)
 ***difference:*** *TBD; quantitative threshold; acceptable margin of error;*  
 ***subgroups*** *gender; sex; ethnicity; education; health history; disability; socio-economic background*
 

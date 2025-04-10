@@ -330,7 +330,7 @@ Each subsection corresponds to one of the 7 WPs within the STRATIF-AI project. T
 
 *Communication*
 
-[Standardize training materials](3_privacy.qmd#standardize-training-materials)
+[Standardize training materials](4_transparency.qmd#standardize-training-materials)
 
 ## Diversity, Non-discrimination and Fairness
 
